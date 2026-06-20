@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>政和三中</title>
+<style>
+:root { --primary: #1a365d; --bg: #f0f2f5; --card: #ffffff; }
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); display: flex; justify-content: center; min-height: 100vh; }
+.app { width: 100%; max-width: 430px; background: var(--bg); }
+.header { background: linear-gradient(135deg, var(--primary), #2c5282); color: #fff; padding: 24px 20px 20px; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; text-align: center; }
+.header h1 { font-size: 22px; font-weight: 700; }
+.header p { font-size: 13px; opacity: 0.85; margin-top: 6px; }
+.page { display: none; min-height: 100vh; }
+.page.active { display: block; }
+.auth-container { padding: 40px 24px; }
+.auth-card { background: var(--card); border-radius: 16px; padding: 28px 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.auth-title { font-size: 20px; color: var(--primary); text-align: center; margin-bottom: 24px; font-weight: 600; }
+.input-group { margin-bottom: 16px; }
+.input-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; }
+.input-group input:focus { border-color: var(--primary); }
+.btn-primary { width: 100%; background: linear-gradient(135deg, var(--primary), #2c5282); color: #fff; border: none; border-radius: 10px; padding: 14px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 8px; }
+.btn-primary:active { transform: scale(0.98); }
+.auth-link { text-align: center; margin-top: 20px; font-size: 14px; color: #64748b; }
+.auth-link a { color: var(--primary); font-weight: 600; cursor: pointer; }
+.error-msg { background: #fef2f2; color: #dc2626; padding: 10px 14px; border-radius: 8px; margin-top: 16px; font-size: 13px; display: none; }
+.main-container { display: none; min-height: 100vh; background: var(--bg); }
+.main-container.active { display: block; }
+.tab-nav { display: flex; background: var(--card); position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.tab-nav div { flex: 1; text-align: center; padding: 14px 0; font-size: 15px; color: #64748b; cursor: pointer; position: relative; }
+.tab-nav .active { color: var(--primary); font-weight: 600; }
+.tab-nav .active::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 40%; height: 3px; background: var(--primary); border-radius: 3px; }
+.tab-content { display: none; padding: 16px; }
+.tab-content.active { display: block; }
+.card { background: var(--card); border-radius: 14px; padding: 16px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.intro h2 { font-size: 17px; color: var(--primary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f1f5f9; }
+.intro p { font-size: 15px; line-height: 1.7; color: #475569; margin-bottom: 10px; }
+.post-form { margin-bottom: 16px; }
+.post-form textarea { width: 100%; height: 100px; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 12px; font-size: 15px; resize: none; outline: none; margin-bottom: 12px; font-family: inherit; }
+.upload-area { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.upload-btn { display: inline-flex; align-items: center; gap: 6px; background: #f1f5f9; color: #64748b; padding: 8px 14px; border-radius: 8px; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+.upload-btn:active { transform: scale(0.98); }
+.upload-btn input { display: none; }
+.image-preview { max-width: 100%; max-height: 200px; border-radius: 8px; margin-top: 8px; display: none; }
+.post-btn { background: var(--primary); color: #fff; border: none; border-radius: 10px; padding: 10px 24px; font-size: 15px; font-weight: 600; cursor: pointer; float: right; }
+.post-btn:active { transform: scale(0.98); }
+.post { background: var(--card); border-radius: 14px; padding: 16px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: relative; }
+.post-header { display: flex; align-items: center; margin-bottom: 12px; }
+.post-avatar { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; margin-right: 12px; flex-shrink: 0; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600; font-size: 16px; }
+.post-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.post-user-info { flex: 1; }
+.post-user { font-size: 15px; font-weight: 600; color: var(--primary); }
+.post-time { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+.delete-btn { position: absolute; right: 16px; top: 16px; font-size: 12px; color: #ef4444; cursor: pointer; padding: 4px 8px; background: #fef2f2; border-radius: 4px; }
+.post-content { font-size: 15px; line-height: 1.6; color: #334155; margin-bottom: 12px; }
+.post-image { width: 100%; border-radius: 10px; margin-bottom: 12px; }
+.like-section { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; cursor: pointer; }
+.like-icon { font-size: 18px; color: #cbd5e1; }
+.like-icon.liked { color: #ef4444; }
+.like-count { font-size: 13px; color: #64748b; }
+.comments-section { margin-top: 12px; padding-top: 12px; border-top: 1px solid #f1f5f9; }
+.comment { display: flex; margin-bottom: 10px; }
+.comment-avatar { width: 28px; height: 28px; border-radius: 50%; overflow: hidden; margin-right: 10px; flex-shrink: 0; background: linear-gradient(135deg, #38b2ac, #4299e1); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; }
+.comment-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.comment-content { background: #f8fafc; border-radius: 10px; padding: 8px 12px; flex: 1; }
+.comment-user { font-size: 13px; font-weight: 600; color: #2c5282; margin-bottom: 2px; }
+.comment-text { font-size: 14px; color: #475569; line-height: 1.4; }
+.comment-input { display: flex; gap: 10px; margin-top: 12px; }
+.comment-input input { flex: 1; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 20px; font-size: 14px; outline: none; }
+.comment-input button { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: #fff; border: none; font-size: 16px; cursor: pointer; flex-shrink: 0; }
+.profile-container { padding: 20px 0; }
+.profile-tab-nav { display: flex; background: #f8fafc; border-radius: 10px; padding: 4px; margin-bottom: 20px; }
+.profile-tab-nav div { flex: 1; text-align: center; padding: 10px 0; font-size: 15px; color: #64748b; cursor: pointer; border-radius: 8px; transition: all 0.2s; }
+.profile-tab-nav .active { background: #fff; color: var(--primary); font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.profile-info { text-align: center; padding: 20px 0; }
+.profile-avatar { width: 80px; height: 80px; border-radius: 50%; overflow: hidden; background: linear-gradient(135deg, var(--primary), #2c5282); color: #fff; font-size: 32px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.profile-name { font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+.profile-role { font-size: 14px; color: #64748b; }
+.logout-btn { width: 100%; background: #ef4444; color: #fff; border: none; border-radius: 10px; padding: 14px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 30px; }
+.logout-btn:active { transform: scale(0.98); }
+.settings-section { padding: 10px 0; }
+.settings-group { margin-bottom: 24px; }
+.settings-group h3 { font-size: 16px; color: var(--primary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #f1f5f9; }
+.settings-item { display: flex; align-items: center; padding: 16px 0; border-bottom: 1px solid #f8fafc; }
+.settings-label { flex: 1; font-size: 15px; color: #334155; }
+.settings-value { font-size: 15px; color: #64748b; margin-right: 8px; }
+.settings-arrow { color: #cbd5e1; font-size: 18px; }
+.avatar-upload { text-align: center; margin-bottom: 20px; }
+.avatar-preview { width: 80px; height: 80px; border-radius: 50%; overflow: hidden; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 32px; font-weight: 700; margin: 0 auto 12px; cursor: pointer; position: relative; }
+.avatar-preview img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-preview .edit-overlay { position: absolute; bottom: 0; right: 0; background: rgba(0,0,0,0.6); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.avatar-upload input { display: none; }
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center; z-index: 1000; }
+.modal-overlay.active { display: flex; }
+.modal-content { background: white; border-radius: 16px; padding: 24px; width: 90%; max-width: 320px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+.modal-title { font-size: 18px; font-weight: 600; color: var(--primary); margin-bottom: 16px; text-align: center; }
+.modal-input { width: 100%; padding: 14px 16px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 15px; outline: none; margin-bottom: 20px; box-sizing: border-box; }
+.modal-buttons { display: flex; gap: 12px; }
+.modal-btn { flex: 1; padding: 12px; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.modal-btn.cancel { background: #f1f5f9; color: #64748b; }
+.modal-btn.confirm { background: var(--primary); color: white; }
+.modal-btn:active { transform: scale(0.98); }
+.empty-state { text-align: center; padding: 60px 20px; color: #94a3b8; }
+.empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header"><h1>政和三中</h1><p>非官方网站</p></div>
+  <div id="pageLogin" class="page active auth-container">
+    <div class="auth-card">
+      <div class="auth-title">账号登录</div>
+      <div class="input-group"><input type="text" id="loginUsername" placeholder="用户名"></div>
+      <div class="input-group"><input type="password" id="loginPassword" placeholder="密码"></div>
+      <div id="loginError" class="error-msg"></div>
+      <button class="btn-primary" onclick="handleLogin()">登 录</button>
+      <div class="auth-link">没有账号？<a onclick="showPage('register')">立即注册</a></div>
+    </div>
+  </div>
+  <div id="pageRegister" class="page auth-container">
+    <div class="auth-card">
+      <div class="auth-title">创建账号</div>
+      <div class="avatar-upload">
+        <div class="avatar-preview" onclick="document.getElementById('regAvatar').click()">
+          <div id="avatarPreviewText">头像</div>
+          <img id="avatarPreviewImg" style="display:none;">
+          <div class="edit-overlay">✎</div>
+        </div>
+        <input type="file" id="regAvatar" accept="image/*" onchange="handleAvatarSelect(event)">
+      </div>
+      <div class="input-group"><input type="text" id="regUsername" placeholder="用户名（用于登录）"></div>
+      <div class="input-group"><input type="password" id="regPassword" placeholder="设置密码（至少6位）"></div>
+      <div class="input-group"><input type="password" id="regConfirmPassword" placeholder="确认密码"></div>
+      <div id="regError" class="error-msg"></div>
+      <button class="btn-primary" onclick="handleRegister()">注 册</button>
+      <div class="auth-link">已有账号？<a onclick="showPage('login')">返回登录</a></div>
+    </div>
+  </div>
+  <div id="pageHome" class="main-container">
+    <div class="tab-nav">
+      <div class="tab-item active" onclick="switchTab('intro')">学校介绍</div>
+      <div class="tab-item" onclick="switchTab('wall')">校园墙</div>
+      <div class="tab-item" onclick="switchTab('profile')">个人中心</div>
+    </div>
+    <div id="tabIntro" class="tab-content active">
+
+<div class="card intro">
+  <!-- 👇 新增的图片 -->
+  <img src="_20260620183309_3242.jpg" 
+       style="width:100%; border-radius:10px; margin-bottom:16px;"
+       alt="政和三中">
+
+  <h2>学校简介</h2>
+  <p>政和县第三中学创办于2002年，是一所集初中、高中教育为一体的公办完全中学。</p>
+  <p>学校坐落于福建省南平市政和县星溪南路73号，校园环境优美，教学设施完善。</p>
+  <p>学校始终坚持"厚德求慧，勤奋自强"的校训，致力于培养全面发展的优秀学生。</p>
+</div>
+    </div>
+    <div id="tabWall" class="tab-content">
+      <div class="card">
+        <div class="post-form">
+          <textarea id="postContent" placeholder="分享校园生活..."></textarea>
+          <div class="upload-area"><label class="upload-btn">添加图片<input type="file" accept="image/*" onchange="handleImageSelect(event)"></label></div>
+          <img id="imagePreview" class="image-preview">
+          <button class="post-btn" onclick="publishPost()">发 布</button>
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+      <div id="postsContainer"></div>
+    </div>
+    <div id="tabProfile" class="tab-content">
+      <div class="card">
+        <div class="profile-tab-nav">
+          <div class="profile-tab active" onclick="switchProfileTab('info')">个人资料</div>
+          <div class="profile-tab" onclick="switchProfileTab('settings')">设置</div>
+        </div>
+        <div id="profileInfo" class="profile-container">
+          <div class="profile-info">
+            <div class="profile-avatar" id="profileAvatar"><div id="profileAvatarText">用</div><img id="profileAvatarImg" style="display:none;"></div>
+            <div class="profile-name" id="profileName"></div>
+            <div class="profile-role">学生</div>
+            <button class="logout-btn" onclick="handleLogout()">退出登录</button>
+          </div>
+        </div>
+        <div id="profileSettings" class="profile-container" style="display:none;">
+          <div class="settings-section">
+            <div class="settings-group">
+              <h3>头像</h3>
+              <div class="avatar-upload">
+                <div class="avatar-preview" onclick="document.getElementById('settingsAvatar').click()">
+                  <div id="settingsAvatarText">用</div>
+                  <img id="settingsAvatarImg" style="display:none;">
+                  <div class="edit-overlay">✎</div>
+                </div>
+                <input type="file" id="settingsAvatar" accept="image/*" onchange="handleSettingsAvatarSelect(event)">
+              </div>
+            </div>
+            <div class="settings-group">
+              <h3>名字设置</h3>
+              <div class="settings-item" onclick="openNameModal()">
+                <div class="settings-label">名字</div>
+                <div class="settings-value" id="settingsName">未设置</div>
+                <div class="settings-arrow">›</div>
+              </div>
+            </div>
+            <div class="settings-group">
+              <h3>账号信息</h3>
+              <div class="settings-item">
+                <div class="settings-label">用户名</div>
+                <div class="settings-value" id="settingsUsername"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="nameModal" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-title">修改名字</div>
+    <input type="text" id="modalEditName" class="modal-input" placeholder="请输入名字">
+    <div class="modal-buttons">
+      <button class="modal-btn cancel" onclick="closeNameModal()">取消</button>
+      <button class="modal-btn confirm" onclick="saveNameFromModal()">保存</button>
+    </div>
+  </div>
+</div>
+<script>
+const USERS_KEY = 'zhenghe3_users', CURRENT_USER_KEY = 'zhenghe3_current_user', POSTS_KEY = 'zhenghe3_posts';
+
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+  document.getElementById('page' + pageId.charAt(0).toUpperCase() + pageId.slice(1)).classList.add('active');
+  hideErrors();
+}
+
+function hideErrors() {
+  document.getElementById('loginError').style.display = 'none';
+  document.getElementById('regError').style.display = 'none';
+}
+
+function getUsers() {
+  const users = localStorage.getItem(USERS_KEY);
+  return users ? JSON.parse(users) : {};
+}
+
+function saveUsers(users) {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+}
+
+function handleRegister() {
+  hideErrors();
+  const avatar = document.getElementById('avatarPreviewImg').src;
+  const username = document.getElementById('regUsername').value.trim();
+  const password = document.getElementById('regPassword').value;
+  const confirmPassword = document.getElementById('regConfirmPassword').value;
+  const errorEl = document.getElementById('regError');
+  
+  if (!username || !password) {
+    errorEl.textContent = '请填写完整信息';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  if (password.length < 6) {
+    errorEl.textContent = '密码至少需要6位';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  if (password !== confirmPassword) {
+    errorEl.textContent = '两次密码不一致';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  const users = getUsers();
+  if (users[username]) {
+    errorEl.textContent = '用户名已存在';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  users[username] = {
+    password: password,
+    name: '',
+    avatar: avatar && avatar.startsWith('data:image/') ? avatar : null
+  };
+  
+  saveUsers(users);
+  alert('注册成功，请登录！');
+  showPage('login');
+}
+
+function handleAvatarSelect(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  if (!file.type.startsWith('image/')) {
+    alert('请选择图片文件');
+    return;
+  }
+  
+  if (file.size > 2 * 1024 * 1024) {
+    alert('头像图片大小不能超过2MB');
+    return;
+  }
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const previewImg = document.getElementById('avatarPreviewImg');
+    const previewText = document.getElementById('avatarPreviewText');
+    
+    previewImg.src = e.target.result;
+    previewImg.style.display = 'block';
+    previewText.style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function handleLogin() {
+  hideErrors();
+  const username = document.getElementById('loginUsername').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  const errorEl = document.getElementById('loginError');
+  
+  if (!username || !password) {
+    errorEl.textContent = '请输入用户名和密码';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  const users = getUsers();
+  if (!users[username] || users[username].password !== password) {
+    errorEl.textContent = '账号或密码错误';
+    errorEl.style.display = 'block';
+    return;
+  }
+  
+  localStorage.setItem(CURRENT_USER_KEY, username);
+  enterHome();
+}
+
+function enterHome() {
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  if (!currentUser) {
+    showPage('login');
+    return;
+  }
+  
+  const users = getUsers();
+  const user = users[currentUser];
+  
+  if (!user) {
+    localStorage.removeItem(CURRENT_USER_KEY);
+    showPage('login');
+    return;
+  }
+  
+  const displayName = user.name || currentUser;
+  document.getElementById('profileName').textContent = displayName;
+  document.getElementById('settingsName').textContent = user.name || '未设置';
+  document.getElementById('settingsUsername').textContent = currentUser;
+  
+  updateAvatar('profileAvatarText', 'profileAvatarImg', user.avatar, displayName);
+  updateAvatar('settingsAvatarText', 'settingsAvatarImg', user.avatar, displayName);
+  
+  document.getElementById('pageHome').classList.add('active');
+  document.getElementById('pageLogin').classList.remove('active');
+  document.getElementById('pageRegister').classList.remove('active');
+  
+  loadPosts();
+}
+
+function updateAvatar(textId, imgId, avatarUrl, name) {
+  const textEl = document.getElementById(textId);
+  const imgEl = document.getElementById(imgId);
+  
+  if (avatarUrl && avatarUrl.startsWith('data:image/')) {
+    imgEl.src = avatarUrl;
+    imgEl.style.display = 'block';
+    textEl.style.display = 'none';
+  } else {
+    imgEl.style.display = 'none';
+    textEl.style.display = 'flex';
+    textEl.textContent = name.charAt(0).toUpperCase();
+  }
+}
+
+function switchProfileTab(tabName) {
+  document.querySelectorAll('.profile-tab').forEach(tab => tab.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  if (tabName === 'info') {
+    document.getElementById('profileInfo').style.display = 'block';
+    document.getElementById('profileSettings').style.display = 'none';
+  } else {
+    document.getElementById('profileInfo').style.display = 'none';
+    document.getElementById('profileSettings').style.display = 'block';
+  }
+}
+
+function handleSettingsAvatarSelect(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  if (!file.type.startsWith('image/')) {
+    alert('请选择图片文件');
+    return;
+  }
+  
+  if (file.size > 2 * 1024 * 1024) {
+    alert('头像图片大小不能超过2MB');
+    return;
+  }
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+    const users = getUsers();
+    
+    if (users[currentUser]) {
+      users[currentUser].avatar = e.target.result;
+      saveUsers(users);
+      
+      const displayName = users[currentUser].name || currentUser;
+      updateAvatar('profileAvatarText', 'profileAvatarImg', e.target.result, displayName);
+      updateAvatar('settingsAvatarText', 'settingsAvatarImg', e.target.result, displayName);
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+function handleLogout() {
+  localStorage.removeItem(CURRENT_USER_KEY);
+  document.getElementById('loginUsername').value = '';
+  document.getElementById('loginPassword').value = '';
+  showPage('login');
+}
+
+function switchTab(tabName) {
+  document.querySelectorAll('.tab-item').forEach(item => item.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+  document.getElementById('tab' + tabName.charAt(0).toUpperCase() + tabName.slice(1)).classList.add('active');
+}
+
+function handleImageSelect(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  if (!file.type.startsWith('image/')) {
+    alert('请选择图片文件');
+    return;
+  }
+  
+  if (file.size > 5 * 1024 * 1024) {
+    alert('图片大小不能超过5MB');
+    return;
+  }
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const preview = document.getElementById('imagePreview');
+    preview.src = e.target.result;
+    preview.style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+}
+
+function publishPost() {
+  const content = document.getElementById('postContent').value.trim();
+  const imagePreview = document.getElementById('imagePreview');
+  const hasImage = imagePreview.style.display === 'block' && imagePreview.src;
+  
+  if (!content && !hasImage) {
+    alert('请输入内容或选择图片');
+    return;
+  }
+  
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const users = getUsers();
+  const user = users[currentUser];
+  const posts = getPosts();
+  const displayName = user.name || currentUser;
+  
+  const newPost = {
+    id: Date.now(),
+    userId: currentUser,
+    userName: displayName,
+    userAvatar: user.avatar,
+    content: content,
+    imageUrl: hasImage ? imagePreview.src : null,
+    timestamp: new Date().toLocaleString(),
+    likes: [],
+    comments: []
+  };
+  
+  posts.unshift(newPost);
+  savePosts(posts);
+  
+  document.getElementById('postContent').value = '';
+  imagePreview.style.display = 'none';
+  imagePreview.src = '';
+  document.querySelector('.upload-btn input').value = '';
+  
+  loadPosts();
+}
+
+function getPosts() {
+  const posts = localStorage.getItem(POSTS_KEY);
+  return posts ? JSON.parse(posts) : [];
+}
+
+function savePosts(posts) {
+  localStorage.setItem(POSTS_KEY, JSON.stringify(posts));
+}
+
+function loadPosts() {
+  const posts = getPosts();
+  const container = document.getElementById('postsContainer');
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const users = getUsers();
+  
+  if (posts.length === 0) {
+    container.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><p>暂无动态，快来发布第一条吧！</p></div>';
+    return;
+  }
+  
+  container.innerHTML = posts.map(post => {
+    const isLiked = post.likes.includes(currentUser);
+    const isMyPost = post.userId === currentUser;
+    const postUser = users[post.userId] || {};
+    
+    return `
+      <div class="post">
+        ${isMyPost ? `<div class="delete-btn" onclick="deletePost(${post.id})">删除</div>` : ''}
+        <div class="post-header">
+          <div class="post-avatar">
+            ${postUser.avatar ? `<img src="${postUser.avatar}">` : post.userName.charAt(0).toUpperCase()}
+          </div>
+          <div class="post-user-info">
+            <div class="post-user">${post.userName}</div>
+            <div class="post-time">${post.timestamp}</div>
+          </div>
+        </div>
+        
+        ${post.content ? `<div class="post-content">${post.content}</div>` : ''}
+        ${post.imageUrl ? `<img src="${post.imageUrl}" class="post-image">` : ''}
+        
+        <div class="like-section" onclick="toggleLike(${post.id})">
+          <span class="like-icon ${isLiked ? 'liked' : ''}">❤</span>
+          <span class="like-count">${post.likes.length} 赞</span>
+        </div>
+        
+        <div class="comments-section">
+          ${(post.comments || []).map(comment => {
+            const commentUser = users[comment.userId] || {};
+            return `
+              <div class="comment">
+                <div class="comment-avatar">
+                  ${commentUser.avatar ? `<img src="${commentUser.avatar}">` : comment.userName.charAt(0).toUpperCase()}
+                </div>
+                <div class="comment-content">
+                  <div class="comment-user">${comment.userName}</div>
+                  <div class="comment-text">${comment.content}</div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+          
+          <div class="comment-input">
+            <input type="text" id="commentInput${post.id}" placeholder="写评论...">
+            <button onclick="addComment(${post.id})">➤</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function toggleLike(postId) {
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const posts = getPosts();
+  const postIndex = posts.findIndex(p => p.id === postId);
+  
+  if (postIndex === -1) return;
+  
+  const post = posts[postIndex];
+  const likeIndex = post.likes.indexOf(currentUser);
+  
+  if (likeIndex > -1) {
+    post.likes.splice(likeIndex, 1);
+  } else {
+    post.likes.push(currentUser);
+  }
+  
+  savePosts(posts);
+  loadPosts();
+}
+
+function addComment(postId) {
+  const input = document.getElementById(`commentInput${postId}`);
+  const content = input.value.trim();
+  
+  if (!content) return;
+  
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const users = getUsers();
+  const user = users[currentUser];
+  const posts = getPosts();
+  const postIndex = posts.findIndex(p => p.id === postId);
+  
+  if (postIndex === -1) return;
+  
+  const displayName = user.name || currentUser;
+  
+  posts[postIndex].comments.push({
+    userId: currentUser,
+    userName: displayName,
+    userAvatar: user.avatar,
+    content: content,
+    timestamp: new Date().toLocaleTimeString()
+  });
+  
+  savePosts(posts);
+  input.value = '';
+  loadPosts();
+}
+
+function deletePost(postId) {
+  if (!confirm('确定要删除这条帖子吗？')) return;
+  
+  const posts = getPosts();
+  const filteredPosts = posts.filter(p => p.id !== postId);
+  savePosts(filteredPosts);
+  loadPosts();
+}
+
+function openNameModal() {
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const users = getUsers();
+  const user = users[currentUser];
+  
+  document.getElementById('modalEditName').value = user.name || '';
+  document.getElementById('nameModal').classList.add('active');
+  document.getElementById('modalEditName').focus();
+}
+
+function closeNameModal() {
+  document.getElementById('nameModal').classList.remove('active');
+}
+
+function saveNameFromModal() {
+  const newName = document.getElementById('modalEditName').value.trim();
+  const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+  const users = getUsers();
+  
+  if (!users[currentUser]) return;
+  
+  users[currentUser].name = newName;
+  saveUsers(users);
+  
+  const displayName = newName || currentUser;
+  document.getElementById('profileName').textContent = displayName;
+  document.getElementById('settingsName').textContent = newName || '未设置';
+  updateAvatar('profileAvatarText', 'profileAvatarImg', users[currentUser].avatar, displayName);
+  updateAvatar('settingsAvatarText', 'settingsAvatarImg', users[currentUser].avatar, displayName);
+  
+  closeNameModal();
+  alert('名字已更新！');
+}
+
+document.getElementById('nameModal').addEventListener('click', function(e) {
+  if (e.target === this) closeNameModal();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeNameModal();
+});
+
+window.onload = function() {
+  if (localStorage.getItem(CURRENT_USER_KEY)) {
+    enterHome();
+  } else {
+    showPage('login');
+  }
+};
+</script>
+</body>
+</html>
