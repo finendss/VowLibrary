@@ -2970,7 +2970,7 @@ at,
 as,
 })
 
-local av=af("Enter Key","key",nil,"Input",function(av)
+local av=af("输入卡密","key",nil,"Input",function(av)
 an=av
 end)
 
