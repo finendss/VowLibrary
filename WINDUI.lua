@@ -3074,7 +3074,7 @@ PaddingBottom=UDim.new(0,16),
 
 
 
-local az=ae("Exit","log-out",function()
+local az=ae("退出","log-out",function()
 al:Close()()
 end,"Tertiary",ax.Frame)
 
@@ -3086,7 +3086,7 @@ az.AnchorPoint=Vector2.new(0,1)
 end
 
 if ag.KeySystem.URL then
-ae("Get key","key",function()
+ae("获取卡密","key",function()
 setclipboard(ag.KeySystem.URL)
 end,"Secondary",ax.Frame)
 end
@@ -3102,7 +3102,7 @@ if ag.KeySystem.API then
 
 local aA=240
 local aB=false
-local b=ae("Get key","key",nil,"Secondary",ax.Frame)
+local b=ae("获取卡密","key",nil,"Secondary",ax.Frame)
 
 local d=ab.NewRoundFrame(99,"Squircle",{
 Size=UDim2.new(0,1,1,0),
@@ -3315,7 +3315,7 @@ task.wait(0.4)
 ai(true)
 end
 
-local aA=ae("Submit","arrow-right",function()
+local aA=ae("加载","arrow-right",function()
 local aA=tostring(an or"empty")local aB=
 ag.Folder or ag.Title
 
@@ -14453,11 +14453,11 @@ J=true
 
 aw:Dialog{
 
-Title="关闭Vow",
-Content="关闭后需再次注入.",
+Title="Close Window",
+Content="Do you want to close this window? You will not be able to open it again.",
 Buttons={
 {
-Title="取消",
+Title="Cancel",
 
 Callback=function()
 J=false
@@ -14465,7 +14465,7 @@ end,
 Variant="Secondary",
 },
 {
-Title="关闭",
+Title="Close Window",
 
 Callback=function()
 J=false
