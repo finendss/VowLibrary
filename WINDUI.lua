@@ -14453,11 +14453,11 @@ J=true
 
 aw:Dialog{
 
-Title="Close Window",
-Content="Do you want to close this window? You will not be able to open it again.",
+Title="关闭面板",
+Content="是否关闭面板 关闭则需重新注入",
 Buttons={
 {
-Title="Cancel",
+Title="算了",
 
 Callback=function()
 J=false
@@ -14465,7 +14465,7 @@ end,
 Variant="Secondary",
 },
 {
-Title="Close Window",
+Title="确定",
 
 Callback=function()
 J=false
