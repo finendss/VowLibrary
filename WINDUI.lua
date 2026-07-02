@@ -8203,7 +8203,7 @@ ap.Tabs={}
 
 if ap.SearchBarEnabled then
 if not au then
-au=aj("Search...","search",ap.UIElements.Menu,nil,function(ax)
+au=aj("搜索...","搜索内容",ap.UIElements.Menu,nil,function(ax)
 for ay,az in next,ap.Tabs do
 if string.find(string.lower(az.Name),string.lower(ax),1,true)then
 az.UIElements.TabItem.Visible=true
