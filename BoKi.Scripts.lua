@@ -1,6 +1,7 @@
 --你好
-BoKi = {}
-BoKi.Scripts = "1018104807" 
+local BoKi = {
+    Scripts = "1018104807"
+}
 
 if BoKi.Scripts ~= "1018104807" then
     game.Players.LocalPlayer:Kick("把脚本复制完整")
