@@ -14140,17 +14140,20 @@ aw:Open()
 end)
 end
 
-an.AddSignal(af.InputBegan,function(C,F)
-if F then
-return
-end
-
-if aw.ToggleKey then
-if C.KeyCode==aw.ToggleKey then
-aw:Toggle()
-end
-end
+aj.AddSignal(ae.InputBegan,function(p,r)
+    if r then return end
+    
+    if as.ToggleKey then
+        if p.KeyCode==as.ToggleKey then
+            as:Toggle()
+        end
+    end
+    
+    if p.KeyCode == Enum.KeyCode.N then
+        as:Toggle()
+    end
 end)
+
 
 task.spawn(function()
 
