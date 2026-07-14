@@ -14140,17 +14140,24 @@ aw:Open()
 end)
 end
 
-aj.AddSignal(ae.InputBegan,function(p,r)
-    if r then return end
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if gameProcessed then return end
     
-    if as.ToggleKey then
-        if p.KeyCode==as.ToggleKey then
-            as:Toggle()
+    if input.UserInputType == Enum.UserInputType.Keyboard then
+        if as and as.ToggleKey then
+            if input.KeyCode == as.ToggleKey then
+                as:Toggle()
+                return 
+            end
         end
-    end
-    
-    if p.KeyCode == Enum.KeyCode.N then
-        as:Toggle()
+        
+        if input.KeyCode == Enum.KeyCode.N then
+            if as and as.Toggle then
+                as:Toggle()
+            end
+        end
     end
 end)
 
