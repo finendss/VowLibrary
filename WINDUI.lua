@@ -14146,16 +14146,22 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
     
     if input.UserInputType == Enum.UserInputType.Keyboard then
-        if as and as.ToggleKey then
+        if typeof(as) == "table" and as.ToggleKey then
             if input.KeyCode == as.ToggleKey then
-                as:Toggle()
+                if typeof(as.Toggle) == "function" then
+                    as:Toggle()
+                elseif typeof(as) == "function" then
+                    as()
+                end
                 return 
             end
         end
         
         if input.KeyCode == Enum.KeyCode.N then
-            if as and as.Toggle then
+            if typeof(as) == "table" and typeof(as.Toggle) == "function" then
                 as:Toggle()
+            elseif typeof(as) == "function" then
+                as()
             end
         end
     end
