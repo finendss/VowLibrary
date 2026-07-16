@@ -14141,27 +14141,24 @@ end)
 end
 
 local UserInputService = game:GetService("UserInputService")
-
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
-    
     if input.UserInputType == Enum.UserInputType.Keyboard then
-        if typeof(as) == "table" and as.ToggleKey then
-            if input.KeyCode == as.ToggleKey then
-                if typeof(as.Toggle) == "function" then
-                    as:Toggle()
-                elseif typeof(as) == "function" then
-                    as()
+        if typeof(aw) == "table" and aw.ToggleKey then
+            if input.KeyCode == aw.ToggleKey then
+                if typeof(aw.Toggle) == "function" then
+                    aw:Toggle()
+                elseif typeof(aw) == "function" then
+                    aw()
                 end
-                return 
+                return
             end
         end
-        
         if input.KeyCode == Enum.KeyCode.N then
-            if typeof(as) == "table" and typeof(as.Toggle) == "function" then
-                as:Toggle()
-            elseif typeof(as) == "function" then
-                as()
+            if typeof(aw) == "table" and typeof(aw.Toggle) == "function" then
+                aw:Toggle()
+            elseif typeof(aw) == "function" then
+                aw()
             end
         end
     end
