@@ -9601,12 +9601,12 @@ end)
 
 local F={
 {
-Title="Cancel",
+Title="取消",
 Variant="Secondary",
 Callback=function()end,
 },
 {
-Title="Apply",
+Title="确定",
 
 Variant="Primary",
 Callback=function()
