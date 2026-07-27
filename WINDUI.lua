@@ -5931,7 +5931,7 @@ as.ImageLabel.ImageColor3=Color3.new(1,1,1)
 as.ImageLabel.ImageTransparency=0.4
 
 local at=ab("TextLabel",{
-Text="Locked",
+Text="锁定",
 TextSize=18,
 FontFace=Font.new(aa.Font,Enum.FontWeight.Medium),
 AutomaticSize="XY",
