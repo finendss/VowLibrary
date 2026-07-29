@@ -4209,6 +4209,22 @@ ElementBackground=Color3.fromHex"#251F1F",
 ElementBackgroundTransparency=0,
 },
 
+Pink = {
+Name = "Pink",
+
+Accent = Color3.fromHex("#FF69B4"),
+Dialog = Color3.fromHex("#3d1020"),
+        
+Text = Color3.fromHex("#fff0f5"),
+Placeholder = Color3.fromHex("#c98aa8"),
+Background = Color3.fromHex("#1a0510"),
+Button = Color3.fromHex("#FF1493"),
+Icon = Color3.fromHex("#FF69B4"),
+
+ElementBackground = Color3.fromHex("#2d1424"),
+ElementBackgroundTransparency = 0,
+},
+
 MonokaiPro={
 Name="Monokai Pro",
 
