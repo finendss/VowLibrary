@@ -4215,7 +4215,7 @@ Name = "Pink",
 Accent = Color3.fromHex("#FF69B4"),
 Dialog = Color3.fromHex("#3d1020"),
         
-Text = Color3.fromHex("#fff0f5"),
+Text = Color3.fromHex("#FF6B6B"),
 Placeholder = Color3.fromHex("#c98aa8"),
 Background = Color3.fromHex("#1a0510"),
 Button = Color3.fromHex("#FF1493"),
