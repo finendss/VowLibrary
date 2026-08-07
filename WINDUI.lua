@@ -11200,7 +11200,7 @@ Locked=ap.Locked,
 ShowTabTitle=ap.ShowTabTitle,
 TabTitleAlign=ap.TabTitleAlign or"Left",
 CustomEmptyPage=(ap.CustomEmptyPage and next(ap.CustomEmptyPage)~=nil)and ap.CustomEmptyPage
-or{Icon="lucide:frown",IconSize=48,Title="This tab is Empty",Desc=nil},
+or{Icon="lucide:frown",IconSize=48,Title="哎呀你卡了嗯对",Desc=nil},
 Border=ap.Border,
 Selected=false,
 Index=nil,
