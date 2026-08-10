@@ -4226,16 +4226,19 @@ ElementBackgroundTransparency = 0,
 },
 
 FIN = {
-    Name = "FIN",
-    Accent = Color3.fromHex("#FF1493"),
-    Dialog = Color3.fromHex("#FF69B4"),
-    Text = Color3.fromHex("#FFFFFF"),
-    Placeholder = Color3.fromHex("#FFB6C1"),
-    Background = Color3.fromHex("#33001A"),
-    Button = Color3.fromHex("#FF007F"),
-    Icon = Color3.fromHex("#FF69B4"),
-    ElementBackground = Color3.fromHex("#4A0029"),
-    ElementBackgroundTransparency = 0,
+Name = "FIN",
+    
+Accent = Color3.fromHex("#FF1493"),
+Dialog = Color3.fromHex("#FF69B4"),
+    
+Text = Color3.fromHex("#FFFFFF"),
+Placeholder = Color3.fromHex("#FFB6C1"),
+Background = Color3.fromHex("#33001A"),
+Button = Color3.fromHex("#FF007F"),
+Icon = Color3.fromHex("#FF69B4"),
+
+ElementBackground = Color3.fromHex("#4A0029"),
+ElementBackgroundTransparency = 0,
 },
 
 MonokaiPro={
