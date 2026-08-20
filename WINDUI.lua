@@ -4228,16 +4228,16 @@ ElementBackgroundTransparency = 0,
 FIN = {
 Name = "FIN",
     
-Accent = Color3.fromHex("#FF1493"),
-Dialog = Color3.fromHex("#FF69B4"),
+Accent = Color3.fromHex("#9945EA"),
+Dialog = Color3.fromHex("#B87CEE"),
     
 Text = Color3.fromHex("#FFFFFF"),
-Placeholder = Color3.fromHex("#FFB6C1"),
-Background = Color3.fromHex("#33001A"),
-Button = Color3.fromHex("#FF007F"),
-Icon = Color3.fromHex("#FF69B4"),
+Placeholder = Color3.fromHex("#C9A8F0"),
+Background = Color3.fromHex("#08010E"),
+Button = Color3.fromHex("#9945EA"),
+Icon = Color3.fromHex("#B87CEE"),
 
-ElementBackground = Color3.fromHex("#4A0029"),
+ElementBackground = Color3.fromHex("#1A0433"),
 ElementBackgroundTransparency = 0,
 },
 
