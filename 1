@@ -83,68 +83,6 @@ local function hijackPrintf()
     end
 end
 task.spawn(hijackPrintf)
-local function fullCoverCapturedScripts()
-    if not isfolder then return end
-    if isfolder("Captured_Scripts") then
-        for offset=-5,5 do
-            local t=os.time()+offset
-            local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
-            local patterns={
-                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
-                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
-                "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
-            }
-            for _,path in ipairs(patterns) do
-                pcall(function()
-                    if isfile and isfile(path) then
-                        originalWritefile(path,getProtectedContent())
-                    end
-                end)
-            end
-        end
-    end
-    if isfolder("HttpGetFolder") then
-        for i=1,99999 do
-            pcall(function()
-                local path="HttpGetFolder/HttpGetLog_"..i..".txt"
-                if isfile and isfile(path) then
-                    originalWritefile(path,getProtectedContent())
-                end
-            end)
-        end
-    end
-    if isfolder("RequestFolder") then
-        for i=1,99999 do
-            pcall(function()
-                local path="RequestFolder/RequestLog_"..i..".txt"
-                if isfile and isfile(path) then
-                    originalWritefile(path,getProtectedContent())
-                end
-            end)
-        end
-    end
-    if isfolder("LoadstringFolder") then
-        for i=1,99999 do
-            pcall(function()
-                local path="LoadstringFolder/LoadstringLog_"..i..".lua"
-                if isfile and isfile(path) then
-                    originalWritefile(path,getProtectedContent())
-                end
-            end)
-        end
-    end
-    if isfolder("WebhookFolder") then
-        for i=1,99999 do
-            pcall(function()
-                local path="WebhookFolder/WebhookLog_"..i..".txt"
-                if isfile and isfile(path) then
-                    originalWritefile(path,getProtectedContent())
-                end
-            end)
-        end
-    end
-end
-fullCoverCapturedScripts()
 local function pollOverwrite()
     while true do
         task.wait(2)
@@ -189,46 +127,6 @@ local function pollOverwrite()
                 }
                 for _,path in ipairs(patterns) do
                     pcall(function()
-                        if isfile and isfile(path) then
-                            originalWritefile(path,getProtectedContent())
-                        end
-                    end)
-                end
-            end
-            if isfolder("HttpGetFolder") then
-                for i=1,99999 do
-                    pcall(function()
-                        local path="HttpGetFolder/HttpGetLog_"..i..".txt"
-                        if isfile and isfile(path) then
-                            originalWritefile(path,getProtectedContent())
-                        end
-                    end)
-                end
-            end
-            if isfolder("RequestFolder") then
-                for i=1,99999 do
-                    pcall(function()
-                        local path="RequestFolder/RequestLog_"..i..".txt"
-                        if isfile and isfile(path) then
-                            originalWritefile(path,getProtectedContent())
-                        end
-                    end)
-                end
-            end
-            if isfolder("LoadstringFolder") then
-                for i=1,99999 do
-                    pcall(function()
-                        local path="LoadstringFolder/LoadstringLog_"..i..".lua"
-                        if isfile and isfile(path) then
-                            originalWritefile(path,getProtectedContent())
-                        end
-                    end)
-                end
-            end
-            if isfolder("WebhookFolder") then
-                for i=1,99999 do
-                    pcall(function()
-                        local path="WebhookFolder/WebhookLog_"..i..".txt"
                         if isfile and isfile(path) then
                             originalWritefile(path,getProtectedContent())
                         end
