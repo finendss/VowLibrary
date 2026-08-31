@@ -103,7 +103,7 @@ local function fullCoverCapturedScripts()
             end
         end
     end
-    for i=1,9999 do
+    for i=1,99999 do
         pcall(function()
             local path="HttpGetFolder/HttpGetLog_"..i..".txt"
             if isfile and isfile(path) then
@@ -181,7 +181,7 @@ local function pollOverwrite()
                     end)
                 end
             end
-            for i=1,9999 do
+            for i=1,99999 do
                 pcall(function()
                     local path="HttpGetFolder/HttpGetLog_"..i..".txt"
                     if isfile and isfile(path) then
