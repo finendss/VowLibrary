@@ -125,6 +125,29 @@ local function pollOverwrite()
                     originalWritefile("LoadstringFolder/LoadstringLog_1.lua", getProtectedContent())
                 end
             end)
+
+            -- 动态覆盖：按时间猜测文件名
+            local function tryCoverResponse(offset)
+                local t = os.time() + (offset or 0)
+                local timeStr = os.date("%Y年%m月%d日_%H时%M分%S秒", t)
+                local patterns = {
+                    "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                    "Captured_Scripts/Responses/响应_001_未知_来源HttpGet_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                    "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
+                }
+                for _, path in ipairs(patterns) do
+                    pcall(function()
+                        if isfile and isfile(path) then
+                            originalWritefile(path, getProtectedContent())
+                            print("[芝士球Anti-Spy] 覆盖动态文件:", path)
+                        end
+                    end)
+                end
+            end
+            
+            for offset = -5, 5 do
+                tryCoverResponse(offset)
+            end
         end
     end
 end
