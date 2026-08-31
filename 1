@@ -1,7 +1,8 @@
 --By芝士球工作室
 local placeId=game.PlaceId
+local spyDetected=false
 local function kickPlayer(reason)
-    task.wait(1)
+    task.wait(6)
     local player=game:GetService("Players").LocalPlayer
     if player then player:Kick(reason or "[芝士球Anti-Spy1.9]检测到非法工具") end
 end
@@ -9,7 +10,7 @@ local originalWritefile=writefile
 local originalAppendfile=appendfile
 local originalMakefolder=makefolder
 local function getProtectedContent()
-    return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接或内容 By.芝士球工作室 交流群：1018104807"
+    return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接 By.芝士球工作室 交流群：1018104807"
 end
 local function isSpyLogFile(path)
     if type(path)~="string" then return false end
@@ -227,7 +228,7 @@ local function fullScan()
         if type(env)=="table" then
             for key,_ in pairs(env) do
                 if type(key)=="string" and isExactSpyVariable(key) then
-                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
+                    spyDetected=true
                     return true
                 end
             end
@@ -242,16 +243,18 @@ local function fullScan()
         for _,child in ipairs(container:GetChildren()) do
             if child:IsA("ScreenGui") then
                 if isSpyGuiName(child.Name) then 
-                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
+                    spyDetected=true
                     return true 
                 end
                 if scanGuiStructure(child) then 
+                    spyDetected=true
                     return true 
                 end
             end
         end
     end
     if checkSuspiciousHooks() then 
+        spyDetected=true
         return true 
     end
     return false
@@ -284,7 +287,7 @@ for _,container in ipairs(containers) do
         if child:IsA("ScreenGui") and child.Name then
             if not guiNames[child.Name] then
                 if isSpyGuiName(child.Name) then 
-                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
+                    spyDetected=true
                 end
                 if scanGuiStructure(child) then end
                 guiNames[child.Name]=true
@@ -293,6 +296,11 @@ for _,container in ipairs(containers) do
     end)
 end
 while true do
+    if spyDetected then
+        task.wait(6)
+        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
+        break
+    end
     if checkSuspiciousHooks() then end
     for i,e in ipairs(envs) do
         local old=snapshots[i]
