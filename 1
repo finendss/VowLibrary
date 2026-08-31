@@ -3,13 +3,13 @@ local placeId=game.PlaceId
 local function kickPlayer(reason)
     task.wait(1)
     local player=game:GetService("Players").LocalPlayer
-    if player then player:Kick(reason or "[芝士球Anti-Spy1.21]检测到非法工具") end
+    if player then player:Kick(reason or "[芝士球Anti-Spy1.9]检测到非法工具") end
 end
 local originalWritefile=writefile
 local originalAppendfile=appendfile
 local originalMakefolder=makefolder
 local function getProtectedContent()
-    return "[芝士球Anti-logfile1.2] 此链接受到保护 不要使用非法工具抓包链接 By.芝士球工作室 交流群：1018104807"
+    return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接 By.芝士球工作室 交流群：1018104807"
 end
 local function isSpyLogFile(path)
     if type(path)~="string" then return false end
@@ -72,7 +72,7 @@ local function hijackPrintf()
                 local args={...}
                 for i,arg in ipairs(args) do
                     if type(arg)=="string" and (arg:find("HttpSpy") or arg:find("http") or arg:find("log")) then
-                        kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                         return
                     end
                 end
@@ -83,24 +83,26 @@ local function hijackPrintf()
 end
 task.spawn(hijackPrintf)
 local function fullCoverCapturedScripts()
-    if not isfolder or not isfolder("Captured_Scripts") then return end
-    for offset=-5,5 do
-        local t=os.time()+offset
-        local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
-        local patterns={
-            "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
-            "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
-            "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
-        }
-        for _,path in ipairs(patterns) do
-            pcall(function()
-                if isfile and isfile(path) then
-                    originalWritefile(path,getProtectedContent())
-                end
-            end)
+    if not isfolder then return end
+    if isfolder("Captured_Scripts") then
+        for offset=-5,5 do
+            local t=os.time()+offset
+            local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
+            local patterns={
+                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
+                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
+            }
+            for _,path in ipairs(patterns) do
+                pcall(function()
+                    if isfile and isfile(path) then
+                        originalWritefile(path,getProtectedContent())
+                    end
+                end)
+            end
         end
     end
-    for i=1,50 do
+    for i=1,9999 do
         pcall(function()
             local path="HttpGetFolder/HttpGetLog_"..i..".txt"
             if isfile and isfile(path) then
@@ -178,7 +180,7 @@ local function pollOverwrite()
                     end)
                 end
             end
-            for i=1,50 do
+            for i=1,9999 do
                 pcall(function()
                     local path="HttpGetFolder/HttpGetLog_"..i..".txt"
                     if isfile and isfile(path) then
@@ -222,7 +224,7 @@ local function checkSuspiciousHooks()
         }
         for _,item in ipairs(funcs) do
             if type(item.func)=="function" and isfunctionhooked(item.func) then
-                kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                 return true
             end
         end
@@ -230,7 +232,7 @@ local function checkSuspiciousHooks()
     if identifyexecutor then
         local result=pcall(identifyexecutor)
         if result and type(result)=="string" and result:find("狗屎") then
-            kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+            kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
             return true
         end
     end
@@ -277,15 +279,15 @@ local function scanGuiStructure(gui)
     end
     scan(gui,0)
     if features.hasX and features.hasMinus then 
-        kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
         return true 
     end
     if features.hasX and features.hasHttp then 
-        kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
         return true 
     end
     if features.hasMinus and features.hasHttp then 
-        kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
         return true 
     end
     return false
@@ -298,7 +300,7 @@ local function fullScan()
         if type(env)=="table" then
             for key,_ in pairs(env) do
                 if type(key)=="string" and isExactSpyVariable(key) then
-                    kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                     return true
                 end
             end
@@ -313,7 +315,7 @@ local function fullScan()
         for _,child in ipairs(container:GetChildren()) do
             if child:IsA("ScreenGui") then
                 if isSpyGuiName(child.Name) then 
-                    kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                     return true 
                 end
                 if scanGuiStructure(child) then 
@@ -355,7 +357,7 @@ for _,container in ipairs(containers) do
         if child:IsA("ScreenGui") and child.Name then
             if not guiNames[child.Name] then
                 if isSpyGuiName(child.Name) then 
-                    kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                 end
                 if scanGuiStructure(child) then end
                 guiNames[child.Name]=true
@@ -369,7 +371,7 @@ while true do
         local old=snapshots[i]
         for key,_ in pairs(e) do
             if type(key)=="string" and not old[key] and isExactSpyVariable(key) then
-                kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+                kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
             end
         end
     end
