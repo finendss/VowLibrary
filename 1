@@ -21,6 +21,7 @@ local function isSpyLogFile(path)
     if lower:find("captured_scripts") then return true end
     if lower:find("响应") or lower:find("请求") then return true end
     if lower:find("loadstring") then return true end
+    if lower:find("httpgetlog") then return true end
     if lower:find("log") and lower:find(".txt") then return true end
     if path:find(placeId) and lower:find("log") then return true end
     return false
