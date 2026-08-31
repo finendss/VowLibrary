@@ -21,6 +21,7 @@ local function isSpyLogFile(path)
     if lower:find("httpgetfolder") or lower:find("webhookfolder") then return true end
     if lower:find("requestfolder") or lower:find("loadstringfolder") then return true end
     if lower:find("captured_scripts") then return true end
+    if lower:find("响应_") or lower:find("请求_") then return true end
     if lower:find("http") and lower:find("log") then return true end
     if path:find(placeId) and lower:find("log") then return true end
     return false
@@ -41,8 +42,8 @@ end
 if originalMakefolder then
     makefolder=function(path)
         if type(path)=="string" and isSpyFolder(path) then
-            kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
-            return
+            print("[芝士球Anti-Spy] 监控到可疑文件夹创建:", path)
+            return originalMakefolder(path)
         end
         return originalMakefolder(path)
     end
@@ -51,7 +52,7 @@ end
 if originalWritefile then
     writefile=function(path,content)
         if isSpyLogFile(path) then
-            kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+            print("[芝士球Anti-Spy] 监控到可疑文件写入，已覆盖:", path)
             return originalWritefile(path, getProtectedContent())
         end
         return originalWritefile(path,content)
@@ -61,7 +62,7 @@ end
 if originalAppendfile then
     appendfile=function(path,content)
         if isSpyLogFile(path) then
-            kickPlayer("[芝士球Anti-Spy1.21]检测到非法工具")
+            print("[芝士球Anti-Spy] 监控到可疑文件追加，已阻止:", path)
             return
         end
         return originalAppendfile(path,content)
@@ -90,7 +91,6 @@ local function hijackPrintf()
 end
 task.spawn(hijackPrintf)
 
--- ==================== 轮询覆盖（每2秒检查并覆盖已有文件） ====================
 local function pollOverwrite()
     while true do
         task.wait(2)
@@ -123,31 +123,6 @@ local function pollOverwrite()
             pcall(function() 
                 if isfile and isfile("LoadstringFolder/LoadstringLog_1.lua") then
                     originalWritefile("LoadstringFolder/LoadstringLog_1.lua", getProtectedContent())
-                end
-            end)
-            -- Captured_Scripts 覆盖（路径包含 captured_scripts 就覆盖，直接尝试写入）
-            pcall(function()
-                if isfolder and isfolder("Captured_Scripts/Responses") then
-                    -- 尝试覆盖常见格式，由于文件名动态，直接尝试写入一个示例文件名
-                    -- 实际写入会被 writefile 劫持处理
-                end
-            end)
-            -- 直接尝试覆盖 Captured_Scripts 下的文件（通过检测 isfile）
-            pcall(function()
-                if isfile and isfile("Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_2026年08月31日_17时22分01秒_可能被混淆.lua") then
-                    originalWritefile("Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_2026年08月31日_17时22分01秒_可能被混淆.lua", getProtectedContent())
-                end
-            end)
-            pcall(function()
-                if isfile and isfile("Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_2026年08月31日_17时22分01秒.txt") then
-                    originalWritefile("Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_2026年08月31日_17时22分01秒.txt", getProtectedContent())
-                end
-            end)
-            -- 通配覆盖：尝试覆盖 Captured_Scripts 下任何已知可能存在的文件
-            pcall(function()
-                if isfolder and isfolder("Captured_Scripts") then
-                    -- 由于 listfiles 不可用，我们无法遍历，但 writefile 劫持会拦截所有新写入
-                    -- 这里只覆盖已知的可能文件名模式
                 end
             end)
         end
