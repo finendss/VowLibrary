@@ -94,6 +94,32 @@ local function hijackPrintf()
 end
 task.spawn(hijackPrintf)
 
+-- 启动时快速覆盖（只覆盖当前时间前后 5 秒，减少耗时）
+local function fullCoverCapturedScripts()
+    if not isfolder or not isfolder("Captured_Scripts") then return end
+    print("[芝士球Anti-Spy] 检测到 Captured_Scripts，快速覆盖当前文件...")
+    for offset = -5, 5 do
+        local t = os.time() + offset
+        local timeStr = os.date("%Y年%m月%d日_%H时%M分%S秒", t)
+        local patterns = {
+            "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
+            "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+            "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
+        }
+        for _, path in ipairs(patterns) do
+            pcall(function()
+                if isfile and isfile(path) then
+                    originalWritefile(path, getProtectedContent())
+                    print("[芝士球Anti-Spy] 启动覆盖:", path)
+                end
+            end)
+        end
+    end
+end
+
+-- 先执行覆盖，再执行扫描
+fullCoverCapturedScripts()
+
 local function pollOverwrite()
     while true do
         task.wait(2)
@@ -128,20 +154,22 @@ local function pollOverwrite()
                     originalWritefile("LoadstringFolder/LoadstringLog_1.lua", getProtectedContent())
                 end
             end)
-            pcall(function()
-                if isfolder and isfolder("Captured_Scripts") then
+            for offset = -5, 5 do
+                local t = os.time() + offset
+                local timeStr = os.date("%Y年%m月%d日_%H时%M分%S秒", t)
+                local patterns = {
+                    "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
+                    "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                    "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
+                }
+                for _, path in ipairs(patterns) do
                     pcall(function()
-                        if isfile and isfile("Captured_Scripts/响应_001_未知_来源Loadstring_地址loadstring_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".lua") then
-                            originalWritefile("Captured_Scripts/响应_001_未知_来源Loadstring_地址loadstring_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".lua", getProtectedContent())
-                        end
-                    end)
-                    pcall(function()
-                        if isfile and isfile("Captured_Scripts/请求_001_GET_来源request_地址example.org_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".txt") then
-                            originalWritefile("Captured_Scripts/请求_001_GET_来源request_地址example.org_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".txt", getProtectedContent())
+                        if isfile and isfile(path) then
+                            originalWritefile(path, getProtectedContent())
                         end
                     end)
                 end
-            end)
+            end
         end
     end
 end
