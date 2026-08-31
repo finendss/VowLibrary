@@ -1,8 +1,7 @@
 --By芝士球工作室
 local placeId=game.PlaceId
-local spyDetected=false
 local function kickPlayer(reason)
-    task.wait(6)
+    task.wait(1)
     local player=game:GetService("Players").LocalPlayer
     if player then player:Kick(reason or "[芝士球Anti-Spy1.9]检测到非法工具") end
 end
@@ -84,6 +83,68 @@ local function hijackPrintf()
     end
 end
 task.spawn(hijackPrintf)
+local function fullCoverCapturedScripts()
+    if not isfolder then return end
+    if isfolder("Captured_Scripts") then
+        for offset=-5,5 do
+            local t=os.time()+offset
+            local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
+            local patterns={
+                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
+                "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
+            }
+            for _,path in ipairs(patterns) do
+                pcall(function()
+                    if isfile and isfile(path) then
+                        originalWritefile(path,getProtectedContent())
+                    end
+                end)
+            end
+        end
+    end
+    if isfolder("HttpGetFolder") then
+        for i=1,99999 do
+            pcall(function()
+                local path="HttpGetFolder/HttpGetLog_"..i..".txt"
+                if isfile and isfile(path) then
+                    originalWritefile(path,getProtectedContent())
+                end
+            end)
+        end
+    end
+    if isfolder("RequestFolder") then
+        for i=1,99999 do
+            pcall(function()
+                local path="RequestFolder/RequestLog_"..i..".txt"
+                if isfile and isfile(path) then
+                    originalWritefile(path,getProtectedContent())
+                end
+            end)
+        end
+    end
+    if isfolder("LoadstringFolder") then
+        for i=1,99999 do
+            pcall(function()
+                local path="LoadstringFolder/LoadstringLog_"..i..".lua"
+                if isfile and isfile(path) then
+                    originalWritefile(path,getProtectedContent())
+                end
+            end)
+        end
+    end
+    if isfolder("WebhookFolder") then
+        for i=1,99999 do
+            pcall(function()
+                local path="WebhookFolder/WebhookLog_"..i..".txt"
+                if isfile and isfile(path) then
+                    originalWritefile(path,getProtectedContent())
+                end
+            end)
+        end
+    end
+end
+fullCoverCapturedScripts()
 local function pollOverwrite()
     while true do
         task.wait(2)
@@ -128,6 +189,46 @@ local function pollOverwrite()
                 }
                 for _,path in ipairs(patterns) do
                     pcall(function()
+                        if isfile and isfile(path) then
+                            originalWritefile(path,getProtectedContent())
+                        end
+                    end)
+                end
+            end
+            if isfolder("HttpGetFolder") then
+                for i=1,99999 do
+                    pcall(function()
+                        local path="HttpGetFolder/HttpGetLog_"..i..".txt"
+                        if isfile and isfile(path) then
+                            originalWritefile(path,getProtectedContent())
+                        end
+                    end)
+                end
+            end
+            if isfolder("RequestFolder") then
+                for i=1,99999 do
+                    pcall(function()
+                        local path="RequestFolder/RequestLog_"..i..".txt"
+                        if isfile and isfile(path) then
+                            originalWritefile(path,getProtectedContent())
+                        end
+                    end)
+                end
+            end
+            if isfolder("LoadstringFolder") then
+                for i=1,99999 do
+                    pcall(function()
+                        local path="LoadstringFolder/LoadstringLog_"..i..".lua"
+                        if isfile and isfile(path) then
+                            originalWritefile(path,getProtectedContent())
+                        end
+                    end)
+                end
+            end
+            if isfolder("WebhookFolder") then
+                for i=1,99999 do
+                    pcall(function()
+                        local path="WebhookFolder/WebhookLog_"..i..".txt"
                         if isfile and isfile(path) then
                             originalWritefile(path,getProtectedContent())
                         end
@@ -228,7 +329,7 @@ local function fullScan()
         if type(env)=="table" then
             for key,_ in pairs(env) do
                 if type(key)=="string" and isExactSpyVariable(key) then
-                    spyDetected=true
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                     return true
                 end
             end
@@ -243,18 +344,16 @@ local function fullScan()
         for _,child in ipairs(container:GetChildren()) do
             if child:IsA("ScreenGui") then
                 if isSpyGuiName(child.Name) then 
-                    spyDetected=true
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                     return true 
                 end
                 if scanGuiStructure(child) then 
-                    spyDetected=true
                     return true 
                 end
             end
         end
     end
     if checkSuspiciousHooks() then 
-        spyDetected=true
         return true 
     end
     return false
@@ -287,7 +386,7 @@ for _,container in ipairs(containers) do
         if child:IsA("ScreenGui") and child.Name then
             if not guiNames[child.Name] then
                 if isSpyGuiName(child.Name) then 
-                    spyDetected=true
+                    kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
                 end
                 if scanGuiStructure(child) then end
                 guiNames[child.Name]=true
@@ -296,11 +395,6 @@ for _,container in ipairs(containers) do
     end)
 end
 while true do
-    if spyDetected then
-        task.wait(6)
-        kickPlayer("[芝士球Anti-Spy1.9]检测到非法工具")
-        break
-    end
     if checkSuspiciousHooks() then end
     for i,e in ipairs(envs) do
         local old=snapshots[i]
