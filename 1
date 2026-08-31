@@ -86,7 +86,7 @@ task.spawn(hijackPrintf)
 local function fullCoverCapturedScripts()
     if not isfolder then return end
     if isfolder("Captured_Scripts") then
-        for num=1,999 do
+        for num=1,50 do
             local numStr=string.format("%03d",num)
             for offset=-5,5 do
                 local t=os.time()+offset
@@ -182,7 +182,7 @@ local function pollOverwrite()
                     originalWritefile("LoadstringFolder/LoadstringLog_1.lua", getProtectedContent())
                 end
             end)
-            for num=1,999 do
+            for num=1,50 do
                 local numStr=string.format("%03d",num)
                 for offset=-5,5 do
                     local t=os.time()+offset
