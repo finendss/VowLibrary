@@ -1,6 +1,7 @@
 --By芝士球工作室
 local placeId=game.PlaceId
 local function kickPlayer(reason)
+    task.wait(1)
     local player=game:GetService("Players").LocalPlayer
     if player then player:Kick(reason or "[芝士球Anti-Spy1.21]检测到非法工具") end
 end
@@ -21,8 +22,8 @@ local function isSpyLogFile(path)
     if lower:find("httpgetfolder") or lower:find("webhookfolder") then return true end
     if lower:find("requestfolder") or lower:find("loadstringfolder") then return true end
     if lower:find("captured_scripts") then return true end
-    if lower:find("响应_") or lower:find("请求_") then return true end
-    if lower:find("http") and lower:find("log") then return true end
+    if lower:find("响应") or lower:find("请求") then return true end
+    if lower:find("log") and lower:find(".txt") then return true end
     if path:find(placeId) and lower:find("log") then return true end
     return false
 end
@@ -36,6 +37,7 @@ local function isSpyFolder(path)
     if lower:find("httpgetfolder") or lower:find("webhookfolder") then return true end
     if lower:find("requestfolder") or lower:find("loadstringfolder") then return true end
     if lower:find("captured_scripts") then return true end
+    if lower:find("响应") or lower:find("请求") then return true end
     return false 
 end
 
@@ -125,29 +127,20 @@ local function pollOverwrite()
                     originalWritefile("LoadstringFolder/LoadstringLog_1.lua", getProtectedContent())
                 end
             end)
-
-            -- 动态覆盖：按时间猜测文件名
-            local function tryCoverResponse(offset)
-                local t = os.time() + (offset or 0)
-                local timeStr = os.date("%Y年%m月%d日_%H时%M分%S秒", t)
-                local patterns = {
-                    "Captured_Scripts/Responses/响应_001_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
-                    "Captured_Scripts/Responses/响应_001_未知_来源HttpGet_地址loadstring_"..timeStr.."_可能被混淆.lua",
-                    "Captured_Scripts/Requests/请求_001_GET_来源request_地址example.org_"..timeStr..".txt",
-                }
-                for _, path in ipairs(patterns) do
+            pcall(function()
+                if isfolder and isfolder("Captured_Scripts") then
                     pcall(function()
-                        if isfile and isfile(path) then
-                            originalWritefile(path, getProtectedContent())
-                            print("[芝士球Anti-Spy] 覆盖动态文件:", path)
+                        if isfile and isfile("Captured_Scripts/响应_001_未知_来源Loadstring_地址loadstring_"..os.date("%Y年%m月%d日_%H时%M分%S秒").."_可能被混淆.lua") then
+                            originalWritefile("Captured_Scripts/响应_001_未知_来源Loadstring_地址loadstring_"..os.date("%Y年%m月%d日_%H时%M分%S秒").."_可能被混淆.lua", getProtectedContent())
+                        end
+                    end)
+                    pcall(function()
+                        if isfile and isfile("Captured_Scripts/请求_001_GET_来源request_地址example.org_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".txt") then
+                            originalWritefile("Captured_Scripts/请求_001_GET_来源request_地址example.org_"..os.date("%Y年%m月%d日_%H时%M分%S秒")..".txt", getProtectedContent())
                         end
                     end)
                 end
-            end
-            
-            for offset = -5, 5 do
-                tryCoverResponse(offset)
-            end
+            end)
         end
     end
 end
