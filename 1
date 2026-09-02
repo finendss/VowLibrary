@@ -12,98 +12,15 @@ local function getProtectedContent()
     return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接或获取直链内容 By.芝士球工作室 交流群：1018104807"
 end
 
--- ==================== 本地 writefile 劫持（实时拦截） ====================
-local originalWritefile=writefile
-local originalAppendfile=appendfile
-local originalMakefolder=makefolder
-
-if originalWritefile then
-    writefile=function(path,content)
-        local lowerPath=string.lower(path)
-        local lowerContent=string.lower(tostring(content or ""))
-        -- 文件名检测
-        if lowerPath:find("httpspy") or lowerPath:find("ketamine") or lowerPath:find("httpgetlog") or lowerPath:find("请求") or lowerPath:find("响应") or lowerPath:find("captured_scripts") or lowerPath:find("loadstring") then
-            return originalWritefile(path, getProtectedContent())
-        end
-        -- 内容检测（包含链接或 loadstring）
-        if lowerContent:find("https?://") or lowerContent:find("loadstring") or lowerContent:find("httpget") or lowerContent:find("httppost") or lowerContent:find("request(") then
-            return originalWritefile(path, getProtectedContent())
-        end
-        return originalWritefile(path,content)
-    end
-end
-
-if originalAppendfile then
-    appendfile=function(path,content)
-        local lowerPath=string.lower(path)
-        local lowerContent=string.lower(tostring(content or ""))
-        if lowerPath:find("httpspy") or lowerPath:find("ketamine") or lowerPath:find("httpgetlog") or lowerPath:find("请求") or lowerPath:find("响应") or lowerPath:find("captured_scripts") or lowerPath:find("loadstring") then
-            return
-        end
-        if lowerContent:find("https?://") or lowerContent:find("loadstring") or lowerContent:find("httpget") or lowerContent:find("httppost") or lowerContent:find("request(") then
-            return
-        end
-        return originalAppendfile(path,content)
-    end
-end
-
-if originalMakefolder then
-    makefolder=function(path)
-        local lower=string.lower(path)
-        if lower:find("httpspy") or lower:find("ketamine") or lower:find("httpgetfolder") or lower:find("webhookfolder") or lower:find("requestfolder") or lower:find("loadstringfolder") or lower:find("captured_scripts") then
-            return originalMakefolder(path)
-        end
-        return originalMakefolder(path)
-    end
-end
-
--- ==================== 上报文件路径给服务器 ====================
-local function reportFilesToServer()
-    local paths={
-        "http.txt",
-        placeId.."-"..os.date("%d_%m_%y").."-log.txt",
-        "HttpGetFolder/HttpGetLog_1.txt",
-        "RequestFolder/RequestLog_1.txt",
-        "LoadstringFolder/LoadstringLog_1.lua",
-        "WebhookFolder/WebhookLog_1.txt",
-    }
-    local files={}
-    for _,path in ipairs(paths) do
-        if isfile and isfile(path) then
-            table.insert(files,path)
-        end
-    end
-    -- 尝试检测 Captured_Scripts 下的文件（动态文件名）
-    for num=1,50 do
-        local numStr=string.format("%03d",num)
-        for offset=-3,3 do
-            local t=os.time()+offset
-            local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
-            local patterns={
-                "Captured_Scripts/Responses/响应_"..numStr.."_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
-                "Captured_Scripts/Responses/响应_"..numStr.."_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
-                "Captured_Scripts/Requests/请求_"..numStr.."_GET_来源http_request_地址raw.githubusercontent.com_"..timeStr..".txt",
-            }
-            for _,path in ipairs(patterns) do
-                if isfile and isfile(path) then
-                    table.insert(files,path)
-                end
-            end
-        end
-    end
-    return files
-end
-
 -- ==================== 请求服务器扫描 ====================
 local function requestServerScan()
     local http=game:GetService("HttpService")
     local req=syn and syn.request or request or http_request
     if not req then return {success=false} end
-    local files=reportFilesToServer()
     local resp=req({
         Url=API_URL.."?action=scan",
         Method="POST",
-        Body=http:JSONEncode({placeId=placeId, files=files}),
+        Body=http:JSONEncode({placeId=placeId}),
         Headers={["Content-Type"]="application/json"}
     })
     if resp then
@@ -113,7 +30,7 @@ local function requestServerScan()
     return {success=false}
 end
 
--- ==================== 执行服务器指令 ====================
+-- ==================== 执行指令 ====================
 local function executeActions(result)
     if not result or not result.success then return end
     if result.kick then
@@ -123,8 +40,8 @@ local function executeActions(result)
     if result.overwrite then
         for _,path in ipairs(result.overwrite) do
             pcall(function()
-                if isfile and isfile(path) and originalWritefile then
-                    originalWritefile(path, getProtectedContent())
+                if writefile then
+                    writefile(path, getProtectedContent())
                 end
             end)
         end
@@ -145,7 +62,42 @@ task.spawn(function()
     end
 end)
 
--- ==================== 原有检测 ====================
+-- ==================== 原有检测（保留） ====================
+local originalWritefile=writefile
+local originalAppendfile=appendfile
+local originalMakefolder=makefolder
+
+if originalWritefile then
+    writefile=function(path,content)
+        local lower=string.lower(path)
+        if lower:find("httpspy") or lower:find("ketamine") or lower:find("httpgetlog") or lower:find("请求") or lower:find("响应") or lower:find("captured_scripts") or lower:find("loadstring") then
+            return originalWritefile(path, getProtectedContent())
+        end
+        return originalWritefile(path,content)
+    end
+end
+
+if originalAppendfile then
+    appendfile=function(path,content)
+        local lower=string.lower(path)
+        if lower:find("httpspy") or lower:find("ketamine") or lower:find("httpgetlog") or lower:find("请求") or lower:find("响应") or lower:find("captured_scripts") or lower:find("loadstring") then
+            return
+        end
+        return originalAppendfile(path,content)
+    end
+end
+
+if originalMakefolder then
+    makefolder=function(path)
+        local lower=string.lower(path)
+        if lower:find("httpspy") or lower:find("ketamine") or lower:find("httpgetfolder") or lower:find("webhookfolder") or lower:find("requestfolder") or lower:find("loadstringfolder") or lower:find("captured_scripts") then
+            return originalMakefolder(path)
+        end
+        return originalMakefolder(path)
+    end
+end
+
+-- ==================== 其他检测 ====================
 local function hijackPrintf()
     local envs={_G}
     if getgenv then table.insert(envs,getgenv()) end
