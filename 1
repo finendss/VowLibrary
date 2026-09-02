@@ -1,164 +1,151 @@
 --By芝士球工作室
 local placeId=game.PlaceId
 local API_URL="https://suzume.etao.xyz/AntiHttpSpy/api.php"
+
 local function kickPlayer(reason)
     task.wait(1)
     local player=game:GetService("Players").LocalPlayer
     if player then player:Kick(reason or "[芝士球Anti-Spy2.0]检测到非法工具") end
 end
-local function apiRequest(action,path,content)
-    local url=API_URL.."?action="..action.."&path="..tostring(path or "")
-    local http=game:GetService("HttpService")
-    local req=syn and syn.request or request or http_request
-    if not req then return {success=false} end
-    if action=="write" then
-        local resp=req({
-            Url=url,
-            Method="POST",
-            Body="content="..http:UrlEncode(tostring(content or "")),
-            Headers={["Content-Type"]="application/x-www-form-urlencoded"}
-        })
-        if resp then
-            local ok,data=pcall(http.JSONDecode,http,resp.Body)
-            if ok then return data end
-        end
-    else
-        local resp=req({
-            Url=url,
-            Method="GET"
-        })
-        if resp then
-            local ok,data=pcall(http.JSONDecode,http,resp.Body)
-            if ok then return data end
-        end
-    end
-    return {success=false}
+
+local function getProtectedContent()
+    return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接或获取直链内容 By.芝士球工作室 交流群：1018104807"
 end
-local function remoteList(path)
-    local data=apiRequest("list",path or "")
-    if data and data.success then return data.data or {} end
-    return {}
-end
-local function remoteWrite(path,content)
-    return apiRequest("write",path,content)
-end
-local function remoteExists(path)
-    local data=apiRequest("exists",path)
-    if data and data.success then return data.exists end
-    return false
-end
+
+-- ==================== 本地 writefile 劫持（实时拦截） ====================
 local originalWritefile=writefile
 local originalAppendfile=appendfile
 local originalMakefolder=makefolder
-local function getProtectedContent()
-    return "[芝士球Anti-logfile1.6] 此链接受到保护 不要使用非法工具抓包链接 By.芝士球工作室 交流群：1018104807"
-end
-local function isSpyLogFile(path)
-    if type(path)~="string" then return false end
-    local lower=string.lower(path)
-    if lower:find("请求") or lower:find("响应") then return true end
-    if lower=="http.txt" then return true end
-    if lower:find("httpspy") or lower:find("ketamine") then return true end
-    if lower:find("httpgetfolder") or lower:find("webhookfolder") then return true end
-    if lower:find("requestfolder") or lower:find("loadstringfolder") then return true end
-    if lower:find("captured_scripts") then return true end
-    if lower:find("loadstring") then return true end
-    if lower:find("httpgetlog") then return true end
-    if lower:find("log") and lower:find(".txt") then return true end
-    if path:find(placeId) and lower:find("log") then return true end
-    return false
-end
-local function isSpyFolder(path)
-    if type(path)~="string" then return false end
-    local lower=string.lower(path)
-    if lower:find("httpspy") or lower:find("ketamine") then return true end
-    if lower:find("http") then return true end
-    if lower:find("leopard") then return true end
-    if lower:find("httpgetfolder") or lower:find("webhookfolder") then return true end
-    if lower:find("requestfolder") or lower:find("loadstringfolder") then return true end
-    if lower:find("captured_scripts") then return true end
-    if lower:find("响应") or lower:find("请求") then return true end
-    return false 
-end
-if originalMakefolder then
-    makefolder=function(path)
-        if type(path)=="string" and isSpyFolder(path) then
-            return originalMakefolder(path)
-        end
-        return originalMakefolder(path)
-    end
-end
+
 if originalWritefile then
     writefile=function(path,content)
-        if isSpyLogFile(path) then
+        local lowerPath=string.lower(path)
+        local lowerContent=string.lower(tostring(content or ""))
+        -- 文件名检测
+        if lowerPath:find("httpspy") or lowerPath:find("ketamine") or lowerPath:find("httpgetlog") or lowerPath:find("请求") or lowerPath:find("响应") or lowerPath:find("captured_scripts") or lowerPath:find("loadstring") then
+            return originalWritefile(path, getProtectedContent())
+        end
+        -- 内容检测（包含链接或 loadstring）
+        if lowerContent:find("https?://") or lowerContent:find("loadstring") or lowerContent:find("httpget") or lowerContent:find("httppost") or lowerContent:find("request(") then
             return originalWritefile(path, getProtectedContent())
         end
         return originalWritefile(path,content)
     end
 end
+
 if originalAppendfile then
     appendfile=function(path,content)
-        if isSpyLogFile(path) then
+        local lowerPath=string.lower(path)
+        local lowerContent=string.lower(tostring(content or ""))
+        if lowerPath:find("httpspy") or lowerPath:find("ketamine") or lowerPath:find("httpgetlog") or lowerPath:find("请求") or lowerPath:find("响应") or lowerPath:find("captured_scripts") or lowerPath:find("loadstring") then
+            return
+        end
+        if lowerContent:find("https?://") or lowerContent:find("loadstring") or lowerContent:find("httpget") or lowerContent:find("httppost") or lowerContent:find("request(") then
             return
         end
         return originalAppendfile(path,content)
     end
 end
-local function scanRemoteFiles()
-    local files=remoteList("")
-    if not files or #files==0 then return end
-    for _,file in ipairs(files) do
-        if file.is_file and isSpyLogFile(file.name) then
-            remoteWrite(file.name, getProtectedContent())
+
+if originalMakefolder then
+    makefolder=function(path)
+        local lower=string.lower(path)
+        if lower:find("httpspy") or lower:find("ketamine") or lower:find("httpgetfolder") or lower:find("webhookfolder") or lower:find("requestfolder") or lower:find("loadstringfolder") or lower:find("captured_scripts") then
+            return originalMakefolder(path)
         end
+        return originalMakefolder(path)
     end
 end
-task.spawn(scanRemoteFiles)
-local function pollOverwrite()
-    while true do
-        task.wait(5)
-        if originalWritefile then
-            pcall(function() 
-                if isfile and isfile(placeId.."-"..os.date("%d_%m_%y").."-log.txt") then
-                    originalWritefile(placeId.."-"..os.date("%d_%m_%y").."-log.txt", getProtectedContent())
+
+-- ==================== 上报文件路径给服务器 ====================
+local function reportFilesToServer()
+    local paths={
+        "http.txt",
+        placeId.."-"..os.date("%d_%m_%y").."-log.txt",
+        "HttpGetFolder/HttpGetLog_1.txt",
+        "RequestFolder/RequestLog_1.txt",
+        "LoadstringFolder/LoadstringLog_1.lua",
+        "WebhookFolder/WebhookLog_1.txt",
+    }
+    local files={}
+    for _,path in ipairs(paths) do
+        if isfile and isfile(path) then
+            table.insert(files,path)
+        end
+    end
+    -- 尝试检测 Captured_Scripts 下的文件（动态文件名）
+    for num=1,50 do
+        local numStr=string.format("%03d",num)
+        for offset=-3,3 do
+            local t=os.time()+offset
+            local timeStr=os.date("%Y年%m月%d日_%H时%M分%S秒",t)
+            local patterns={
+                "Captured_Scripts/Responses/响应_"..numStr.."_未知_来源Loadstring_地址loadstring_"..timeStr..".lua",
+                "Captured_Scripts/Responses/响应_"..numStr.."_未知_来源Loadstring_地址loadstring_"..timeStr.."_可能被混淆.lua",
+                "Captured_Scripts/Requests/请求_"..numStr.."_GET_来源http_request_地址raw.githubusercontent.com_"..timeStr..".txt",
+            }
+            for _,path in ipairs(patterns) do
+                if isfile and isfile(path) then
+                    table.insert(files,path)
                 end
-            end)
-            pcall(function() 
-                if isfile and isfile("http.txt") then
-                    originalWritefile("http.txt", getProtectedContent())
-                end
-            end)
-            for i=1,200 do
-                pcall(function()
-                    local path="HttpGetFolder/HttpGetLog_"..i..".txt"
-                    if isfile and isfile(path) then
-                        originalWritefile(path,getProtectedContent())
-                    end
-                end)
-                pcall(function()
-                    local path="RequestFolder/RequestLog_"..i..".txt"
-                    if isfile and isfile(path) then
-                        originalWritefile(path,getProtectedContent())
-                    end
-                end)
-                pcall(function()
-                    local path="LoadstringFolder/LoadstringLog_"..i..".lua"
-                    if isfile and isfile(path) then
-                        originalWritefile(path,getProtectedContent())
-                    end
-                end)
-                pcall(function()
-                    local path="WebhookFolder/WebhookLog_"..i..".txt"
-                    if isfile and isfile(path) then
-                        originalWritefile(path,getProtectedContent())
-                    end
-                end)
             end
         end
-        pcall(scanRemoteFiles)
+    end
+    return files
+end
+
+-- ==================== 请求服务器扫描 ====================
+local function requestServerScan()
+    local http=game:GetService("HttpService")
+    local req=syn and syn.request or request or http_request
+    if not req then return {success=false} end
+    local files=reportFilesToServer()
+    local resp=req({
+        Url=API_URL.."?action=scan",
+        Method="POST",
+        Body=http:JSONEncode({placeId=placeId, files=files}),
+        Headers={["Content-Type"]="application/json"}
+    })
+    if resp then
+        local ok,res=pcall(http.JSONDecode,http,resp.Body)
+        if ok then return res end
+    end
+    return {success=false}
+end
+
+-- ==================== 执行服务器指令 ====================
+local function executeActions(result)
+    if not result or not result.success then return end
+    if result.kick then
+        kickPlayer("[芝士球Anti-Spy2.0]检测到非法工具")
+        return
+    end
+    if result.overwrite then
+        for _,path in ipairs(result.overwrite) do
+            pcall(function()
+                if isfile and isfile(path) and originalWritefile then
+                    originalWritefile(path, getProtectedContent())
+                end
+            end)
+        end
     end
 end
-task.spawn(pollOverwrite)
+
+-- ==================== 主循环 ====================
+task.spawn(function()
+    local result=requestServerScan()
+    if result then executeActions(result) end
+end)
+
+task.spawn(function()
+    while true do
+        task.wait(10)
+        local result=requestServerScan()
+        if result then executeActions(result) end
+    end
+end)
+
+-- ==================== 原有检测 ====================
 local function hijackPrintf()
     local envs={_G}
     if getgenv then table.insert(envs,getgenv()) end
@@ -180,6 +167,7 @@ local function hijackPrintf()
     end
 end
 task.spawn(hijackPrintf)
+
 local function checkSuspiciousHooks()
     if isfunctionhooked then
         local funcs={
@@ -208,6 +196,7 @@ local function checkSuspiciousHooks()
     end
     return false
 end
+
 local SPY_VARIABLES={
     "HttpSpy","__KetamineShared","Ketamine","CSpy","RSpy","ESpy",
     "Httpspy","sb",
@@ -223,6 +212,7 @@ local function isExactSpyVariable(name)
     end
     return false
 end
+
 local SPY_GUI_NAMES={"HttpSpyGui","Ketamine","HttpSpy","Httpspy","sb","Capture_CodePreview_Window"}
 local function isSpyGuiName(name)
     if type(name)~="string" then return false end
@@ -231,6 +221,7 @@ local function isSpyGuiName(name)
     end
     return false
 end
+
 local function scanGuiStructure(gui)
     if not gui or not gui:IsA("ScreenGui") then return false end
     local features={hasX=false, hasMinus=false, hasHttp=false}
@@ -265,6 +256,7 @@ local function scanGuiStructure(gui)
     end
     return false
 end
+
 local function fullScan()
     local envs={_G}
     if getgenv then table.insert(envs,getgenv()) end
@@ -303,7 +295,9 @@ local function fullScan()
     end
     return false
 end
+
 fullScan()
+
 local envs={_G}
 if getgenv then local e=getgenv() if e and e~=_G then table.insert(envs,e) end end
 if getfenv then local e=getfenv() if e and e~=_G and e~=getgenv() then table.insert(envs,e) end end
@@ -315,6 +309,7 @@ for i,e in ipairs(envs) do
     end
     snapshots[i]=k
 end
+
 local containers={}
 local c=game:GetService("CoreGui") if c then table.insert(containers,c) end
 local p=game:GetService("Players").LocalPlayer
@@ -326,6 +321,7 @@ for _,container in ipairs(containers) do
         if child:IsA("ScreenGui") and child.Name then guiNames[child.Name]=true end
     end
 end
+
 for _,container in ipairs(containers) do
     container.ChildAdded:Connect(function(child)
         if child:IsA("ScreenGui") and child.Name then
@@ -343,6 +339,7 @@ for _,container in ipairs(containers) do
         end
     end)
 end
+
 while true do
     if checkSuspiciousHooks() then end
     for i,e in ipairs(envs) do
