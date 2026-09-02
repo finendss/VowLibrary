@@ -4241,6 +4241,22 @@ ElementBackground = Color3.fromHex("#1A0433"),
 ElementBackgroundTransparency = 0,
 },
 
+FUKE = {
+Name = "FUKE",
+
+Accent = Color3.fromHex("#E6397C"),
+Dialog = Color3.fromHex("#E6397C"),
+
+Text = Color3.fromHex("#FFFFFF"),
+Placeholder = Color3.fromHex("#E6397C"),
+Background = Color3.fromHex("#1A1A1D"),
+Button = Color3.fromHex("#E6397C"),
+Icon = Color3.fromHex("#E6397C"),
+
+ElementBackground = Color3.fromHex("#1A1A1D"),
+ElementBackgroundTransparency = 0,
+},
+
 MonokaiPro={
 Name="Monokai Pro",
 
