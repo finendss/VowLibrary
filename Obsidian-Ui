@@ -1,5 +1,6 @@
 --[[
-    Obsidian UI Library 
+    Obsidian UI Library - Merged + Rounded + Resize
+    CornerRadius = 10
 ]]
 
 local cloneref = (cloneref or clonereference or function(instance: any)
@@ -189,7 +190,7 @@ local Library = {
 
     MinSize = Vector2.new(480, 360),
     DPIScale = 1,
-    CornerRadius = 4,
+    CornerRadius = 10,
 
     IsLightTheme = false,
     Scheme = {
@@ -285,7 +286,7 @@ local Templates = {
         Resizable = true,
         SearchbarSize = UDim2.fromScale(1, 1),
         GlobalSearch = false,
-        CornerRadius = 4,
+        CornerRadius = 10,
         NotifySide = "Right",
         ShowCustomCursor = true,
         Font = Enum.Font.Code,
@@ -6624,6 +6625,33 @@ function Library:CreateWindow(WindowInfo)
         WindowInfo.Title = title
     end
 
+    function Window:Resize(width, height)
+        width = tonumber(width) or 720
+        height = tonumber(height) or 600
+        
+        local ViewportSize = workspace.CurrentCamera.ViewportSize
+        local MaxX = ViewportSize.X - 64
+        local MaxY = ViewportSize.Y - 64
+        local MinX = Library.MinSize and Library.MinSize.X or 480
+        local MinY = Library.MinSize and Library.MinSize.Y or 360
+        
+        width = math.clamp(width, MinX, MaxX)
+        height = math.clamp(height, MinY, MaxY)
+        
+        if MainFrame then
+            MainFrame.Size = UDim2.fromOffset(width, height)
+            if WindowInfo.Center then
+                MainFrame.Position = UDim2.new(0.5, -width / 2, 0.5, -height / 2)
+            end
+        end
+        
+        WindowInfo.Size = UDim2.fromOffset(width, height)
+        
+        pcall(function()
+            ApplySidebarLayout()
+        end)
+    end
+
     function Window:AddTab(...)
         local Name = nil
         local Icon = nil
@@ -8759,10 +8787,8 @@ end
 
 
 -- ===== Unified Exports =====
--- 同时导出两个名字，兼容不同使用方式
 getgenv().ThemeManager = ThemeManager
 getgenv().ObsidianThemeManager = ThemeManager
 getgenv().SaveManager = SaveManager
 
--- 直接返回 Library，兼容 loadstring()() 的使用方式
 return Library
