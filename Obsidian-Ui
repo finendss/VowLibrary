@@ -1,5 +1,5 @@
 --[[
-    Obsidian UI Library -By.二改芝士球工作室
+    Obsidian UI Library 
 ]]
 
 local cloneref = (cloneref or clonereference or function(instance: any)
@@ -8759,12 +8759,9 @@ end
 
 
 -- ===== Unified Exports =====
-getgenv().Library = Library
+-- ThemeManager 和 SaveManager 放到全局环境
 getgenv().ObsidianThemeManager = ThemeManager
 getgenv().SaveManager = SaveManager
 
-return {
-    Library = Library,
-    ThemeManager = ThemeManager,
-    SaveManager = SaveManager,
-}
+-- 直接返回 Library，兼容 loadstring()() 的使用方式
+return Library
