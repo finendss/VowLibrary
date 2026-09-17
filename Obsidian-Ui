@@ -8759,7 +8759,8 @@ end
 
 
 -- ===== Unified Exports =====
--- ThemeManager 和 SaveManager 放到全局环境
+-- 同时导出两个名字，兼容不同使用方式
+getgenv().ThemeManager = ThemeManager
 getgenv().ObsidianThemeManager = ThemeManager
 getgenv().SaveManager = SaveManager
 
