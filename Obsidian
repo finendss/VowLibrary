@@ -7884,7 +7884,7 @@ do
         },
         ["FUKE"] = {
            19,
-            { FontColor = "ffffff", MainColor = "1a1a1d", AccentColor = "e6397c", BackgroundColor = "1a1a1d", OutlineColor = "2e2e32" },
+            { FontColor = "ffffff", MainColor = "25252a", AccentColor = "e6397c", BackgroundColor = "1a1a1d", OutlineColor = "e6397c" },
         }
     }
 
