@@ -7881,6 +7881,10 @@ do
         ["Material"] = {
             18,
             { FontColor = "eeffff", MainColor = "212121", AccentColor = "82aaff", BackgroundColor = "151515", OutlineColor = "424242" },
+        },
+        ["FUKE"] = {
+           19,
+            { FontColor = "ffffff", MainColor = "1a1a1d", AccentColor = "e6397c", BackgroundColor = "1a1a1d", OutlineColor = "2e2e32" },
         }
     }
 
