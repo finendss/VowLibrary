@@ -168,7 +168,8 @@ end
 
 function m.SetRadius(u,v)
 m.Radius=v
-r.SliceScale=math.max(v/GetShape(m.Type).Radius,0.0001)
+local w=GetShape(m.Type)
+r.SliceScale=math.max(v/w.Rect.Width,0.0001)
 return m
 end
 
@@ -4633,7 +4634,6 @@ local ah={
 Title=af.Title or"Tag",
 Icon=af.Icon,
 Color=af.Color or Color3.fromHex"#315dff",
-Radius=af.Radius or 999,
 Border=af.Border or false,
 
 TagFrame=nil,
@@ -4642,6 +4642,8 @@ Padding=10,
 TextSize=14,
 IconSize=16,
 }
+
+ah.Radius=af.Radius or ah.Height/2
 
 local ai
 if ah.Icon then
@@ -13343,12 +13345,12 @@ PaddingLeft=UDim.new(0,4),
 }),
 }),
 ao("CanvasGroup",{
-Size=UDim2.new(0,0,0,aw.Topbar.Height),
+Size=UDim2.new(0,0,1,0),
 BackgroundTransparency=1,
 Name="Center",
 AnchorPoint=Vector2.new(0,0.5),
 Position=UDim2.new(0,0,0.5,0),
-AutomaticSize="None",
+AutomaticSize="Y",
 Visible=false,
 },{
 
@@ -13357,7 +13359,7 @@ Visible=false,
 ao("ScrollingFrame",{
 Name="Holder",
 BackgroundTransparency=1,
-AutomaticSize="None",
+AutomaticSize="Y",
 ScrollBarThickness=0,
 ScrollingDirection="X",
 AutomaticCanvasSize="X",
