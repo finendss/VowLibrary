@@ -4,14 +4,7 @@
     | |/ |/ / / _ \/ _  / /_/ // /  
     |__/|__/_/_//_/\_,_/\____/___/
     
-    v1.6.65  |  2026-06-14  |  Roblox UI Library for scripts
-    
-    To view the source code, see the `src/` folder on the official GitHub repository.
-    
-    Author: Footagesus (Footages, .ftgs, oftgs)
-    Github: https://github.com/Footagesus/WindUI
-    Discord: https://discord.gg/ftgs-development-hub-1300692552005189632
-    License: MIT
+    二改来自芝士球工作室  ദ്ദി˶>ω<)✧
 ]]
 
 type ConfigType__DARKLUA_TYPE_a={
@@ -4698,7 +4691,7 @@ ImageColor3=ah.Color,
 },
 },{
 ak,
-ab.NewRoundFrame(ah.Radius+1,"SquircleGlass",{
+ab.NewRoundFrame(ah.Radius+1,"Glass-1.4",{
 Size=UDim2.new(1,1,1,1),
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -4766,6 +4759,8 @@ ai=ab.Image(an,an,0,af.Window,"Tag",false)
 
 ai.Size=UDim2.new(0,ah.IconSize,0,ah.IconSize)
 ai.Parent=al
+ai.Position=UDim2.new(0,ah.Padding,0.5,0)
+ai.AnchorPoint=Vector2.new(0,0.5)
 
 if typeof(ah.Color)=="Color3"then
 ai.ImageLabel.ImageColor3=ab.GetTextColorForHSB(ah.Color)
