@@ -4633,7 +4633,6 @@ local ah={
 Title=af.Title or"Tag",
 Icon=af.Icon,
 Color=af.Color or Color3.fromHex"#315dff",
-Radius=af.Radius or 999,
 Border=af.Border or false,
 
 TagFrame=nil,
@@ -4642,6 +4641,8 @@ Padding=10,
 TextSize=14,
 IconSize=16,
 }
+
+ah.Radius=math.min(af.Radius or ah.Height/2,ah.Height/2)
 
 local ai
 if ah.Icon then
@@ -4691,7 +4692,7 @@ ImageColor3=ah.Color,
 },
 },{
 ak,
-ab.NewRoundFrame(ah.Radius+1,"SquircleGlass",{
+ab.NewRoundFrame(ah.Radius+1,"Glass-1.4",{
 Size=UDim2.new(1,1,1,1),
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -4759,6 +4760,8 @@ ai=ab.Image(an,an,0,af.Window,"Tag",false)
 
 ai.Size=UDim2.new(0,ah.IconSize,0,ah.IconSize)
 ai.Parent=al
+ai.Position=UDim2.new(0,ah.Padding,0.5,0)
+ai.AnchorPoint=Vector2.new(0,0.5)
 
 if typeof(ah.Color)=="Color3"then
 ai.ImageLabel.ImageColor3=ab.GetTextColorForHSB(ah.Color)
