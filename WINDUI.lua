@@ -4680,9 +4680,9 @@ end
 end
 
 local al=ab.NewRoundFrame(ah.Radius,"Squircle",{
-AutomaticSize="X",
 Size=UDim2.new(0,0,0,ah.Height),
 Parent=ag,
+ClipsDescendants=true,
 ImageColor3=typeof(ah.Color)=="Color3"and ah.Color
 or typeof(ah.Color)=="table"and Color3.new(1,1,1)
 or nil,
@@ -13343,12 +13343,12 @@ PaddingLeft=UDim.new(0,4),
 }),
 }),
 ao("CanvasGroup",{
-Size=UDim2.new(0,0,1,0),
+Size=UDim2.new(0,0,0,aw.Topbar.Height),
 BackgroundTransparency=1,
 Name="Center",
 AnchorPoint=Vector2.new(0,0.5),
 Position=UDim2.new(0,0,0.5,0),
-AutomaticSize="Y",
+AutomaticSize="None",
 Visible=false,
 },{
 
@@ -13357,7 +13357,7 @@ Visible=false,
 ao("ScrollingFrame",{
 Name="Holder",
 BackgroundTransparency=1,
-AutomaticSize="Y",
+AutomaticSize="None",
 ScrollBarThickness=0,
 ScrollingDirection="X",
 AutomaticCanvasSize="X",
