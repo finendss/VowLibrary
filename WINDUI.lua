@@ -168,8 +168,7 @@ end
 
 function m.SetRadius(u,v)
 m.Radius=v
-local w=GetShape(m.Type)
-r.SliceScale=math.max(v/w.Rect.Width,0.0001)
+r.SliceScale=math.max(v/GetShape(m.Type).Radius,0.0001)
 return m
 end
 
@@ -4643,7 +4642,7 @@ TextSize=14,
 IconSize=16,
 }
 
-ah.Radius=af.Radius or ah.Height/2
+ah.Radius=math.min(af.Radius or ah.Height/2,ah.Height/2)
 
 local ai
 if ah.Icon then
@@ -4682,9 +4681,9 @@ end
 end
 
 local al=ab.NewRoundFrame(ah.Radius,"Squircle",{
+AutomaticSize="X",
 Size=UDim2.new(0,0,0,ah.Height),
 Parent=ag,
-ClipsDescendants=true,
 ImageColor3=typeof(ah.Color)=="Color3"and ah.Color
 or typeof(ah.Color)=="table"and Color3.new(1,1,1)
 or nil,
