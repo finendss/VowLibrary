@@ -3181,7 +3181,7 @@ local function synsaveinstance(...)
 
 	local OPTIONS = {
 		mode = "optimized",
-		Binary = true,
+		Binary = false,
 		CompressionMode = "zstd",
 		CompressionLevel = 9,
 		Decompile = true,
