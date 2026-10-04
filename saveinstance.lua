@@ -3196,15 +3196,12 @@ local function synsaveinstance(...)
 		Callback = false,
 		CopyToClipboard = false,
 
-		DecompileIgnore = {
-			"TextChatService",
-			ModuleScript = nil,
-		},
-		IgnoreDefaultPlayerScripts = true,
+DecompileIgnore = {},
+IgnoreDefaultPlayerScripts = false,
 
-		IgnoreProperties = {},
+IgnoreProperties = {},
 
-		IgnoreList = { "CoreGui", "CorePackages", Packages = false },
+IgnoreList = { "CoreGui", "CorePackages", Packages = false },
 
 		ExtraInstances = {},
 		NilInstances = false,
