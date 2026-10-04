@@ -1,2 +1,6145 @@
--- This script was generated using MoonVeil 2.0.26 [https://moonveil.cc]
-return({function(d)return function(...)local g,f,e,b,i e,f={},d.h(...)d.j(e,1,d.i(f))g=e g={[1]=0b11,[0b11]=g}g[0b10]=g e=#g[0b10][g[1]]e={[1]=0b11,[0b11]=e}e[0b10]=e b=bit32 f=b.rshift f={[1]=0b11,[0b11]=f}f[0b10]=f i=buffer b=i.writeu8 b={[1]=0b11,[0b11]=b}b[0b10]=b i=d:ag{f,e,b,g}return i end end,function(d)return function(g)local b,e,c,f,i c=0b10010011 while true do if c>0b10101010 then if c<=0b11110100 then b=math b,f=e,b.round f=d.h(f(b))return d.i(f)else c,i=c+-0xc2,2147483648 b=e<i end elseif c<=0b10010011 then if c>0x36 then f=0x960 i,e=-0x80000000,g*f b=e>=i c=b and 0xf8 or 0b110110 else f=not b c=f and c+0x74 or 0b11110100 end else f=-0x80000000 return f end end end end,function(d,_)return function(g)local i,b,k,a,h,f,e f=_[1][0b10][_[1][1]]k=f._normalizeRange i,b=g.Min,k b=b(i)a,h,e=k," ",g.Max a=a(e)i=h..a f=b..i return f end end,function(d,_)return function(a)local e,f f,e=a.Y,_[1][0b10][_[1][1]]e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local b,f,a,e f=Content a,e,b,f="TemporaryReferenceId",f.fromUri,g,_[1][0b10][_[1][1]]f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d)return function(g)local i,f,b,p,n,m,j,k,_,c,q,a,l,e c=0b11000111 repeat if c>0b11010000 then if c>0b11100111 then l="\1\0\0\0\0\0\0\0"return l else p,b=q(a,e)e=p c=e==nil and 0b10001011 or c+-0x17 end elseif c>0b11000111 then n=buffer j,n,m,c,_=n.writeu16,l,b,0xe7,i j(n,_,m)j=0b10 i=i+j elseif c>0b10001011 then f,k=g,g.GetParents k=k(f)l,f=0,#k c=f==l and 0b11101100 or 0b1101100 elseif c>0x6c then a=buffer q,a=a.tostring,l q=d.h(q(a))return d.i(q)else i=buffer e,l,i,a=0b10,i.create,0b1000,#k q=a*e i=i+q l=l(i)q=buffer q,e,i,a=l,1,q.writeu32,0 i(q,a,e)q=buffer a,i,q,e=0b100,q.writeu32,l,f i(q,a,e)e,a,i,q=nil,nil,0b1000,k q,a,e=d.g(q,a,e)p,b=q(a,e)e=p c=e==nil and 0b10001011 or 0b100111100-c end until false end end,function(d,_)return function(g)local b,f,e f=_[1][0b10][_[1][1]]e,b,f=f._packF32,g.Y,g.X e=d.h(e(f,b))return d.i(e)end end,function(d)return function(a)local f,e f,e=a,a.GetExtentsSize e=d.h(e(f))return d.i(e)end end,function(d)return function(g,k,f)local m,a,e,l,h,i i=bit32 l,h,i=i.band,4294967295,f l=l(i,h)h,a=f-l,18446744073709552000 i,a=h/a,buffer h,e,m,a=a.writei32,k,l,g h(a,e,m)a=buffer h,a,m=a.writei32,g,0b100 m,e=i,k+m h(a,e,m)return end end,function(d,_)return function()local a,e,f,g,b f=_[0b10][0b10][_[0b10][1]]b,e,a=_[1][0b10][_[1][1]],f.ReflectionService,_[0b11][0b10][_[0b11][1]]e,f=e.GetClass,e e=e(f,b,a)g=e.Serialized return g end end,function(d,_)return function(g,k,f,l)local i,m,h,b,e,a k={[1]=0b11,[0b11]=k}k[0b10]=k l={[1]=0b11,[0b11]=l}l[0b10]=l a=0b100 a,i,h=a*f,g.allocRegion,g i=i(h,a)a,m,b,h,e=g,i,d:Ef{l,k},_[1][0b10][_[1][1]],f h(a,e,m,b)return end end,function(d,_)return function(a)local e,f f,e=a.B,_[1][0b10][_[1][1]]e=d.h(e(f))return d.i(e)end end,function(r)return function(g,k,f,l)local s,h,c,a,e,_,n,i,d,b,j,p,m c=0b11010011 while true do if c<0b11010001 then if c>0b100010 then c,n,_=c+0b10100010,g,l n,_=n(_)b,j=n,_ p=p+j else _,m=n,p return _,m end elseif c>0b11010011 then _=buffer _,n=p,_.create n=n(_)m=buffer m,_,h,d=n,m.copy,0,i _(m,h,d)m=buffer m,_,d,h=n,m.copy,a,s _(m,h,d)_=nil c=l~=_ and 0xd1 or 0x22 elseif c>0b11010001 then s,i=k,g i,s=i(s)a,e=g,f a,e=a(e)b,n,p,j=nil,nil,s+e,nil c=l~=n and 0b1000100 or 0b11100110 else m=buffer _,h,d,m=m.copy,s+e,b,n c=c+-0xaf _(m,h,d)end end end end,function(d,_)return function(g)local f,e,b b,e,f=_[1][0b10][_[1][1]],g.GetBaseMaterialOverride,g e=d.h(e(f,b))return d.i(e)end end,function(d,_)return function(g,j)local f,a,i,b,c,h c=0x15 repeat if c<0x75 then if c<0x20 then if c<=0b10001 then if c<=1 then f=false return f else c=b and 0b10110011-c or 0x36 end else f=not g c=f and 1 or 0b1110101 end elseif c>0b110110 then c,b=0x85-c,nil elseif c>0x20 then h,a=_[0b11][0b10][_[0b11][1]],f h=h(a)i=not h c=i and 0b11001011-c or c+0b10110001 else i=false return i end elseif c>0b10100010 then if c>=0xe7 then if c<=0b11100111 then h=nil i=b~=h c=i and 0xcea3/c or 0b11101010 else return i end else h="Instance"i=j~=h c=i and c+-0b1100011 or 0xea end elseif c>=0x95 then if c<=0x95 then c,b=0b11100111,"Folder"else h=_[1][0b10][_[1][1]]i=not h c=i and 0b100000 or 0b11100111 end elseif c>0x75 then c,i=0x16c-c,j~=b else f,i=g.ClassName,_[0b10][0b10][_[0b10][1]]b=i[f]c=b and 0x86-c or 0xe9-c end until false end end,function(d,_)return function(g)local a,i,b,k,f,c,h c=0x31 repeat if c<=0b10100011 then if c<0b10011010 then if c>0b10 then h,k=Enum,g.SourceType i=h.ContentSourceType b=i.None f=k==b c=f and 0b10 or 0b10100011 else c,f=0b10100011,"<null></null>"end elseif c>0b10011010 then c=f and 0xdc or 0b10011010 else h=Enum i=h.ContentSourceType b=i.Uri f=k==b c=f and 0x16f-c or 0x8458/c end elseif c>0xd5 then return f else b,a="<uri>",_[1][0b10][_[1][1]]a,h=g.Uri,a.string h=h(a)c,a=0xb70c/c,"</uri>"i=h..a f=b..i end until false end end,function(r,y)return function(g,t,f)local p,u,k,z,q,l,w,C,D,i,s,B,m,h,a,o,b,v,j,e,n,_,d,A C=0b1101 while true do if C<0x74 then if C<0b1000100 then if C<=0x23 then if C<0b10010 then if C<0b1000 then if C>0b100 then h=y[0b111][0b10][y[0b111][1]]C=h and 0b1000100 or 0b11100010 elseif C>0b10 then _=y[0b1011][0b10][y[0b1011][1]]z=_[g]C=z and 0xfd or 0x3f else C,h=0xd2,l.__Synthetic end elseif C>0b1101 then C=_ and C+0b1100001 or 0b100 elseif C>0b1000 then B=y[0b10][0b10][y[0b10][1]]l=B[g]C=l and 0b11011010 or 0xb2 else C,m=0b1110111,_[e]end elseif C<0b11110 then if C<0x17 then C=h and C+0xed or 0b101011-C elseif C<=0b10111 then d,k,q="\0",_.propClass,"\0propsOnly"C,u=0xcb-C,k..q h=d..u m=m..h else C,h=0xff,w end elseif C>=0x20 then if C>0x20 then q=table k,q=q.create,#u k=k(q)q,d,k,p=nil,k,u,nil k,q,p=r.g(k,q,p)D,a=k(q,p)p=D C=p==nil and 0b100010111-C or 0xbf else h=true m=_==h C=m and C+0x38 or 0x7e end else _=y[0b1110][0b10][y[0b1110][1]]C=_ and C+0x51 or 0b10001 end elseif C<=0x37 then if C<0x2f then if C<=0b101011 then if C>0x24 then D,a=k(q,p)p=D C=p==nil and 0x11f-C or 0b10111111 else k,d,h,u,q=e,y[0b101][0b10][y[0b101][1]],"Folder",g,w C,d=0x74,d(u,k,q)l,h,b,w=d,true,"Instance",h y[1][0b10][y[1][1]]=h end else k,q,h,u,d=e,w,m,g,y[0b101][0b10][y[0b101][1]]d=d(u,k,q)l,h,w=d,"Folder",h C=w==h and 0b1001010 or C+0x46 end elseif C>=0x32 then if C>0x32 then C,d,u=0xb4,"\0",_.propClass h=d..u m=m..h else h=y[0b11][0b10][y[0b11][1]]m=h[w]C=m and 0b10100000 or 0x88-C end else C=f and 0b1010010 or 0x2d88/C end elseif C<=0b111111 then if C<=0b111101 then if C>0b111011 then C,f=0b101111,true else k={}C,u=C+0b1011000,k end else m=y[0b1011][0b10][y[0b1011][1]]m,_=false,m[w]C=_==m and 0xb2-C or C+0b100010 end else h=true m=_==h C=m and 0x77 or 0x200/C end elseif C<0b1100000 then if C>=0x52 then if C>0b1010110 then if C<=0x58 then C=m and 0x9b or 0x8a-C else m.class=h h=b C=h and 0x38f4/C or 0xf7-C end elseif C>=0b1010100 then if C>0b1010100 then h=y[0b1111][0b10][y[0b1111][1]]C=h and C+0x10 or 0x9e-C else u,k=#h,1 d=u+k h[d]=g u,d=false,nil C=z~=u and 0x7b or 0b11110100 end elseif C>0b1010010 then h=l C=h and 0b10 or 0b11010010 else m,_=true,y[0b10010][0b10][y[0x12][1]]C,_[g]=0x4f70/C,m end elseif C>0b1001000 then if C<=0b1001010 then C,b=0b1110100,"Instance"else C,B=0xe5,l.__ClassName end elseif C<=0b1000101 then if C>0b1000100 then C,i=0b100110010-C,nil else u,C,h,d=w,0x3c08/C,y[0b111][0b10][y[0b111][1]],"Class not Found"h(d,u)end else C=h and 0b11000111 or 0xe9-C end elseif C<0b1100110 then if C>=0x63 then if C<0b1100100 then C,f=0b101111,"self"elseif C>0b1100100 then C=i and 0xed or 0x45 else C,u=0x3908/C,l.__Children end elseif C<=0b1100000 then u=not s C=u and 0xdc or 0b100011 else m=_ C=m and 0x81-C or 0b1011000 end elseif C>=0b1110000 then if C>=0b1110010 then if C>0b1110010 then C,z=C+-0x41,false else return end else C,w=0b10110110,g.ClassName end elseif C<0b1100111 then u,d,h="PartOperation",g,g.IsA C,h=C+-0b11110,h(d,u)elseif C<=0b1100111 then C,v=0b1111010,l.Properties e=v.Name else C,m=0x80-C,g.Archivable _=not m end elseif C>0b10110010 then if C<0xdc then if C<=0xc9 then if C<0b10111111 then if C<0b10110100 then w=s C=w and 0xb6 or 0b1110000 elseif C>0xb4 then e=s C=e and 0b1100111 or 0b1111010 else d=y[0b110][0b10][y[0b110][1]]h=d[m]d=not h C=d and 0x8d54/C or 0b1010100 end elseif C>=0b11000111 then if C>0b11000111 then d={}h,d=d,y[0b110][0b10][y[0b110][1]]d[m]=h C,d=0x54,y[0b10011][0b10][y[0b10011][1]]k,u=1,d.instTypeCount u=u+k d.instTypeCount=u else C,q,k,h,u,d=0b1110100,w,e,"Part",g,y[0b101][0b10][y[0b101][1]]d=d(u,k,q)l,b,w=d,"BasePart",h end else j,A,o,i=a,y[0b1010][0b10][y[0b1010][1]],g,true i=f==i C=i and 0b11011001 or C+-0b1011010 end elseif C<=0b11011001 then if C<0b11010010 then C,s=0x8f57/C,l.__Virtual elseif C>0b11010010 then C,i=0b1100101,true else m.propsOnly=h d=nil h=s~=d m.virtual=h m.parent=t _,m=m,y[0b10][0b10][y[0b10][1]]m[g]=_ m,d=y[0b10000][0b10][y[0x10][1]],y[0b10011][0b10][y[0x13][1]]h=d.instCount m[g]=h m=d d,h=1,m.instCount h=h+d m.instCount=h h,m=_.propsOnly,_.tag C=h and 0b10111 or 0b110000000-C end else return end elseif C<0b11101101 then if C>=0xdf then if C<=0xe2 then if C<=0b11011111 then _=true C=n==_ and 0x3d or 0b11011101 else v,C,b,w=w,0b101010110-C,"Instance","Folder"end else s=l C=s and 0b11001101 or 0b10110011 end elseif C>0xdc then _=false C=n==_ and C+-0x7a or C+-0b10101110 else u,k=g.GetChildren,g C,u=0b100011,u(k)end elseif C>=0b11111000 then if C>=0xfd then if C>0xfd then m.tag=h h=B C=h and C+-0b10100101 or C+-0x76 else return end else _=not B C=_ and 0b11110 or 0b10100101 end elseif C<=0xee then if C>0xed then C,b=C+-0x7a,"Instance"else A(j,o,i)j=y[0b10][0b10][y[0b10][1]]A=j[a]C=A and C+-0b1100110 or 0b101011 end else u=d C=u and 0x187-C or 0x3b end elseif C<0b10010011 then if C>=0x7e then if C>=0x8a then if C>0b10001111 then C=u and 0x23 or 0x60 elseif C>0b10001010 then u=y[0b1100][0b10][y[0b1100][1]]d=u[w]h=not d C=h and C+-0b10001010 or 0x74 else m=y[0b1101][0b10][y[0b1101][1]]_,m=m[w],nil C=_~=m and 0x2280/C or 0b11011111 end elseif C>0x87 then C,h=0x5a,w elseif C<=0x7e then C,m=0b1011000,_[e]else C,o,j=0b101011,1,#d A=j+o d[A]=a end elseif C>0x79 then if C>0b1111010 then u=l C=u and 0b1100100 or 0x92 else C=e and 0b10010101 or 0x9f end elseif C<0b1110111 then h,m=v,{}C=h and C+-0x62 or 0xaf elseif C<=0x77 then C,n=C+0x68,m else return end elseif C<0xa1 then if C>=0x9d then if C<=0x9f then if C>0x9d then C,e=0x134-C,g.Name else C,h=0xa2,w end else d=y[0b1001][0b10][y[0b1001][1]]h=not d C=h and 0x79 or 0b11001110-C end elseif C<=0b10010101 then if C<=0b10010011 then _.children=u u=y[0b1000][0b10][y[0b1000][1]]p=u q,p=#p,1 k=q+p u[k]=g return else v,_,z,b=nil,y[0b1101][0b10][y[0b1101][1]],nil,nil n,_=_[g],nil C=n==_ and 0x5052/C or 0xdf end else return end elseif C<=0b10101110 then if C>=0b10100101 then if C>0xa5 then h=_.propClass C=h~=m and 0b110111 or C+0b110 else _="Folder"C=B==_ and 0b110010011-C or 0x119-C end elseif C>0b10100001 then m.propClass=h m.override=l d=nil h=s~=d C=h and C+0x30 or 0x53 else u,d=w,y[0b10001][0b10][y[0b10001][1]]d=d(u)h=not d C=h and 0b11000101-C or 0x8f end elseif C>0xaf then l=y[0b100][0b10][y[0b100][1]]l()B=y[0b10100][0b10][y[0b10100][1]]l=B[g]B=l C=B and 0x363c/C or 0b110010111-C else C,h=C+-0x9d,B end end end end,function(d)return function(a)local f,e f,e=a,a.GetModelCFrame e=d.h(e(f))return d.i(e)end end,function(d)return function(g)local k,h,l,e,a,i,f f=buffer f,k=0b11,f.create k=k(f)l=buffer a,i,l,f=math,0,k,l.writeu8 e,h,a=0b11111111,a.floor,g.R a=a*e h=d.h(h(a))f(l,i,d.i(h))l=buffer l,a,i,f=k,math,1,l.writeu8 h,e,a=a.floor,0xff,g.G a=a*e h=d.h(h(a))f(l,i,d.i(h))l=buffer l,f,i,a=k,l.writeu8,0b10,math h,e,a=a.floor,0b11111111,g.B a=a*e h=d.h(h(a))f(l,i,d.i(h))f,l=k,0b11 return f,l end end,function(r)return function(g)local l,f,t,u,s,h,e,k,n,c,b,i,_,a,d,m,v,j c=0b1001111 while true do if c<0x2b then if c<=0b11110 then if c<=0b1101 then s=table i,a,s=s.concat,"\\",l i=r.h(i(s,a))return r.i(i)else e,v=i(s,a)a=e c=a==nil and 0b101011-c or 0x2b end else i=table i,l=f,i.create l=l(i)i,a,s=t,nil,nil i,s,a=r.g(i,s,a)e,v=i(s,a)a=e c=a==nil and 0b110111010/c or 0b101011 end elseif c<=0b1001111 then if c>0b101011 then t,l=game,"PhysicsService"t,f=t.GetService,t t=t(f,l)t,f=t.GetRegisteredCollisionGroups,t t=t(f)f,l=#t,0 c=f==l and 0xcd or 0b100010 else _,j,d="^",v.name,1 h,k,u=e-d,v.mask,_ d=u..k c,m=0b11110,h..d n=_..m b=j..n l[e]=b end else l=""return l end end end end,function(d)return function(g,k)local f,j,i,h,e,l,a,b,c,m c=0b10101001 while true do if c>0x85 then if c>0xb1 then if c<=0b10110010 then h=0 a=h return h,a else a=0 e=a return a,e end elseif c<0b10101001 then if c<=0b10010010 then c=l and 0b1000111 or c+-0b1101 else m,b=f.Value,h.Value e,b,j=m-b,f.Time,h.Time m=b-j a=e/m e,m=a,a return e,m end elseif c>0xa9 then h,m=f.Interpolation,Enum e=m.KeyInterpolationMode a=e.Constant c=h==a and 0b1101011 or 0b11101 else f,i=g[k],1 h,l=#g,k==i i=k==h c=i and 0b10110010 or 0xb1 end elseif c>0x47 then if c<0b1101110 then h=0 a=h return h,a elseif c>0x6e then e=1 a=k-e h=g[a]a,b=h.Interpolation,Enum m=b.KeyInterpolationMode e=m.Constant c=a==e and 0b10001000-c or 0b10110000-c else e=1 a=k+e h=g[a]m,b=h.Value,f.Value b,e,j=h.Time,m-b,f.Time m=b-j a=e/m m,e=a,a return e,m end elseif c<0b101011 then if c>0b11 then m,h=Enum,f.Interpolation e=m.KeyInterpolationMode a=e.Linear c=h==a and 0b1101110 or 0xaf-c else a=0 e=a return a,e end elseif c<=0x2b then a,b=h.Interpolation,Enum m=b.KeyInterpolationMode e=m.Linear c=a==e and c+0x69 or 0xf7 else h=0 a=h return h,a end end end end,function(d,_)return function(g)local e,b,f,a f=_[1][0b10][_[1][1]]e,b,f,a=f._vector,g.Y,g.X,g.Z e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function(g)local h,k,f,e,c,l,j,i,a c=0x2b repeat if c>=0xb4 then if c>=0b11000011 then if c<0b11001101 then l,h=4294967295,1 c,f=0b1101111,f-h elseif c<=0xcd then h=0 c=l==h and 0xc3 or 0xcd/c else c=l and 0b110011000-c or 0xa134/c end elseif c<=0b10110100 then f,l=f(l)h=bit32 a,i,h=0x1f,h.extract,l i=i(h,a)a=bit32 e,h,a=1,a.lshift,l h=h(a,e)a,l=bit32,h h,e=a.bor,a e,a,j=f,e.lshift,1 a=a(e,j)e=i h=h(a,e)f=h c=k and 0x181-c or c+-0x45 else c,l=c+-1,g end elseif c>=0b111100 then if c<=0x3c then c,l=c+0xa8,-g else return f,l end elseif c>1 then f=0 f,k=_[1][0b10][_[1][1]],g<f l=k c=l and 0b111100 or 0xe4 else h=1 c,l=0x6f,l-h end until false end end,function(d,_)return function(g)local f,b,j,i,h,c c=0x6c repeat if c>0x9f then if c>0xf1 then if c<=0xf4 then i=_[1][0b10][_[1][1]]i()i,h=_[0b100][0b10][_[0b100][1]],"crashed"i[g]=h i=_[0b101][0b10][_[0b101][1]]i()i=_[0b11][0b10][_[0b11][1]]c=i and 0x4688/c or 0x118-c else i="failed"b=f==i c=b and 0x23 or 0b1010000 end elseif c<0b11100001 then if c<=0b10100001 then c,j=0x9791/c,true else return j end elseif c>0xe1 then b=_[0b10][0b10][_[0b10][1]]b[g]=j return j else i=_[0b11][0b10][_[0b11][1]]c,h,b=0xf4,"Testing ghp.. Rerun script if crashed",i.Text i.Text=h end elseif c<0x4a then if c<=0x24 then if c<=0b100011 then if c<=0b11000 then b=_[0b100][0b10][_[0b100][1]]f,b=b[g],"ok"c=f==b and c+0b10001001 or 0b11111111 else c=b and 0x52-c or 0b11000010-c end else c,j=0xf1,true end else c,j=0x2c3f/c,false end elseif c<=0x6c then if c<0b1010000 then i=_[0b11][0b10][_[0b11][1]]c,i.Text=0x24,b elseif c>0x50 then f=_[0b10][0b10][_[0b10][1]]f,j=nil,f[g]c=j~=f and 0b10101010 or 0b11000 else c,i=0xaf0/c,"crashed"b=f==i end else b,i=nil,_[0b11][0b10][_[0b11][1]]c=i and 0xe1 or 0xf4 end until false end end,function(d)return function(g,e)local f g={[1]=0b11,[0b11]=g}g[0b10]=g e={[1]=0b11,[0b11]=e}e[0b10]=e f=d:Hf{g,e}return f end end,function(r,M)return function()local F,U,K,q,d,h,S,W,p,g,s,o,f,I,u,X,C,x,l,B,A,b,w,m,_a,Y,P,c,G,N,D,y,R,L,H,z,V,aa,Q,v,t,E,O,k,T,e,J,a,j,n U=0x4a repeat if U<=0b10010010 then if U>0x48 then if U>=0x67 then if U<=0x78 then if U>0x6d then if U<=0x72 then if U>0x6f then b=M[0b111][0b10][M[0b111][1]]U=b and U+0x46 or 0xb6 else U,b=U+-0x14,v end else O,G,_a,Q,A=E,nil,nil,M[0b1001][0b10][M[0b1001][1]],"string"Q=Q(O,G,_a,A)U,O=0b11001011,Q.NotCreatable N.NotCreatable=O O=Q.Service N.Service=O end elseif U>=0x6b then if U<=0b1101011 then y,X=j(V,s)s=y U=s==nil and 0xf3 or 0b101100000-U else aa,q=type,p aa=aa(q)q="table"U=aa==q and 0b11111010 or 0b1111010-U end elseif U>0b1100111 then U,q=0b11101010,r:Lf{p}else U=q and 0x65 or 0x7f end elseif U>=0x85 then if U<0b10000111 then C,k=c.ValueType,c.Name D,W=C.Name,"Content"J=D==W U=J and 0xbc or 0xd2 elseif U<=0b10000111 then V=nil U=j[0b10][j[1]]and 0b11011000-U or U+-0b1101011 else U=X and U+-0x8d or 0xe2 end elseif U<=0b1111010 then V,s,j=nil,nil,W j,V,s=r.g(j,V,s)y,X=j(V,s)s=y U=s==nil and 0x73ce/U or 0b11110101 else q=aa[0b10][aa[1]]U=q and 0b100110 or U+-0b11010 end elseif U>0x57 then if U>=0b1100010 then if U>=0b1100011 then if U>0b1100011 then U=q and U+0b10000101 or U+0b100 else y,s,V=nil,nil,J V,s,y=r.g(V,s,y)X,p=V(s,y)y=X U=y==nil and 0x87 or 0x2a27/U end else U,j[0b10][j[1]]=0b11100,nil end elseif U>0x58 then U=b and 0x34f7/U or 0xd9 else F=true U,s.Shadows=U+0x45,F end elseif U<=0b1010001 then if U>0x4e then s=l[u]V,y=s[j[0b10][j[1]]],nil s=V==y U=s and 0x10 or U+0b1001101 elseif U>=0b1001010 then if U<=0b1001010 then f,g,l={},nil,r:Of{M[0b10],M[0b100],M[0b1000]}f[1]=l l=r:Pf{M[0b1000],M[1],M[0b10]}f[0b10]=l l=r:Kf{M[0b10],M[0b110],M[0b1010]}f[0b11]=l l=r:If{M[0b10]}f[0b100]=l t=f B,l,f=nil,nil,t f,l,B=r.g(f,l,B)L,w=f(l,B)B=L U=B==nil and 0b10110110 or 0xe4 else U,X=0x92,B[X]end else P,c=A(K,I)I=P U=I==nil and 0x3354/U or 0x522/U end elseif U<=0x56 then if U>0x54 then N={}u,h,m={},1,N u.Properties=m E=T.Superclass u.Superclass=E E=nil u.NotCreatable=E E,N,u=T.Tags,u,T.Name U=E and 0x2850/U or U+0x75 else U,q=U+0x13,p[0b10][p[1]]end else s.Fallback=q U,m[h]=0x18cf/U,s q=1 h=h+q end elseif U>0x1b then if U>0x31 then if U<=0b1000100 then if U<0b111011 then return f elseif U>0x3b then p=string X,aa=p.lower,p p,aa,q=aa.sub,k,1 R=q p=r.h(p(aa,q,R))X=X(r.i(p))aa=string U,q,aa,p=0x92,0b10,k,aa.sub p=p(aa,q)y,X=X..p,B[u]else K.ValueType=I U,K.MemberType=0xee,G A=K h[_a]=A end elseif U<=0b1000110 then y=V.ValueType U,s=0b10000,D~=y else J=not _a U=J and U+-0b1000110 or 0x4458/U end elseif U>0b100110 then if U>=0x2c then if U<=0x2c then U,aa=0b11111100,r:Mf{j}else U=aa and 0b10111000-U or U+0b10100110 end else m,N=T.Name,{}u,h,N,E=nil,N,T.Members,nil N,u,E=r.g(N,u,E)Q,O=N(u,E)E=Q U=E==nil and 0b10011100 or 0b11010001 end elseif U<=0x24 then if U>=0b100000 then if U>0b100000 then Y,T=v(b,z)z=Y U=z==nil and U+0x10 or 0b1111010-U else J=_a[k]U,x.CanSave=0x10c-U,J end else y={}y.Name=k X=C.Category y.Category=X y.ValueType=D y.Special=W X=nil y.CanRead=X X,s=string,y X,aa,p,y=D,0b1000,1,X.sub y=y(X,p,aa)X="Optional"U=y==X and 0b11010110-U or 0b1000100 end else U,q=0b10001011-U,r:Jf{p,aa}end elseif U>=0b1110 then if U>=0x14 then if U>0b11001 then U,aa=0x4c-U,W elseif U>=0b10111 then if U>0b10111 then U,J=0b11000011-U,O[k]else a=aa(q,R)R=a U=R==nil and 0b10011101 or 0xde end else R,q="Property",V.MemberType aa=q==R U=aa and 0x2c or 0xfc end elseif U>=0b10000 then if U>0b10000 then x,k=c.MemberType,"Property"U=x==k and 0xdc-U or U+0b110111 else U=s and 0b1100010 or 0x1c end else Y,U,m,T=warn,0xb6,z,"[DEBUG] DUMP writefile error"Y(T,m)end elseif U<0b1010 then if U>0b11 then p=l[X]U=p and 0xb9 or 0b10011101 elseif U<=0b10 then J={}j,_a=M[0b110][0b10][M[0b110][1]],J W=j.Reflection J=not W U=J and 0b10110111 or 0xf3 else U=J and U+0xcc or U+0x46 end elseif U>0b1100 then aa="NotScriptable"U=p==aa and 0b10000010/U or 0xaeb/U elseif U>0b1010 then U,p=0b11000101,Q[k]else W=true U=j[0b10][j[1]]and U+0x7d or 0x866/U end elseif U>=0xc7 then if U<=0xe0 then if U<0b11010010 then if U>0xcc then if U<=0xcf then W,j,J=nil,nil,c.Tags j={[1]=0b11,[0b11]=j}j[0b10]=j U=J and U+-0x6c or 0x6d29/U else A,G="Property",O.MemberType _a=G==A U=_a and 0b101110011-U or 0b11000000 end elseif U<=0xcb then if U<=0b11001010 then if U>0xc7 then x=c.Serialization k=x.CanLoad U=k and U+-0b1000101 or 0x113-U else z=0b10 U,b=U+0b1101,z<L end else O=M[0b101][0b10][M[0b101][1]]G,A,K,_a,O,I,Q=w[u],T.Members,nil,nil,L[u],nil,O[u]A,K,I=r.g(A,K,I)P,c=A(K,I)I=P U=I==nil and 0x8ebc/U or U+-0b10111001 end else aa={[1]=0b11,[0b11]=aa}aa[0b10]=aa q=p[0b10][p[1]]U=q and 0x163-U or 0xea end elseif U>0xd9 then if U>0b11011110 then J=O U=J and 0b11001 or 0b10101010 elseif U>0xdd then o=string d,H=o,o.lower n,o,d=1,d.sub,a S=n o=r.h(o(d,n,S))H=H(r.i(o))d=string n,d,o=0b10,a,d.sub o=o(d,n)F=H..o U=F==y and 0x4c50/U or 0b11110101-U else W=G U=W and 0b10110000 or 0xad end elseif U>0b11010111 then z=false b=v~=z U=b and U+-0b10010 or 0b110101101-U elseif U<0xd4 then U,W=0b10111100,"AssetContentMap"J=D==W elseif U<=0b11010100 then U=b and 0b110000011-U or 0x9018/U else X,p=V(s,y)y=X U=y==nil and 0x87 or 0b1101101 end elseif U<=0b11101110 then if U<0b11101100 then if U>0b11100100 then U=q and 0x4f86/U or 0b11111011 elseif U>0b11100010 then e,v=pcall,w e,v=e(v)b=e U=b and 0x153-U or 0b1011011 else p=Q U=p and 0b1100 or 0xadea/U end elseif U<=0xed then if U<=0b11101100 then J=x.CanSave U=J and 0b10101010 or 0xce80/U else P=O.ValueType U,I=0b111011,P.Name end else Q,O=N(u,E)E=Q U=E==nil and 0x9c or U+-0x1d end elseif U>=0b11111010 then if U>0xfb then U=aa and 0xcc or 0b111000000-U elseif U<=0xfa then j[0b10][j[1]]=p.PreferredDescriptorName aa=j[0b10][j[1]]U=aa and 0b11011 or 0x31 else U,q=0x152-U,aa[0b10][aa[1]]end elseif U<=0b11110011 then J,W=_a[k],nil U=J~=W and 0b100010011-U or 0xe004/U else aa,p=X.Serialized,X.Name U,_a[p]=0b1101011,aa end elseif U>0b10110000 then if U>0xba then if U<0b11000100 then if U>0xbc then A="Function"U,_a=0xa2,G==A else U=J and 0x48 or 0b11101100 end elseif U>=0xc5 then if U>0xc5 then K,P,_a={},"Property",O.Name I=G==P U=I and 0b11101101 or 0x101-U else p={[1]=0b11,[0b11]=p}p[0b10]=p aa=j[0b10][j[1]]U=aa and 0b10100 or 0b11001100 end else U,aa=0b11001100,r:Nf{j}end elseif U>=0xb8 then if U>0xb9 then X=string U,p,X,y=U+-0b1110110,0b1001,D,X.sub y=y(X,p)s.Optional=y elseif U<=0xb8 then b,m,Y,z=pcall,M[0b10][0b10][M[0b10][1]],"ussi_cache/API_DUMP.json",M[0b111][0b10][M[0b111][1]]T,h,N=m.HttpService,{},M[0b1000][0b10][M[0b1000][1]]h[N]=g T,m=T.JSONEncode,T T=r.h(T(m,h))b,z=b(z,Y,r.i(T))Y=not b U=Y and 0b1110 or 0b10110110 else R,aa,q=nil,p,nil aa,q,R=r.g(aa,q,R)a=aa(q,R)R=a U=R==nil and 0x7175/U or 0b11011110 end elseif U<0b10110110 then U,f[u]=U+-0b10010000,N elseif U>0xb6 then V,J=M[0b10][0b10][M[0b10][1]],pcall j=V.ReflectionService W,j,s,V=j.GetPropertiesOfClass,V.ReflectionService,M[0b1010][0b10][M[0b1010][1]],u J,W=J(W,j,V,s)U=J and 0x131-U or 0xadb5/U else l={}L,f={},l l,L=L,{}B,e=L,M[0b11][0b10][M[0b11][1]]L,e,w=e.Whitelist,g,e.Blacklist b,z,v=nil,nil,e v,b,z=r.g(v,b,z)Y,T=v(b,z)z=Y U=z==nil and 0x15c-U or 0x28 end elseif U>0xa2 then if U<0xae then if U>=0xaa then if U<=0xaa then U=J and 0b110000111-U or 0xad-U else U,J=U+-0xaa,not W end else z,b,v=nil,nil,e v,b,z=r.g(v,b,z)Y,T=v(b,z)z=Y U=z==nil and 0b110100 or U+-0x50 end elseif U<=0b10101111 then if U>0b10101110 then b,T,z,Y=warn,"version API Dump, trying fallbacks..","[DEBUG] Failed to get",M[0b1000][0b10][M[0b1000][1]]b(z,Y,T)T,Y,m,z="Reason:",L,v,"[DEBUG] Method number:"U=0xae b(z,Y,T,m)else L,w=f(l,B)B=L U=B==nil and 0x7bb4/U or 0b11100100 end else U,W=0xad,G[k]end elseif U<0b10011100 then if U>0x95 then R,a=type,p[0b10][p[1]]R=R(a)a="function"q=R==a U=q and 0x54 or 0b11111110-U elseif U>0x93 then g,b=v,0b10 U=L==b and 0x425a/U or 0b10110110 else Y,T=v(b,z)z=Y U=z==nil and 0x5f52/U or 0b10111011-U end elseif U<0x9e then if U<=0x9c then U,l[m]=U+-0b1001,h N=T.Superclass B[m]=N else aa=s.Shadows U=aa and 0b11100010 or U+-0x4f end elseif U>0b10011110 then U=_a and 0x7d4c/U or 0xee else X,y="Property",V.MemberType s=y==X U=s and U+-0x58 or 0x10 end until false end end,function(d,_)return function(g,k,f,l)local i,a,h,b,e,m k={[1]=0b11,[0b11]=k}k[0b10]=k l={[1]=0b11,[0b11]=l}l[0b10]=l i,b,h,a=_[1][0b10][_[1][1]],0b100,g,f e,m,b=g.allocRegion,g,b*f e=e(m,b)m=d:Xf{l,k}i(h,a,e,m)return end end,function(d)return function(g)local e,f,a,b,c c=0b10111011 repeat if c>=0b1010110 then if c<0xbb then c,e=0xe1,nil elseif c<=0xbb then e,f=#g,0 c=e==f and 0x56 or 0xe1 else f,b,a=next,g,e f=f(b,a)b=nil c=f==b and 0x30 or c+-0b10010000 end elseif c<=0x30 then f="ValueArray"return f else f="ValueTable"return f end until false end end,function(r,y)return function(g)local o,w,j,f,h,c,s,z,x,m,p,B,q,a,e,v,l,n,_,t,b,d,k,u,A c=0x70 while true do if c>0b1110100 then if c>=0b11010101 then if c>0xeb then if c>0b11101101 then p=nil c=k==p and 0x778f/c or 0b1110100 else f="\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"return f end elseif c<=0b11100001 then if c<=0xd5 then k,q,u,x=d.RightTangent,e[h],d.LeftTangent,buffer x,p,A,a=b,x.writeu8,d.Interpolation,z A=A.Value p(x,a,A)p=1 z,x=z+p,buffer p,A,x,o,a,j=x.writeu8,y[1][0b10][y[1][1]],b,k,z,u A=A(j,o)p(x,a,A)p=1 z,x=z+p,buffer a,A,x,p=z,1,b,x.writeu32 A=q+A p(x,a,A)p=0b100 x,z=buffer,z+p a,p,x,A=z,x.writeu8,b,l p(x,a,A)p=1 x,z=buffer,z+p p,x,A,a=x.copy,b,w[h],z p(x,a,A)x,z=nil,z+q p=u==x c=p and 0b1111000 or 0b10100 else p=nil c=u==p and 0x1e or c+0x10 end else h,d=n(_,m)m=h c=m==nil and 0b1101110 or 0x1c0-c end elseif c>=0b10010000 then if c<0xa9 then a,p,x=h,y[0b110][0b10][y[0b110][1]],t c=0b1110100 p,x=p(x,a)u,k=p,x elseif c>0b10101001 then z=buffer _,b=0b1000,z.create n=_+v _,z=0b100,n+_ n=_*s z=z+n b=b(z)n=buffer m,_,z,n=0b10,0,n.writeu32,b z(n,_,m)n=buffer m,n,_,z=s,b,0b100,n.writeu32 z(n,_,m)m,n,z,_=nil,t,0b1000,nil n,_,m=r.g(n,_,m)h,d=n(_,m)m=h c=m==nil and 0x55f0/c or 0xd5 else _,m=b(z,n)n=_ c=n==nil and 0x171-c or 0b1101 end elseif c<=0b1111000 then c,x=0x960/c,nil p=k==x else c,k=0x74,u end elseif c>=0b1000100 then if c>=0x6e then if c>=0b1110000 then if c>0b1110000 then x=buffer A,x,a,p=u,b,z,x.writef32 p(x,a,A)p=0b100 x,c,z=buffer,0x6a7c/c,z+p x,p,a,A=b,x.writef32,z,k p(x,a,A)p=0b100 z=z+p else t,f=g.GetKeys,g t=t(f)l,f=0,#t c=f==l and 0b11101101 or 0b1000100 end else _,h,n,m=b,t,y[0b101][0b10][y[0b101][1]],z n=n(_,m,h)z,_=n,buffer n,_=_.tostring,b n=r.h(n(_))return r.i(n)end elseif c<=0x58 then if c>0x44 then e,s=table,#t w,e=e.create,s w=w(e)v=table v,e=s,v.create e=e(v)n,v,b,z=nil,0,t,nil b,z,n=r.g(b,z,n)_,m=b(z,n)n=_ c=n==nil and c+0x70 or 0b1100101-c else f,B=g.ValueType,y[0b10][0b10][y[0b10][1]]l=B[f]B=not l c=B and 0b11011 or c+0x25 end else s=y[0b11][0b10][y[0b11][1]]B=s[f]s=not B c=s and 0b10100010-c or 0x2418/c end elseif c>0b11011 then if c<=0b11110 then c,u=c+0b1010110,k else s="\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"return s end elseif c>=0b10100 then if c<=0x14 then c=p and c+0b1111100 or 0xf5-c else B,s=y[0b100][0b10][y[0b100][1]],t[1]c,s=0xb13/c,s.Value B=B(s)B,f=y[0b10][0b10][y[0b10][1]],B l=B[f]end else h,d=B,m.Value h,d=h(d)w[_]=h c,e[_]=0xa9,d k=0b1111 u=k+d v=v+u end end end end,function(d,_)return function()local b,f,g,e e=settings e=e()b,e,f="DebugSettings",e.GetService,e e=e(f,b)g=e.RobloxVersion _[1][0b10][_[1][1]]=g return end end,function(d,_)return function()local a,g,b,i,j,f,h f=_[1][0b10][_[1][1]]j,b,h,a=f.HttpService,game,"https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/Mini-API-Dump.json",true b,i=b.HttpGet,b b=d.h(b(i,h,a))f,j=j,j.JSONDecode j=j(f,d.i(b))g=j.Classes return g end end,function(d,_)return function(a)local e,f f,e=a.Y,_[1][0b10][_[1][1]]e=d.h(e(f))return d.i(e)end end,function(d,_)return function()local e,c,a c=0x37 repeat if c<=0b110111 then if c<=0b110 then a=_[1][0b10][_[1][1]]c=0x4fe/c a()else e=_[0b10][0b10][_[0b10][1]]a=e.GuiService a,e=a.GetErrorMessage,a a=a(e)e="[SAVEINSTANCE SAFEMODE]\nSaving..\nDo NOT leave\nLVL7 Executor RECOMMENDED for more SAFETY\nTo Disable this: SafeMode=false (Less Protection)"c=a~=e and 0b110 or 0b11010101 end else return end until false end end,function(r,o)return function(g,k,f)local i,a,c,b,l,m,e,j,p,_,n,q c=0b10001100 while true do if c>=0x8c then if c>=0b11011011 then if c<=0xdb then m,b,j=1,q,i _=a-m _,c,n=m,0x4c,l+_ b(j,n,_)else return end else i,q,l=g,0b10000,g.writeu8 l(i,q)i,l,e,a,q=g,o[1][0b10][o[1][1]],true,f,k l(i,q,a,e)i,q,l=g,0b10,g.writeu8 l(i,q)q,i,l=f,g,g.allocRegion l=l(i,q)i,a=g.buf,buffer e,a,q=f,1,a.writeu8 p=a c=(e~=e or(p>0 and a>e or(p<=0 or p~=p)and a<e))and 0xef or 0x41 end elseif c<=0b1000001 then j,b=nil,k[a]c=b~=j and 0x379b/c or 0x4c else a=a+p c=(p>0 and a>e or p<=0 and a<e or p~=p)and 0b11101111 or c+-0b1011 end end end end,function(r,o)return function(g,t,f)local a,j,s,p,d,b,m,_,n,l,u,c,e,i,k,h c=0b10101001 while true do if c>=0b10101001 then if c>=0b11100101 then if c<=0b11100110 then if c<=0xe5 then return else c=k and 0x15b-c or 0b101010001-c end else c,k=0b101010,0 end elseif c<=0xaa then if c>0xa9 then e=e+b c=(b>0 and e>p or b<=0 and e<p or b~=b)and 0b11100101 or 0xd0 else l,p,i,s,e,a=g.writeLenString,f,g.writeu16,g.writeu8,1,g.writeu32 b=e c=(p~=p or(b>0 and e>p or(b<=0 or b~=b)and e<p))and 0xe5 or 0b11010000 end else _,n,j=o[1][0b10][o[1][1]],pcall,t[e]h,m="Weight",j n,_=n(_,m,h)u,d,h,m="Style",j,o[1][0b10][o[1][1]],pcall m,h=m(h,d,u)u,d,k=g,l,j.Family d(u,k)u,k,d=g,n,i c=k and c+-0b1000110 or 0x20 end elseif c<=0x6f then if c<0b1101011 then if c<=0x20 then c=k and 0x2a or 0x107-c else d(u,k)u,k,d=g,m,s c=k and 0b10011001-c or 0xe6 end elseif c<=0x6b then c,k=c+0b1010,0 else c,k=0xe6,h.Value end elseif c>0b1110101 then c,k=c+-0x6a,_.Value else d(u,k)k,u,d=0,g,a c=0x4db2/c d(u,k)end end end end,function(d,_)return function(g)local j,c,f,h,i,b c=0b111011 while true do if c>0b11000001 then if c<=0xd9 then c,b=0b101100010-c,_[0b11][0b10][_[0b11][1]]f=b[j]else return f end elseif c<0b10001001 then h,b=_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]]i=h[g]f=b[i]j=f.parent f=j c=f and 0b11011001 or 0x89 elseif c<=0x89 then c=f and c+0x57 or c+0b111000 else c,f=0xe0,-1 end end end end,function(d)return function(a)local e,c c=0x8e while true do if c<0b10011010 then if c<=0b100100 then c,e=0b10101110,"0"else e=a~=a c=e and 0b100100 or 0xae end elseif c>0b10101110 then c,e=0b10011010,a elseif c>0b10011010 then c=e and 0x9a or c+0x41 else return e end end end end,function(d,_)return function(a)local e,f f,e=a.G,_[1][0b10][_[1][1]]e=d.h(e(f))return d.i(e)end end,function(d)return function(g)local b,h,f,i,e f=buffer e,f=f.create,0b11001 e=e(f)b=buffer b,f,h,i=e,b.writeu8,1,0 f(b,i,h)b=buffer b,i,f,h=e,1,b.writef32,g.Density f(b,i,h)b=buffer b,h,f,i=e,g.Friction,b.writef32,0b101 f(b,i,h)b=buffer h,b,i,f=g.Elasticity,e,0b1001,b.writef32 f(b,i,h)b=buffer i,f,h,b=0b1101,b.writef32,g.FrictionWeight,e f(b,i,h)b=buffer i,b,f,h=0b10001,e,b.writef32,g.ElasticityWeight f(b,i,h)b=buffer h,f,i,b=g.AcousticAbsorption,b.writef32,0x15,e f(b,i,h)b,f=0b11001,e return f,b end end,function(d,_)return function(g,k,f,l)local i,a,c,e,h,j c=0x36 repeat if c>=0x6c then if c<=0b10001010 then if c>=0x85 then if c>0b10000101 then i=false return i else i=true return i end elseif c<=0b1101100 then i=true return i else j,a,e=i,_[1][0b10][_[1][1]],g a=a(e,j)e=nil h=a~=e return h end elseif c>0b10100111 then a,e,h=f,l,_[0b10][0b10][_[0b10][1]]h=h(a,e)i=not h return i elseif c>0x97 then i="Enum"c=f==i and c+-0x22 or c+-0b111101 else i="can't get value"c=g==i and 0x103-c or c+-0x2f end elseif c>0x4b then if c<=0b1101000 then h,a=type,g h=h(a)a="string"i=h~=a c=i and 0x4b or 0x6c-c else i=k.ErrNeedle h=not i c=h and 0x35 or 0x3496/c end elseif c>=0x36 then if c<=0b110110 then i=nil c=g==i and 0xe0 or 0x97 else c=i and 0b10001010 or 0xa7 end elseif c>0b100 then a,h=k.Name,"Unable to get property "c,i=0b1111111,h..a k.ErrNeedle=i else a,c,h=0b100000000,c+0x47,#g i=h>a end until false end end,function(d,_)return function()local e,g,c,f,b c=0b101011 repeat if c<=0b100000 then if c<=0x14 then return e else b=_[1][0b10][_[1][1]]f=b.SourceAssetId c,e=c+-0b1100,g==f end else f,e,g="SourceAssetId",_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]]g=g(e,f)f,b=type,g f=f(b)b="number"e=f==b c=e and 0b100000 or 0x14 end until false end end,function(r,y)return function(g)local f,q,j,D,b,n,e,s,a,E,A,o,l,h,w,B,u,c,m,x,d,v,p,t,i,_,z,F F=0xf3 while true do if F>0b10001110 then if F<0xc3 then if F<=0b10100100 then if F<=0b10011011 then if F>0b10010101 then if F>0b10011010 then F=b and 0b10010010 or 0b100011001-F else h,d=_.ValueType,y[0b10111][0b10][y[0x17][1]]F=d and 0b11111011 or 0x8d5e/F end elseif F<0b10010100 then if F<=0x90 then a=y[0b11][0b10][y[0b11][1]]F=a and 0b10111010 or 0b100110111-F else v,e=B,B.writeu8 e(v,b)v,b,e=B,t,B.writeu32 e(v,b)v,e,b,_=B,y[0b10010][0b10][y[0x12][1]],t,0b100 z,n,_=B.allocRegion,B,_*t z=z(n,_)n=r:rf{g,y[0b1110]}e(v,b,z,n)F=w and 0b11111010 or 0x146-F end elseif F<=0b10010100 then F=a and 0b10010000 or F+0b1101 else F,d,u=0x2ba7/F,"Referent",y[0b1110][0b10][y[0b1110][1]]end elseif F>0b10100010 then o,a,A,j,x,c=m,y[0b101][0b10][y[0b101][1]],"PROP dropped",l,#g[0b10][g[1]],"n="i,F,c=c..x,F+-0b10110,"failed at "c=c..D a(A,j,o,i,c)elseif F>0xa1 then E=q+p u=u+E F,y[0b1100][0b10][y[0b1100][1]]=0b10,u elseif F>0b10011100 then j,A,o,a=m,"UNSUPPORTED BINARY TYPE (OPEN A GITHUB ISSUE): ",d,warn F=0b10001110 a(A,j,o)else a,A=1,t j=a F=(A~=A or(j>0 and a>A or(j<=0 or j~=j)and a<A))and 0b1100 or 0x1b end elseif F<0b10110100 then if F<=0xa8 then if F<0b10100111 then d=d+E F=(E>0 and d>u or E<=0 and d<u or E~=E)and 0b111110 or 0xcb elseif F>0xa7 then F,c=0xf6,A.tailLen else F,a=0x7956/F,y[0x13][0b10][y[0x13][1]]end else F,b=0b10011011,1 end elseif F>=0xb9 then if F<0xba then F,E=F+-0x3a,y[0b11000][0b10][y[0x18][1]]E=E.ProtectedString elseif F<=0xba then F=a and 0x42 or F+-0b10011101 else F,u=0x37f5/F,y[0b1110][0b10][y[0b1110][1]]end elseif F>0xb4 then D,p=h,h.writeLenString F=0xa6 p(D,a)else z,v,e,b,n=B,y[0x16][0b10][y[0x16][1]],y[0b1011][0b10][y[0b1011][1]],"INST",y[0b1001][0b10][y[0b1001][1]]v=v(b,z,n)e(v)e=y[0x15][0b10][y[0x15][1]]F=e and 0x25f8/F or 0x8a end elseif F>0xe1 then if F<0xf4 then if F<=0xec then if F<=0b11101011 then if F>0xe3 then F=d and 0b1100011 or 0x68 else p=q F,p=0x85,p()q=p end else F,a=0b10010100,q end else g={[1]=0b11,[0b11]=g}g[0b10]=g l,B,t=y[0b10][0b10][y[0b10][1]],g[0b10][g[1]][1],#g[0b10][g[1]]f=l[B]s,l=y[0b100][0b10][y[0b100][1]],f.class B,e,s=s.new,0b100,0x40 w=e*t s=s+w B=B(s)e,s,w=y[0b10100][0b10][y[0b10100][1]],B.writeu32,B s(w,e)s,w,e=B.writeLenString,B,l s(w,e)w=y[0b1101][0b10][y[0b1101][1]]s=w[l]w=s F=w and 0b1001110 or 0x10 end elseif F<0xfa then if F<=0xf4 then F,d=0b1001011,"Enum"else F=c and 0b11011101 or 0xd272/F end elseif F>0xfb then v=f.propsOnly F=v and F+-0b110010 or F+-0x8d elseif F>0b11111010 then u="BinaryString"F,d=F+-0b10000,h==u else v=buffer v,n,z,b,e=B.buf,t,B,B.allocRegion,v.fill b=b(z,n)z,n=1,t F=0b10110100 e(v,b,z,n)end elseif F<0xd6 then if F>0b11001100 then if F<=0b11010000 then F,p=0x83a0/F,0 else F=p and 0b100010110-F or 0b10011 end elseif F<0b11001011 then m,d=_.Name,y[0b10000][0b10][y[0b10000][1]]h=d[m]F=h and F+-0b110101 or 0b10011010 elseif F<=0xcb then j,A=g[0b10][g[1]][d],y[0b10][0b10][y[0b10][1]]a=A[j]D=a.override p=D.Properties q,p=p[n],type D=q p=p(D)D="function"F=p==D and F+0x18 or 0x85 else n=f.override v,b,z=n.Properties,nil,nil v,b,z=r.g(v,b,z)n=v(b,z)z=n F=z==nil and 0xd6 or 0b1101001 end elseif F>0xdb then if F>0xdd then F,D=0x1b3-F,d.str p=#D else F,o=F+-0b1001111,i+c j=j+o y[0b1100][0b10][y[0b1100][1]]=j end elseif F<0b11011010 then b,v=1,y[0b10100][0b10][y[0b10100][1]]v=v+b y[0x14][0b10][y[0b10100][1]]=v return elseif F>0xda then F,c=0x1b8-F,0 else a=y[0b101][0b10][y[0b101][1]]F=a and 0xa4 or 0x8e end elseif F<=0b1000100 then if F<0x26 then if F>0x1b then if F<0x23 then if F>0x1c then F=a and 0x11ac/F or F+-0b10001 else b,v=g[0b10][g[1]][1],y[0b1111][0b10][y[0b1111][1]]F,v=0xfe,v(b)e=not v end elseif F<=0x23 then x=A.str F,c=0b1001001-F,#x else E=y[0x18][0b10][y[0b11000][1]]F,E=0x9f-F,E.string end elseif F>0x10 then if F>0x13 then i,o,c=p[a],y[0x11][0b10][y[0x11][1]],h o=o(i,c)F=o and F+0x18 or 0b1011010-F else F,p=0b1010111-F,d.tailLen end elseif F>=0b1100 then if F<=0b1100 then A=y[0b100][0b10][y[0b100][1]]i,A,a,o=0b100,0x80,A.new,#g[0b10][g[1]]j=o*i A=A+j a=a(A)A,o,j=a.writeu32,y[0b10100][0b10][y[0x14][1]],a A(j,o)A,j,o=a.writeLenString,a,m A(j,o)A,o,j=a.writeu8,q,a A(j,o)j,o,c,A,i=a,p,u,E,#g[0b10][g[1]]A(j,o,i,c)A,j,i,o=y[0b10110][0b10][y[0x16][1]],"PROP",y[0b1001][0b10][y[0b1001][1]],a A=A(j,o,i)j=y[1][0b10][y[1][1]]c=j c,i=1,#c o=i+c j[o]=A i,c,j=A.len,A.str,y[0b1100][0b10][y[0b1100][1]]F=c and 0b100011 or 0b111001000/F else b=w F=b and 0b10101111 or 0x9b end elseif F>1 then n=v(b,z)z=n F=z==nil and 0b110101100/F or 0x6b-F else q,E="Class",_.Category F=E==q and 0x95 or 0b110010 end elseif F<0b111100 then if F<=0x32 then if F<0x30 then F=c and F+0b11010000 or F+0b10000010 elseif F>0x30 then E="Content"F=d==E and 0b10111111 or 0xea6/F else F=q and 0x5b or 0xb40/F end elseif F<=0x33 then F,o=0x3f,nil p[a]=o else v=f.propsOnly F,e=0x8a,not v end elseif F>0x3f then if F>0b1000010 then F=p and F+0b1011110 or 0b11010000 else j,A="Class",_.Category F,a=0x77a/F,A==j end elseif F<=0b111110 then if F>0x3c then q,d,E,u=not m,y[0b10110][0b10][y[0b10110][1]],h,"PROP"F=q and 0x1ae2/F or 0b110000 else F,q=0b10010111-F,nil end else a=a+j F=(j>0 and a>A or j<=0 and a<A or j~=j)and 0b1100 or F+-0x24 end elseif F<=0b1101111 then if F<=0b1100010 then if F<=0b1001110 then if F>=0b1001101 then if F<=0x4d then F,a=F+0x6b,""else F,w=0x10,s.Service end elseif F>0x46 then q=y[0b110][0b10][y[0b110][1]]p,E=y[0x18][0b10][y[0x18][1]],q[d]q,D=p[d],p p=D.SharedString F=q==p and 0x1cb6/F or 0x46 else p,a,D=y[0b1000][0b10][y[0b1000][1]],_,g[0b10][g[1]]p,D=p(D,a)a=not p F=a and 0b11011010 or 0x2648/F end elseif F<=0x5b then d=d(u,E,q)u=y[1][0b10][y[1][1]]p=u q,p=#p,1 E=q+p u[E]=d u,q,p=y[0b1100][0b10][y[0b1100][1]],d.len,d.str F=p and 0b11100001 or 0xd2 else F,u=0b10101000-F,y[0b1010][0b10][y[0b1010][1]]end elseif F>0b1101001 then F,q=F+-0x3f,y[0b1001][0b10][y[0b1001][1]]elseif F>=0b1101000 then if F<=0x68 then u,q,E,d=nil,"Enum",_.Category,h F=E==q and F+0x8c or 1 else h="Source"m,d=n==h,y[0b100][0b10][y[0b100][1]]h,E,d=d.new,0b10000,0x40 u=t*E d=d+u h=h(d)d,u,E=h.writeu32,h,y[0x14][0b10][y[0x14][1]]d(u,E)E,u,d=n,h,h.writeLenString d(u,E)E=m F=E and F+0x50 or 0x3417/F end else F,h=0x2838/F,"SharedString"end elseif F>=0x7f then if F>=0b10001010 then if F>0b10001100 then n,_=v(b,z)z=n F=z==nil and 0b11010110 or 0x6c2a/F elseif F>0b10001010 then a=E F=a and 0xec or 0b10010100 else F=e and 0b10100110-F or 0x188-F end elseif F>0b1111111 then a=q F=a and 0xb8 or 0x2801/F else F=E and 0xfa-F or 0b100100 end elseif F<0b1111011 then if F>0x70 then v=not e F=v and 0x3170/F or 0b101000111-F else b,v=f.propClass,y[0b111][0b10][y[0b111][1]]v,b,z=v(b)v,b,z=r.g(v,b,z)n,_=v(b,z)z=n F=z==nil and 0xd6 or 0b100110011-F end elseif F>0b1111011 then F,b=0x92,0 else u,d=h,h.writeu8 d(u,E)d,u=1,t E=d F=(u~=u or(E>0 and d>u or(E<=0 or E~=E)and d<u))and 0x1dca/F or F+0x50 end end end end,function(d,_)return function(g)local f,e f,e=g.Y,_[1][0b10][_[1][1]]f=f.Offset e=e(f)return e end end,function(d,_)return function(g)local f,b,e,c c=0xf0 repeat if c>=0b10101111 then if c<0xbb then return f elseif c<=0xbb then c=f and 0x7fd5/c or 0x58 else f=_[0b10][0b10][_[0b10][1]]e=f[g]f=e c=f and 0x7a or 0xbb end elseif c>0b1011000 then c,b=0b10111011,_[1][0b10][_[1][1]]f=b[e]else c,f=0b10101111,-1 end until false end end,function(d,_)return function()local l,i,h,k,a,f,g,e,c c=0xc1 repeat if c<0x8b then return elseif c<=0x8b then g,k=_[0b100][0b10][_[0b100][1]],_[0b10][0b10][_[0b10][1]]g=g+k _[0b100][0b10][_[0b100][1]],h,f,g=g,math,"Writing to File ",_[0b11][0b10][_[0b11][1]]i,e,a=h.round,_[1][0b10][_[1][1]],_[0b100][0b10][_[0b100][1]]a,h=0x64,a/e h=h*a i=i(h)h="%"l=i..h e,h,f,k,l,i=table,_[0b101][0b10][_[0b101][1]],nil,f..l,false,_[0b110][0b10][_[0b110][1]]e,a=_[0b111][0b10][_[0b111][1]],e.concat a=d.h(a(e))g(k,f,l,i,h,d.i(a))k=table g,k=k.clear,_[0b111][0b10][_[0b111][1]]g(k)g=0 _[0b10][0b10][_[0b10][1]],k=g,task g=k.wait g()return else k,g=0,_[0b10][0b10][_[0b10][1]]c=g==k and 0x2e or 0b10001011 end until false end end,function(d,_)return function(g)local e,f,b f=_[1][0b10][_[1][1]]b,e,f=g.Max,f._packF32,g.Min e=d.h(e(f,b))return d.i(e)end end,function(d,_)return function()local g,b,c,k,e,f,a,h,i c=0x8a while true do if c>=0b10100101 then if c<0b11000001 then if c>0xa5 then i=task i,b=g.timeoutThread,i.cancel c=0x55c8/c b(i)b=g.thread else h=task i=h.wait c=c+-0b101101 i()end elseif c>0xdd then k=_[0b10][0b10][_[0b10][1]]g=not k c=g and 0x6a or 0b11011101 elseif c>0b11000001 then k,g=nil,_[0b10][0b10][_[0b10][1]]i,f,_[0b10][0b10][_[0b10][1]],b,k=g.args,_[1][0b10][_[1][1]],k,unpack,pcall b=d.h(b(i))k,f=k(f,d.i(b))b=g.isCancelled c=b and 0b11100100-c or 0x9dfb/c else h=coroutine a,e,h,i=k,f,b,h.resume c=c+0x30 i(h,a,e)end elseif c>=0x78 then if c<=0b1111000 then h=coroutine h,i=b,h.status i=i(h)h="suspended"c=i~=h and c+0x2d or 0b100111001-c else c=0xf1 end elseif c<=0b111 then return else k=task c,g=c+0b10000111,k.wait g()end end end end,function(d,_)return function(g)local h,a,j,c,k,f,l,e,i c=0b11000000 while true do if c<=0xc0 then if c>0x36 then k,f=g.GetChildren,g k=k(f)f=_[0b10][0b10][_[0b10][1]]f[g]=k f,i,l=k,nil,nil f,l,i=d.g(f,l,i)h,a=f(l,i)i=h c=i==nil and 0x36 or 0x31 elseif c>0x31 then return else e,j=_[1][0b10][_[1][1]],a c=0x25b5/c e(j)end else h,a=f(l,i)i=h c=i==nil and 0b110110 or 0b110001 end end end end,function(d)return function(g)local c,n,k,i,j,q,p,l,_,f,b,m,a,e c=0b1010011 while true do if c>0b1010011 then if c>0xe6 then p,b=q(a,e)e=p c=e==nil and 0b100 or 0b11100110 elseif c<=0x61 then if c<=0b1011111 then p=1 k=k+p c,f[k]=c+-0x3f,a else l,k={},0 l,f,i,q=g,l,nil,nil l,i,q=d.g(l,i,q)a=l(i,q)q=a c=q==nil and 0b1000010 or 0b1011111 end else n=buffer j,_,m,n=n.writef32,i,b,l j(n,_,m)c,j=0xf5,0b100 n,i=buffer,i+j j,m,_,n=n.writef32,g[b],i,l j(n,_,m)j=0b100 i=i+j end elseif c>=0x23 then if c>=0x42 then if c>0b1000010 then l,f=g,next f=f(l)k=not f c=k and 0x23 or 0b1100001 else i=table l,i=i.sort,f l(i)i=buffer i,l,a=1,i.create,0b1000 q=k*a i=i+q l=l(i)q,i,e,a=f,1,nil,nil q,a,e=d.g(q,a,e)p,b=q(a,e)e=p c=e==nil and 0x46-c or 0x3b4c/c end else k="\0"return k end elseif c<=0b100 then a=buffer q,a=a.tostring,l q=d.h(q(a))return d.i(q)else a=l(i,q)q=a c=q==nil and 0b1000010 or 0xbe0/c end end end end,function(d,_)return function(g)local e,b,f,a e,b,a,f=_[0b10][0b10][_[0b10][1]],0,g,_[0b100][0b10][_[0b100][1]]e(f,b,a)e,a,f,b=_[0b11][0b10][_[0b11][1]],0,_[1][0b10][_[1][1]],_[0b100][0b10][_[0b100][1]]f=f(b,a)b=1 e=d.h(e(f,b))return d.i(e)end end,function(d)return function(g)local h,i,b,j,f,c c=0b11101000 while true do if c>0x56 then if c>0b1011011 then f=buffer f,j=0b10101,f.create j=j(f)b=buffer i,f,h,b=0,b.writef32,g.Time,j f(b,i,h)b=buffer b,i,f,h=j,0b100,b.writef32,g.DelayTime f(b,i,h)b=buffer f,h,b,i=b.writei32,g.RepeatCount,j,0b1000 f(b,i,h)b=buffer f,i,b,h=b.writeu32,0b1100,j,g.EasingStyle h=h.Value f(b,i,h)b=buffer i,h,b,f=0x10,g.EasingDirection,j,b.writeu32 h=h.Value f(b,i,h)b=buffer h,b,i,f=g.Reverses,j,0x14,b.writeu8 c=h and 0b100 or 0b1000 else c,h=0x56,0 end elseif c<=0b1000 then if c<=0b100 then c,h=0b1000,1 else c=h and 0b1011110-c or 0x2d8/c end else f(b,i,h)f,b=j,0x15 return f,b end end end end,function(d,_)return function(g,k,f)local i,e,h,m,b,a,l,c c=0xc3 repeat if c<0xa9 then if c<=0b1010000 then if c<=0b10000 then h,c,i=0b10,0b10101001,_[0b10][0b10][_[0b10][1]]l=i*h else h,b,a,m=_[1][0b10][_[1][1]],0b10,i,_[0b10][0b10][_[0b10][1]]c,e,m=0b11011101,m*b,f h(a,e,m)end else h,c,i=0b11,c+0xa1,_[0b10][0b10][_[0b10][1]]l=i*h end elseif c>=0xdd then if c<=0b11011101 then a,h=l,i return h,a else c=l and 0b10101001 or c+-0b11101000 end elseif c<=0xa9 then h=buffer i,h=h.create,l i=i(h)e,m,h,a=0,g,_[1][0b10][_[1][1]],i h(a,e,m)a,e,m=i,_[0b10][0b10][_[0b10][1]],k h(a,e,m)c=f and c+-0x59 or 0xdd else l=f c=l and 0b1010111 or 0b11111000 end until false end end,function(r,o)return function(g)local d,m,f,k,u,c,j,_,i,p,b,w,h,v,s,q,e,l,t,n c=0b1100 repeat if c>0x44 then if c>=0x91 then if c<=0b10010001 then l="\1\0"return l else w,i,l,s=nil,t,0b10,nil i,s,w=r.g(i,s,w)e,v=i(s,w)w=e c=w==nil and c+-0b1011111 or 0x79 end elseif c<=0x4e then s=buffer s,i=l,s.create i=i(s)w=buffer w,e,v,s=i,0,1,w.writeu8 s(w,e,v)w=buffer e,v,w,s=1,f,i,w.writeu8 s(w,e,v)w=o[1][0b10][o[1][1]]v,w,s,b,e=nil,0b10,w.int32,nil,t e,v,b=r.g(e,v,b)j,n=e(v,b)b=j c=b==nil and 0x18 or 0b10001 else c,_,j=0b10110100-c,v.name,0b111 n=#_ b=j+n l=l+b end elseif c>=0x18 then if c>=0b111011 then if c<=0b111011 then e,v=i(s,w)w=e c=w==nil and 0b1001110 or c+0b111110 else j,n=e(v,b)b=j c=b==nil and 0b11000 or 0b1010101-c end else v=buffer e,v=v.tostring,i e=r.h(e(v))return r.i(e)end elseif c>0b1100 then _,d=n.name,1 m,k,d,h=j-d,buffer,#_,n.mask p,u,q,k=m,k.writeu8,w,i u(k,q,p)u=1 w,k=w+u,buffer q,p,k,u=w,s,i,k.writeu8 u(k,q,p)c,u=0x44,1 k,w=buffer,w+u k,p,u,q=i,h,k.writei32,w u(k,q,p)u=0b100 w,k=w+u,buffer q,p,k,u=w,d,i,k.writeu8 u(k,q,p)u=1 w,k=w+u,buffer p,u,k,q=_,k.writestring,i,w u(k,q,p)w=w+d else t,l=game,"PhysicsService"t,f=t.GetService,t t=t(f,l)t,f=t.GetRegisteredCollisionGroups,t t=t(f)l,f=0,#t c=f==l and 0x91 or 0xad end until false end end,function(d,_)return function()local a,e e=_[1][0b10][_[1][1]]a=e.RunService a,e=a.GetRobloxVersion,a a=a(e)_[0b10][0b10][_[0b10][1]]=a return end end,function(d,_)return function()local f,a,c,e,h,k,l,g,i c=0x4f while true do if c>0x4f then f,g,i,k="ussi_cache/GHP_STATE.json",pcall,_[0b100][0b10][_[0b100][1]],_[0b10][0b10][_[0b10][1]]e,h,l,a=_[1][0b10][_[1][1]],{},i.HttpService,_[0b11][0b10][_[0b11][1]]h[a]=e l,i=l.JSONEncode,l l=d.h(l(i,h))g(k,f,d.i(l))return elseif c<=0x44 then return else k=_[0b10][0b10][_[0b10][1]]g=not k c=g and 0x44 or 0xc8 end end end end,function(d,_)return function(g)local h,j,i,f,b,a f=g.CFrame j,b,i=f.Position,g.Size,0.5 f,i=b*i,_[1][0b10][_[1][1]]b,h=i._packMultiple,i h,a,i=j-f,j+f,h.Vector3 b=d.h(b(i,h,a))return d.i(b)end end,function(d,o)return function(g)local l,k,j,n,c,b,h,e,p,i,f,a c=0b10010110 repeat if c<0xba then if c<=0x92 then h,a=f(l,i)i=h c=i==nil and 0x6a14/c or 0xc6 else f={}l,i,f,k=g,false,g.GetAccessories,f f,l,i=f(l,i)f,l,i=d.g(f,l,i)h,a=f(l,i)i=h c=i==nil and 0b10111010 or 0xc6 end elseif c<=0xba then l=o[1][0b10][o[1][1]]i,f=k,l.HttpService f,l=f.JSONEncode,f f=d.h(f(l,i))return d.i(f)else p=table p,b,j,e=k,{},a.AssetId,p.insert b.AssetId=j j=a.Order b.Order=j n=a.AccessoryType c,j=0b101011000-c,n.Name b.AccessoryType=j j=a.Puffiness b.Puffiness=j e(p,b)end until false end end,function(d)return function(g)local f,e,i,b,c c=0b11100010 while true do if c>=0x37 then if c>0b1101110 then f=0 e=g<f c=e and 0b110111 or 0x6e elseif c<=0x37 then i,b=-g,0b10 f,b=b*i,1 c,e=0b10100101-c,f-b else c=e and 0b10 or 0b100000 end elseif c<=0b10 then return e else f=0b10 c,e=0b10,f*g end end end end,function(d,o)return function(g,k,f)local j,l,a,e,h,c,i,b,n,p c=0x3c while true do if c>0x62 then if c>0b1111111 then p,c,n,a,i="[",c+-0x34,"] ",{},{}j=n..k b=f..j e=p..b a.Name=e h=a i.Properties=h i,l=o[1][0b10][o[1][1]],i i[g]=l else return l end elseif c>=0x3c then if c>0x3c then return l else i=o[1][0b10][o[1][1]]l=i[g]c=l and 0x7f or 0b1011 end else c=k~=f and 0x96 or 0b1101101-c end end end end,function(d,_)return function(g)local f,b,a,e e,b,f,a=_[0b10][0b10][_[0b10][1]],_[1][0b10][_[1][1]],g,_[0b11][0b10][_[0b11][1]]e=d.h(e(f,b,a))return d.i(e)end end,function(r,M)return function(g)local u,o,D,l,P,J,I,h,z,c,T,y,x,V,v,s,f,R,n,_,j,w,K,d,q,t,k,i,Q,a,A,b,E,O,m,B,N,p,C,S,L,e,G f,t=g,g.GetComponents t,f,l,B,L,w,e,v,b,z,n,T=t(f)u=M[1][0b10][M[1][1]]u,N,Q,E=t,u._vector,l,f N=N(u,E,Q)_,s,C,R,o,c,E,G,p,K="</R22>","</R12><R20>","</R10><R11>","</R21><R22>","</R11><R12>","</R02><R10>","<R00>","</R00><R01>","</R20><R21>","</R01><R02>"a=T.._ q=R..a i=n..q d=p..i y=z..d V=s..y j=b..V J=o..j D=v..J k=C..D x=e..k P=c..x I=w..P A=K..I S=L..A O=G..S Q=B..O u=E..Q h,m="CoordinateFrame",N..u return m,h end end,function(d,_)return function(a)local e,f a={[1]=0b11,[0b11]=a}a[0b10]=a f,e=d:af{a,_[0b10],_[1]},pcall e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local f,e f,e=0,_[1][0b10][_[1][1]]return e,f end end,function(d,_)return function()local h,b,a,g,k,i,f k=task g,f=k.delay,math a,b,k=os,0b101,f.clamp h=a.clock h=h()a=_[0b10][0b10][_[0b10][1]]i=h-a b,i,f=0,0b101,b-i k=k(f,b,i)i=_[1][0b10][_[1][1]]b=i.GuiService b,f=i,b.ClearError b=b.GuiService g(k,f,b)k=i f,g=true,k.RunService g,k=g.Set3dRenderingEnabled,g g(k,f)return end end,function(d,_)return function()local a a=version a=a()_[1][0b10][_[1][1]]=a return end end,function(r,o)return function(g,t,f)local u,v,c,i,a,h,d,_,e,l,n,j,q,b,s,k,m c=0b10110111 repeat if c>0xb7 then return elseif c<=0x84 then if c<=0x73 then i=i+a c=(a>0 and i>s or a<=0 and i<s or a~=a)and 0x5a4b/c or 0xf7-c else e,j=t[i],1 b=i-j j,v=string,l+b n,j,b,_="%-",e,j.gsub,""b=b(j,n,_)n,j,_,m=o[1][0b10][o[1][1]],o[0b10][0b10][o[0b10][1]],b,1 n=n(_,m)h,m,_=0b1001,b,o[1][0b10][o[1][1]]_=r.h(_(m,h))j,n=j(n,r.i(_))d,k,m,h,u,q,_=f,b,g,v,o[1][0b10][o[1][1]],0x19,o[0b11][0b10][o[0b11][1]]u=r.h(u(k,q))_(m,h,d,r.i(u))_,m,u=o[0b11][0b10][o[0b11][1]],g,0b100 d=u*f h,q,d,u,k=v+d,0x11,f,o[1][0b10][o[1][1]],b u=r.h(u(k,q))_(m,h,d,r.i(u))u,m,_=0b1000,g,o[0b11][0b10][o[0b11][1]]d=u*f h,d,u=v+d,f,j _(m,h,d,u)u,m=0b1100,g d=u*f u,h,c,d=n,v+d,0b11110111-c,f _(m,h,d,u)end else s=0b10000 l,i,s=g.allocRegion,g,s*f l=l(i,s)i,s=1,f a=i c=(s~=s or(a>0 and i>s or(a<=0 or a~=a)and i<s))and 0b11001001 or 0b10000100 end until false end end,function(r,o)return function(g)local l,n,a,e,m,t,i,_,f,s,p,d,j,b,h,c c=0b1001110 repeat if c>0x56 then if c<=0xfd then if c>=0xf8 then if c<=0b11111000 then _(m,h,d)m=buffer _,d,m,h=m.writeu8,j,e,0b10 c=d and 0b101000111-c or 0x27b8/c else c=d and 0xf518/c or 0xfe end else c,d=0x1ec-c,b.Value end else c,d=c+-0b110,0 end elseif c>0b1001110 then if c<=0b1001111 then c,d=0xca7/c,n.Value else _(m,h,d)m=buffer m,_,h,d=e,m.copy,0b11,f _(m,h,d)m=buffer d,m,_=0b11,e,m.copy h,d=d+l,i _(m,h,d)_,m=e,a return _,m end elseif c>=0x45 then if c>0b1000101 then f=o[0b10][0b10][o[0b10][1]]t=f.string l,f=g.Family,t f,l=f(l)i,s=t,""i,s=i(s)p=0b11 e=p+l p,a=buffer,e+s p,e=a,p.create e=e(p)j,p,b,n=g,pcall,o[1][0b10][o[1][1]],"Weight"p,b=p(b,j,n)_,n,m,j=g,o[1][0b10][o[1][1]],"Style",pcall j,n=j(n,_,m)m=buffer _,d,h,m=m.writeu16,p,0,e c=d and 0b11101111 or 0b11111101 else c,d=0x172e/c,0 end else c=d and 0b1010110 or 0x6e-c end until false end end,function(d)return function(a)local e a={[1]=0b11,[0b11]=a}a[0b10]=a e=d:bg{a}return e end end,function(d)return function(g,e)local b,f,c c=0b1001010 while true do if c>=0xa6 then if c<=0b10100110 then return f else c,b=0x77f6/c,"Class"f=g==b end else b=nil f=e~=b c=f and 0b10100110 or 0xb9 end end end end,function(r)return function(g)local l,b,p,k,m,q,e,i,h,a,_,n,j,f,c c=0b11001001 repeat if c<0xb0 then if c>=0b1110110 then if c<0b10010001 then q,i,l,a=nil,k,0b1000,nil i,q,a=r.g(i,q,a)e,p=i(q,a)a=e c=a==nil and 0b11000001 or 0x42d6/c elseif c<=0x91 then n,j=#p,0b100 c,b=0x40,j+n l=l+b else l="\1\0\0\0\0\0\0\0"return l end elseif c>0x40 then b,j=a(e,p)p=b c=p==nil and 0xf0 or 0xef elseif c>0x1a then e,p=i(q,a)a=e c=a==nil and 0x101-c or 0x91 else c,_=0xe7-c,buffer h,m,_,n=j,q,i,_.writestring n(_,m,h)n=#j q=q+n end elseif c<=0xcd then if c<0b11001001 then if c<=0b10110000 then e=buffer e,a=i,e.tostring a=r.h(a(e))return r.i(a)else q=buffer q,i=l,q.create i=i(q)a=buffer q,e,p,a=a.writeu32,0,1,i q(a,e,p)a=buffer p,a,q,e=f,i,a.writeu32,0b100 q(a,e,p)e,p,q,a=nil,nil,0b1000,k a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0xb4f0/c or 0b11101111 end elseif c>0b11001001 then b,j=a(e,p)p=b c=p==nil and 0xb0 or 0x1a else f,k=g,g.GetNames k=k(f)f,l=#k,0 c=f==l and 0xae or 0x76 end elseif c>0b11101111 then p,e,a=nil,nil,k a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and c+-0b1000000 or 0x1a else _=buffer c,h,n,m,_=0b1011001,#j,_.writeu32,q,i n(_,m,h)n=0b100 q=q+n end until false end end,function(d,_)return function(a)local e,f e,f=_[1][0b10][_[1][1]],a.Guid e=d.h(e(f))return d.i(e)end end,function(d)return function(g)local b,f,h,e,a,k,i f=bit32 b,k=f,f.bor f,i,b=b.lshift,0x18,g f=f(b,i)i=bit32 b,h=i.band,i i,a,h=h.lshift,0b1000,g i=i(h,a)h=0xff0000 b=b(i,h)h=bit32 a,i=h,h.band h,a,e=a.rshift,g,0b1000 h=h(a,e)a=0xff00 i=i(h,a)a=bit32 a,e,h=g,0x18,a.rshift h=d.h(h(a,e))k=d.h(k(f,b,i,d.i(h)))return d.i(k)end end,function(d,_)return function(g)local f,k,l,h,c,e,m,i,a c=0xc1 while true do if c>0x9d then if c<0b11000001 then if c<0b10101011 then if c<=0b10100000 then if c<=0b10011110 then c,k=0x91a8/c,nil else i=_[0b110][0b10][_[0b110][1]]c=i and c+-0b11 or 0b110010 end else c,e=0b1010,""end elseif c<0b10111001 then if c>0xab then f,i,l=nil,g,_[0b100][0b10][_[0b100][1]]l,i=l(i)l,f,k=nil,l,i c=f and 0b11011100-c or 0x9e else h=_[0b10][0b10][_[0b10][1]]c=h and 0x40cb/c or 0b1011000 end elseif c<=0xb9 then f=_[0b110][0b10][_[0b110][1]]c=f and 0x3d or 0x32 else h=_[0b11][0b10][_[0b11][1]]h[k]=i h=_[1][0b10][_[1][1]]c=h and 0b110001011-c or 0x25 end elseif c>=0xdd then if c>0xec then h=""c,i=c+-0xdd,k==h elseif c>=0xe2 then if c>0xe2 then c=l and c+-0xcc or 0b10100000 else a=string e,m,h,a="\0","\\0",a.gsub,l h=h(a,e,m)l=h c,i=0b110001101-c,l end else h,a,e,i="Found in Cache",g.GetFullName,g,_[1][0b10][_[1][1]]a=d.h(a(e))c=0 i(h,d.i(a))end elseif c>0b11001101 then i=nil c=f and 0xe2 or 0x8d elseif c<=0xc1 then k,f=nil,_[0b10][0b10][_[0b10][1]]c=f and 0xb8 or 0xb9 else e,h,a,m=g.GetFullName,_[1][0b10][_[1][1]],"Cached",g c,e=0b100101,d.h(e(m))h(a,d.i(e))end elseif c<0b110010 then if c>0b100000 then if c>0b100100 then return i elseif c>0b100001 then i=not k c=i and 0x4a4/c or 0x23b8/c else c=i and 0b1110111 or 0x5c end elseif c<0b1010 then if c<=0 then return l else f,c,l=false,0x6e0/c,"Empty Output"end elseif c<=0b1010 then m="\n]]"c,a=0x6ae/c,e..m i=h..a else i=_[1][0b10][_[1][1]]c=i and c+0xbd or 0/c end elseif c>0x61 then if c<=0b10001101 then if c<=0b1110111 then i="-- The Script is Empty"return i else e,h=l,"--[[ Failed to decompile. Reason:\n"c=e and 0b10010111-c or 0xa9 end else i="-- Not found in already decompiled ScriptCache"return i end elseif c<0x58 then if c<=0x32 then h,i,f=g.Name,"Decompiling ",_[0b101][0b10][_[0b101][1]]e,i,l,a,h=g,true,i..h,_[0b111][0b10][_[0b111][1]],nil f,l=f(l,i,h,a,e)i=not l c=i and 0b1000 or 0xdc else f="-- Not found in already decompiled ScriptCache"return f end elseif c<0b1011100 then c=h and 0b10111110 or c+-0x33 elseif c>0b1011100 then c,h=0x58,k else i=_[0b11][0b10][_[0b11][1]]c,l=0b11101100,i[k]end end end end,function(r,y)return function(g)local B,_,q,z,G,a,x,C,l,e,E,f,t,d,b,k,w,A,o,F,i,c,n,m,s,h,j,p,u,v F=0b1001001 repeat if F<=0xc2 then if F>0b10000101 then v,b=s(w,e)e=v F=e==nil and 0x3c or 0x1ae-F elseif F>=0b1001001 then if F>0b1001001 then l=buffer s,l,f=0x30,0b1000,l.create B=t*s l=l+B f=f(l)B=buffer l,w,s,B=B.writeu32,1,0,f l(B,s,w)B=buffer s,l,B,w=0b100,B.writeu32,f,t l(B,s,w)B=y[1][0b10][y[1][1]]B,s,e,l,w=0b1000,g,nil,B._packF32,nil s,w,e=r.g(s,w,e)v,b=s(w,e)e=v F=e==nil and 0b111100 or 0b101110001-F else f,t=0,#g F=t==f and 0xd5 or 0x85 end else w=buffer w,s=f,w.tostring s=r.h(s(w))return r.i(s)end elseif F>0b11010101 then z,n=b.GetComponents,b z,n,_,m,h,d,u,E,q,p,G,a=z(n)j,o,i,A=m,h,d,l F,A=0xc2,A(j,o,i)o=buffer j,o,c,i=o.copy,f,A,B j(o,i,c)j=0b1100 j,o,i,c,B=l,u,E,q,B+j j=j(o,i,c)i=buffer o,c,i,x=i.copy,B,f,j o(i,c,x)o=0b1100 i,B,o,x,c=p,B+o,l,a,G o=o(i,c,x)c=buffer k,c,x,i=o,f,B,c.copy i(c,x,k)i=0b1100 x,k,B,i,c=n,_,B+i,l,z i=i(c,x,k)x=buffer c,C,x,k=x.copy,i,f,B c(x,k,C)c=0b1100 B=B+c else f="\1\0\0\0\0\0\0\0"return f end until false end end,function(d)return function(g)local i,c,h,f,e,b c=0xfe while true do if c>0xb7 then if c>0xbc then f=buffer e,f=f.create,1 e=e(f)b=buffer b,i,f,h=e,0,b.writeu8,g c=h and 0b101111 or 0xbc else c=h and 0b110111 or 0b10110111 end elseif c>=0b110111 then if c>0b110111 then c,h=c+-0b10000000,0 else f(b,i,h)b,f=1,e return f,b end else c,h=0xeb-c,1 end end end end,function(r,o)return function(g,t,f,l)local i,e,s,d,k,h,v,b,n,p,_,u,j,w,q,m,x,c c=0x75 repeat if c<0xa2 then if c<0b1110101 then if c<=0b1001100 then _,n=v,l n=n(_)_=e c=_ and 0b10000101 or 0b11101110-c else c,_=0xb6,n end elseif c>0x75 then c,_=0xa2,n-e else i,w=g.buf,bit32 s,e=w.rshift,buffer b,e,w,v=t,nil,e.writeu8,1 j=v c=(b~=b or(j>0 and v>b or(j<=0 or j~=j)and v<b))and 0b11010001 or 0b1001100 end elseif c<0b11010001 then if c>0xa2 then c,h,m,e=0b11100000,_,o[1][0b10][o[1][1]],n m=m(h)u=1 d=v-u h,d,u=f+d,w,i k,x,q,p=h,0b11000,s,m q=r.h(q(p,x))d(u,k,r.i(q))k,q,u,p,d,x=h+t,s,i,m,w,0b10000 q=r.h(q(p,x))d(u,k,r.i(q))p,d,u=0b10,w,i q=p*t q,k,p,x=s,h+q,m,0b1000 q=r.h(q(p,x))d(u,k,r.i(q))p,d,u=0b11,w,i q=p*t k,q=h+q,m d(u,k,q)else c=_ and 0b10110110 or 0b100010001-c end elseif c>0xd1 then v=v+j c=(j>0 and v>b or j<=0 and v<b or j~=j)and 0b110110001-c or 0x4c else return end until false end end,function(d)return function(g,k)local f,b,i,h,a f,i=tonumber,string a,h,i,b=0b111,k,g,i.sub a=k+a b=b(i,h,a)i=0x10 f=d.h(f(b,i))return d.i(f)end end,function(d,_)return function(a)local f,e f,e=a,_[1][0b10][_[1][1]]e(f)return end end,function(d,_)return function(g)local e,b,f,a f=_[1][0b10][_[1][1]]e,b=f._packMultiple,f f,a,b=b.Vector3int16,g.Max,g.Min e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function(g)local b,f,c,a,e c=0xb5 repeat if c>0xb5 then f=""return f elseif c>0b1011 then f,e=g,g.GetAttributes e=e(f)b,a=next,e b=b(a)f=not b c=f and 0b11110000 or 0b1011 else b,f=e,_[1][0b10][_[1][1]]f=d.h(f(b))return d.i(f)end until false end end,function(d,_)return function(g)local c,e,f c=0x82 while true do if c>0x82 then if c<=0b10001101 then return e else c,e=0x8d,g end elseif c>=0b1110001 then if c<=0x71 then c=e and 0x8d or 0b11101110 else f=_[0b10][0b10][_[0b10][1]]e=g==f c=e and 0x16 or 0b1110001 end else c,e=0x9b6/c,_[1][0b10][_[1][1]]end end end end,function(r)return function(g)local l,h,c,k,j,f,m,a,_,n,i,e,s,p,b c=0xb9 while true do if c>0x97 then if c<=0b10110000 then return f else k,f=g.GetEquippedEmotes,g k=k(f)l,f=0,#k c=f==l and 0x97 or 0b1011 end elseif c>=0b111110 then if c>0b111110 then f=""return f else h,m,b,n="\\",e.Name,e.Slot,"^"_=m..h j=n.._ p=b..j c,f=0x24,f..p end elseif c>0b1011 then a,e=l(i,s)s=a c=s==nil and 0x18c0/c or 0x62-c else f,l,s,i="",k,nil,nil l,i,s=r.g(l,i,s)a,e=l(i,s)s=a c=s==nil and 0xb0 or 0x3e end end end end,function(r,o)return function(g,t)local p,c,e,i,j,w,k,u,q,f,_,v,m,d,h,s,b,l,n c=0b1110110 while true do if c<=0b1111000 then if c>0x44 then if c>0x5e then if c<0b1101100 then if c<0b1100100 then if c<=0b1100001 then c=s and 0x42 or 0b10000 else c,h=0xd66/c,not d end elseif c>=0b1101001 then if c>0b1101001 then v="ProtectedString"e=l==v c=e and c+-0x30 or c+0b1101100 else m=not h c=m and 0 or c+0b111101 end else c,w=c+-0x48,_ end elseif c<=0b1110101 then if c>0b1110011 then _=o[0b1000][0b10][o[0b1000][1]]return _ elseif c<=0b1110010 then if c>0x6c then u,p,q,k,d=_,b,v,t,o[0b1111][0b10][o[0b1111][1]]c,d=c+0x1d,d(u,k,q,p)d=not d else n,_,h,m=pcall,o[0b1001][0b10][o[0b1001][1]],f,g n,_=n(_,m,h)c=n and 0x2a30/c or 0xbd0/c end else c,w=0b1110,o[0b1000][0b10][o[0b1000][1]]end elseif c<=0b1110110 then i,e,s,v,f,l=t.CanRead,o[0b10][0b10][o[0b10][1]],t.Special,nil,t.Name,t.ValueType w=e==v c=w and 0b10001000 or 0b10110010 else c=_ and 0x83 or c+-0x1f end elseif c>=0b1010101 then if c<=0b1011011 then if c>=0b1011001 then if c<=0x59 then j=true c,h=0xf1,j t.GHPFFailed=h else n=o[0b1001][0b10][o[0b1001][1]]c=n and 0x2a or 0b10001101 end elseif c>0b1010101 then c,j=0x61,l else c=_ and 0x1d or 0b1111100 end elseif c<=0b1011101 then c=h and c+-0x14 or c+0b11011 else c=j and 0b10111111-c or 0x57 end elseif c<0x4e then if c>0b1001001 then c,n=c+0b10010011,o[0b11][0b10][o[0b11][1]]elseif c<=0b1000110 then c=m and 0b1111 or 0x71-c else c,_=0x78,nil end elseif c<0b1001111 then _=not j c=_ and 0b10100001 or c+0xa3 elseif c<=0b1001111 then c=v and 0xf9 or c+0x99 else c,w=0b1110,o[0b1000][0b10][o[0b1000][1]]end elseif c>=0x26 then if c<0b110011 then if c<=0b101011 then if c<0b101010 then if c<=0x26 then c,k=0xb9,not h else c=w and 0x97 or 0x21f9/c end elseif c<=0b101010 then c,_,n=0x8d,j,o[0b101][0b10][o[0b101][1]]n=n(_)else t.CanRead=n m=not n c=m and 0x18b1/c or 0xe3 end elseif c>0b101100 then m,h=o[0b101][0b10][o[0b101][1]],j c,m=0xc94/c,m(h)else b,v,j=t.Optional,t.Category,false c=i~=j and c+0xb5 or 0x8b end elseif c<0x42 then if c>=0x3a then if c<=0b111010 then c,v=c+0b10011100,"Source"e=f==v else c,u,k,d=0xb3,"Filtered",f,o[0b1100][0b10][o[0b1100][1]]d(u,k)end else j,n,_=o[0b1101][0b10][o[0b1101][1]],b,l j=j(n,_)return j end elseif c>=0x43 then if c>0b1000011 then c=w and 0b11100001-c or c+0b111100 else b="ProtectedString"v=l==b c=v and 0b101 or 0x4f end else n=t.Shadows c=n and 0x4a or c+0x9b end elseif c>0b10000 then if c>0x1d then if c<=0x23 then k,d,u=n,o[1][0b10][o[1][1]],j c=k and 0x532/c or 0b11011100-c else v,j,b=o[0b1110][0b10][o[0b1110][1]],o[0b1011][0b10][o[0b1011][1]],g j=j[g]v=v(b,j)return v end elseif c<0x1c then h=nil t.Fallback=h h=o[0b1100][0b10][o[0b1100][1]]c=h and 0b11101111-c or c+0b1100100 elseif c>0b11100 then _,m,h=pcall,n,g _,m=_(m,h)c=_ and 0x1926/c or 0b11000 else h,m,k,u,d=w,o[0b1111][0b10][o[0b1111][1]],b,v,t m=m(h,d,u,k)h=m c=h and 0b10010110 or 0x3f-c end elseif c<=0b1010 then if c<=0b1001 then if c>0b101 then c,w,m=0b101011,_,true t.Special=m elseif c<=0 then c,m=0xa6,o[0b1001][0b10][o[0b1001][1]]else b="Source"c,v=0x4f,f==b end else n=false c,t.CanRead=0b11000-c,n end elseif c<0b1111 then n=o[0b1000][0b10][o[0b1000][1]]c=w~=n and c+0x87 or 0x99-c elseif c>0b1111 then c=i and 0xbc0/c or 0x85 else m,d,h,u=pcall,g,o[0b1001][0b10][o[0b1001][1]],f m,h=m(h,d,u)m,_,n,h=o[1][0b10][o[1][1]],h,m,j d=n c=d and 0x6ae/c or 0b10011110-c end elseif c>=0b10111001 then if c>0xdf then if c<=0b11110001 then if c<=0xed then if c>0xe8 then c,w=c+-0xc2,_ elseif c<=0xe3 then if c>0b11100001 then u,m,c,d,k,h=v,o[0b1111][0b10][o[0b1111][1]],c+-0x50,t,b,w m=m(h,d,u,k)else n="Enum"j=v==n c=j and 0xc2 or 0xf3 end else c=v and 0x2188/c or c+-0b10111100 end elseif c<=0xf0 then k,d,c,u=b,o[0b1010][0b10][o[0b1010][1]],c+-0b10001110,v d=d(u,k)else _=j c=_ and 0xe6a5/c or 0x55 end elseif c>0b11110111 then if c>0b11111001 then j,b=nil,v[f]c=b~=j and 0b110011 or 0b1000011 else b,v=g,o[0b110][0b10][o[0b110][1]]c,v=0b11101000,v(b)end elseif c<0b11110101 then n="Class"c,j=0b11000010,v==n elseif c>0xf5 then c=_ and 0x75 or 0b1001110 else c,_=c+-0xa0,n end elseif c>=0b11010110 then if c>=0xdd then if c>=0b11011110 then if c>0b11011110 then c=w and c+-0b1110101 or 0x44 else d,h,u=m,o[0b1101][0b10][o[0b1101][1]],l h=h(d,u)return h end else c=n and 0x8a2/c or 0b1011011 end elseif c>=0b11010111 then if c>0b11010111 then c,_=c+0b11100,not n else h,k,u,d=o[0b1100][0b10][o[0b1100][1]],m,f,"Fix Failed"c=0x7c h(d,u,k)end else c,w=0b100011010-c,not e end elseif c>0xc6 then if c>0xcf then h=t.Shadows c=h and 0xac3b/c or 0b1101001 else c,h=0b100111000-c,o[0b11][0b10][o[0b11][1]]end elseif c>=0b11000010 then if c>0b11000010 then v=e.Properties c=v and 0x1c3-c or 0x43 else c=j and 0x603e/c or 0b100100000-c end elseif c<=0xb9 then d(u,k)c=m and 0x5a55/c or 0b1110 else c,w=0b11001010-c,g[f]end elseif c>0b10010101 then if c>0b10110001 then if c<0b10110100 then if c>0b10110010 then d=false c,t.CanRead=0b1010010,d else c=w and 0x163-c or 0b11011001-c end elseif c>0b10110100 then d=o[0b1100][0b10][o[0b1100][1]]c=d and 0x2eb8/c or 0xb3 else d,k,u=o[0b1010][0b10][o[0b1010][1]],b,v d=d(u,k)c,h=0b1011101,not d end elseif c<=0b10100001 then if c<0x9d then if c<=0x96 then u=nil d=_==u c=d and 0b11110000 or c+-0x34 else c,w=0x176-c,not s end elseif c<=0b10011101 then w=g[f]return w else m,h,_,d=o[0x10][0b10][o[0b10000][1]],g,pcall,f _,m=_(m,h,d)d=nil h=m==d c=h and 0xb4 or 0x3a7d/c end elseif c<=0b10100110 then c=m and 0x1dd4/c or 0xec-c else c,e=c+-0b10001010,true w=i==e end elseif c<=0b10001000 then if c<0b10000000 then if c<0b1111101 then _=o[0b1000][0b10][o[0b1000][1]]return _ elseif c>0b1111101 then c,j=0b1011110,v else c=h and 0b100110101-c or 0b1010010 end elseif c<0x85 then if c<=0b10000000 then w,v=o[0b1000][0b10][o[0b1000][1]],o[0b100][0b10][o[0b100][1]]e=v[g]c=e and 0b11000110 or 0x43 else d,h,u=m,o[0b1101][0b10][o[0b1101][1]],l h=h(d,u)return h end elseif c<=0x85 then n,h,m,_=pcall,f,g,o[0b111][0b10][o[0b111][1]]n,_=n(_,m,h)c=n and 0b11101101 or 0b11010101 else v=o[0b100][0b10][o[0b100][1]]c,v,e=0xb2,nil,v[g]w=e==v end elseif c<0x8f then if c<=0x8b then n,j=t.Fallback,t.GHPFFailed _=j c=_ and 0b11011011 or 0xf7 else c=n and c+-0x21 or 0b1110 end elseif c<=0b10010011 then if c>0x8f then c=m and 0x106-c or c+-0b10000101 else m(h,d)c=n and 0x98-c or 0xba-c end else n,_,m=o[0b1101][0b10][o[0b1101][1]],w,l n=n(_,m)return n end end end end,function(d,_)return function(g)local e,b,a,f,c c=0x71 repeat if c<0x75 then e,f=g.GetConditions,g e=e(f)b,a=next,e b=b(a)f=not b c=f and 0b10011011 or 0x75 elseif c<=0b1110101 then b,f=e,_[1][0b10][_[1][1]]f=d.h(f(b))return d.i(f)else f="\0\0\0\0"return f end until false end end,function(d)return function(a)local f,e e,f=a.GetScale,a e=d.h(e(f))return d.i(e)end end,function(r,o)return function(g)local h,l,s,a,_,k,e,b,c,m,i,j,p,d,n,f c=0b1011000 repeat if c<0b1100100 then if c<=0x53 then if c>0b110111 then b,j=a(e,p)p=b c=p==nil and 0x130-c or 0b1100100 elseif c<=0b11111 then s=buffer e,i=0b1000,s.create a=e+l e,s=0b100,a+e a=f*e s=s+a i=i(s)a=buffer s,p,e,a=a.writeu32,0b10,0,i s(a,e,p)a=buffer e,p,a,s=0b100,f,i,a.writeu32 s(a,e,p)s,e,a,p=0b1000,nil,k,nil a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0xdd or 0xc1c/c else n=p.Value j,n=#n,1 c,b=0x3359/c,j+n l=l+b end else k,f=g.GetMarkers,g k=k(f)l,f=0,#k c=f==l and 0xac or 0x96 end elseif c>=0b10101100 then if c>0b11011101 then e,p=i(s,a)a=e c=a==nil and 0x1f or 0x126-c elseif c<=0b10101100 then l="\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"return l else e,p,a,b=i,s,o[1][0b10][o[1][1]],k a=a(e,p,b)e,s=buffer,a a,e=e.tostring,i a=r.h(a(e))return r.i(a)end elseif c<=0b1100100 then n,m=j.Value,buffer h,m,d,_=s,i,n,m.writestring _(m,h,d)m,h=#n,1 c,_=0b1010011,m+h s=s+_ else i,s,l,a=k,nil,0,nil i,s,a=r.g(i,s,a)e,p=i(s,a)a=e c=a==nil and 0x122a/c or 0x203a/c end until false end end,function(d,_)return function()local i,g,m,k,a,c,l,e,h,f c=0b110010 while true do if c<0x32 then if c>0b111 then e,c,m="/channel/",0b100001010/c,_[1][0b10][_[1][1]]a=e..m else c=a and 0b11101000 or 0x5a end elseif c>=0b1011010 then if c>0b1011010 then h,l,f,i=true,f,f.HttpGet,h..a f=d.h(f(l,i,h))g,k=g.JSONDecode,g g=d.h(g(k,d.i(f)))return d.i(g)else c,a=0x142-c,""end else k=_[0b10][0b10][_[0b10][1]]f,h,g,a=game,"https://clientsettingscdn.roblox.com/v2/client-version/WindowsStudio64",k.HttpService,_[1][0b10][_[1][1]]c=a and 0b100110 or 0b111 end end end end,function(d,_)return function(g)local b,f,e b,f,e=g,g.GetDistanceAttenuation,_[1][0b10][_[1][1]]f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(r,o)return function(g)local m,h,t,n,k,f,d,e,u,b,a,l,i,p,j,_,c,s c=0b1010010 repeat if c<=0b1010010 then if c<0x51 then if c>0b101111 then m,_=n,s _,m=_(m)d=buffer u,h,k,d=a,d.writeu8,i,l c=0b10011101 h(d,u,k)h=1 a,d=a+h,buffer h,d,k,u=d.copy,l,_,a h(d,u,k)a=a+m else p=buffer e,p=p.tostring,l e=r.h(e(p))return r.i(e)end elseif c<=0x51 then l="\0\0\0\0"return l else f,t=g,g.GetControlPoints t=t(f)l,f=0,#t c=f==l and 0x51 or 0x75 end elseif c>0x75 then j,n=e(p,b)b=j c=b==nil and 0x2f or 0x46 else i=buffer i,l,a=0b100,i.create,0x31 s=f*a i=i+s l=l(i)s=buffer i,s,a,e=s.writeu32,l,0,f i(s,a,e)s=o[0b10][0b10][o[0b10][1]]i,a=s.Path2DControlPoint,o[1][0b10][o[1][1]]a,e,p,b,s=0b100,t,nil,nil,a.Path2DControlPoint e,p,b=r.g(e,p,b)j,n=e(p,b)b=j c=b==nil and 0x157b/c or 0b1000110 end until false end end,function(r)return function(g)local i,v,x,m,w,h,k,t,p,u,b,j,d,_,f,l,e,s,n,q,c c=0xf0 repeat if c>0xe9 then f,s={},Enum i=s.Material w,l=s,i.Grass s=w.Material i,e=s.Slate,w w=e.Material s,v=w.Concrete,e e=v.Material w,b=e.Brick,v v=b.Material j,e=b,v.Sand b=j.Material v,n=b.WoodPlanks,j j=n.Material _,b=n,j.Rock n=_.Material j,m=n.Glacier,_ _=m.Material n,h=_.Snow,m m=h.Material d,_=h,m.Sandstone h=d.Material m,u=h.Mud,d d=u.Material h,k=d.Basalt,u u=k.Material q,d=k,u.Ground k=q.Material p,u=q,k.CrackedLava q=p.Material k,x=q.Asphalt,p p=x.Material q=p.Cobblestone f[1],f[0b10],f[0b11],f[0b100],f[0b101],f[0b110],f[0b111],f[0b1000],f[0b1001],f[0b1010],f[0b1011],f[0b1100],f[0b1101],f[0b1110],f[0b1111],f[0b10000]=l,i,s,w,e,v,b,j,n,_,m,h,d,u,k,q s=x i=s.Material w,l=x,i.Ice s=w.Material e,i=x,s.LeafyGrass w=e.Material s,v=w.Salt,x e=v.Material p,w=x.Material,e.Limestone e=p.Pavement f[0b10001],f[0b10010],f[0x13],f[0b10100],f[0x15]=l,i,s,w,e l,t=buffer,f l,f=0x45,l.create f=f(l)i,w,l,s=t,nil,0b110,nil i,s,w=r.g(i,s,w)e,v=i(s,w)w=e c=w==nil and 0b10100111 or 0b11100011 elseif c<=0xe3 then if c>0b10100111 then j,b,n=g,g.GetMaterialColor,v b=b(j,n)n=buffer h,_,n,m,j=0xff,l,f,b.R,n.writeu8 m=m*h j(n,_,m)j=1 n,l=buffer,l+j h,j,m,_,n=0xff,n.writeu8,b.G,l,f m=m*h j(n,_,m)j=1 n,l=buffer,l+j h,j,m,_,n=0b11111111,n.writeu8,b.B,l,f m=m*h j(n,_,m)j=1 c,l=0b11101001,l+j else s=buffer s,i=f,s.tostring i=r.h(i(s))return r.i(i)end else e,v=i(s,w)w=e c=w==nil and 0x97ff/c or 0b111001100-c end until false end end,function(r,o)return function(g)local l,b,i,s,j,d,w,e,_,k,p,h,u,v,t,m,f,q,n,c c=0b1011 while true do if c>0x6e then if c<=0xc1 then if c<0b10011110 then if c>=0x86 then if c>0x86 then h,d=m,v h,d=h(d)k=buffer k,u=1,k.create k=k+d u=u(k)k,b=buffer,u p,q,u,k=_,0,k.writeu8,b u(k,q,p)k=buffer p,c,k,q,u=h,0b11011000-c,b,1,k.copy u(k,q,p)u=1 j=u+d else v,e=l,s return e,v end else e=e+b c=(b>0 and e>v or b<=0 and e<v or b~=b)and 0x86 or 0b1010010 end elseif c<0xb0 then s=f(l,i)i=s c=i==nil and 0x43e4/c or 0xb9-c elseif c>0b10110000 then c=e and 0b110000 or 0b1000000 else c=e and c+0b100001 or 0b11000001 end elseif c<=0b11011111 then if c>=0xde then if c<=0xde then w=buffer s,w=w.create,l s=s(w)e=buffer b,e,w,v=i,s,e.writeu32,0 w(e,v,b)e,w,v=1,0b100,i b=e c=(v~=v or(b>0 and e>v or(b<=0 or b~=b)and e<v))and 0x86 or 0x471c/c else _=buffer n,_=_.create,1 n=n(_)b,c,_=n,0b111111,buffer n,_,m,h=_.writeu8,b,0,1 n(_,m,h)j=1 end else c,b=0b11000001,math v,b=b.floor,s v=v(b)e=s==v end else c,t=0b10011110,s end elseif c<=0x30 then if c<=0x1b then if c<=0b1111 then if c<=0b1011 then if c<=1 then _,n=v,o[0b10][0b10][o[0b10][1]]n=n(_)m=o[1][0b10][o[1][1]]_,h=m[n],o[0b11][0b10][o[0b11][1]]m=h[n]h=not m c=h and 0b1111/c or 0b10011001 else l,i,f,t=nil,nil,g,0 f,l,i=r.g(f,l,i)s=f(l,i)i=s c=i==nil and 0x6e or 0b11011 end else s=s+e c=(e>0 and s>w or e<=0 and s<w or e~=e)and 0b11011110 or c+0x1a end else v,b=type,s v=v(b)b="number"e=v==b c=e and 0b10000010-c or 0x1290/c end elseif c>0b101001 then v=1 c,e=0x40,s>=v else n,v,b,j=nil,g[s],nil,nil c=v==n and 0xdf or 1 end elseif c>0x52 then if c<=0b1100111 then c,e=0b10110000,s>t else l=table f,l=l.create,t f=f(l)i,l,s,w=0,0b100,1,t e=s c=(w~=w or(e>0 and s>w or(e<=0 or e~=e)and s<w))and 0x14c-c or 0x29 end elseif c>=0b1000000 then if c<=0x40 then c=e and 0b11100100 or 0xde-c else j,_=f[e],buffer _,n,h,c,m=s,_.copy,j,0x28ae/c,w n(_,m,h)_=buffer n,_=_.len,j n=n(_)w=w+n end else c,n=0b1111,1 i=i+n f[i]=b l=l+j end end end end,function(d,_)return function()local b,g,e,f e,g=true,_[0b10][0b10][_[0b10][1]]g.isCancelled=e g=nil _[0b100][0b10][_[0b100][1]],e=g,coroutine g,e,b,f=e.resume,_[0b11][0b10][_[0b11][1]],_[1][0b10][_[1][1]],nil g(e,f,b)return end end,function(d,_)return function(g)local f,b,e e,f,b=_[1][0b10][_[1][1]],g.GetPostTransforms,g f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g,k,f,l,i)local a,e,h,m,b b,a,h,e,m=l,g,_[1][0b10][_[1][1]],k,f h(a,e,m,b)b,a=0b100,g m=b*f e,m,b=k+m,f,i h(a,e,m,b)return end end,function(d,_)return function(g)local h,i,f,k,a,l,e,j f=_[1][0b10][_[1][1]]k,l,f=f.string,g.EnumType,tostring f=d.h(f(l))k,f=k(d.i(f))i=0b100 h,l=buffer,f+i h,i=l,h.create i=i(h)a=buffer h,e,a,j=a.copy,0,i,k h(a,e,j)a=buffer e,j,h,a=f,g.Value,a.writeu32,i h(a,e,j)a,h=l,i return h,a end end,function(d,_)return function(g)local l,i,m,c,e,k,h,f,a c=0xa2 while true do if c>=0b10001100 then if c<=0x94 then if c<0x91 then m,e=true,_[0b11][0b10][_[0b11][1]]c,e[h]=0b11011100,m elseif c<=0b10010001 then k,f=_[0b10][0b10][_[0b10][1]],g k,f,l=k(f)k,f,l=d.g(k,f,l)i,h=k(f,l)l=i c=l==nil and 0x94 or 0b100101 else return end elseif c>0b10100010 then e,c,m=_[1][0b10][_[1][1]],0x2cb0/c,h e(m)else c=g and 0x91 or 0x94 end elseif c<=0x34 then if c<0x25 then c=e and c+0b1111011 or 0b11011100 elseif c<=0b100101 then m,e=h.ClassName,_[0b100][0b10][_[0b100][1]]a=e[m]e=a c=e and 0b1001101 or 0b10001 else i,h=k(f,l)l=i c=l==nil and 0x1e10/c or c+-0b1111 end else c,m=0b1011110-c,h.Name e=a[m]end end end end,function(d,_)return function(g)local j,i,e,h,f,a,l,k,c c=0b101000 repeat if c>=0b1110011 then if c<=0x73 then e,j=_[1][0b10][_[1][1]],a e=e(j)c,k=0b10011,k..e else return k end elseif c<=0b10011 then h,a=f(l,i)i=h c=i==nil and 0b11111100-c or c+0x60 else k,f,i,l="",g.Keypoints,nil,nil f,l,i=d.g(f,l,i)h,a=f(l,i)i=h c=i==nil and 0xe9 or 0x73 end until false end end,function(d)return function(g,k)local f,i,h,a,e,c,b c=0x67 while true do if c<0x67 then a=bit32 a,h=b,a.bnot h=h(a)c,h,b=0b10010100,bit32,h i=h.bnot h=i i=i(h)elseif c>0b1100111 then return b,i else b=bit32 b,f,i=g,b.extract,0x1f f=f(b,i)i=bit32 h,b=i,i.bor i,a,h=h.lshift,1,g i=i(h,a)a=bit32 a,e,h=k,0b11111,a.extract h=d.h(h(a,e))b=b(i,d.i(h))h=bit32 h,a,i=k,1,h.lshift i=i(h,a)h=1 c=f==h and 0x28 or 0b10010100 end end end end,function(d,o)return function(g,k,f,l)local a,h,e,_,j,n,p,c,i,b c=0x94 while true do if c>0x73 then if c<0xd7 then if c>0xb3 then j=true c,i[b]=0b1010000,j elseif c>=0x9d then if c>0x9d then c=j and 0b101111000-c or 0b100000011-c else c,i[p]=0b1001101,b end else h={}i=h c=k and 0b10100 or 0b1110010 end elseif c<0xf6 then if c<=0xd7 then n,j=b,type j=j(n)n="table"c=j==n and 0x1cd-c or 0b101110100-c else c,i[b]=0x13d-c,j end elseif c>0b11110110 then _,n=b,type c,n=0x1ae-c,n(_)j=n==l else j,c,n,_=o[1][0b10][o[1][1]],0b1001101,b,k j=j(n,_)i[p]=j end elseif c<=0b1001101 then if c<=0b111101 then if c<0x1c then if c>0b10010 then h,e,a=g,nil,nil h,a,e=d.g(h,a,e)p,b=h(a,e)e=p c=e==nil and c+0b1011111 or 0x3d else j=l c=j and 0xfb or c+0xa1 end elseif c>0b11100 then j,n=type,p j=j(n)n="number"c=j==n and 0x17d4/c or c+0x9a else c,j=0x1a40/c,true end elseif c>0x4b then p,b=h(a,e)e=p c=e==nil and 0x73 or c+-0b10000 else j=not l c=j and 0b10110011 or 0b10010 end elseif c<0x72 then if c>0b1010000 then j=f c=j and 0x5dc0/c or 0x1c else p,b=h(a,e)e=p c=e==nil and c+0b100011 or 0b1001011 end elseif c>0b1110010 then return i else h,e,a=g,nil,nil h,a,e=d.g(h,a,e)p,b=h(a,e)e=p c=e==nil and 0b1110011 or c+-0x27 end end end end,function(d,o)return function(g)local j,f,a,h,b,e,c,l,k,m,i c=0x9a repeat if c<0b10100101 then if c>0x75 then if c>0x9f then e=o[0b100][0b10][o[0b100][1]]c=h~=e and 0x8412/c or 0b10001111 elseif c>=0x9a then if c>0x9a then return else k=not g c=k and 0b10011111 or 0b10100101 end else i,h=k(f,l)l=i c=l==nil and 0x8cc4/c or 0b101110001-c end elseif c>0b1010000 then if c>0x6d then m,b,e,j=o[0b101][0b10][o[0b101][1]],h,pcall,coroutine j=j.yield c=0b10001111 e(m,b,j)else m=o[0b11][0b10][o[0b11][1]]e=not m c=e and 0xb7-c or 0b100010011-c end elseif c>=0b1001010 then if c>0x4a then m=o[1][0b10][o[1][1]]e=not m c=e and 0b11101101 or 0xb5 else c=e and c+0b110 or c+0b10100011 end else e,a=true,o[0b10][0b10][o[0b10][1]]a[h]=e e,a=h,type a=a(e)e="thread"c=a==e and 0xa1 or 0x3080/c end elseif c<0b11010010 then if c<0b10110101 then if c<=0xa5 then f=table k,f=f.clone,g f=d.h(f())k,f,l=k(d.i(f))k,f,l=d.g(k,f,l)i,h=k(f,l)l=i c=l==nil and 0xfc or 0xe2 else c,m,e=0b1001010,h,o[0b11][0b10][o[0b11][1]]e=e(m)end elseif c<=0xb5 then c,b,m=0xed,h,o[1][0b10][o[1][1]]m=m(b)e=not m else e="function"c=a==e and 0x6d or 0x6c5e/c end elseif c>=0b11101101 then if c>=0b11111001 then if c<=0xf9 then e=o[0b101][0b10][o[0b101][1]]c=e and 0x75 or 0x8b17/c else return end else c=e and 0b11111001 or 0b10001111 end elseif c>0xd2 then m=o[0b10][0b10][o[0b10][1]]e=m[h]a=not e c=a and 0b1000000 or 0x8f else c,b,e=0x754e/c,coroutine,pcall b,m=h,b.close e(m,b)end until false end end,function(d,_)return function(g)local f,e,b f,e,b=g.GetTransforms,_[1][0b10][_[1][1]],g f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(d)return function(g)local e,f f,e="token",g.Value return e,f end end,function(ja,lb)return function(...)local ba,Pa,La,J,db,jb,ab,Ja,s,T,rb,I,ub,f,va,M,X,Ka,da,wb,Ta,t,U,Na,N,Y,wa,y,ka,_a,Ia,_b,h,ta,Xa,G,Ca,Da,g,ea,fb,Aa,fa,_,mb,na,F,D,Q,pa,nb,p,ib,k,sb,la,sa,O,ca,b,kb,xa,L,ga,Sa,A,l,i,v,qb,pb,ia,Ba,c,ma,E,Va,za,Wa,P,S,Ea,gb,H,Oa,Ya,eb,u,oa,K,q,w,ob,j,aa,W,C,Ua,Qa,m,ra,x,a,bb,V,B,Ga,qa,z,vb,Ra,n,hb,ua,r,ha,o,Ma,Ha,e,tb,R,d,ya,Fa Va=0xf2 repeat if Va>=0b101010001 then if Va<0x296 then if Va<=0b111100100 then if Va<=0b110010111 then if Va<=0x178 then if Va>=0x169 then if Va<0b101110011 then if Va>0b101101011 then Va=aa and Va+-0b10100110 or 0x363 elseif Va>0b101101001 then Va,J=0x18d,table wb,J,ea=R,o,J.insert ea(J,wb)else d=ja:Ae()d=d()Va,Q=0x38952/Va,not d end elseif Va<0b101110101 then tb,La,Aa,_a="KariCcat",loadstring,pcall,gb Aa,La=Aa(La,_a,tb)_a=Aa Va=_a and Va+-0x8f or 0x3b9 elseif Va>0b101110101 then Va=C and 0x3a0-Va or 0x36d-Va else ta=lb[0b11111][0b10][lb[0b11111][1]]Va,i=0x250-Va,ta.USSI_scriptcache end elseif Va<0b101100100 then if Va>0b101011011 then C=f[0b10][f[1]].ShutdownWhenDone Va=C and 0x391 or 0x1ff20/Va elseif Va<=0b101010001 then Va,Ta=0x18d8e/Va,lb[0x1c][0b10][lb[0x1c][1]]else D=D+v Va=(v>0 and D>na or v<=0 and D<na or v~=v)and 0x310 or 0x3c3bd/Va end elseif Va<=0b101100101 then if Va>0b101100100 then ga=not ya[0b10][ya[1]]Va=ga and 0x35b-Va or 0x23b else d,p=type,f[0b10][f[1]].RiskyServicesDisabled ua=p d=d(ua)ua="table"Q=d==ua Va=Q and Va+-0xe3 or 0x34528/Va end else Q=ja:Fe{lb[0b10010]}Va,lb[0x19][0b10][lb[0b11001][1]]=0x193,Q end elseif Va>0x18d then if Va<=0x192 then if Va<0b110010001 then I=table M,I=I.concat,_b M=M(I)Fa[0b10][Fa[1]]=M _b,D,x,I,M,v,na=ja:_e{Fa},lb[0b1010][0b10][lb[0b1010][1]],{},"zstdcompress",d,n,eb x[1],x[0b10],x[0b11]=D,na,v x,na,D,N=_b,Fa[0b10][Fa[1]],0b1010,x M=M(I,N,x,D,na)M,lb[0b1010][0b10][lb[0b1010][1]]=nil,M M={[1]=0b11,[0b11]=M}M[0b10]=M I,N=pcall,ja:Md{M}I(N)I,N,x,v,aa,na=ja:Pe(),d,"lz4compress",lb[0x11][0b10][lb[0x11][1]],M[0b10][M[1]],{}na[1],na[0b10]=v,aa v,na,aa,D=0b1010,I,Fa[0b10][Fa[1]],na N=N(x,D,na,v,aa)lb[0b10001][0b10][lb[0b10001][1]],d,Q=N,lb[0b10101][0b10][lb[0x15][1]],pcall Q,d=Q(d)Va=Q and 0x275 or 0x106be/Va elseif Va>0x191 then J,R=Oa,game R,ea=R.FindService,R R=R(ea,J)ea=R Va=ea and Va+-0x42 or 0x258 else jb=table ca,hb,Ga,jb=1,jb.insert,ka,X[0b10][X[1]]Va=Va+0x155 hb(jb,ca,Ga)end elseif Va<=0x193 then d=lb[0b1000][0b10][lb[0b1000][1]]Q=not d Va=Q and 0x336-Va or Va+0b110011111 else gb=nil gb={[1]=0b11,[0b11]=gb}gb[0b10]=gb Va=Ta[0b10][Ta[1]]and 0x5ecb6/Va or 0x2fb20/Va end elseif Va<0x183 then if Va<0b101111101 then Va,eb=0x3a9-Va,"ok"bb=pb~=eb elseif Va<=0b101111101 then Va,eb=0x93,Wa.dep bb,eb=H[0b10][H[1]][eb],"crashed"pb=bb==eb else pb,bb=pcall,Wa.test pb,bb=pb(bb)eb=pb Va=eb and Va+0x171 or 0x218 end elseif Va>=0x18b then if Va>0x18b then Ca,Oa=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0xa462/Va or 0x192 else eb,Va,_b,Fa=mb[0b10][mb[1]],Va+0b10000100,bb,E eb(Fa,_b)end else l,Aa=ja:Yd{_,Ta,lb[0b11100]},f[0b10][f[1]].Decompile gb=not Aa Va=gb and 0x3e3 or 0x115 end elseif Va<=0b110110010 then if Va<=0x1a8 then if Va>=0b110100100 then if Va<=0b110100110 then if Va>0x1a5 then C,ua=d,U[0b10][U[1]]ua,C,Pa=ua(C)ua,C,Pa=ja.g(ua,C,Pa)T,n=ua(C,Pa)Pa=T Va=Pa==nil and 0x1d5ce/Va or 0xe9 elseif Va<=0b110100100 then Va=Q and 0x542f4/Va or 0x392 else ob,Ha=type,tb Va,ob=0x45120/Va,ob(Ha)Ha="table"vb=ob==Ha end else d=table d,Q=bit32,d.clone Q=Q(d)d=ja:sd()Q.byteswap=d ua=table ua,d=bit32,ua.isfrozen d=d(ua)Va=d and Va+0x8f or 0x1a160/Va end elseif Va<0b110100000 then p=lb[0x1d][0b10][lb[0b11101][1]]U=p.protectgui Va=U and Va+0xea or 0x11e elseif Va<=0b110100000 then p=task U,p=p.spawn,ja:Le{Xa,jb,lb[0x12],ab,Ca}U(p)U,p=L.BoostFPS,nil Va=U==p and 0x326 or 0x2eb else Q=lb[0b11011][0b10][lb[0b11011][1]]Va=Q and 0x1aa or Va+0b110 end elseif Va<=0b110101101 then if Va>=0x1aa then if Va>0x1aa then bb=pb Va=bb and 0x36c or 0x13f else d=Instance d,Q="AnimationRigData",d.new Q=Q(d)Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q ua,T,Pa={},"boolean",{}Pa.key=T T=true Pa.fatal=T T=ja:Cd{lb[0x1b]}Pa.test=T T,C,n={},Pa,"Enum"T.key=n n=ja:Je{lb[0b11011]}T.test=n n,Pa,Wa={},T,"Color3uint8"n.key=Wa Wa=true n.retest=Wa Wa=ja:ie{lb[0x1b]}n.test=Wa Wa,E,T={},"int64",n Wa.key=E E=true Wa.retest=E E=ja:ae{Q,lb[0x1b]}Wa.test=E pb,n,E="BinaryString",Wa,{}E.key=pb pb=true E.retest=pb pb=ja:td{lb[0b11011],Q}E.test=pb pb,bb,Wa={},"SharedString",E pb.key=bb bb=ja:Oe{lb[0b11011],Q}pb.test=bb bb,eb,E={},"NetAssetRef",pb bb.key=eb eb=ja:se{lb[0b11011]}bb.test=eb pb,Fa,eb=bb,"BinaryString",{}eb.dep=Fa Fa=ja:Fd{lb[0b11011],Q,sa}eb.test=Fa bb=eb ua[1],ua[0b10],ua[0b11],ua[0b100],ua[0b101],ua[0b110],ua[0b111],ua[0b1000]=C,Pa,T,n,Wa,E,pb,bb d,ua=ua,nil T,Pa,C=nil,nil,d C,Pa,T=ja.g(C,Pa,T)n,Wa=C(Pa,T)T=n Va=T==nil and 0b101000010 or 0x395-Va end else d=lb[0x1b][0b10][lb[0x1b][1]]Q=not d Va=Q and 0x21d36/Va or 0b110100100 end elseif Va<=0x1af then ta={}ta,Va,i[0b10][i[1]]=lb[0b11111][0b10][lb[0x1f][1]],0b100110110,ta ta.USSI_scriptcache=i[0b10][i[1]]else Va=R and 0x33c or 0x2c8 end elseif Va>=0x1d8 then if Va<=0b111100000 then if Va>0b111011101 then _a,La,tb,Aa=decompile,f[0b10][f[1]].DecompileTimeout,"Decompiler timed out",k Aa=Aa(La,_a,tb)Va,gb[0b10][gb[1]]=0xd7,Aa elseif Va<=0b111011000 then n,Wa=C(Pa,T)T=n Va=T==nil and 0x142 or 0x1eb else ga=f[0b10][f[1]].ShowStatus Va=ga and 0x3ee or Va+0b100000100 end elseif Va<=0b111100011 then bb=pb Va=bb and 0x6e7db/Va or 0x251 else Va=Aa and Va+-0b1110001 or 0x29c end elseif Va<=0x1c8 then if Va<=0x1be then if Va<=0b110111100 then Va,lb[0b11011][0b10][lb[0b11011][1]]=0x31a58/Va,la else Va=E and 0x3655a/Va or 0x30f end else ga=f[0b10][f[1]].SafeMode Va=ga and 0x2de or 0x4d9-Va end elseif Va>0b111001010 then Va,da=0b111110100,true f[0b10][f[1]].scriptcache=da else ua=W ua()C=os ua=C.clock ua=ua()q[0b10][q[1]],C=ua-q[0b10][q[1]],math C,ua=q[0b10][q[1]],C.log10 ua=ua(C)ua={[1]=0b11,[0b11]=ua}ua[0b10]=ua C=not Q[0b10][Q[1]]Va=C and 0x2a5 or 0x222 end elseif Va>=0x23b then if Va<=0x26a then if Va<=0x25a then if Va<=0x251 then if Va<=0x24c then if Va>=0x244 then if Va<=0x244 then mb=lb[0x20][0b10][lb[0x20][1]]mb,qa=mb()ub,oa=qa,mb mb=not ub Va=mb and 0x2ac or 0x2f0-Va else D=table D,x=0xfa0,D.create x=x(D)D,na=1,0xfa0 v=D Va=(na~=na or(v>0 and D>na or(v<=0 or v~=v)and D<na))and 0x310 or 0x513-Va end else Va=ga and 0x28f or 0x418-Va end else Va=bb and 0x1d8 or Va+0b11000 end elseif Va>=0x258 then if Va>0x258 then lb[0b1100][0b10][lb[0b1100][1]],d=Q,lb[0x1b][0b10][lb[0b11011][1]]Q=not d Va=Q and 0x601ec/Va or 0x318 else Va=ea and 0b101101011 or 0x18d end else Va=Aa and 0x533-Va or Va+-0b1101111 end elseif Va>0x265 then if Va<=0x269 then pb=Wa.dep Va=pb and 0x39645/Va or 0x93 else Va,H[0b10][H[1]]=0x386,qa[za[0b10][za[1]]]end elseif Va<0x25c then Va,E,Wa=0b100011101,n,Q[0b10][Q[1]]Wa(E)elseif Va>0x25c then R,ea=Ea[0b10][Ea[1]],Oa R=R(ea)Va=R and 0x2ad or 0x2c8 else Va,Ya=0x3c9-Va,0b11 aa=D%Ya end elseif Va<0x287 then if Va>=0x277 then if Va>0x280 then Va=Q and 0b110101000 or 0x29e elseif Va>0x277 then jb={}jb,ca,hb=ma.GetDescendants,ma,jb jb,ca,Ga=jb(ca)jb,ca,Ga=ja.g(jb,ca,Ga)Ca,Oa=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0x7b200/Va or 0x265 else Va=gb and 0b110010111 or 0x5bc-Va end elseif Va>0x270 then Va,lb[0b1000][0b10][lb[0b1000][1]]=0x5a7-Va,d else a=nil a={[1]=0b11,[0b11]=a}a[0b10]=a Ta=f[0b10][f[1]].SaveBytecode Va=Ta and 0x3c1-Va or Va+-0b101000010 end elseif Va<0x28f then if Va>0x287 then d,ua=L.RiskyServicesDisabled,nil Va,Q=0x318,d==ua else U=ab U=U()ga[0b10][ga[1]].Name=U p=lb[0b11101][0b10][lb[0b11101][1]]U,p=p.protectgui,ga[0b10][ga[1]]Va=0xa0f5d/Va U(p)U,Q=game,"CoreGui"p,U=U,U.GetService U=U(p,Q)ga[0b10][ga[1]].Parent=U end elseif Va>0x290 then p=f[0b10][f[1]].BoostFPS Va=p and 0x392-Va or 0b10111101 elseif Va>0x28f then ea=R Va=ea and Va+0x2e or 0x216 else Va,ga=0x4c473/Va,true Y[0b10][Y[1]].Player=ga end elseif Va<0x202 then if Va>=0x1f5 then if Va<=0b111110111 then if Va>0x1f6 then Va=la and 0b110111100 or 0x383e6/Va elseif Va>0b111110101 then U,ab=nil,L.SaveNotCreatable Va,ga=0x23b,ab==U else return end elseif Va>0b111111011 then jb={[1]=0b11,[0b11]=jb}jb[0b10]=jb jb[0b10][jb[1]]=ja:Ad{lb[0x12]}ca={[1]=0b11,[0b11]=ca}ca[0b10]=ca Ca,ca[0b10][ca[1]]=os,ja:Xd{g}Ga=Ca.clock Ga=Ga()Ga={[1]=0b11,[0b11]=Ga}Ga[0b10]=Ga Ca={[1]=0b11,[0b11]=Ca}Ca[0b10]=Ca Ca[0b10][Ca[1]]=ja:ye{Ga}Oa={[1]=0b11,[0b11]=Oa}Oa[0b10]=Oa Oa[0b10][Oa[1]],R,ea,J=ja:Ce{Ca,Ga},false,nil,nil R={[1]=0b11,[0b11]=R}R[0b10]=R ea={[1]=0b11,[0b11]=ea}ea[0b10]=ea J={[1]=0b11,[0b11]=J}J[0b10]=J wb={[1]=0b11,[0b11]=wb}wb[0b10]=wb wb[0b10][wb[1]]=ja:te{ea,J,R,t}r={[1]=0b11,[0b11]=r}r[0b10]=r r[0b10][r[1]],db,k=ja:vd{wb,t,R,ea,Ca},{},ja:Ke()j=db j={[1]=0b11,[0b11]=j}j[0b10]=j db=f[0b10][f[1]].DecompileJobless db={[1]=0b11,[0b11]=db}db[0b10]=db Va=db[0b10][db[1]]and 0x1cf or Va+-0b1101 else E=string E,Wa,pb="\1\0\0\0\1\2\3\4\5\6\a",E.rep,0b110010 Wa=Wa(E,pb)M,bb,I,Fa,E,pb,_b=ua[0b10][ua[1]],"base64encode",Pa,{},ja:Gd(),d,lb[0b1111][0b10][lb[0b1111][1]]Fa[1],Fa[0b10],Fa[0b11]=_b,M,I Fa,_b,eb,M=E,0b110010,Fa,Wa pb=pb(bb,eb,Fa,_b,M)lb[0b1111][0b10][lb[0b1111][1]]=pb bb=lb[0b1111][0b10][lb[0b1111][1]]pb=not bb Va=pb and 0b101000000 or Va+0x14d end elseif Va<=0x1ec then if Va<0b111101011 then ab={}ga[0b10][ga[1]],Va,ab=ab,Va+-0xdf,lb[0b11111][0b10][lb[0b11111][1]]ab.USSI_kicksnapshot=ga[0b10][ga[1]]elseif Va<=0b111101011 then E=Wa.key Va=E and 0b100000010 or 0x454-Va else Va,Oa=0x290,Oa.Parent R=Oa.Parent end elseif Va>0x1f3 then da=f[0b10][f[1]].scriptcache Va=da and 0x5df-Va or Va+-0b101100000 else pb="crashed"H[0b10][H[1]][E]=pb Va,pb=Va+0x11c,oa[0b10][oa[1]]pb()end elseif Va>=0x222 then if Va>=0x229 then if Va>0x22e then Va,ua=0x333-Va,table d,ua=ua.freeze,Q d=d(ua)Q=d elseif Va>0x229 then Va=bb and 0x39d or 0x41cca/Va else Va=ga and 0x32f-Va or 0b10101111 end elseif Va<0x223 then Va=t[0b10][t[1]]and 0x2ff or 0x37e-Va elseif Va>0x223 then Pa=task T,C=0b10,Pa.wait Pa,T=ua[0b10][ua[1]]*T,0b1010 Pa=Pa+T C(Pa)Va,C=0x1f5,game C,Pa=C.Shutdown,C C(Pa)else Va=jb and 0x5bbed/Va or 0x201 end elseif Va<0x216 then if Va<=0x202 then ab=Instance ab,ga="ScreenGui",ab.new ga=ga(ab)ga={[1]=0b11,[0b11]=ga}ga[0b10]=ga ab=lb[0b11111][0b10][lb[0b11111][1]]ab.USSI_statustext=ga[0b10][ga[1]]ab=0x77359400 ga[0b10][ga[1]].DisplayOrder=ab U,ab=ja:oe{ga},pcall ab(U)U=Instance ab,U=U.new,"TextLabel"ab=ab(U)ab,t[0b10][t[1]]="Saving...",ab t[0b10][t[1]].Text=ab ab=1 t[0b10][t[1]].BackgroundTransparency=ab p=Enum U=p.Font ab=U.Code t[0b10][t[1]].Font=ab U=Vector2 ab,U=U.new,1 ab=ab(U)t[0b10][t[1]].AnchorPoint=ab U=UDim2 U,ab=1,U.new ab=ab(U)t[0b10][t[1]].Position=ab U=UDim2 U,p,ab=0.3,0,U.new d,Q=0x14,p ab=ab(U,p,Q,d)t[0b10][t[1]].Size=ab U=Color3 U,ab=1,U.new Q,p=U,U ab=ab(U,p,Q)t[0b10][t[1]].TextColor3=ab ab=true t[0b10][t[1]].TextScaled=ab ab=0.7 t[0b10][t[1]].TextStrokeTransparency=ab p=Enum U=p.TextXAlignment ab=U.Right t[0b10][t[1]].TextXAlignment=ab U=p.TextYAlignment ab=U.Top t[0b10][t[1]].TextYAlignment=ab t[0b10][t[1]].Parent=ga[0b10][ga[1]]ab,p=ja:re(),lb[0b11101][0b10][lb[0b11101][1]]U=p.gethui Va=U and Va+-0b11110011 or Va+-0x65 else eb=not bb Va=eb and Va+0b11110010 or 0x2b0 end elseif Va>0x218 then Va,U=Va+-0x13d,checkclosure elseif Va>0x216 then bb=eb Va=E and 0x33b08/Va or 0x20f else Va=ea and 0x40248/Va or 0x1b2 end elseif Va<=0x315 then if Va>0x2c7 then if Va>=0x2f2 then if Va>0x305 then if Va>=0x311 then if Va>=0x314 then if Va>0x314 then Va,pb=0xf1,not ua else jb,ca,Ga=hb,nil,nil jb,ca,Ga=ja.g(jb,ca,Ga)Ca=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0x14648/Va or 0x3d6 end else Va=ga and 0x3ab or 0x122 end elseif Va>0x30f then na=string v,Va,D=table,0x380,na.char na,Ma,v,aa=v.unpack,math,x,1 Ya,rb,Ma=Ma.min,0x1f3d,0xfa0 Ya=ja.h(Ya(Ma,rb))na=ja.h(na(v,aa,ja.i(Ya)))D=D(ja.i(na))_b[M]=D else pb=t[0b10][t[1]]Va=pb and 0x96d3b/Va or 0b11110001 end elseif Va>=0x301 then if Va<=0x302 then if Va>0x301 then Oa,R=ca(Ga,Ca)Ca=Oa Va=Ca==nil and 0x36c-Va or 0x38658/Va else Va,eb=0x2b0,Wa.fatal end else ab={[1]=0b11,[0b11]=ab}ab[0b10]=ab ab[0b10][ab[1]],p=ja:ce{Y,Xa},f[0b10][f[1]].SavePlayerCharacters U=not p Va=U and 0x7ceee/Va or 0x118 end elseif Va>0x2f5 then Va,Pa=Va+-0b110100011,task C,Pa=Pa.spawn,ja:Kd{ca,Q,q,t,J,ua}C(Pa)elseif Va>0x2f2 then Va,C=0xd8,getreg else Va,eb=0x218,bb end elseif Va>=0x2e1 then if Va<=0x2eb then if Va<0x2e6 then if Va<=0x2e1 then ab=lb[0x1f][0b10][lb[0x1f][1]]ga=ab.USSI_kicksnapshot ga={[1]=0b11,[0b11]=ga}ga[0b10]=ga ab=not ga[0b10][ga[1]]Va=ab and Va+-0xfa or 0b100001000 else Va,Ta[0b10][Ta[1]]=0b110000011,tb end elseif Va<=0x2e6 then qb=f[0b10][f[1]].IsolateLocalPlayer qb={[1]=0b11,[0b11]=qb}qb[0b10]=qb o=f[0b10][f[1]].IsolateLocalPlayerCharacter o={[1]=0b11,[0b11]=o}o[0b10]=o ya=f[0b10][f[1]].IsolatePlayers ya={[1]=0b11,[0b11]=ya}ya[0b10]=ya ma=f[0b10][f[1]].IsolateStarterPlayer ma={[1]=0b11,[0b11]=ma}ma[0b10]=ma hb=f[0b10][f[1]].NilInstances hb={[1]=0b11,[0b11]=hb}hb[0b10]=hb jb=ya[0b10][ya[1]]Va=jb and 0x806fe/Va or 0x63172/Va else U={[1]=0b11,[0b11]=U}U[0b10]=U U[0b10][U[1]],p=ja:xe{w},f[0b10][f[1]].IgnoreDefaultPlayerScripts Va=p and Va+0x5c or 0x57d-Va end elseif Va>0x2ee then _a,tb=tostring,La Va,_a=0x470d0/Va,_a(tb)_[0b10][_[1]]=_a else Va=vb and 0x2e3 or 0b11100101 end elseif Va>=0x2dc then if Va<=0x2de then if Va>0x2dc then ab,U=L.KillAllScripts,nil Va,ga=Va+0x33,ab==U else p={[1]=0b11,[0b11]=p}p[0b10]=p d={}Q=d Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q d=ja:qe{U,Q,ab,ga,p}C,ua=debug,d Va=C and 0x2b6 or Va+-0x31 end else La=""Va,Aa=0x56f80/Va,gb~=La end elseif Va>0x2c8 then Q=jb[0b10][jb[1]]Va,Q=0x43e-Va,Q()Q,p=Xa[0b10][Xa[1]],Q.Idled d,ua=p,ja:Ld{lb[0x12]}Q(d,ua)else Ca,Oa=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0x314 or 0x52d-Va end elseif Va>0x2b2 then if Va<=0x2bf then if Va<0x2bc then if Va<0x2b6 then bb=nil Va,lb[0b11011][0b10][lb[0b11011][1]]=0x3f5-Va,bb elseif Va<=0x2b6 then Va,C=0x2ab,debug C=C.getregistry else Va,ga=0b101100101,false Y[0b10][Y[1]].StarterPlayer=ga end elseif Va>=0x2be then if Va<=0x2be then Va,ea=0x216,R~=ma else Ta,_=nil,nil Ta={[1]=0b11,[0b11]=Ta}Ta[0b10]=Ta _={[1]=0b11,[0b11]=_}_[0b10]=_ gb,l=ja:Ge(),pcall l,gb=l(gb)Aa=l Va=Aa and 0x3c6-Va or 0x253 end else Va=0x1de84/Va ua(C)ua,C=d,getallthreads ua(C)C,ua=getgc,d ua(C)end elseif Va>=0x2c4 then if Va<=0x2c5 then if Va<=0x2c4 then Va,ta=Va+0x5b,not i[0b10][i[1]]else Va,jb=0x223,qb[0b10][qb[1]]end else Ya=0b10 aa=M<=Ya Va=aa and 0x523-Va or 0x434-Va end elseif Va<=0x2c1 then Va,ga[0b10][ga[1]].Parent=0x3fb,U else p=ab p=p()ga[0b10][ga[1]].Name=p d,p="CoreGui",game p,Va,Q=p.GetService,0x3fb,p p=p(Q,d)ga[0b10][ga[1]].Parent=p end elseif Va>0x2ab then if Va<=0x2af then if Va<0x2ad then Va,ub=0x358-Va,"0"elseif Va<=0x2ad then Va,R=0x6db50/Va,Oa.Parent else Va,qb[0b10][qb[1]]=0x560af/Va,false end elseif Va>0x2b0 then Va,Ha,ob=0x7e57c/Va,tb.decompile,type ob=ob(Ha)Ha="function"vb=ob==Ha else Va=eb and 0x320e0/Va or 0x1d8 end elseif Va<=0x29e then if Va<=0x29d then if Va<0x29c then Q,p,U=ja:Qd{ab},ga.PlayerAdded,Xa[0b10][Xa[1]]U(p,Q)U,p=ga.GetPlayers,ga U,p,Q=U(p)U,p,Q=ja.g(U,p,Q)d,ua=U(p,Q)Q=d Va=Q==nil and Va+-0b110110110 or 0x8f elseif Va>0x29c then Va,U=0x35a,isourclosure else La,Aa=gb,tostring Aa=Aa(La)Va,_[0b10][_[1]]=0x183,Aa end else Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q Q[0b10][Q[1]]=ja:Ne()d,C,ua=ja:ve{Q},nil,nil ua={[1]=0b11,[0b11]=ua}ua[0b10]=ua C={[1]=0b11,[0b11]=C}C[0b10]=C Pa,T=pcall,ja:we{C,ua}Pa(T)n,T,Pa,pb=nil,nil,nil,lb[0b1100][0b10][lb[0b1100][1]]E=pb.Encoding Wa=not E Va=Wa and 0b101001110 or Va+-0b10100011 end elseif Va>=0x2a5 then if Va>0x2a5 then Va=C and 0x24048/Va or Va+0b1001010 else Pa,C="Error found while saving:",warn C(Pa)Pa=d Va=Va+-0b10000011 C(Pa)end else Va=vb and 0x552-Va or 0x2ee end elseif Va>0x36c then if Va<=0x3ba then if Va>=0x39f then if Va<0x3ab then if Va>0x3a0 then eb=Wa.retest Va,bb=0x251,not eb elseif Va>0x39f then Va,C=0x2bc,getregistry else Ta,a,_=f[0b10][f[1]].BytecodeTimeout,k,lb[0b11100][0b10][lb[0b11100][1]]Va,a=0x8d390/Va,a(Ta,_)ta[0b10][ta[1]]=a end elseif Va>=0x3b9 then if Va>0x3b9 then La,Aa,tb,_a=f[0b10][f[1]].DecompileTimeout,k,"Decompiler timed out",l Va,Aa=0x32136/Va,Aa(La,_a,tb)gb[0b10][gb[1]]=Aa else Va=_a and 0x3c5 or 0x2f0 end else Va,ga=0x122,true f[0b10][f[1]].KillAllScripts=ga end elseif Va>0x391 then if Va<=0x392 then ua=bit32 d=ua.byteswap Q=not d Va=Q and 0x282 or 0b101101001 else bb=nil Va,lb[0x1b][0b10][lb[0b11011][1]]=0b101000010,bb end elseif Va<0x386 then M=M+N Va=(N>0 and M>I or N<=0 and M<I or N~=N)and 0x57100/Va or 0x24c elseif Va<=0x386 then oa={[1]=0b11,[0b11]=oa}oa[0b10]=oa oa[0b10][oa[1]]=ja:pe{H,lb[0b1101],za,lb[0x12]}ub={[1]=0b11,[0b11]=ub}ub[0b10]=ub ub[0b10][ub[1]]=ja:ke{Ca,Ha,t,H,oa}mb={[1]=0b11,[0b11]=mb}mb[0b10]=mb mb[0b10][mb[1]]=ja:Re{Ha,H,oa}qa={[1]=0b11,[0b11]=qa}qa[0b10]=qa qa[0b10][qa[1]]=ja:He{mb,Na,sa,w,ub,Ea,lb[0x18],lb[0b110],lb[0b11011],vb,j,Ra,Ja,Aa,ob,lb[0b11001]}Ka={[1]=0b11,[0b11]=Ka}Ka[0b10]=Ka Ka[0b10][Ka[1]]=ja:ue{lb[0b1000],lb[0b101]}ba={[1]=0b11,[0b11]=ba}ba[0b10]=ba ba[0b10][ba[1]],Ba=ja:Hd{j,b,lb[0b1000],m,ha,Ra,s,Oa,z,_a,Y,w,La,V},{}G=Ba G={[1]=0b11,[0b11]=G}G[0b10]=G Ba={[1]=0b11,[0b11]=Ba}Ba[0b10]=Ba Ba[0b10][Ba[1]]=ja:De{G,w}K={[1]=0b11,[0b11]=K}K[0b10]=K K[0b10][K[1]]=ja:fe{lb[0b11],qa,lb[0x13],Oa,tb,lb[0b1000],Ra,ia,g,y,lb[0x11],fa,fb,lb[0b1010],ca,lb[0b100001],Sa,u,b,lb[0b110],Ca,lb[0b1011],Ka,Ua,Ea,t}e={[1]=0b11,[0b11]=e}e[0b10]=e e[0b10][e[1]]=ja:wd{Sa,lb[0x23],lb[0b10110],g,G,kb,lb[0x18],Ua,lb[0b10],y,va,Ra,t,ia,Ea,Ka,qa,Ca,lb[0b1000],ca,tb,lb[0b110]}S,Xa=ja:de{lb[0b1000],sb,e,qb,K,X,ca,ba,Ba,lb[0b11110],lb[0b111],lb[0b100000],hb,fa,f,Ia,h,lb[0b11101],q,ya,g,r,H,w,G,lb[0x12],o,ma,nb,lb[0b1101],V,lb[0b10000]},{}Qa=Xa Qa={[1]=0b11,[0b11]=Qa}Qa[0b10]=Qa Xa={[1]=0b11,[0b11]=Xa}Xa[0b10]=Xa Xa[0b10][Xa[1]],ab,W=ja:rd{Qa},lb[0x12][0b10][lb[0x12][1]],ja:Ie{lb[0b11111],Qa,sb}U,ga,ab=true,ab.Players,Y[0b10][Y[1]].Model Va=ab~=U and Va+-0x81 or 0x54e-Va else Va,C=0b101111000,Q[0b10][Q[1]]end elseif Va>0x3eb then if Va<0x3fb then if Va>0x3ee then d,ua=U(p,Q)Q=d Va=Q==nil and 0x4d4-Va or 0x2354c/Va else ab=lb[0b11111][0b10][lb[0x1f][1]]ga=ab.USSI_statustext Va=ga and 0x334 or 0x202 end elseif Va>0x3fb then qa,mb=ja:Nd{lb[0x17],lb[0x12]},pcall mb,qa=mb(qa)Ka=mb Va=Ka and 0x33f or 0x323 else Va=0x6dc-Va end elseif Va>0x3d6 then if Va>0x3e3 then Va,da=Va+-0x357,lb[0b11100][0b10][lb[0b11100][1]]else Va,ib[0b10][ib[1]]=0x3ce,ja:Dd()end elseif Va<=0x3ce then if Va<=0x3ca then if Va>0x3c5 then T,n=ua(C,Pa)Pa=T Va=Pa==nil and 0b100011101 or 0xe9 else _a,tb=pcall,La _a,tb=_a(tb)vb=_a Va=vb and 0x56a-Va or 0x665-Va end else gb={[1]=0b11,[0b11]=gb}gb[0b10]=gb gb[0b10][gb[1]]=ja:ge{lb[0b10010]}Aa={[1]=0b11,[0b11]=Aa}Aa[0b10]=Aa Aa[0b10][Aa[1]]=ja:Ed{i,lb[0x18],a,Ia,gb,db,ib,da}La={[1]=0b11,[0b11]=La}La[0b10]=La La[0b10][La[1]]=ja:Be{w}_a={[1]=0b11,[0b11]=_a}_a[0b10]=_a _a[0b10][_a[1]]=ja:yd{Da,ra,lb[0x12],lb[1],lb[0b1100]}tb={[1]=0b11,[0b11]=tb}tb[0b10]=tb tb[0b10][tb[1]]=ja:xd{fa,m,_a}vb={[1]=0b11,[0b11]=vb}vb[0b10]=vb vb[0b10][vb[1]]=ja:je()ob={[1]=0b11,[0b11]=ob}ob[0b10]=ob H,ob[0b10][ob[1]]={},ja:Qe{lb[0b1110],vb}Ha=H Ha={[1]=0b11,[0b11]=Ha}Ha[0b10]=Ha za={}H=za H={[1]=0b11,[0b11]=H}H[0b10]=H za=nil za={[1]=0b11,[0b11]=za}za[0b10]=za sa=true sa={[1]=0b11,[0b11]=sa}sa[0b10]=sa oa,ub,mb="UNKNOWN","0",lb[0b100000][0b10][lb[0x20][1]]Va=mb and Va+-0x18a or 0x28e68/Va end else ea=table Va,J,ea,R=Va+-0b1110100,Ca,o,ea.insert R(ea,J)end elseif Va<=0x343 then if Va>=0x332 then if Va<0x33c then if Va<=0x334 then if Va<=0x332 then d=os Q=d.clock Q=Q()Q,d,q[0b10][q[1]],ua=xpcall,S,Q,ja:Se()Q,d=Q(d,ua)Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q ua=f[0b10][f[1]].BoostFPS Va=ua and 0x352 or 0x1f7 else U,Va,ab=ga,0x202,ga.Destroy ab(U)end else Q,d=lb[0b1100][0b10][lb[0b1100][1]],false Q.UGC=d Q=ja:Me{lb[0x12]}Va,lb[0x19][0b10][lb[0b11001][1]]=0x392,Q end elseif Va>=0x33f then if Va>0x33f then Va,gb=Va+-0xcc,decompile else G,ba=qa,type ba=ba(G)G="table"Va,Ka=0x323,ba==G end else Va,ea=0x2c8,true hb[Oa]=ea end elseif Va<0x326 then if Va<0x31f then Va=Q and 0b100101111 or 0x18c00/Va elseif Va<=0x31f then Va=ta and 0x54131/Va or 0x136 else Va=Ka and 0x358 or 0b100001011 end elseif Va>=0x32c then if Va<=0x32c then ua,Va,pb=true,Va+-0b110101011,"Testing ghp. Rerun script if crashed"t[0b10][t[1]].Text=pb pb=Ca[0b10][Ca[1]]pb()else Va,a[0b10][a[1]]=0x2bf,ja:le{lb[0b1111],ta}end else Va,U=0x2eb,true f[0b10][f[1]].BoostFPS=U end elseif Va>=0x358 then if Va<0x362 then if Va<=0x358 then ba,G=type,qa[za[0b10][za[1]]]Va,ba=0x10b,ba(G)G="table"Ka=ba==G else U={[1]=0b11,[0b11]=U}U[0b10]=U d,Q="Volt",lb[0x22][0b10][lb[0b100010][1]]p=Q~=d Va=p and 0x43c-Va or Va+-0x7e end elseif Va>0x363 then Va,bb=0x4ab-Va,Wa.fatal elseif Va<=0x362 then Ca=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0x3cc-Va or Va+0x74 else Ma=2654435761 Va,Ma,Ya=0xc7,0b100000000,D*Ma aa=Ya%Ma end elseif Va<0x347 then if Va<=0x345 then Va,ib[0b10][ib[1]]=Va+0x89,ja:zd()else Va,J=0x302,table ea,J,wb=J.insert,o,R ea(J,wb)end elseif Va>0x348 then Va,ua,C=0x1f7,pcall,ja:Pd{lb[0b10010],q}ua(C)elseif Va>0x347 then eb,bb,N,_b,M,I,pb="base64decode",d,T,{},lb[0b10100][0b10][lb[0b10100][1]],C[0b10][C[1]],ja:Id()_b[1],_b[0b10],_b[0b11]=M,I,N Fa,N,_b,I,M=_b,Wa,pb,lb[0b1111][0b10][lb[0b1111][1]],0x32 I=ja.h(I(N))bb=bb(eb,Fa,_b,M,ja.i(I))eb,lb[0x14][0b10][lb[0x14][1]]=lb[0b10010][0b10][lb[0b10010][1]],bb bb=eb.HttpService bb={[1]=0b11,[0b11]=bb}bb[0b10]=bb eb,Fa=ja:ze{lb[0b1110],bb,lb[0x14]},nil Fa={[1]=0b11,[0b11]=Fa}Fa[0b10]=Fa M=table M,_b=0b100,M.create _b=_b(M)M,I=1,0b100 N=M Va=(I~=I or(N>0 and M>I or(N<=0 or N~=N)and M<I))and 0b110001110 or 0x594-Va else d,p,Pa,C={},lb[0b100][0b10][lb[0b100][1]],"PlayerModule",{}C[1]=Pa ua=C d.ModuleScript=ua C,Pa,n,Wa,T={},"BubbleChat","PlayerScriptsLoader","RbxCharacterSounds","ChatScript"C[1],C[0b10],C[0b11],C[0b100]=Pa,T,n,Wa ua=C d.LocalScript=ua Q,d=d,true p=p(Q,d)p={[1]=0b11,[0b11]=p}p[0b10]=p Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q Q[0b10][Q[1]]=ja:Rd{Q,U,z,p}d,ua=Q[0b10][Q[1]],lb[0b10010][0b10][lb[0b10010][1]]ua=ua.StarterPlayer d(ua)C=lb[0b10010][0b10][lb[0x12][1]]ua=C.Players d=ua.LocalPlayer Va=d and 0x1a6 or 0x11d end elseif Va<=0b10011111 then if Va<0b1011001 then if Va<0b100100 then if Va<0x14 then if Va>0b1010 then if Va>0b1111 then if Va>0x11 then Ga,Ca=L[ca],nil Va=Ga==Ca and Va+0x67 or 0b11101000-Va else jb=hb.Name lb[0x1a][0b10][lb[0x1a][1]],jb=jb,lb[0x1f][0b10][lb[0b11111][1]]Va,ca=0xaa,lb[0b11010][0b10][lb[0b11010][1]]jb.USSI_placeName=ca end elseif Va<0b1110 then Va=Oa and 0x234/Va or 0b1001010 elseif Va<=0b1110 then hb,jb=lb[0b100][0b10][lb[0b100][1]],o hb=hb(jb)Oa,_,j,i,l,J,r,Ta,a,ea,da,db,ta,k,Ca,wb,R="Workspace","TextChatService","ServerStorage","StarterPlayer","LocalizationService","MaterialService","ReplicatedStorage","Chat","SoundService","Lighting","StarterPack","StarterGui","Teams","ServerScriptService",{},"ReplicatedFirst","Players"Ca[1],Ca[0b10],Ca[0b11],Ca[0b100],Ca[0b101],Ca[0b110],Ca[0b111],Ca[0b1000],Ca[0b1001],Ca[0b1010],Ca[0b1011],Ca[0b1100],Ca[0b1101],Ca[0b1110],Ca[0b1111],Ca[0b10000]=Oa,R,ea,J,wb,r,k,j,db,da,i,ta,a,Ta,_,l jb,Ga,ca=Ca,nil,nil jb,ca,Ga=ja.g(jb,ca,Ga)Ca,Oa=jb(ca,Ga)Ga=Ca Va=Ga==nil and 0x78-Va or 0b110010010 else z=ra(Da,b)b=z Va=b==nil and 0b1000110 or 0x33-Va end elseif Va>0b1000 then if Va<=0b1001 then V=f[0b10][f[1]].SaveNotCreatable V={[1]=0b11,[0b11]=V}V[0b10]=V s=f[0b10][f[1]].TreatUnionsAsParts s={[1]=0b11,[0b11]=s}s[0b10]=s y=f[0b10][f[1]].SharedBinaryStrings y={[1]=0b11,[0b11]=y}y[0b10]=y sb,q,Ia,X,fa,ib=nil,nil,nil,nil,nil,nil X={[1]=0b11,[0b11]=X}X[0b10]=X ib={[1]=0b11,[0b11]=ib}ib[0b10]=ib sb={[1]=0b11,[0b11]=sb}sb[0b10]=sb q={[1]=0b11,[0b11]=q}q[0b10]=q fa={[1]=0b11,[0b11]=fa}fa[0b10]=fa Ia={[1]=0b11,[0b11]=Ia}Ia[0b10]=Ia Ea=f[0b10][f[1]].ReadMe Va=Ea and 0x8ca/Va or 0b1111011 else Va=Ua[0b10][Ua[1]]and Va+0xed or 0b1101000 end elseif Va<0b11 then if Va>0 then ya="optimized"Va=qb==ya and Va+0xde or 0b10010001-Va else nb,h=ia[1],typeof h=h(nb)nb="Instance"Va=h==nb and Va+0x6b or Va+0b10100001 end elseif Va<=0b11 then Ea="full"f[0b10][f[1]].mode=Ea ka,Va,Ua[0b10][Ua[1]]=nil,0x61-Va,nil else ha=string Va,ha,la,Sa,kb=0x46-Va,"_",#Ua[0b10][Ua[1]],#wa[0b10][wa[1]],ha.rep Sa=Sa-la kb=kb(ha,Sa)Ua[0b10][Ua[1]]=Ua[0b10][Ua[1]]..kb end elseif Va<=0b11011 then if Va>0x17 then if Va>0b11001 then ma=ka Va=ma and 0b101010 or 0b11001001-Va else Va=Ua and 0x45-Va or 0x84 end elseif Va>0x16 then Va,Ua=0xde,1 elseif Va>=0x15 then if Va<=0x15 then Va,Oa=0b1100,o[1]else Va=ma and 0x2e or 0x83-Va end else h="Instance"Va=m==h and Va+0b1111 or 0x6c end elseif Va>=0b100001 then if Va<0b100010 then kb,ha=#Ua[0b10][Ua[1]],#wa[0b10][wa[1]]Va=kb>ha and Va+0b10011011 or 0x5f-Va elseif Va<=0b100010 then jb=game ca,Ga,hb=" ",lb[0b11010][0b10][lb[0b11010][1]],jb.PlaceId jb=ca..Ga Va,ma=0b1111000-Va,hb..jb else f[0b10][f[1]].Object=ia Va,Da=0x8b,true end elseif Va>0b11101 then va,c=f[0b10][f[1]].SaveCacheInterval,f[0b10][f[1]].FilePath va={[1]=0b11,[0b11]=va}va[0b10]=va ka,Ua=f[0b10][f[1]].Object,f[0b10][f[1]].IsModel Ua={[1]=0b11,[0b11]=Ua}Ua[0b10]=Ua kb=ka Va=kb and 0b10011001 or 0b1000001 else ra=f[0b10][f[1]].Callback Va=ra and 0x1bde/Va or Va+0x46 end elseif Va>0b1001000 then if Va<0b1010011 then if Va<0b1001011 then if Va<=0x49 then Va=ya and 0x9f or 0x46b8/Va else Va,Oa=0x2f,game end elseif Va>0x4d then Va,wa,A=0x78,B[O],nil xa=wa~=A elseif Va>0x4b then return else wa,O=fb,type O=O(wa)wa="string"Va=O~=wa and 0xbf or 0xe7 end elseif Va>=0x55 then if Va>0b1010110 then Va=ya and 0x9f or 0x2feb/Va elseif Va>0b1010101 then Va=ma and 0x35c/Va or 0b10100011 else h,m,nb="DUPLICATE OPTION",warn,z Va=0b1111 m(h,nb)end elseif Va<=0x53 then Va,pa[ia]=0b1111,z else Va=w and 0x8d-Va or 0x67 end elseif Va<0x36 then if Va<0b101100 then if Va<=0x28 then if Va>0x24 then ma,hb=lb[0b11111][0b10][lb[0x1f][1]],true ma[sb[0b10][sb[1]]]=hb hb=nil ma.USSI=hb ma="scripts"Va=qb~=ma and 0b1011111 or 0x43-Va else m=string m,ia=z,m.lower ia=ia(m)m=pa[ia]Va=m and 0b1111001-Va or 0b1010011 end else hb="full"Va=qb==hb and 0xaf-Va or Va+0x90 end elseif Va<=0x2e then if Va>0b101100 then hb,Va,ma=sb[0b10][sb[1]],Va+0x92,0 else A[0b10][A[1]]=Ua Ua=A[0b10][A[1]]Ua={[1]=0b11,[0b11]=Ua}Ua[0b10]=Ua ha,kb=#wa[0b10][wa[1]],#Ua[0b10][Ua[1]]Va=kb<ha and 0b1000 or Va+-0b1011 end else Oa,R=Oa.GetFullName,Oa Oa=Oa(R)Ga=Ca..Oa ca=ma..Ga Va,jb=0b1001000,jb..ca hb=hb(jb)sb[0b10][sb[1]]=hb end elseif Va<0x41 then if Va>=0x39 then if Va<=0x39 then w=ja:ne{lb[0x12]}Y,z,ra,b,Da="SAVEINSTANCE ERROR",{},w,"SendNotification","SetCore"z.Title=Y Y="Function \"writefile\" is NOT available\nUse the Option \"Callback\" instead for now (check docs)"z.Text=Y Y=0b1111 z.Duration=Y Y="rbxassetid://9072920609"z.Icon=Y ra(Da,b,z)Da,ra,b,z,Y="SetCore",w,"SendNotification",{},"SAVEINSTANCE ERROR"z.Title=Y Y="Please ask your executor's developers to add writefile"z.Text=Y Y=0b1111 z.Duration=Y Y="rbxassetid://9072920609"z.Icon=Y ra(Da,b,z)ra,Da=warn,"Function \"writefile\" is NOT available\nUse the Option \"Callback\" instead for now (check docs)"ra(Da)ra,Da=lb[0b11111][0b10][lb[0b11111][1]],nil ra.USSI=Da return else Sa,la,kb,ha=ja:Te{xa,O},{},ja:Ud{wa,P,A},ja:he{wa,P,Ua}la.string=kb la.BinaryString=ha la.SharedString=ha la.double=Sa la.float=Sa la.int=Sa Va,la.int64=Va+-0b100000,Sa Na[0b10][Na[1]]=la end else Va,ka=0b11001111,va end elseif Va>=0b1000110 then if Va>0x46 then Va=c and 0b1101111 or 0b10100101 else b,z,Da,ra=f[0b10][f[1]].OptionsAliases,"ALIAS",pa,w ra(Da,b,z)ra,b,z,Da=w,f[0b10][f[1]].OptionsAliasesInverse,"INVERSE ALIAS",B ra(Da,b,z)w,ra=ja:ee{f},f[0b10][f[1]].NilInstancesFixes b,z,Da="Animator has to be placed under Humanoid or AnimationController","AnimationController",w Da=Da(b,z)ra.Animator=Da ra,b,Da,z=f[0b10][f[1]].NilInstancesFixes,"AdPortal must be parented to a Part",w,"Part"Da=Da(b,z)ra.AdPortal=Da b,Da,ra,z="Attachments must be parented to a BasePart or another Attachment",w,f[0b10][f[1]].NilInstancesFixes,"Part"Da=Da(b,z)ra.Attachment=Da z,b,ra,Da="MeshPart","BaseWrap must be parented to a MeshPart",f[0b10][f[1]].NilInstancesFixes,w Da=Da(b,z)ra.BaseWrap=Da ra,Da,z,b,Y=f[0b10][f[1]].NilInstancesFixes,w,"Folder","Package already has a PackageLink",true Da=Da(b,z,Y)ra.PackageLink=Da Da=table Da,ra=ja.h(...),Da.pack ra=ra(ja.i(Da))z,b,Da=ra.n,1,false Y=b Va=(z~=z or(Y>0 and b>z or(Y<=0 or Y~=Y)and b<z))and 0xd3 or 0xe2-Va end else Va=kb and Va+0b100101 or 0xb3-Va end elseif Va<=0b10000010 then if Va<0x6c then if Va>0b1100011 then if Va>0b1101000 then if Va<=0b1101010 then X[0b10][X[1]]=o Va=ka and Va+0x127 or 0x2e6 else f[0b10][f[1]].ExtraInstances=ia Va,h=0b11110110-Va,true f[0b10][f[1]].IsModel=h Da=h end elseif Va>0b1100111 then jb,Va,hb="place ",Va+-0b100000,F jb=jb..ma hb=hb(jb)sb[0b10][sb[1]]=hb elseif Va<=0b1100110 then Va,Ua[0b10][Ua[1]]=Va+0b1100,true else ra={}w=ra w={[1]=0b11,[0b11]=w}w[0b10]=w Da={}ra=Da ra={[1]=0b11,[0b11]=ra}ra[0b10]=ra Da=nil Da={[1]=0b11,[0b11]=Da}Da[0b10]=Da b=nil b={[1]=0b11,[0b11]=b}b[0b10]=b u,nb,h=true,f[0b10][f[1]].DecompileIgnore,lb[0b100][0b10][lb[0b100][1]]h=h(nb,u)u,h,z,nb=true,lb[0b100][0b10][lb[0b100][1]],h,f[0b10][f[1]].IgnoreList h=h(nb,u)h,nb,Y=lb[0b100][0b10][lb[0b100][1]],f[0b10][f[1]].IgnoreProperties,h h=h(nb)nb,h,u,m,ia=true,f[0b10][f[1]].NotCreatableFixes,"Folder",lb[0b100][0b10][lb[0b100][1]],h m=m(h,nb,u)z={[1]=0b11,[0b11]=z}z[0b10]=z Y={[1]=0b11,[0b11]=Y}Y[0b10]=Y ia={[1]=0b11,[0b11]=ia}ia[0b10]=ia m={[1]=0b11,[0b11]=m}m[0b10]=m h=f[0b10][f[1]].CopyToClipboard h={[1]=0b11,[0b11]=h}h[0b10]=h nb=f[0b10][f[1]].Callback nb={[1]=0b11,[0b11]=nb}nb[0b10]=nb u=f[0b10][f[1]].CompressionLevel u={[1]=0b11,[0b11]=u}u[0b10]=u fb=f[0b10][f[1]].CompressionMode fb={[1]=0b11,[0b11]=fb}fb[0b10]=fb Ra=f[0b10][f[1]].__DEBUG_MODE Ra={[1]=0b11,[0b11]=Ra}Ra[0b10]=Ra O=Ra[0b10][Ra[1]]Va=O and 0x52e2/Va or 0xf9-Va end elseif Va>0x5f then if Va>0b1100001 then Va,ra=0xf6,f[0b10][f[1]].CopyToClipboard else Va,b=0x14c-Va,"invalidmode"f[0b10][f[1]].mode=b end elseif Va>=0b1011110 then if Va>0b1011110 then Va,Sa[0b10][Sa[1]]=0x7a-Va,nil else Ea={[1]=0b11,[0b11]=Ea}Ea[0b10]=Ea Ea[0b10][Ea[1]],o,F=ja:Vd(),string,ja:be()o,qb=f[0b10][f[1]].mode,o.lower qb=qb(o)ya=table ya,o=f[0b10][f[1]].ExtraInstances,ya.clone o=o(ya)Va=ka and 1 or 0x151-Va end elseif Va<=0x59 then ca,jb=o,lb[0b100][0b10][lb[0b100][1]]jb=jb(ca)ca,Ga,Ca=hb,nil,nil ca,Ga,Ca=ja.g(ca,Ga,Ca)Oa,R=ca(Ga,Ca)Ca=Oa Va=Ca==nil and 0x6a or 0x684c/Va else jb=1 Va,Ca,ca,ma=0b100011101-Va,")","(",ma+jb Ga=ma..Ca jb=ca..Ga hb=sb[0b10][sb[1]]..jb end elseif Va>=0b1111000 then if Va>=0x80 then if Va>0x81 then Va,A=Va+0x68,Ra elseif Va>0x80 then Va,d=0x25a,table Q,d=d.clone,p Q=Q(d)else Q=nil lb[0b11001][0b10][lb[0x19][1]],ua=Q,lb[0b1100][0b10][lb[0b1100][1]]d=ua.UGC Q=not d Va=Q and 0b101100111 or 0x193 end elseif Va>0b1111001 then Ea=game Va=ka==Ea and 0b101110001/Va or 0x5e elseif Va<=0b1111000 then Va=wa and 0x41a0/Va or 0xed else Va,Ga=0xd6,false f[0b10][f[1]][ca]=Ga end elseif Va<=0x72 then if Va>0b1101111 then kb=f[0b10][f[1]].IgnoreDefaultProperties kb={[1]=0b11,[0b11]=kb}kb[0b10]=kb Sa=f[0b10][f[1]].IgnoreNotArchivable ha=not Sa ha={[1]=0b11,[0b11]=ha}ha[0b10]=ha Sa=f[0b10][f[1]].IgnorePropertiesOfNotScriptsOnScriptsMode Sa={[1]=0b11,[0b11]=Sa}Sa[0b10]=Sa la,V=nil,f[0b10][f[1]].IgnoreSpecialProperties Va=V and 0x6918/Va or 0x5028/Va elseif Va>=0b1101101 then if Va>0b1101101 then hb=lb[0x1f][0b10][lb[0x1f][1]]ma=hb[sb[0b10][sb[1]]]Va=ma and 0b10001110 or 0x1158/Va else Va,sb[0b10][sb[1]]=0xdc-Va,sb[0b10][sb[1]]..ya end else h="string"Va=m==h and 0x69e4/Va or 0x3aa4/Va end elseif Va<=0b1110011 then Va=Ua and 0b11011110 or 0x17 else Ua,kb,O[0b10][O[1]],wa[0b10][wa[1]]=type,c,va.UserId,va.Name Ua=Ua(kb)kb="table"ka=Ua==kb Ua=ka Va=Ua and Va+0b10010 or 0x341c/Va end elseif Va<0b10010010 then if Va>0x8d then if Va>=0b10010000 then if Va<=0b10010000 then Ca,Oa,ca,Ga,jb,R="IsolatePlayers","IsolateStarterPlayer","IsolateLocalPlayer","IsolateLocalPlayerCharacter",{},"NilInstances"jb[1],jb[0b10],jb[0b11],jb[0b100],jb[0b101]=ca,Ga,Ca,Oa,R hb,ya,ma=nil,jb,nil ya,ma,hb=ja.g(ya,ma,hb)jb,ca=ya(ma,hb)hb=jb Va=hb==nil and 0x183-Va or Va+-0x7e else Va,sb[0b10][sb[1]]=0b1101111,hb..ya end elseif Va>0b10001110 then Pa,C=ua,ab[0b10][ab[1]]Va=0x483-Va C(Pa)else return end elseif Va<=0b10001011 then if Va<=0b10000110 then if Va>=0x85 then if Va<=0x85 then hb=not ka Va=hb and 0x4ef8/Va or 0b1101010 else Va,Ua=Va+-0b10011,c.UserId end else Va,Ua=0x16b0/Va,"Roblox"end else b=b+Y Va=(Y>0 and b>z or Y<=0 and b<z or Y~=Y)and Va+0b1001000 or 0x9c end elseif Va>0b10001100 then Va,ya=0x9f,".rbxlx"else A=nil Va=xa and 0x517c/Va or 0x82 end elseif Va<0x99 then if Va<0x94 then if Va<=0x92 then Va=O and 0b10110000 or 0xa6 else Va=pb and 0x10f08/Va or 0b110111110 end elseif Va<0b10010101 then da={[1]=0b11,[0b11]=da}da[0b10]=da i=da[0b10][da[1]]Va=i and Va+0xe1 or 0xdb elseif Va<=0b10010101 then Va,A=0x8832/Va,not Ra else hb,jb=ma.GetChildren,ma hb=hb(jb)ca,jb=#hb,0 Va=jb<ca and 0x59 or 0b1101010 end elseif Va<=0b10011100 then if Va<0x9b then if Va>0x99 then Va=ya and 0x49 or 0xc1 else ha,Va,Sa=L.IsModel,0b1000001,nil kb=ha==Sa end elseif Va>0x9b then m,ia=typeof,ra[b]h=ia m=m(h)h="table"Va=m==h and 0 or 0xc30/Va else Va=b and 0x3abb/Va or 0b11101011 end elseif Va<=0b10011101 then ca,ma=lb[0b10010][0b10][lb[0b10010][1]],pcall jb=ca.MarketplaceService jb,hb,ca=ca.MarketplaceService,jb.GetProductInfoAsync,game ca=ca.PlaceId ma,hb=ma(hb,jb,ca)Va=ma and 0b10001 or 0x6842/Va else Va=c and 0xc4 or 0xc3 end elseif Va<0b11100100 then if Va>=0b11000000 then if Va>=0xd6 then if Va>=0b11011101 then if Va<0b11100000 then if Va<=0xde then if Va>0xdd then Ua,xa[0b10][xa[1]]=ka,Ua Va=Ua and 0xd7ee/Va or 0b11001 else Va=U and 0x35a or 0x24189/Va end else Va,qb=Va+-0b1001111,"full"end elseif Va<0xe1 then Va=0b111001000 elseif Va>0b11100001 then Va,p=0x3be-Va,hookfunction else U=lb[0b11111][0b10][lb[0x1f][1]]Va,ab=0x229,U.USSI_KAS ga=not ab end elseif Va>0xd8 then if Va<=0xdb then i={[1]=0b11,[0b11]=i}i[0b10]=i ta=da[0b10][da[1]]Va=ta and 0x25dac/Va or 0x31f else Va,sb[0b10][sb[1]]=0x48,hb end elseif Va<0b11010111 then jb,ca=ya(ma,hb)hb=jb Va=hb==nil and 0xf3 or 0xf0c/Va elseif Va<=0xd7 then Va,ib[0b10][ib[1]]=Va+0x2f7,ja:Wd{Ra,da,i,ta,r,db,gb}else Va=C and 0x24ea0/Va or 0x3a0 end elseif Va>=0xc8 then if Va>0xcf then if Va>0b11010011 then Va,ya=0b1010111,".rbxmx"else b=Da Va=b and 0b10101011 or 0x7fc1/Va end elseif Va<0b11001110 then if Va<=0b11001000 then ya=Ua[0b10][Ua[1]]Va=ya and 0x8340/Va or 0x7850/Va else Va,ma=Va+-0xb3,lb[0b1001][0b10][lb[0b1001][1]]end elseif Va>0xce then Va=ka and 0x74 or 0b11110 else wa,xa=type,Ra[0b10][Ra[1]]wa=wa(xa)Va,xa=0x757c/Va,"function"O=wa~=xa end elseif Va<=0xc3 then if Va>0xc1 then hb=lb[0b11010][0b10][lb[0b11010][1]]ma=not hb Va=ma and 0b10011101 or 0x817e/Va elseif Va>0b11000000 then Va,ya=0b1001001,".rbxl"else ca,jb=hb..ya,lb[0b1001][0b10][lb[0b1001][1]]jb=jb(ca)Va=jb and 0x45c0/Va or 0x91 end elseif Va<=0b11000100 then jb=string jb,hb,ca=c,jb.match,"%.[^/\\]+$"hb=hb(jb,ca)jb=nil ma=hb~=jb hb=ma Va=hb and 0b111000010-Va or 0b101111101-Va else Va,x[D]=0b101011011,aa end elseif Va<0b10101100 then if Va>0xa6 then if Va>0b10101010 then Y,z=nil,L.mode Va,b=0b10011011,z==Y elseif Va>=0xa9 then if Va<=0b10101001 then ua,C=warn,"Failed to load the API Dump"ua(C)C=d ua(C)ua=W ua()return else ma=lb[0x1a][0b10][lb[0b11010][1]]Va=ma and 0b100010 or 0b1010110 end else Va,ya=0b10011010,".rbxm"end elseif Va<0xa4 then if Va>=0b10100001 then if Va>0b10100001 then hb=game Va,ma=0xad-Va,hb.PlaceId else h,u,nb=ia,nil,nil h,nb,u=ja.g(h,nb,u)fb,Ra=h(nb,u)u=fb Va=u==nil and 0b10001011 or 0b1001011 end else hb="scripts"Va=qb==hb and 0x19000/Va or 0b1101010 end elseif Va>0xa5 then wa,O,A,Na,xa=nil,nil,nil,nil,nil O={[1]=0b11,[0b11]=O}O[0b10]=O wa={[1]=0b11,[0b11]=wa}wa[0b10]=wa xa={[1]=0b11,[0b11]=xa}xa[0b10]=xa A={[1]=0b11,[0b11]=A}A[0b10]=A Na={[1]=0b11,[0b11]=Na}Na[0b10]=Na Ja={[1]=0b11,[0b11]=Ja}Ja[0b10]=Ja Ja[0b10][Ja[1]]=ja:ud{Na}P={[1]=0b11,[0b11]=P}P[0b10]=P P[0b10][P[1]],Ua,c=ja:Td{lb[0b1110]},lb[0x12][0b10][lb[0b10010][1]],f[0b10][f[1]].Anonymous ka=Ua.Players ka,va=c,ka.LocalPlayer Va=ka and Va+-0b1110000 or 0x175-Va elseif Va<=0b10100100 then V,Va,la=nil,Va+-0b10011011,lb[0x1b][0b10][lb[0x1b][1]]lb[0x1b][0b10][lb[0x1b][1]]=V else ma=f[0b10][f[1]].AvoidFileOverwrite Va=ma and 0xc9 or Va+-0b10001111 end elseif Va>0xb4 then if Va<=0xbc then if Va<0b10111010 then Va=hb and 0b11011100 or 0b10110001 elseif Va<=0xba then hb="optimized"Va=qb==hb and 0b1110 or 0xa0 else Va,ha=0x2d88/Va,string ha,kb,Sa,la=Ua[0b10][Ua[1]],ha.sub,1,#wa[0b10][wa[1]]kb=kb(ha,Sa,la)Ua[0b10][Ua[1]]=kb end elseif Va>0xbd then xa,wa,O=fb,"Option names must be strings",warn Va=0b11100111 O(wa,xa)else p=f[0b10][f[1]].AntiIdle Va=p and 0x2da or 0b101100100 end elseif Va>=0b10110000 then if Va>=0xb1 then if Va>0xb1 then Va=V and 0x158-Va or 0x654/Va else Va,hb=0x981c/Va,c..ya end else Va,Ra[0b10][Ra[1]]=0b101010110-Va,warn end elseif Va<0b10101110 then Ka,mb="_",F K,Ba=lb[0x10][0b10][lb[0x10][1]],Ka G=Ba..K ba=ub..G qa=Ka..ba qa=oa..qa mb=mb(qa)mb,za[0b10][za[1]]=lb[0b10111][0b10][lb[0b10111][1]],mb Va=mb and 0x3ff or 0x386 elseif Va>0xae then Va=ma[0b10][ma[1]]and 0x36a-Va or 0x165 else Va,ma=0x2a,game end elseif Va>=0x106 then if Va<0b100101100 then if Va<0b100010101 then if Va>=0b100001000 then if Va>=0x10b then if Va>0x10b then U=ab U=U()Va,ga[0b10][ga[1]].Name=0x3fb,U p=lb[0b11101][0b10][lb[0x1d][1]]U=p.gethui U=U()ga[0b10][ga[1]].Parent=U else Va=Ka and 0x26a or 0x386 end else ab={[1]=0b11,[0b11]=ab}ab[0b10]=ab U,ab[0b10][ab[1]]=f[0b10][f[1]].SafeMode,ja:Bd{w,ga}Va=U and Va+0x98 or 0x2eb end elseif Va>0x106 then _a,La=gb,type La=La(_a)Va,_a=0x26345/Va,"string"Aa=La==_a else ga,ab=lb[0b11111][0b10][lb[0b11111][1]],true ga.USSI_KAS=ab U,ga="ScriptContext",game ab,ga=ga,ga.GetService ga=ga(ab,U)p=math Q,U=0.000047,p.clamp d,Q,p=0b11110,0b10100,va[0b10][va[1]]*Q U=ja.h(U(p,Q,d))ga,ab=ga.SetTimeout,ga ga(ab,ja.i(U))ab=coroutine ga=ab.running ga=ga()ga={[1]=0b11,[0b11]=ga}ga[0b10]=ga ab=islclosure ab={[1]=0b11,[0b11]=ab}ab[0b10]=ab U=isexecutorclosure Va=U and 0b11011101 or 0x21a end elseif Va>=0x11e then if Va<=0b100100010 then if Va>0x11e then ga=f[0b10][f[1]].KillAllScripts Va=ga and 0x203-Va or 0x229 else U,Q=game,"CoreGui"p,U=U,U.GetService U=U(p,Q)U,p,Q=U.FindFirstChild,U,"RobloxGui"U=U(p,Q)Va=U and Va+0b110100011 or Va+0b110100100 end else eb=nil Va,lb[0b11011][0b10][lb[0x1b][1]]=0x176d4/Va,eb end elseif Va<=0x118 then if Va<=0x115 then gb=Ta[0b10][Ta[1]]Va=gb and Va+0b101100010 or 0x343 else Va,ha[0b10][ha[1]]=Va+-0b111000,false end else Va=0x292 end elseif Va<=0b100111111 then if Va<0b100110110 then if Va>0x12e then Q,d=lb[0b1100][0b10][lb[0b1100][1]],false Va,Q.UGC=0x80,d elseif Va<=0x12c then J=jb[R]ea=not J Va=ea and 0x346 or Va+0b111010110 else Va=Ta and 0x32d or 0x2bf end elseif Va>=0b100111100 then if Va>0x13c then Va=bb and 0b101111011 or 0x2b752/Va else bb=Wa.fatal Va=bb and 0x354f4/Va or 0b111011000 end else ta=nil ta={[1]=0b11,[0b11]=ta}ta[0b10]=ta a=lb[0b11100][0b10][lb[0b11100][1]]Va=a and 0x4628a/Va or 0x270 end elseif Va>0x146 then if Va<=0x14e then Wa,Va,pb=game,0x1fb,"EncodingService"E,Wa=Wa,Wa.GetService Wa=Wa(E,pb)Wa={[1]=0b11,[0b11]=Wa}Wa[0b10]=Wa Pa,T,bb=ja:Ee{Wa},ja:Sd{Wa},Enum pb=bb.CompressionAlgorithm E=pb.Zstd E={[1]=0b11,[0b11]=E}E[0b10]=E n=ja:Od{E,Wa}else J=hb[R]Va,ea=0x258,not J end elseif Va>=0x142 then if Va>0b101000010 then ua,d=nil,L.RiskyServicesDisabled Va,Q=Va+0x5e,d==ua else Va=0b110101001 end else bb,pb="base64encode not found",warn pb(bb)pb=W pb()return end elseif Va<=0b11110011 then if Va<0b11101011 then if Va>=0b11100111 then if Va>=0xe9 then if Va>0b11101001 then Va,f[0b10][f[1]][wa]=0b11101101,A Na=true L[wa]=Na else pb,Wa,E="PlayerScripts",n.IsA,n Wa=Wa(E,pb)Va=Wa and 0x224d3/Va or 0x372da/Va end else wa=string wa,O=fb,wa.lower O=O(wa)wa,xa=pa[O],false A=not wa Va=A and 0b1001111 or 0b1111000 end elseif Va<=0xe5 then if Va>0b11100100 then vb,Va,ob=tostring,0x183,tb vb=vb(ob)_[0b10][_[1]]=vb else tb,Va,vb=type,0x3b9,La tb=tb(vb)vb="function"_a=tb==vb end else g,t=lb[0b11111][0b10][lb[0x1f][1]],true g.USSI=t g=0 g={[1]=0b11,[0b11]=g}g[0b10]=g t=nil t={[1]=0b11,[0b11]=t}t[0b10]=t B,pa="optimized",{}pa.mode=B B=true pa.Binary=B B="zstd"pa.CompressionMode=B B=0b1001 pa.CompressionLevel=B B=true pa.Decompile=B B=0b1010 pa.DecompileTimeout=B B=false pa.DecompileJobless=B B=true pa.scriptcache=B B=false pa.SaveBytecode=B B=0b11 pa.BytecodeTimeout=B B=false pa.__DEBUG_MODE=B pa.Callback=B pa.CopyToClipboard=B L,w={},"TextChatService"L[1]=w ra=nil L.ModuleScript=ra B=L pa.DecompileIgnore=B B=true pa.IgnoreDefaultPlayerScripts=B L={}B=L pa.IgnoreProperties=B ra,w,L="CorePackages","CoreGui",{}L[1],L[0b10]=w,ra Da=false L.Packages=Da B=L pa.IgnoreList=B L={}B=L pa.ExtraInstances=B B=Da pa.NilInstances=B L={}B=L pa.NilInstancesFixes=B B=0xdc00 pa.SaveCacheInterval=B B=true pa.ShowStatus=B B=Da pa.KillAllScripts=B pa.SafeMode=B pa.BoostFPS=B pa.ShutdownWhenDone=B B=true pa.AntiIdle=B B=Da pa.Anonymous=B B=true pa.ReadMe=B B=Da pa.FilePath=B B=true pa.AvoidFileOverwrite=B B=Da pa.Object=B pa.IsModel=B B=true pa.IgnoreDefaultProperties=B pa.IgnoreNotArchivable=B B=Da pa.IgnorePropertiesOfNotScriptsOnScriptsMode=B pa.IgnoreSpecialProperties=B pa.IsolateLocalPlayer=B pa.IsolateLocalPlayerCharacter=B pa.IsolatePlayers=B pa.IsolateStarterPlayer=B pa.SavePlayerCharacters=B pa.SaveNotCreatable=B w,Y,ra,b,Da,L,z,ia="","PlayerGui","AdvancedDragger","Dragger","AnimationTrack",{},"Player","PlayerMouse"u,Ra,fb,O,m,wa,nb,h="StudioData","TextSource","TextChatMessage","TouchTransmitter",ia,"Translator","ScreenshotHud","PlayerScripts"L[1],L[0b10],L[0b11],L[0b100],L[0b101],L[0b110],L[0b111],L[0b1000],L[0b1001],L[0b1010],L[0b1011],L[0b1100],L[0b1101],L[0b1110],L[0b1111]=w,ra,Da,b,z,Y,ia,m,h,nb,u,fb,Ra,O,wa xa="LocalizationTable"L.CloudLocalizationTable=xa xa="Part"L.Platform=xa xa="Model"L.Status=xa B=L pa.NotCreatableFixes=B w,L=true,{}L.UGC=w w=false L.Encoding=w L.Reflection=w B=L pa.RiskyServicesDisabled=B B=w pa.SharedBinaryStrings=B pa.TreatUnionsAsParts=B w,Da,Y,ra,b,z=lb[0b100][0b10][lb[0b100][1]],"WRD","OpiumwareMac",{},"Xeno","Zorara"ra[1],ra[0b10],ra[0b11],ra[0b100]=Da,b,z,Y w=w(ra)ra=lb[0x22][0b10][lb[0x22][1]]L=w[ra]B=not L pa.AlternativeWritefile=B w,L="CopyToClipboard",{}L.Clipboard=w w="Decompile"L.DecompileScripts=w w="FilePath"L.FileName=w w="IgnoreNotArchivable"L.IgnoreArchivable=w w="IgnoreDefaultProperties"L.IgnoreDefaultProps=w w="IgnoreList"L.InstancesBlacklist=w w="IsolateLocalPlayer"L.IsolatePlayerGui=w w="SavePlayerCharacters"L.SaveCharacters=w w="IsolateLocalPlayer"L.SaveLocalPlayer=w w="NilInstances"L.SaveNilInstances=w w="SaveNotCreatable"L.SaveNonCreatable=w w="IsolateLocalPlayer"L.SavePlayerGui=w w="IsolatePlayers"L.SavePlayers=w w="ShowStatus"L.StatusText=w w="DecompileTimeout"L.timeout=w B=L pa.OptionsAliases=B w,L="CompressionMode",{}L.DisableCompression=w w="Decompile"L.noscripts=w w="SavePlayerCharacters"L.RemovePlayerCharacters=w w="IsolatePlayers"L.RemovePlayers=w w="Binary"L.XML=w B=L pa.OptionsAliasesInverse=B f=pa f={[1]=0b11,[0b11]=f}f[0b10]=f w={}w,pa={},w B,w=w,{}Da,w,L,ra,b=nil,ja:me(),w,f[0b10][f[1]],nil ra,Da,b=ja.g(ra,Da,b)z=ra(Da,b)b=z Va=b==nil and 0x46 or 0b100001010-Va end elseif Va<0b11110001 then if Va>=0xec then if Va>0xec then fb,Ra=h(nb,u)u=fb Va=u==nil and 0x8b or Va+-0xa2 else Va,V=0b10110100,lb[0b11011][0b10][lb[0b11011][1]]end else ra=lb[0b1101][0b10][lb[0b1101][1]]w=not ra Va=w and 0b11101 or 0x54 end elseif Va>0b11110010 then ya=f[0b10][f[1]].Binary Va=ya and 0xc8 or 0x49 elseif Va>0xf1 then t=lb[0b11111][0b10][lb[0x1f][1]]g=t.USSI Va=g and 0b1001101 or 0xe6 else Va=pb and 0x32c or 0b110000001 end elseif Va>=0b11111011 then if Va>=0xfe then if Va<0x100 then Va,hb=0xb9,c elseif Va<=0b100000000 then Q,p=ja:Jd{lb[0x12]},pcall Va=0b10111101 p(Q)else pb,bb=H[0b10][H[1]][E],"crashed"Va=pb==bb and 0x23e-Va or 0x1b05a/Va end elseif Va>0b11111011 then d=lb[0x1f][0b10][lb[0b11111][1]]Va,d.bit32=0x29e,Q else Va,f[0b10][f[1]].FilePath=0x8b,ia end elseif Va<0b11111000 then if Va>0b11110110 then jb,Oa,Ca,hb="model ",ka," ",F Va=Oa and 0xb94/Va or 0x1443/Va else Va,w=0x54,not ra end elseif Va>0xf9 then Va,Ea=Va+-0b1111111,{}Ia[0b10][Ia[1]]=Ea elseif Va>0xf8 then Va,Ua=0b11001,c.Name else ya=Ua[0b10][Ua[1]]Va=ya and 0xd5 or 0x57 end until false end end,function(d,_)return function()local i,b,g,h,j,f j=_[1][0b10][_[1][1]]i,g=j,j.VirtualInputManager b=i.UserInputService i,b=b,b.GetMouseLocation b=b(i)h,f=j,b.X i=h.UserInputService h,i=i,i.GetMouseLocation i=i(h)g,j,i,h,b=g.SendMouseWheelEvent,g,true,game,i.Y g(j,f,b,i,h)return end end,function(d,o)return function(g)local k,e,a,m,j,n,b,i,f,l,h f=buffer k,f=f.create,0b100 k=k(f)l=buffer i,m,h,l,a,f,j,b,n,e=0,g.Back,o[1][0b10][o[1][1]],k,g.Right,l.writeu32,g.Bottom,g.Left,g.Front,g.Top h=h(a,e,m,b,j,n)f(l,i,h)l,f=0b100,k return f,l end end,function(r,y)return function(g)local k,m,h,p,a,q,l,B,z,_,e,w,x,d,C,v,b,f,t,n,A,s,u,j,o C=0x27 repeat if C>0b10000000 then if C<0xc1 then if C<=0x9c then e=e+b C=(b>0 and e>v or b<=0 and e<v or b~=b)and 0xf9 or 0x1e else b=b+n C=(n>0 and b>z or n<=0 and b<z or n~=n)and 0b10000000 or 0x2f end elseif C>=0xd7 then if C>0xd7 then v=buffer v,e=s,v.create e=e(v)b=buffer b,n,v,z=e,w,b.writeu32,0 v(b,z,n)z,b,v=w,1,0b100 n=b C=(z~=z or(n>0 and b>z or(n<=0 or n~=n)and b<z))and 0b10000000 or 0b101111 else e=B(s,w)w=e C=w==nil and 0x105-C or 0b100101110-C end else d,u=h,n d,u=d(u)k,a=#z,0b100 a,x=1,a+k p=x+a q,C,x=p+u,0b101011101-C,buffer x,p=q,x.create p=p(x)a=buffer a,x,j,A=p,a.writeu32,k,0 x(a,A,j)a=buffer j,x,a,A=z,a.writestring,p,0b100 x(a,A,j)a=buffer j,a,x=0b100,p,a.writeu8 A,j=j+k,m x(a,A,j)a=buffer o,x,a=0b100,a.copy,p j,o=o+k,1 j,A=d,j+o x(a,A,j)x=1 w=w+x B[w]=p s=s+q end elseif C<0b101111 then if C>=0x27 then if C>0b100111 then s=table B,s=s.sort,t B(s)s=table B,s=s.create,l B=B(s)v,e,s,w=l,1,0b100,0 b=e C=(v~=v or(b>0 and e>v or(b<=0 or b~=b)and e<v))and 0b11111001 or 0x564/C else f={}l,t={},f w,l,f,B,s=nil,0,l,g,nil B,s,w=r.g(B,s,w)e=B(s,w)w=e C=w==nil and 0x2e or 0x57 end else z=t[e]_=f[z]n,_=g[_],y[0b10][0b10][y[0b10][1]]m=n _=_(m)h=y[1][0b10][y[1][1]]m,d=h[_],y[0b11][0b10][y[0b11][1]]h=d[_]d=not h C=d and 0xba-C or 0b11000001 end elseif C>0x57 then z,b=s,e return b,z elseif C>0x2f then b=1 b,z,l=tostring,e,l+b b=b(z)C,t[l]=0b11010111,b f[b]=e else h,C,_=buffer,0b10111001,B[b]h,d,u,m=e,v,_,h.copy m(h,d,u)h=buffer m,h=h.len,_ m=m(h)v=v+m end until false end end,function(d,_)return function(g)local b,e,f,a f=_[1][0b10][_[1][1]]b,e=f,f._packMultiple f,b,a=b.Vector3,g.Origin,g.Direction e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function()local e,c,a c=0x82 while true do if c<0x82 then return elseif c<=0b10000010 then a=_[0b10][0b10][_[0b10][1]]c=a and 0x40 or 0xf0 else e=task e,a=d:sf{_[0b100],_[0b11],_[1]},e.spawn a=a(e)_[0b10][0b10][_[0b10][1]]=a return end end end end,function(d,_)return function(g)local f,e f=_[1][0b10][_[1][1]]e=g[f]return e end end,function(r,o)return function(g)local e,i,m,c,n,s,l,f,j,t,p,b,_,d,h,u,k,a c=0b10101110 repeat if c<0b1110101 then if c<=0x2e then if c>=0x1e then if c>0x1e then l="\1\0\0\0\0\0\0\0"return l else j,c,n=0b100,0xd5,#p b=j+n l=l+b end else s=buffer i,s=s.create,l i=i(s)a=buffer e,s,p,a=0,a.writeu32,1,i s(a,e,p)a=buffer s,e,p,a=a.writeu32,0b100,f,i s(a,e,p)a=o[1][0b10][o[1][1]]b,p,s,e,a=nil,nil,a.string,t,0b1000 e,p,b=r.g(e,p,b)j,n=e(p,b)b=j c=b==nil and 0xcb2/c or c+0b1011100 end else i,s,a,l=t,nil,nil,0b1000 i,s,a=r.g(i,s,a)e,p=i(s,a)a=e c=a==nil and 0b1001010-c or 0b11110 end elseif c<=0xae then if c<0b10000010 then m,_=n,s _,m=_(m)d=buffer u,k,h,d=a,_,d.copy,i h(d,u,k)c,a=c+0x65,a+m elseif c<=0b10000010 then p=buffer e,p=p.tostring,i e=r.h(e(p))return r.i(e)else t,f=g.GetOrderedInputPinNames,g t=t(f)f,l=#t,0 c=f==l and 0x2e or 0x31 end elseif c<=0xd5 then e,p=i(s,a)a=e c=a==nil and 0b11001 or 0x1e else j,n=e(p,b)b=j c=b==nil and 0b10000010 or 0b101001111-c end until false end end,function(r,o)return function(g)local j,m,c,i,_,e,b,a,h,v,d,t,n,s,f,l,u,k c=0b11001100 repeat if c<=0xcb then if c<=0x71 then if c<=0x64 then if c<=0b1011011 then h,u="</Weight><Style>",l c=u and 0x72 or 0x59ef/c else c,_=0xbf-c,""end else c=_ and 0x5b or 0x2c24/c end elseif c>0b1110010 then m=o[1][0b10][o[1][1]]_,m=m.EnumItem,f c,_=0x13c-c,_(m)else c,u=0xfd,i.Name end elseif c<=0xd6 then if c>0b11001101 then c,u=c+-0b1001,""elseif c>0xcc then k="</Style>"d=u..k m=h..d n=_..m b=j..n e=v..b s=a..e return s else l,i,f,t=g,"Weight",o[0b10][0b10][o[0b10][1]],pcall t,f=t(f,l,i)s,i,l,a=g,o[0b10][0b10][o[0b10][1]],pcall,"Style"l,i=l(i,s,a)b,a=o[1][0b10][o[1][1]],"<Family>"b,v=g.Family,b.ContentId v=v(b)j,_="</Family><Weight>",t c=_ and 0b11001011 or 0b1110001 end else c=u and c+-0x30 or 0xd37e/c end until false end end,function(r,o)return function(g)local f,p,d,c,t,b,m,n,i,h,j,l,a,e,s,_ c=0x2a while true do if c>=0b1110101 then if c<0x83 then t[0b10][t[1]].roots=e return t[0b10][t[1]]elseif c<=0x83 then m,h=a[0b10][a[1]],_ m(h)m=f[0b10][f[1]][_]c=m and 0b1110000 or 0xb9 else n,_=p(b,j)j=n c=j==nil and 0b1110101 or c+-0x36 end elseif c<=0x2a then f,i={},{}l=i f.entries=l i={}l=i f.classList=l i={}l=i f.ordered=l i={}l=i f.refs=l l=0 f.instCount=l f.instTypeCount=l t=f t={[1]=0b11,[0b11]=t}t[0b10]=t l,f=t[0b10][t[1]].classList,t[0b10][t[1]].entries f={[1]=0b11,[0b11]=f}f[0b10]=f l={[1]=0b11,[0b11]=l}l[0b10]=l s,i=t[0b10][t[1]].refs,t[0b10][t[1]].ordered i={[1]=0b11,[0b11]=i}i[0b10]=i s={[1]=0b11,[0b11]=s}s[0b10]=s a={[1]=0b11,[0b11]=a}a[0b10]=a p,a[0b10][a[1]]=table,r:df{o[0b10],f,o[0b100],o[0b1000],o[0b1101],l,o[0b110],i,o[0b1110],a,o[0b1011],o[0b11],o[0b1001],o[0b101],o[0b111],s,o[0b1010],o[1],t,o[0b1100]}p,e=#g,p.create e=e(p)b,p,j=nil,g,nil p,b,j=r.g(p,b,j)n,_=p(b,j)j=n c=j==nil and 0x75 or 0x83 else h,d=#e,1 c,m=c+0b1001001,h+d e[m]=_ end end end end,function(d,_)return function(g)local c,k,a,e,f,i,h,l c=0b11001011 repeat if c<=0b10111110 then if c<=0x69 then if c>=0x5d then if c>0b1011101 then i,h=f,g i,h=i(h)a=not i c=a and 0b11101111 or 0x5622/c else c,h=0x210f/c,l end elseif c<=0b111011 then i,l="Part",f l,i=l(i)e=_[0b101][0b10][_[0b101][1]]a=e.Reflection h=not a c=h and 0b10011000-c or 0x96-c else c=h and 0b10111110 or 0x92 end elseif c>=0x92 then if c<=0x92 then c,_[1][0b10][_[1][1]]=0x87bc/c,h else c,a=0b10010010,true h=i==a end else i=_[0b10][0b10][_[0b10][1]]i[g]=l return l end elseif c>=0b11010111 then if c<=0xee then if c>0b11010111 then l,i=true,_[1][0b10][_[1][1]]c=i and c+-0b10000101 or 0x90 else l,i,f=_[1][0b10][_[1][1]],nil,d:_f{_[0b100],_[0b11]}c=l==i and 0x318d/c or 0xee end else c,l=0x90,a end elseif c>0b11001011 then e=true c,a=0xef,h==e elseif c<=0b11000101 then return k else f=_[0b10][0b10][_[0b10][1]]k,f=f[g],nil c=k~=f and 0xc5 or 0b11010111 end until false end end,function(d,_)return function(g)local f,h,a,c,k,i,b c=0b11100110 while true do if c>=0b1000111 then if c>0x47 then k,f=g.GetPropertyTransitions,g k=k(f)b,i=next,k b=b(i)f=not b c=f and 0x47 or 0 else f="\2\0\0\0\0\0"return f end else b,i,a,h,f=k,{},0,0b10,_[1][0b10][_[1][1]]i[1],i[0b10]=h,a f=d.h(f(b,i))return d.i(f)end end end end,function(d,_)return function()local f,c,g,e c=0b11100111 while true do if c<=0b10010100 then if c<0x5b then f=_[1][0b10][_[1][1]]e=f.Players c,g=c+0b10000110,e.LocalPlayer elseif c<=0x5b then c=g and c+0x64 or 0x39 else c,e=0x5b,_[1][0b10][_[1][1]]f,g="LocalPlayer",e.Players g,e=g.GetPropertyChangedSignal,g g=g(e,f)g,e=g.Wait,g g=g(e)end elseif c>0b10111111 then f=_[1][0b10][_[1][1]]e=f.Players g=e.LocalPlayer c=g and 0b1011011 or 0x94 else return g end end end end,function(d,_)return function(g)local e,b,i,c,f c=0b11101011 while true do if c<0b11100100 then return f elseif c>0b11100100 then f,e,b=_[0b10][0b10][_[0b10][1]],pcall,g e,f=e(f,b)c=e and 0x4d or 0b11100100 else i=_[1][0b10][_[1][1]]b=g[i]return b end end end end,function(d,_)return function(g)local e,a,b,f f=_[1][0b10][_[1][1]]b,a,e,f=g.Y,g.Z,f._packF32,g.X e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function(g)local i,k,a,h,f,e,l,c c=0b10011111 while true do if c<=0x83 then if c>=0b1110101 then if c>0x75 then c=l and 0b10100110-c or c+0b1100011 else i=""c,l=0x83,f~=i end elseif c<=0b100011 then e,a,i=f,_[1][0b10][_[1][1]],"-- Bytecode (Base64):\n-- "a=a(e)e="\n\n"h=a..e l=i..h return l else c=l and 0b10110011-c or 0x83 end elseif c<=0b10011111 then if c>0x91 then f,k=g,_[0b10][0b10][_[0b10][1]]k,f=k(f)l=k c=l and 0b10010001 or 0b111110 else c,l=0x3e,f end else return end end end end,function(d,_)return function(a)local e,f e,f=_[1][0b10][_[1][1]],a.Offset e=e(f)return e end end,function(r)return function(g,t,f)local j,p,h,b,s,m,a,i,n,_,d,l,e m,d,e,i,j="</",">"," name=\"","<","\">"h=g..d _=m..h n=f.._ b=j..n p=t..b a=e..p s=g..a l=i..s return l end end,function(r)return function(g,t,f)local i,l,p,x,u,c,k,j,b,s,d,q,v,e,_,n,w,h,m c=0x27 repeat if c>=0x2b then if c>0b1111011 then if c<=0xa4 then v=v+j c=(j>0 and v>b or j<=0 and v<b or j~=j)and 0x1b8c/c or 0b1111011 else i=i+w c=(w>0 and i>s or w<=0 and i<s or w~=w)and 0b110 or 0x2adb/c end elseif c<0b110101 then return elseif c>0b110101 then _=t[v]h,n,m,_=i,_.Keypoints,s,w d=#n _(m,h,d)_=0b100 i,_,m,h=i+_,n,nil,nil _,m,h=r.g(_,m,h)d,u=_(m,h)h=d c=h==nil and 0b10100100 or c+-0b1101000 else v,n=0b1100,t[i]j=n.Keypoints c,b=0x104-c,#j e=v*b l=l+e end elseif c>=0x27 then if c>0x27 then d,u=_(m,h)h=d c=h==nil and c+0x7a or c+-0b10111 else i=0b100 l,i,s=i*f,1,f w=i c=(s~=s or(w>0 and i>s or(w<=0 or w~=w)and i<s))and 0b110 or 0x35 end elseif c>0b110 then k,x,p,q=e,u.Time,i,s k(q,p,x)k,q,x=e,s,0b100 p,c,x=i+x,0x2a,u.Value k(q,p,x)k,x,q=e,0b1000,s x,p=u.Envelope,i+x k(q,p,x)k=0b1100 i=i+k else i,s,w=g.allocRegion,g,l i=i(s,w)v,s=buffer,g.buf e,w,v,b=v.writef32,v.writeu32,1,f j=v c=(b~=b or(j>0 and v>b or(j<=0 or j~=j)and v<b))and 0b101011 or 0x7b end until false end end,function(d,_)return function()local b,g,e,f e=_[0b10][0b10][_[0b10][1]]f,b,g=_[1][0b10][_[1][1]],"ussi_cache/GHP_STATE.json",e.HttpService f=d.h(f(b))e,g=g,g.JSONDecode g=d.h(g(e,d.i(f)))return d.i(g)end end,function(r,o)return function(g)local l,b,c,h,_,k,a,q,i,f,j,n,p,e,m c=0xb6 while true do if c>=0x74 then if c<=0b10110110 then if c>0x74 then f,k=g,g.GetUserIdAccessList k=k(f)l,f=0,#k c=f==l and 0b11000 or 0b110100 else c,n,h,m,_=0x143-c,i,j,q,l n(_,m,h)n=0b1000 q=q+n end else b,j=a(e,p)p=b c=p==nil and 0x117-c or 0x74 end elseif c>=0x34 then if c>0b110100 then e=buffer e,a=l,e.tostring a=r.h(a(e))return r.i(a)else i=buffer i,l=0b1000,i.create i=f*i l=l(i)q=o[1][0b10][o[1][1]]i,p,a,q,e=q._writeI64LE,nil,k,0,nil a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0b1001000 or 0b1110100 end else l=""return l end end end end,function(d)return function(g)local e,c,l,a,b,f,q,_,m,k,n,j,i,p c=0x14 repeat if c<=0x30 then if c>=0b10100 then if c>0b10100 then return k else k,f,l="",g.GetEmotes,g f,l,i=f(l)f,l,i=d.g(f,l,i)q,a=f(l,i)i=q c=i==nil and 0x30 or 0b10011 end else b,_="^",table m,n,_=b,_.concat,a n=n(_,m)_="^\\"j=n.._ c,p=0xa3,b..j e=q..p k=k..e end else q,a=f(l,i)i=q c=i==nil and 0xd3-c or 0xb6-c end until false end end,function(d,_)return function(g,j)local h,f,a,b,i b=table b,h,f,a,i=_[1][0b10][_[1][1]],g,b.insert,j,g.Connect i=d.h(i(h,a))f(b,d.i(i))return end end,function(d,_)return function()local f,a,e e=_[1][0b10][_[1][1]]a,f=e.RunService,false e,a=a,a.Set3dRenderingEnabled a(e,f)return end end,function(d,_)return function(g)local e,b,f,a f=_[1][0b10][_[1][1]]e,b,f,a=f._packF32,g.G,g.R,g.B e=d.h(e(f,b,a))return d.i(e)end end,function(r,o)return function(g)local w,h,v,m,i,u,b,q,s,c,p,k,t,f,_,j,n,d,l,e c=0b10100101 while true do if c>=0x63 then if c>=0b10011011 then if c<0xa5 then b=table b,v=w,b.sort v(b)b=buffer v,b=b.create,s v=v(b)j=buffer b,_,j,n=j.writeu32,i,v,0 b(j,n,_)n,j,_,b=nil,w,nil,0b100 j,n,_=r.g(j,n,_)m,h=j(n,_)_=m c=_==nil and 0x17 or c+-0x38 elseif c>0xa5 then v=0 c=i==v and c+-0xd3 or 0x97f9/c else l,t="ExplorerServiceVisibilityService",game f,t=t,t.GetService t=t(f,l)l=o[0b10][0b10][o[0b10][1]]f,i=l.string,o[1][0b10][o[1][1]]i,s,e,l=0,0b100,{},i.string w,v=e,{}e,v=v,game v,b=v.GetChildren,v v,b,j=v(b)v,b,j=r.g(v,b,j)n,_=v(b,j)j=n c=j==nil and 0xfb or 0b1000010 end elseif c<=0x63 then u=buffer k,d,q,u=b,u.writeu8,l,v d(u,k,q)d=1 k,b,d=buffer,b+d,e[h]k,u,q,p=v,k.copy,b,d u(k,q,p)c,k=0x8c,buffer u,k=k.len,d u=u(k)b=b+u else m,h=j(n,_)_=m c=_==nil and c+-0x75 or 0x63 end elseif c<0x28 then if c>0b1011 then n=buffer j,n=n.tostring,v j=r.h(j(n))return r.i(j)else m,h=_.ClassName,f d=m h,d=h(d)u=1 c,i=0x2a,i+u w[i]=m e[m]=h k=u u=k+d s=s+u end elseif c>=0b101010 then if c>0x2a then h,m,d=t,t.GetServiceVisibility,_ m=m(h,d)c=m==g and 0x4d-c or 0b101010 else n,_=v(b,j)j=n c=j==nil and 0b11111011 or c+0x18 end else v="\0\0\0\0"return v end end end end,function(d)return function(a)local e e=a.Max return e end end,function(r,o)return function(g)local p,k,a,m,e,l,n,h,i,_,s,c,b,f,j c=0x6d repeat if c>=0b1101001 then if c<=0b11000000 then if c<=0x6d then if c<=0x69 then j=0x20 c=b<j and 0b101010111-c or 0xd8 else f,k=g,tostring k=k(f)f=""c=k==f and 0x55 or 0x28 end else j=o[1][0b10][o[1][1]]b=j[p]c=b and 0x129-c or 0b1010 end elseif c<=0xd8 then n=bit32 j,m,n=n.bor,bit32,l _,m,h=m.lshift,1,0b100000 h=b-h c,_=0b1010,r.h(_(m,h))j=j(n,r.i(_))l=j else n=bit32 m,n,j=bit32,f,n.bor c,h,m,_=0x94c/c,b,1,m.lshift _=r.h(_(m,h))j=j(n,r.i(_))f=j end elseif c>=0x28 then if c>0b101000 then f=0 l=f return f,l else f=0 l,s=f,string s,i,a=k,s.split," | "i,s,a=i(s,a)i,s,a=r.g(i,s,a)e,p=i(s,a)a=e c=a==nil and 0x280/c or 0b11000000 end elseif c<=0b1010 then e,p=i(s,a)a=e c=a==nil and c+0b110 or 0b11001010-c else return f,l end until false end end,function(d,_)return function(g,e)local f,h,b,i b=_[1][0b10][_[1][1]]h,f,i=e,b.UGCValidationService,g f,b=f.GetPropertyValue,f f=d.h(f(b,i,h))return d.i(f)end end,function(d)return function(g,e)local i,f,b b,i=g.t,e.t f=b<i return f end end,function(d,o)return function(g,k,f)local j,a,n,b,_,l,c,i,e,p,h c=0b1000110 while true do if c>=0xa2 then if c>0xa2 then return k else a,e=l(i,h)h=a c=h==nil and 0b101101110-c or c+-0x47 end elseif c>0x46 then b=buffer j,b,p,n,_=k,g,b.writei32,o[1][0b10][o[1][1]],e.Time c,n=0xa2,d.h(n(_))p(b,j,d.i(n))p=0b100 k=k+p else i=buffer h,a,l,i=k,1,i.writeu32,g l(i,h,a)l=0b100 k,i=k+l,buffer i,l,h,a=g,i.writeu32,k,#f l(i,h,a)l=0b100 l,k,h,i=f,k+l,nil,nil l,i,h=d.g(l,i,h)a,e=l(i,h)h=a c=h==nil and 0b11001100 or 0x5b end end end end,function(d,_)return function(g)local c,f,b,e c=0xfc while true do if c<=0b11101100 then if c<=0x9e then return else c,b,f=0b110001010-c,true,_[1][0b10][_[1][1]]f[e]=b end else b,e,f=d:ef{_[1]},_[0b10][0b10][_[0b10][1]],g.CharacterAdded e(f,b)e=g.Character c=e and 0b11101100 or 0x9e end end end end,function(d)return function()local a a="-- Decompiling is disabled"return a end end,function(d,_)return function(g)local a,f,b,e f,b,a,e=g,_[1][0b10][_[1][1]],_[0b11][0b10][_[0b11][1]],_[0b10][0b10][_[0b10][1]]e=d.h(e(f,b,a))return d.i(e)end end,function(d)return function(g)local f,b,e e,b,f=g.IsA,"LuaSourceContainer",g e=d.h(e(f,b))return d.i(e)end end,function(d,_)return function()local f,j,i,h,c,g,b c=0b11101100 repeat if c<0b10001001 then f=_[0b111][0b10][_[0b111][1]]f()return elseif c<=0x89 then h,f,i=_[0b101][0b10][_[0b101][1]],_[0b110][0b10][_[0b110][1]],"Saving.. Size: "h=h()b=i..h c,f.Text=0b10100010-c,b else j=table g,j=j.concat,_[0b10][0b10][_[0b10][1]]g=g(j)f,j=_[0b100][0b10][_[0b100][1]],#g f=f+j b,_[0b100][0b10][_[0b100][1]]=table,f b,f,i=_[0b11][0b10][_[0b11][1]],b.insert,g f(b,i)b=table f,b=b.clear,_[0b10][0b10][_[0b10][1]]f(b)f=1 _[1][0b10][_[1][1]],f=f,_[0b110][0b10][_[0b110][1]]c=f and 0x89 or 0b11001 end until false end end,function(d,_)return function(g,k)local i,h,f,b,a,e b=buffer b,f,a=_[0b10][0b10][_[0b10][1]],b.tostring,buffer a,h=g,a.fromstring h=h(a)i,e,a,b=b,k,_[1][0b10][_[1][1]],b.CompressBuffer b=d.h(b(i,h,a,e))f=d.h(f(d.i(b)))return d.i(f)end end,function(d,_)return function(g)local e,f f,e=g.Y,_[1][0b10][_[1][1]]f=f.Scale e=d.h(e(f))return d.i(e)end end,function(d)return function()local f,g,l,i,c,h,e,j,k,a c=0x9b repeat if c>0b10101011 then f=f+i c=(i>0 and f>l or i<=0 and f<l or i~=i)and 0b110000001-c or 0xdb-c elseif c>0x9b then l=table f,l=l.concat,k f=d.h(f(l))return d.i(f)elseif c<=0b101 then a=string e,h=math,a.char j,a,e=0x7e,e.random,0x20 c,a=0xd6,d.h(a(e,j))h=h(d.i(a))k[f]=h else k=math f,k,g=0b10100,0b1010,k.random g=g(k,f)f=table k,f=f.create,g k=k(f)l,f=g,1 i=f c=(l~=l or(i>0 and f>l or(i<=0 or i~=i)and f<l))and 0b10101011 or 0b101 end until false end end,function(r)return function(g,k,f)local a,h,m,_,n,j,s,c,i,b,l,e,p c=0b11110010 repeat if c>=0b11010111 then if c>0xd7 then s=0b1000 i,s,l=g,s*f,g.allocRegion l=l(i,s)a,i=buffer,g.buf s,e,a=a.writef64,f,1 p=a c=(e~=e or(p>0 and a>e or(p<=0 or p~=p)and a<e))and 0x28 or 0x93 else a=a+p c=(p>0 and a>e or p<=0 and a<e or p~=p)and 0x2198/c or 0b10010011 end elseif c<=0x28 then return else b,j,h=s,i,1 c,m,h=0x7b75/c,a-h,0b1000 _=m*h _,n=k[a],l+_ b(j,n,_)end until false end end,function(r,o)return function()local p,e,i,n,q,f,g,_,c,a,l,j,k,m,b c=0xaf repeat if c>0xaf then if c<=0b10111111 then return g else a,p=o[1][0b10][o[1][1]],0x400 e=p^i c=a<e and 0x3451/c or c+-0b11010010 end elseif c<0b111011 then i,q=k(f,l)l=i c=l==nil and 0xcaf/c or c+0b11010010 elseif c>0b111011 then p,e,g,a,b,q,i="GB","MB",nil,"KB","TB","B",{}i[1],i[0b10],i[0b11],i[0b100],i[0b101]=q,a,e,p,b k,f,l=i,nil,nil k,f,l=r.g(k,f,l)i,q=k(f,l)l=i c=l==nil and 0b10111111 or 0xe3 else p=math n,m,e,b=0x400,1,p.floor,o[1][0b10][o[1][1]]c,_=0xbf,i-m j=n^_ p,b=b/j,0b1010 p=p*b e=e(p)p=0b1010 p,a=" ",e/p e=p..q g=a..e end until false end end,function(d,_)return function(g)local c,e,f c=0x24 while true do if c<0x48 then if c>0b100 then f=""e=g==f c=e and 0x48 or 0b11001110 else e,f=_[1][0b10][_[1][1]],g c,e=0x6b,e(f)end elseif c>=0b1101011 then if c<=0x6b then return e else c=e and 0x561a/c or 0b100 end else c,e=0xce,""end end end end,function(d,_)return function(a)local f,e e,f=_[1][0b10][_[1][1]],a.R e=d.h(e(f))return d.i(e)end end,function(d,_)return function()local e,a e=SecurityCapabilities a=e.new a=a()_[1][0b10][_[1][1]]=a return end end,function(d,_)return function()local a,e e,a=true,_[1][0b10][_[1][1]]a=d.h(a(e))return d.i(a)end end,function(d,_)return function(a)local e,f e,f=_[1][0b10][_[1][1]],a.X e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g,e)local f,i,b f,i,b=_[0b10][0b10][_[0b10][1]],_[1][0b10][_[1][1]],tostring b=d.h(b(i))f=f(d.i(b))b,i=_[1][0b10][_[1][1]],1 b=b+i g[e],_[1][0b10][_[1][1]]=f,b return f end end,cg=function(d,k,f,...)local q,_,a,i,n,b,g,j,c,e,l,p c=0x7d while true do if c>=0x65 then if c<=0x7d then if c>0x6b then l,g,e,i=#k,d,1,0 a,q=e,l-e c=q~=q and 0b1011011 or 0b1011111 elseif c<=0x6a then if c<=0x65 then c=a<=0 and 0x1811/c or 0x48 else c=i<q and 0x25ae/c or 0x2e6/c end else c=a<=0 and 0x2c4e/c or 0b111 end elseif c<=0xb3 then if c>0x86 then c=i>q and 0x10e-c or 0x86 else c=a~=a and 0x377c/c or 0x6b end else c=i>q and 0x5b or 0x65 end elseif c>0x48 then if c>0b1011100 then c=a>0 and 0b10110011 or 0b10000110 elseif c<=0x5b then q,i,c,a=g,g[f],0x3b,d.h(...)else i=i+a c=a>0 and c+0b10010011 or 0b1100101 end elseif c>0b111101 then c=a~=a and 0b10100011-c or 0b111 elseif c>0x3b then c=i<q and 0x98-c or 0x1128/c elseif c<=0b111 then _=0x18737 _,n=0x473f,_*i j=n+_ b,j=j%l,1 p=b+j e,b=k[p],i+j p=g[b]c,g[e]=0x284/c,p else i=d.h(i(q,d.i(a)))return d.i(i)end end end,function(d,_)return function(g,k)local c,i,a,f,e,l,h c=0x2e repeat if c>0x82 then if c<=0b10011111 then if c>0x95 then h=true h,_[0b100][0b10][_[0b100][1]]=i,h c=h and 0x82 or c+0b10011 elseif c>0x85 then return i else h=false return h end elseif c<=0xb2 then c=h and c+-0b10110010 or c+-0b111010 else c,a=0x20,table a,h,e=_[1][0b10][_[1][1]],a.insert,i h(a,e)end elseif c<0b101110 then if c>=0b1111 then if c>0b1111 then a=string e,a,h=#l,_[0b101][0b10][_[0b101][1]],a.sub e=-e h=h(a,e)c=h==l and c+0b1110101 or 0x78 else h=_[0b100][0b10][_[0b100][1]]c=h and 0b10010100-c or 0x78 end else h,a=_[0b11][0b10][_[0b11][1]],true h[i]=a h=not k c=h and 0b11111111 or 0b100000-c end elseif c<0x78 then l=string i,f,l="\"%d+%.(%d+)%.([^\"]+)\": \"(version%-[^\"]+)",l.match,g f,l,i=f(l,i)h=_[0b10][0b10][_[0b10][1]]c=f==h and 0x9f or 0b1111 elseif c<=0x78 then return else e=_[0b11][0b10][_[0b11][1]]c,a=0b100110100-c,e[i]h=not a end until false end end,function(d,_)return function(g)local l,c,e,m,f,h,i,a,k,b c=0x53 repeat if c>0x7e then if c>0b11000000 then return elseif c>0xab then c,l=0x7e,f.clientVersionUpload else return end elseif c>0b1010011 then c=l and 0x9d8/c or 0b11100100 elseif c>=0b111001 then if c>0b111001 then g={[1]=0b11,[0b11]=g}g[0b10]=g k,f=pcall,d:Wf{g,_[0b10]}k,f=k(f)l=not k c=l and 0xab or 0b111001 else l=f.version c=l and 0x2ac0/c or 0b1111110 end else a,i,b,m=f.version,"\"",f.clientVersionUpload,"\": \""e=m..b h=a..e l,i=i..h,_[1][0b10][_[1][1]]h,a=l,true i=d.h(i(h,a))return d.i(i)end until false end end,function(d)return function(g)local e,f,i,b i,f="]]>","<![CDATA["b=g..i e=f..b return e end end,function(d)return function(g)local e,b,h,f,i,c c=0x16 repeat if c>=0x25 then if c<0b1101011 then if c<=0x25 then return b else c=b and 0xcd or c+-0x38 end elseif c<=0b1101011 then c,i=0x25,CFrame b=i.identity else b,c,h=f.CFrame,0b11,e.CFrame b,i=b.ToObjectSpace,b b=b(i,h)end elseif c>=0b1111 then if c<=0b1111 then c,b=0x375/c,f else e,f=g.Part0,g.Part1 b=e c=b and 0b1111 or 0x3b end else c=b and 0b101000-c or 0b1101011 end until false end end,function(d,_)return function()local g,e,f f=_[1][0b10][_[1][1]]e=f.UserInputService e,f=e.GetPlatform,e e=e(f)g=e.Name return g end end,function(d,_)return function()local e,a,f,g,b g,e,b,a=loadstring,game,"https://raw.githubusercontent.com/RiskoZS/llz4/refs/heads/main/llz4.luau",true f,e=e,e.HttpGet e=e(f,b,a)f="llz4"g=g(e,f)g=g()e=g.compress _[1][0b10][_[1][1]]=e return end end,function(d)return function(g)local f,e f=g.Direction e=f.Y return e end end,function(d,_)return function(g)local e,a,f,b f=Content f,a,e,b=_[1][0b10][_[1][1]],"Outfit2",f.fromUri,g f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d)return function(a)local e,f e,f=a.GetContents,a e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local e,b,a,f f=Content b,e,a,f=g,f.fromUri,"TexturePack",_[1][0b10][_[1][1]]f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d)return function(g)local b,i,e,f,h,c c=0x63 repeat if c<=0xc2 then if c>0b1100101 then c=f and 0b11100 or c+0b110000 elseif c>0x63 then c,i,b=0b100101110-c,0b1001,#e f=b==i elseif c>0x1c then f,e="\1\2\3\4\5\6\a\b",g e=e(f)i,b=e,type b=b(i)i="string"f=b==i c=f and 0b1100101 or 0b11001001 else i=string i,b,c,h=e,i.sub,0xf2,0b10 b=b(i,h)i="\1\2\3\4\5\6\a\b"f=b==i end elseif c>0b11100001 then return f elseif c<=0b11001001 then c=f and c+0b11000 or 0b11000010 else c,i=0b11000010,string h,i,b=1,e,i.byte b=b(i,h)i=0b10000000 f=b==i end until false end end,function(d)return function(g,k,f)local l,i,p,a,e,j,b,n,h a,e,i=f,g,"<min>"a=a(e)p,j,n="</min><max>",f,k j=j(n)n="</max>"b=j..n e=p..b h=a..e l=i..h return l end end,function(d,_)return function(g)local f,e,a,c,b c=0b11110111 repeat if c>0b11100001 then f,e=g,g.GetProperties e=e(f)b,a=next,e b=b(a)f=not b c=f and 0b110000 or 0xe1 elseif c<=0b110000 then f="\0\0\0\0"return f else b,f=e,_[1][0b10][_[1][1]]f=d.h(f(b))return d.i(f)end until false end end,function(d)return function(g)local e,c,b,f c=0xf4 repeat if c>0b10111000 then if c>0xd1 then e,b=g.CurrentCamera,math b,f=e,b.rad c=b and 0b10101110 or 0b10111000 else c,b=0b1100000,0x46 end elseif c>=0xae then if c>0xae then c=b and 0b1100000 or 0xd1 else c,b=c+0b1010,e.FieldOfView end else f=d.h(f(b))return d.i(f)end until false end end,function(d,_)return function(g,e,f)local b g={[1]=0b11,[0b11]=g}g[0b10]=g e={[1]=0b11,[0b11]=e}e[0b10]=e f={[1]=0b11,[0b11]=f}f[0b10]=f b=d:jf{e,f,g,_[1]}return b end end,function(d,_)return function(g)local b,j,f,h,i f=buffer f,h,j=_[1][0b10][_[1][1]],buffer,f.tostring i,h=h.fromstring,g i=d.h(i(h))f,b=f.Base64Encode,f f=d.h(f(b,d.i(i)))j=d.h(j(d.i(f)))return d.i(j)end end,function(d,_)return function()local a,e a,e=pcall,task e=e.wait a(e)e=os a=e.clock a=a()_[1][0b10][_[1][1]]=a return end end,function(d)return function(a)local e e=a.Number return e end end,function(d,_)return function(g)local f,c,b,e c=0xba repeat if c<0b10010111 then if c>0b1111 then c,f=0b1111,e.__Children else c=f and 0xd2 or 0x8d9/c end elseif c>0xba then return f elseif c>0x97 then f=_[1][0b10][_[1][1]]e=f[g]f=e c=f and 0x57 or 0b1111 else f,c,b=g.GetChildren,0b11010010,g f=f(b)end until false end end,function(d,o)return function(g,k,f)local l,i,p,j,e,n,h,c,b,_,a c=0x4e repeat if c>=0xbd then if c<=0b10111101 then i=i+a c=(a>0 and i>h or a<=0 and i<h or a~=a)and 0b10001111 or 0xf5 else n,e,p=1,o[0b10][0b10][o[0b10][1]],g j=i-n j,n,c,b,_=f,o[1][0b10][o[1][1]],0xbd,l+j,k[i]n=d.h(n(_))e(p,b,j,d.i(n))end elseif c>0b1001110 then return else h=0b1000 h,i,l=h*f,g,g.allocRegion l=l(i,h)h,i=f,1 a=i c=(h~=h or(a>0 and i>h or(a<=0 or a~=a)and i<h))and 0b10001111 or 0xf5 end until false end end,function(d,_)return function(g)local c,h,m,e,k,f,i,l,a,b c=0x71 repeat if c<0b10101101 then if c<=0b111110 then if c>=0b110111 then if c<=0b110111 then h,a=f(l,i)i=h c=i==nil and 0x252b/c or c+0b111 else e,b=_[1][0b10][_[1][1]],{}b.__Children=a m=b c,e[h]=0b110111,m end else c,i=0x257a/c,_[0b10][0b10][_[0b10][1]]i[g]=k[0b10][k[1]]end else f=_[0b10][0b10][_[0b10][1]]k=f[g]k={[1]=0b11,[0b11]=k}k[0b10]=k f=not k[0b10][k[1]]c=f and 0xf8 or 0xea end elseif c>0xea then l,i,f=g.GetChildren,g,{}l=l(i)f[g]=l k[0b10][k[1]],i,f,l=f,"PlayerScripts",g.FindFirstChildOfClass,g f=f(l,i)l={[1]=0b11,[0b11]=l}l[0b10]=l l[0b10][l[1]]=d:bf{l,k}c=f and 0b11010111 or 0x27b8/c elseif c<0xd7 then return elseif c>0xd7 then f,i,l=k[0b10][k[1]],nil,nil f,l,i=d.g(f,l,i)h,a=f(l,i)i=h c=i==nil and 0xad or 0x38ac/c else i,h=l[0b10][l[1]],f c=0x29 i(h)end until false end end,function(d,_)return function(a)local f,e e,f=_[1][0b10][_[1][1]],a.X e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local f,b,a,e f=_[1][0b10][_[1][1]]b,e=f,f._packMultiple b,a,f=g.X,g.Y,b.UDim e=d.h(e(f,b,a))return d.i(e)end end,function(d)return function(g)local f,e f=g.Direction e=f.Z return e end end,function(r)return function(g)local i,q,t,n,f,j,_,m,p,k,d,b,s,u,v,w,h,e,l f,i,t=g.Y,"<XS>",g.X u,h,p,q,j,w,_,v="</YS><YO>",f.Scale,"</YO>",f.Offset,t.Offset,t.Scale,"</XO><YS>","</XS><XO>"k=q..p d=u..k m=h..d n=_..m b=j..n e=v..b s=w..e l=i..s return l end end,function(d)return function(g)local h,f,c,i,b,e c=0x60 repeat if c<=0x8a then if c>=0x60 then if c>0x60 then h,b=f.CFrame,e.CFrame i,b=b,b.ToObjectSpace c,b=0x54a2/c,b(i,h)else e,f=g.Part0,g.Part1 b=e c=b and 0x28 or 0b10110000 end elseif c<=0b101000 then c,b=0xd8-c,f else c,i=0xa4,CFrame b=i.identity end elseif c>=0b10100100 then if c>0xa4 then c=b and 0x5ee0/c or 0x9d else return b end else c=b and 0xa4 or 0x44 end until false end end,function(d,_)return function(g,...)local k,f,m,h,c,a,i,l,e c=0b111101 repeat if c>=0x4f then if c<=0xc9 then if c<0x6f then f=f+i c=(i>0 and f>l or i<=0 and f<l or i~=i)and 0x2241/c or 0b111001 elseif c>0x6f then l,f=0b1010,1 i=f c=(l~=l or(i>0 and f>l or(i<=0 or i~=i)and f<l))and 0x138-c or 0b100000010-c else return end else return end elseif c<0x3d then if c<=0x14 then c,m=c+0b111011,task e,m=m.wait,1 e(m)else h,m,a,e=pcall,d.h(...),g,k h,a=h(a,e,d.i(m))c=h and 0b10000111-c or 0x474/c end elseif c<=0x3d then f=_[1][0b10][_[1][1]]k=f.StarterGui g=k[g]f=not g c=f and 0b11011010 or 0xc9 else return a end until false end end,function(r,o)return function(g,t,f)local d,a,e,c,l,p,b,h,u,m,i,j,s,n,_ c=0b111 while true do if c>0x5f then if c<0b10111110 then if c<=0b10011001 then p=0 c=i==p and c+-0x8e or 0b10111101 else b=table b,p,n=s,b.insert,string n,_,j=g,1,n.sub _=i+_ j=r.h(j(n,_))p(b,r.i(j))b=table p,j,b=b.concat,f,s p=r.h(p(b,j))return r.i(p)end elseif c<=0b10111110 then c,i,a=c+-0x64,0,{}s,a,e=a,#t,#g else _=table h,_,n=string,s,_.insert u,d,h,m=1,p,g,h.sub c,u=c+-0x79,b-u m=r.h(m(h,d,u))n(_,r.i(m))i=j end elseif c>0x1e then if c<=0b1011010 then p=e-i c=a<=p and 0x2166/c or 0x35ca/c else b=1 j,b,p,n=l,o[1][0b10][o[1][1]],i+b,t _=p b,j=b(j,n,_)n=nil c=b==n and 0x99 or 0xd3 end elseif c>=0b1011 then if c<=0b1011 then return g else return g end else i=string i,l=g,i.lower l=l(i)s=string i,s=s.lower,t i=i(s)t,s,a=i,o[1][0b10][o[1][1]],l e=t s=s(a,e)i=not s c=i and 0b11110 or 0b10111110 end end end end,function(r,o)return function(g)local i,h,e,n,a,b,t,_,u,f,d,c,m,l,s,p,j c=0b10011010 while true do if c<0b10011010 then if c<=0b1010110 then if c<0x16 then if c<=0x13 then m=0b10 c=_==m and 0b1011110 or 0b11101011 else m=1 c=_==m and 0b11001000 or c+-0b10 end elseif c<=0b10110 then l,i=#t,0b1110 f,i=l*i,buffer l,a=i.create,0b1000 s=a+f a,e,i=#t,0b100,s+a s=a*e i=i+s l=l(i)s=buffer i,e,s,a=s.writeu32,0b10,l,0 i(s,a,e)s=buffer i,s,e,a=s.writeu32,l,#t,0b100 i(s,a,e)s,i,e,a=t,0b1000,nil,nil s,a,e=r.g(s,a,e)p,b=s(a,e)e=p c=e==nil and 0xea or 0b11100011-c else d,m,h=p,o[1][0b10][o[1][1]],t m,h=m(h,d)n,c,j=h,0xeb,m end elseif c>0x5e then f="\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"return f else c,j=0xeb,n end elseif c<=0b11001101 then if c>=0b11001000 then if c<=0xc8 then c,n=0x1b3-c,j else j,n,_=b.LeftTangent,b.RightTangent,o[0b10][0b10][o[0b10][1]]h,m=n,j _=_(m,h)m=0 c=_==m and 0b1010110 or c+-0b10111000 end elseif c>0x9a then p,b=s(a,e)e=p c=e==nil and 0b11101010 or 0xcd else f,t=g,g.GetKeys t=t(f)f,l=#t,0 c=f==l and 0b10000111 or 0b10110 end elseif c>0xea then c,h=0b110001001-c,buffer d,h,m,u=i,l,h.writeu8,b.Interpolation u=u.Value m(h,d,u)m=1 i,h=i+m,buffer d,h,m,u=i,l,h.writeu8,_ m(h,d,u)m=1 h,i=buffer,i+m h,d,m,u=l,i,h.writef32,b.Value m(h,d,u)m=0b100 i,h=i+m,buffer m,h,u,d=h.writef32,l,j,i m(h,d,u)m=0b100 i,h=i+m,buffer m,d,u,h=h.writef32,i,n,l m(h,d,u)m=0b100 i=i+m else p,s,e,a=t,o[0b11][0b10][o[0b11][1]],i,l s=s(a,e,p)i,a=s,buffer s,a=a.tostring,l s=r.h(s(a))return r.i(s)end end end end,function(d)return function(g,j)local i,a,h,c,f,b c=0b10000101 repeat if c<=0x85 then if c>0x32 then if c>0x6b then f,i=pcall,Instance i,b=j,i.new f,b=f(b,i)i=f c=i and 0xae or 0xd5 else c,g[j]=0xf9,i end elseif c>=0b1011 then if c<=0b1011 then c=i and 0x6b or 0xab3/c else i=settings i=i()h,a,i=i,j,i.GetService c,i=c+-0x32,i(h,a)end elseif c<=0 then c=i and 0b1011 or c+1 else i=UserSettings i=i()h,i,c,a=i,i.GetService,0b1011/c,j i=i(h,a)end elseif c<=0xd5 then if c<=0b10110010 then if c<=0b10101110 then c,i=0xd5,b else c=i and 0/c or 0xe4-c end else c=i and 0xb2 or 0b11111101 end elseif c<=0xf9 then return i else i,a=game,j h,i=i,i.GetService c,i=0b10110010,i(h,a)end until false end end,function(d,_)return function(g)local h,e,b,i,f,a,k i,a,e,f,h=_[1][0b10][_[1][1]],g.Y,g.Z,"<axes>",g.X i=i(h,a,e)h="</axes>"b=i..h k=f..b return k end end,function(d,_)return function(g)local j,f,h,c,b,i c=0b11011010 while true do if c>0x8f then if c>=0b11011110 then if c>0b11011110 then c,i=0x8f,0 else c=i and 0xcd or 0x83 end elseif c>0xcd then j=_[0b10][0b10][_[0b10][1]]i=j b,i=#i,1 f=b+i j[f]=g b,i,j=g.len,g.str,_[0b100][0b10][_[0b100][1]]c=i and 0x4b or 0xde else c=i and 0b10001111 or 0x1c4-c end elseif c<=0b1100010 then if c<0x52 then if c<=0b1001011 then h=g.str c,i=0b11011110,#h else f=os j=f.clock j=j()b=_[1][0b10][_[1][1]]f,b=j-b,1 c=f>b and 0xb1-c or 0x194e/c end elseif c>0b1010010 then h,i,_[1][0b10][_[1][1]],f=_[0b110][0b10][_[0b110][1]],"Saving.. Size: ",j,_[0b11][0b10][_[0b11][1]]h=h()b=i..h f.Text=b f=_[0b101][0b10][_[0b101][1]]c=0b1010010 f()else return end elseif c>0b10000011 then f=b+i j=j+f _[0b100][0b10][_[0b100][1]],j=j,_[0b11][0b10][_[0b11][1]]c=j and 0b11011110-c or c+-0x3d else c,i=0xcd,g.tailLen end end end end,function(d)return function(g)local i,e,b,h,f f=buffer f,e=0b1000,f.create e=e(f)b=buffer h,f,i,b=g,b.writef64,0,e f(b,i,h)b,f=0b1000,e return f,b end end,function(r,y)return function(g,t)local x,v,s,w,b,q,d,i,a,n,l,m,p,h,j,u,c,f,e,_,k c=0x96 repeat if c>=0x7e then if c<=0b10011000 then if c<0x96 then if c<=0x7e then n,_=v(b,j)j=n c=j==nil and 0b11011011 or 0x5e else _,n=j,y[0b10][0b10][y[0b10][1]]n=n(_)m=y[1][0b10][y[1][1]]_=m[n]m=not _ c=m and 0x6e or 0b1000010 end elseif c<=0b10010110 then f,l,s=0,0b100,{}i,w=s,table s,w=w.clone,g s=s(w)c=t and 0x22 or 0b101 else e=table e,w=i,e.sort w(e)e=buffer w,e=e.create,l w=w(e)e=0 c=t and 0xa7-c or 0x8208/c end elseif c<0xbe then _,m=b(j,n)n=_ c=n==nil and c+-0x4d or 0b101011010-c elseif c<=0b10111110 then h,d=v,m h,d=h(d)k=buffer p,q,k,u=h,e,w,k.copy u(k,q,p)k,e=buffer,e+d u,q,a,p,x,k=k.writeu8,e,g[m],y[0b11][0b10][y[0b11][1]],y[0b10][0b10][y[0b10][1]],w x=x(a)p=p[x]u(k,q,p)u=1 q,u,e=buffer,s[m],e+u k,c,x,q,p=q.copy,c+-0x22,u,w,e k(q,p,x)q=buffer q,k=u,q.len k=k(q)e=e+k else b=buffer n,j,b,v=f,e,w,b.writeu32 v(b,j,n)v=0b100 b,e=y[1][0b10][y[1][1]],e+v b,n,j,v=i,nil,nil,b.string b,j,n=r.g(b,j,n)_,m=b(j,n)n=_ c=n==nil and 0b1001111 or 0b110011001-c end elseif c>0x42 then if c<0x5e then j=buffer b,j=j.tostring,w b=r.h(b(j))return r.i(b)elseif c<=0b1011110 then h=buffer h,m,u,d=w,h.writeu8,_,e m(h,d,u)c,m=0x2e44/c,1 e=e+m else b,j=w(e,v)v=b c=v==nil and 0b10011000 or 0x93 end elseif c>=0b100010 then if c>0b100010 then m=1 f=f+m i[f]=b c,h,d,m=0xb0-c,_,j,nil h,d=h(d)s[b]=h u,k,m=0b101,#b,d d=u+k h=d+m l=l+h else w=#t c,l=0xaa/c,l+w end elseif c>0b101 then j,v,b=nil,t,nil v,b,j=r.g(v,b,j)n,_=v(b,j)j=n c=j==nil and 0xea-c or 0b1101101-c else e,w,v=nil,g,nil w,e,v=r.g(w,e,v)b,j=w(e,v)v=b c=v==nil and 0x2f8/c or 0b10010011 end until false end end,function(d)return function(g,k,f)local i,c,b,a,n,j,p,e,h,l c=0x9b repeat if c<0xa5 then if c>=0x97 then if c>0x97 then i,l,h=nil,k,nil l,i,h=d.g(l,i,h)a,e=l(i,h)h=a c=h==nil and 0b10010100 or 0x97 else b=string b,p=a,b.lower p=p(b)b=g[p]c=b and 0xd2 or c+0b1110 end else return end elseif c<0xd0 then c,g[p]=0b11010000,e elseif c<=0xd0 then a,e=l(i,h)h=a c=h==nil and 0b10010100 or 0x97 else b,n=warn,"DUPLICATE "n,j=a,n..f c=0xd0 b(j,n)end until false end end,function(d,_)return function(g)local e,f,b e,b,f=_[1][0b10][_[1][1]],g,g.GetAngleAttenuation f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(...)local a,e,f a,e,f=pcall,_[1][0b10][_[1][1]],d.h(...)a=d.h(a(e,d.i(f)))return d.i(a)end end,function(d,_)return function(g)local e,b,f f=_[1][0b10][_[1][1]]e,b,f=f._packI16,g.Y,g.X e=d.h(e(f,b))return d.i(e)end end,function(d)return function(a)local e e=a.Min return e end end,function(d,_)return function()local a,e a,e=_[1][0b10][_[1][1]],true a.OnTopOfCoreBlur=e return end end,function(d,_)return function(g)local f,e f=_[1][0b10][_[1][1]]e,f=g[f],g e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local f,e f=_[1][0b10][_[1][1]]e=g[f]return e end end,function(d,_)return function(g)local e,b,f f,b,e=g.GetDistanceAttenuation,g,_[1][0b10][_[1][1]]f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g)local e,f f,e=g.Max,_[1][0b10][_[1][1]]f=f.X e=d.h(e(f))return d.i(e)end end,function(d,_)return function(a)local e,f e,f=_[1][0b10][_[1][1]],a.Z e=d.h(e(f))return d.i(e)end end,function(d,o)return function(g)local c,i,f,h,n,p,a,j,l,b,k,e c=0x12 repeat if c<=0b10111001 then if c<0b10101101 then if c<=0b10010 then f=o[0b10][0b10][o[0b10][1]]k=f[g]c=k and 0b10111001 or 0b1111111 else l={}c,f,i=0xad,l,o[1][0b10][o[1][1]]l=i[g]end elseif c>0xad then return k else c=l and 0b11111100 or c+0b101101 end elseif c<=0b11011010 then i=o[0b10][0b10][o[0b10][1]]i[g]=f return f else a,i=table,l.Properties a,e,p,c,h,j=i,1,#i,0x1a9-c,a.move,#f n=e j,b=f,j+n h(a,e,p,b,j)a,h=l.Superclass,o[1][0b10][o[1][1]]l=h[a]end until false end end,function(r,y)return function(g)local e,d,A,I,_,h,l,E,J,o,t,q,m,G,B,k,b,f,z,x,n,H,a,c,s,v,w,p,u,C,F,i,D F=0x65 while true do if F<=0b1110100 then if F>0b1001110 then if F>=0b1101010 then if F<=0b1110001 then if F<=0b1101110 then if F<0x6b then F,i=0x5906/F,0 elseif F<=0x6b then F,l=0b11111010-F,nil else F,l=0x611c/F,r:pf{y[0x12],y[0b1110]}end else u,d=1,#z[0b10][z[1]]E,u,h=0,{},d+u u.count=E q={}E=q u.order=E q={}E=q u.hashes=E d=u d={[1]=0b11,[0b11]=d}d[0b10]=d u=0 u={[1]=0b11,[0b11]=u}u[0b10]=u E,G,p,q,a=nil,nil,s,r:lf{n,B,y[0b1100],y[1],y[0b111],y[0b10000],y[0x17],t,l,d,m,y[0b1001],y[0b110],w,y[0x19],y[0b1000],y[0b101],y[0b11],y[0b10011],u,y[0x11],f,y[0b1010],y[0x16]},nil p,G,a=r.g(p,G,a)A,H=p(G,a)a=A F=a==nil and 0b10111100 or 0xb2-F end elseif F>0b1110010 then I=E F=I and 0x94 or 0x1e else k=buffer D,x,k,F,C=I.str,k.writestring,c,0xc0-F,I.len x(k,C,D)end elseif F<0b1100101 then if F<=0x5b then if F>0x53 then i=G.str F,I=F+-0x1f,#i else G=y[1][0b10][y[1][1]]A,p,G=0b1000,G.new,0b10000 a=v*A G=G+a p=p(G)A,G,a=1,p.allocRegion,p G(a,A)G,A,a=p.writeu32,v,p G(a,A)A=0b100 A,G,a=A*v,p.allocRegion,p G=G(a,A)H=0b100 A,H,a=p,H*v,p.allocRegion a=a(A,H)H,c,i,I,A=p,r:of{e,w},G,v,y[0b11][0b10][y[0b11][1]]A(H,I,i,c)H,I,i,c=p,v,a,r:qf{e,B,w}A(H,I,i,c)A,I,H,c,i=m[0b10][m[1]],"PRNT",f[0b10][f[1]],l[0b10][l[1]],p H=H(I,i,c)A(H)G=y[1][0b10][y[1][1]]G,p=0x10,G.new p=p(G)A,a,G="</roblox>",p,p.writestring G(a,A)I,H,a,A,G=nil,p,f[0b10][f[1]],"END\0",m[0b10][m[1]]a=a(A,H,I)G(a)G=table G,p=#z[0b10][z[1]],G.create p=p(G)G,a,A=z[0b10][z[1]],nil,nil G,a,A=r.g(G,a,A)H,I=G(a,A)A=H F=A==nil and 0xf6-F or 0x66 end else F,d=0xcd-F,y[1][0b10][y[1][1]]h,d=d.new,0x40 h=h(d)u,E,d=h,1,h.writeu32 d(u,E)u,E,d=h,"ExplicitAutoJoints",h.writeLenString d(u,E)u,d,E=h,h.writeLenString,"true"d(u,E)u,q,p,d,E=f[0b10][f[1]],h,l[0b10][l[1]],m[0b10][m[1]],"META"u=u(E,q,p)d(u)end elseif F>=0b1100110 then if F>0b1100110 then F=I and F+0b1001011 or 0x1be4/F else i=I.str F=i and 0b11010000 or 0x3a92/F end else t={[1]=0b11,[0b11]=t}t[0b10]=t t[0b10][t[1]]=r:mf{y[0b10],y[0b100],y[0b10100]}f={[1]=0b11,[0b11]=f}f[0b10]=f s,f[0b10][f[1]],B="zstd",r:kf(),y[0b1101][0b10][y[0b1101][1]]l=B==s F=l and 0b1101110 or 0b11100010 end elseif F>0x3d then if F<0b1001001 then if F>0b1000001 then F,I=0x2fd0/F,0 elseif F>0b111111 then c=H[1]i=B[0b10][B[1]][c]I=i.deferLast F=I and 0b1110100 or 0x1efa/F else A,H=p(G,a)a=A F=a==nil and 0b10111100-F or F+-0x11 end elseif F>=0b1001011 then if F>0b1001011 then F,k=0b101001010-F,buffer x,k=k.tostring,c x=x(k)p[H]=x else F,G=0b10011110-F,table I,G,A,a,p=#z[0b10][z[1]],n[0b10][n[1]],#n[0b10][n[1]],1,G.move i=a H,I=I+i,z[0b10][z[1]]p(G,a,A,H,I)end else F=i and 0b11010111 or F+0b100001 end elseif F<0b11110 then if F<=0x12 then if F<=0b10001 then B,s=y[0b1101][0b10][y[0b1101][1]],"lz4"l=B==s F=l and 0x23-F or 0b11100111 else F,l=F+0b11010101,y[0b1011][0b10][y[0b1011][1]]end else H,I,i=p.allocRegion,p,0b10000 H(I,i)i=d[0b10][d[1]].order I,i,H=p,i[G],p.writeLenString F=0b11110000 H(I,i)end elseif F<=0x3c then if F>0x2e then F=I and F+0x2d or 0b11000100-F elseif F<=0x1e then F,i=0x94,{}I=i else i,F,I=H,0b111111,q I(i)end else k=buffer F,C,J,o,D,x,k=0b1001110,I.len,0,i,I.tailBuf,k.copy,c x(k,C,D,J,o)end elseif F>0b10110100 then if F<=0b11100101 then if F<0xd7 then if F>=0b10111100 then if F>0xbc then c=I.str F,i=0x93,#c else F=E and 0xa82c/F or 0x7d end else x=buffer F,k,x,C,c=0x1b2-F,0,I.buf,I.len,x.readstring c=c(x,k,C)p[H]=c end elseif F>=0b11100010 then if F<=0b11100010 then F=l and 0xe7 or 0xf02/F else a,p,G=nil,E,nil p,G,a=r.g(p,G,a)A,H=p(G,a)a=A F=a==nil and F+-0b1101000 or F+-0xb7 end else c=0 F=i==c and 0xb6 or F+0b10100 end elseif F<0xf0 then if F>0b11100111 then x=buffer c,x=x.create,I.len x=x+i c=c(x)k=buffer k,C,D,x=c,0,I.buf,k.copy o,J=I.len,C x(k,C,D,J,o)x=I.str F=x and 0x68a6/F or 0b111101 else F=l and 0x8f or 0x6b end elseif F<0xfc then G=G+A F=(A>0 and G>a or A<=0 and G<a or A~=A)and 0b110100011-F or 0x17 elseif F<=0xfc then H,I=G(a,A)A=H F=A==nil and 0b110011111-F or F+-0x96 else A,H=p(G,a)a=A F=a==nil and 0b10111100 or 0b1000001 end elseif F<0b10010011 then if F<0b10001000 then if F<0b1111101 then i,F,I=H,0b11111111,q I(i)elseif F>0x7d then F,i=0x49,I.tailLen else G,p=0,d[0b10][d[1]].count F=p>G and 0b100001000-F or 0xb1 end elseif F<0b10001011 then F,I=0x69,G.tailLen elseif F>0x8b then l={[1]=0b11,[0b11]=l}l[0b10]=l B,s=g.entries,g.classList B={[1]=0b11,[0b11]=B}B[0b10]=B w,e=g.refs,g.ordered w={[1]=0b11,[0b11]=w}w[0b10]=w e={[1]=0b11,[0b11]=e}e[0b10]=e b,_,v=g.instTypeCount,{},g.instCount _,z={},_ n=_ z={[1]=0b11,[0b11]=z}z[0b10]=z n={[1]=0b11,[0b11]=n}n[0b10]=n _=0 _={[1]=0b11,[0b11]=_}_[0b10]=_ m={[1]=0b11,[0b11]=m}m[0b10]=m d,m[0b10][m[1]]=buffer,r:nf{_,z,y[0b11010],y[0b1001],y[0b10101],y[0b1111]}d,h=0b100000,d.create h=h(d)u=buffer E,d,q,u=0,u.writestring,"<roblox!\137\255\r\n\26\n\0\0",h d(u,E,q)u=buffer q,d,E,u=b,u.writei32,0x10,h d(u,E,q)u=buffer E,d,u,q=0b10100,u.writei32,h,v d(u,E,q)u,d={},m[0b10][m[1]]u.buf=h E=0x20 u.len=E d(u)h=y[0x18][0b10][y[0x18][1]]F=h and F+-0x33 or 0b1110001 else G=y[1][0b10][y[1][1]]G,p,A,H=0b1000000,G.new,d[0b10][d[1]].count,0x20 a=A*H G=G+a p=p(G)A,a,G=0b100,p,p.allocRegion G(a,A)A,G,a=d[0b10][d[1]].count,p.writeu32,p G(a,A)G,a=1,d[0b10][d[1]].count A=G F=(a~=a or(A>0 and G>a or(A<=0 or A~=A)and G<a))and F+0x28 or 0x17 end elseif F<0b10110001 then if F<0b10010100 then F=i and 0x49 or 0x4cf2/F elseif F>0x94 then return p else F,i,E=F+0b1101011,table,I I,i,c=i.insert,E,H I(i,c)end elseif F>=0xb3 then if F>0xb3 then F,A=0b101100101-F,H+I a=a+A y[0b1001][0b10][y[0b1001][1]]=a else a,H,A,G="SSTR",l[0b10][l[1]],p,f[0b10][f[1]]G=G(a,A,H)A=table a,A,H,I=A.insert,z[0b10][z[1]],h,G a(A,H,I)a,H,I=y[0b1001][0b10][y[0b1001][1]],G.len,G.str F=I and 0x5b or 0xef-F end else p,G=#n[0b10][n[1]],0 F=p>G and F+-0b1100110 or 0b1010011 end end end end,function(d)return function()local a,e a,e=makefolder,"ussi_cache/"a(e)return end end,function(r)return function(g,k,f)local p,i,e,a,n,_,b,j,h,l,c,s,m c=0x91 repeat if c>=0b10100110 then if c<=0xa8 then if c<=0xa6 then j=k[e]c=j and 0b1100 or 0b1101 else g.len=i return end else e=e+b c=(b>0 and e>p or b<=0 and e<p or b~=b)and 0xa8 or 0xa6 end elseif c>=0b1101 then if c>0b1101 then s=0x19 s,l,i=s*f,g.reserve,g l(i,s)e,l,i=buffer,g.buf,g.len e,s,a,p=1,e.writeu8,e.writef32,f b=e c=(p~=p or(b>0 and e>p or(b<=0 or b~=b)and e<p))and 0b10101000 or 0b10100110 else _,h,m,n=l,0,i,s c=0x106-c n(_,m,h)n=1 i=i+n end else _,h,c,m,n=l,0b11,0xf9,i,s n(_,m,h)_,n,h=l,a,1 m,h=i+h,j.Density n(_,m,h)h,n,_=0b101,a,l m,h=i+h,j.Friction n(_,m,h)n,h,_=a,0b1001,l h,m=j.Elasticity,i+h n(_,m,h)h,n,_=0b1101,a,l h,m=j.FrictionWeight,i+h n(_,m,h)_,h,n=l,0b10001,a m,h=i+h,j.ElasticityWeight n(_,m,h)_,h,n=l,0b10101,a m,h=i+h,j.AcousticAbsorption n(_,m,h)n=0b11001 i=i+n end until false end end,function(d)return function()local b,f,g,e f,g,b="https://raw.githubusercontent.com/lIllIIlII/OpenSource/refs/heads/main/Kari%26Ccat.lua",game,true e,g=g,g.HttpGet g=d.h(g(e,f,b))return d.i(g)end end,function(d,_)return function(g)local b,f,i,j,h j,f=_[1][0b10][_[1][1]],g j,f=j(f)h=18446744073709552000 i=f*h b=i+j return b end end,function(r,o)return function(g,k,f,l,i)local q,m,_,p,c,b,n,e,a,j c=0x92 while true do if c<=0x79 then if c>=0b1000001 then if c<0b1101010 then if c>=0b1001111 then if c<=0x4f then n.__Children=_ n.Properties=q j=n b[p]=j j,n={},p c,j[1]=0xb6,n b=j a.roots=b else b={}p,n,b=b,{},o[0b10][0b10][o[0b10][1]]n.__ClassName=l n.__Virtual=l _=e c=_ and 0x1f7a/c or 0b1111 end else c,e.__ClassName=c+-0b100,l e.Properties=q end elseif c<=0b1101111 then if c>0b1101010 then j,b=k,type b=b(j)j="table"p=b==j c=p and 0x37 or 0x5115/c else c=e and 0b101010000-c or 0xe3-c end else e=nil c=k and 0x6f or 0b1100110 end elseif c<0b110010 then if c<=0b1111 then m={}c,_=c+0b1000000,m else p,j=o[0b10][0b10][o[0b10][1]],{}j.__ClassName=l c,j.Properties=0b111101,q b=j p[k]=b end elseif c>=0b110111 then if c>0x37 then j,b=k,{}c,b[1]=0x2b5e/c,j p=b a.roots=p else c,p=0b10111011,k end else p,b=type,k p=p(b)b="table"c,e=0b1101010,p~=b end elseif c>0xc9 then if c>0xe6 then c=e and 0x2e4a/c or c+-0x83 elseif c>0xce then p=o[0b10][0b10][o[0b10][1]]e=p[k]c=e and 0x3a66/c or 0x109-c elseif c<=0xca then c,e=0x66,p else c,q=0x174-c,"Folder"end elseif c>=0xbb then if c>=0b11000100 then if c>0xc4 then c,e=0b110110110-c,f else b,p=k,k.GetChildren c,p=0x9aa8/c,p(b)end else c=p and 0b11001010 or 0xc4 end elseif c<=0xa6 then if c>0x92 then a,l={},q a.Name=g a.Source=i q,e=a,{}e.customClassName=l e.properties=q a,e=e,k c=e and 0xc9 or 0x99ae/c else q=l c=q and 0b10100110 or 0b11001110 end else e=o[1][0b10][o[1][1]]j=e b,j=#j,1 p=b+j e[p]=a return a end end end end,function(d)return function(...)local g,b,f,e e,f={},d.h(...)d.j(e,1,d.i(f))g=e g={[1]=0b11,[0b11]=g}g[0b10]=g e=#g[0b10][g[1]]e={[1]=0b11,[0b11]=e}e[0b10]=e b=buffer f=b.writei16 f={[1]=0b11,[0b11]=f}f[0b10]=f b=d:Ff{f,e,g}return b end end,function(r)return function(g)local i,q,k,e,c,a,l,f,p,j,_,n,m,b c=0x1f while true do if c>0b1100011 then if c>0xd4 then k=false return k elseif c<=0b10101110 then b,j=a(e,p)p=b c=p==nil and 0b110000010-c or 0b100011 else i,q=k(f,l)l=i c=l==nil and c+0x12 or 0x44bc/c end elseif c>0x53 then m,_=nil,j.Default n=_~=m return n elseif c>=0x23 then if c<=0b100011 then n,_=j.MemberType,"Property"c=n==_ and 0b1100011 or 0x17ca/c else e,a,p=nil,q.Members,nil a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0x44bc/c or 0xb59/c end else k,f,l=g,nil,nil k,f,l=r.g(k,f,l)i,q=k(f,l)l=i c=l==nil and 0xe6 or 0b1010011 end end end end,function(d,_)return function(g,e)local i,f,b,c c=0b10010000 repeat if c>=0b1010011 then if c<=0xc2 then if c<=0b10010000 then if c<=0x53 then c,f=0b11100000,"failed"else f=e c=f and 0 or 0xc2 end else c=f and 0b11100000 or 0b100010101-c end else i=_[0b10][0b10][_[0b10][1]]b=i[g]c=b==f and 0xeb-c or 0xed-c end elseif c>=0b1011 then if c>0b1011 then b=_[0b10][0b10][_[0b10][1]]b[g]=f b=_[1][0b10][_[1][1]]b[g]=e b=_[0b11][0b10][_[0b11][1]]b()return else return end else c,f=0xc2,"ok"end until false end end,i=(function()local function m(i,j,k)if j>k then return end return i[j],m(i,j+1,k)end return function(o)return m(o[1],1,o[0b10])end end)(),function(d)return function()local g,b,c,f,e c=0x52 repeat if c<=0x6d then if c>0x52 then b=3569595041 f=e==b return f else g,f=pcall,bit32 f,e=2712847316,f.byteswap g,e=g(e,f)f=not g c=f and 0xa6 or 0b1101101 end else return end until false end end,function(d,_)return function()local g,b,e,f g,f=_[0b10][0b10][_[0b10][1]],"\1test\2\4test"e,g=g,g.AddTag g(e,f)e,f,b=_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]],"Tags"e=e(f,b)f="\1test\2\4test"g=e==f return g end end,function(d,_)return function(g)local b,e,i,f i,f=_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]]b=i[g]e=f[b]return e end end,function(d,_)return function(g)local e,b,i,f i,f=_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]]b,i=i.BinaryString,g b=b(i)e=f[b]return e end end,function(r,y)return function()local i,t,I,D,v,h,_,H,d,k,g,w,p,E,z,a,c,B,u,b,n,s,q,A,x,m,f,l,C,e,F,G F=0x80 while true do if F<0x83 then if F<=0b111011 then if F<=0x11 then if F<0b1001 then if F>0b11 then c="Enum"F=H==c and 0b1010110 or 0xbe/F else u,q,E=d,nil,nil u,E,q=r.g(u,E,q)p,G=u(E,q)q=p F=q==nil and 0b10011111 or 0xd6 end elseif F>=0b1011 then if F<=0b1011 then F,n.Tags=0x3b,m else F,d=0xa7,table h,u,d=d.insert,"Service",m h(d,u)end else g=nil return g end elseif F>=0b111000 then if F>0x38 then E,h=y[1][0b10][y[1][1]],pcall u=E.ReflectionService E,d,u,q=z,u.GetPropertiesOfClass,E.ReflectionService,y[0b11][0b10][y[0b11][1]]h,d=h(d,u,E,q)F=h and 0x3e-F or 0x24a5/F else d=table h,d,u=d.insert,m,"NotCreatable"F=0xdf-F h(d,u)end elseif F<=0x1e then h=_ F=h and 0b11100101 or 0xdf else c="RefType"F=H==c and 0b111100 or F+0b1011101 end elseif F<0b1010110 then if F>=0x46 then if F>0b1000110 then F=h and 0x88-F or 0b10100111 else v[b]=c F,x=0b10101101,1 b=b+x end elseif F<=0x3c then I,F,H="Class",0b1111011-F,A.InstanceType else x={}x.Name=a k="Property"x.MemberType=k C={}C.Name=H C.Category=I k=C x.ValueType=k D,C=G.Serialized,{}C.CanLoad=D D=G.Serialized C.CanSave=D k=C x.Serialization=k x,k,c=#i,0,x F=x~=k and F+0x79 or 0x113a/F end elseif F>0b1111011 then t=y[0b10][0b10][y[0b10][1]]g=t.Reflection F=g and 0b1001 or 0x87 elseif F<0x66 then F,H,I=F+-0x17,A.EnumType,"Enum"elseif F>0x66 then w,e=l(B,s)s=w F=s==nil and 0x77a3/F or 0xa4 else h=not _ F=h and 0b1010000 or 0xce end elseif F<0xad then if F<=0x9d then if F>0b10000111 then if F>0b10011000 then F,H=F+-0b1011110,c else d=table d,F,h,u=m,0xa7,d.insert,"Service"h(d,u)end elseif F<=0b10000110 then if F<=0x83 then c=f[H]F=c and 0b10011101 or 0xa8 else F,x=0b101,table x,k,c=i,"NotScriptable",x.insert c(x,k)end else f={}g,l,B,t=f,{},"CFrame",1 l.CoordinateFrame=B B="Rect"l.Rect2D=B B="Vector3int16"l.Vector3Int16=B B="Vector2int16"l.Vector2Int16=B B="Region3int16"l.Region3Int16=B B,f=y[1][0b10][y[1][1]],l l,s=B.ReflectionService,y[0b11][0b10][y[0b11][1]]l,B=l.GetClasses,l l,B,s=l(B,s)l,B,s=r.g(l,B,s)w,e=l(B,s)s=w F=s==nil and 0b11111001 or 0b100101011-F end elseif F>0b10100111 then F,c=0x145-F,H elseif F>=0b10100100 then if F<=0b10100100 then z={}z,_,v,b=e.Name,{},z,1 _.Name=z _.Members=v m=e.Superclass F=m and 0xff or F+0b1010010 else h,d=#m,0 F=h~=d and 0b10110010-F or 0x3b end else g[t]=n u=1 F,t=F+-0x24,t+u end elseif F>=0b11011111 then if F<=0b11110110 then if F>0xe5 then F,m=0xff,"<<<ROOT>>>"elseif F<=0xdf then F=h and 0b11110000-F or F+-0b1111001 else F,h=0b111000100-F,_.GetService end elseif F>0b11111001 then _.Superclass=m _,h,n=e.Permits,{},_ h,m=e.Service,h F=h and F+-0x67 or 0x1e else return g end elseif F<=0b11001110 then if F>=0b10111000 then if F<=0xb8 then F,c.Tags=0x46,i else F,d=0x50,_.New h=not d end else p,G=u(E,q)q=p F=q==nil and 0b10011111 or F+0x29 end else a,A=G.Name,G.Type H,I,c=A.EngineType,A.Category,{}x,i,k=next,c,G.Permits x=x(k)c=not x F=c and 0b10000110 or 0b101 end end end end,function(d)return function(g,k,f)local c,h,i,l,m,a,b,e c=0b110011 while true do if c>0x33 then return l elseif c<=0x14 then h,e="<Z>","</Z>"a=f..e i=h..a c,l=0x9e-c,l..i else i,b,e="<X>","</Y>","</X><Y>"m=k..b a=e..m h=g..a l=i..h c=f and 0b10100 or 0b10001010 end end end end,function(d)return function(g)local f,e f=g.Origin e=f.Y return e end end,function(r,M)return function(g,t,f,l)local a,o,c,J,L,I,u,K,e,v,n,B,b,d,D,j,s,x,z,m,i,F,q,G,H,p,k,C,A,E,w,_,h F=0b100111 repeat if F<=0b10101110 then if F>0x6f then if F>=0b10000111 then if F>0b10000111 then q=q+G F=(G>0 and q>p or G<=0 and q<p or G~=G)and 0b11000111 or 0b11110001 else d,h=m,m.GetComponents h,d,u,E,q,p,G,a,A,K,I,i=h(d)B[z]=h L[z]=d w[z]=u H,x,D,J,C,j,k,o,s,c=I,E,G,a,p,K,q,A,i,M[0b10][0b10][M[0b10][1]]c=c(x,k,C,D,J,o,j,H,s)k=M[1][0b10][M[1][1]]x=k[c]F=x and 0b11010 or F+0b110101 end else K=K+i F=(i>0 and K>I or i<=0 and K<I or i~=i)and 0x12b-F or 0x62a2/F end elseif F>=0x2d then if F<0x40 then h=nil F=m==h and F+0b10111101 or F+0b1011010 elseif F<=0x40 then z=z+_ F=(_>0 and z>n or _<=0 and z<n or _~=_)and 0x6f or 0b100010100-F else _=0b1100 n,_,z=g,_*f,g.allocRegion z=z(n,_)_,m,d,h={},B,w,L _[1],_[0b10],_[0b11]=m,h,d d,_,n=bit32,g.buf,_ q,h,m=buffer,d.rshift,d.lrotate u,p,d,E,q=q.readu32,0b11,q.writef32,q.writeu8,1 G=q F=(p~=p or(G>0 and q>p or(G<=0 or G~=G)and q<p))and 0b11000111 or F+0b10000010 end elseif F<=0x1a then C,k,D=g,e,x F=F+0b100110 k(C,D)else v=table e,v=v.create,f e=e(v)v,B=table,e v,e=f,v.create e=e(v)e,L=table,e e,w=f,e.create w=w(e)v,e,z=g.writestring,g.writeu8,CFrame n,z,b=f,1,z.identity _=z F=(n~=n or(_>0 and z>n or(_<=0 or _~=_)and z<n))and 0b1101111 or 0b11010100 end elseif F<0xd4 then if F<=0b11000111 then if F>0xbc then return else C,k,D=g,e,0 k(C,D)C,k,D=g,v,c F=0x40 k(C,D)end else c,C,k,x=d,a[K],0,M[0b11][0b10][M[0b11][1]]c(x,k,C)x,C,k,c=u,0,M[0b11][0b10][M[0b11][1]],m x=x(k,C)k=1 c=c(x,k)C=1 k=K-C C,x,F,k=_,A+k,0x7d,E j,D,o,J=0x18,x,c,h J=r.h(J(o,j))k(C,D,r.i(J))k,C,j,o,D,J=E,_,0x10,c,x+f,h J=r.h(J(o,j))k(C,D,r.i(J))C,o,k=_,0b10,E J=o*f j,D,o,J=0b1000,x+J,c,h J=r.h(J(o,j))k(C,D,r.i(J))k,C,o=E,_,0b11 J=o*f J,D=c,x+J k(C,D,J)end elseif F<=0b11101010 then if F>0b11010100 then F,m=0x87,b else m=t[z]F=l and 0b100000001-F or 0x15b-F end else c,a=1,n[q]c,i=0b100,q-c I=i*c K=I*f I,A,K=f,z+K,1 i=K F=(I~=I or(i>0 and K>I or(i<=0 or i~=i)and K<I))and 0xa3ce/F or 0xbe2a/F end until false end end,function(d)return function(a)local e a={[1]=0b11,[0b11]=a}a[0b10]=a e=d:_g{a}return e end end,function(d)return function(g,k,f,l)local e,b,j,_,i,a,p,n,h i,a=g.buf,buffer h,e=a.writeu8,bit32 p,a,e,b=i,e.rshift,h,k n,j,_=l,a,0x18 j=d.h(j(n,_))e(p,b,d.i(j))j,e,n,_,b,p=a,h,l,0x10,k+f,i j=d.h(j(n,_))e(p,b,d.i(j))e,n,p=h,0b10,i j=n*f b,_,j,n=k+j,0b1000,a,l j=d.h(j(n,_))e(p,b,d.i(j))n,e,p=0b11,h,i j=n*f b,j=k+j,l e(p,b,j)return end end,function(d,_)return function(g)local h,e,b,c,f,i c=0b1100000 while true do if c>=0x89 then if c<=0b10110010 then if c>0xac then c=e and 0b10001001 or 0b101011110-c elseif c<=0b10001001 then return e else f=_[0b11][0b10][_[0b11][1]]b,e=string,f._cdata c,h,f,b,i=0x89,"",b.gsub,g,"\0"f=d.h(f(b,i,h))e=e(d.i(f))end elseif c>0b11011010 then c=e and c+-0x29 or 0x6a14/c else f=""c,e=0b110111,g==f end elseif c<=0x60 then if c>=0x4b then if c>0b1001011 then f=nil e=g==f c=e and 0x37 or 0xda else c,e=0b11011011,""end else c=e and 0x82-c or c+0b10100100 end elseif c>0b1100011 then f,b,e=g,"]]>",_[0b10][0b10][_[0b10][1]]e=e(f,b)c=e and 0b1100011 or 0b100101110-c else f=string i,e,f,b=_[1][0b10][_[1][1]],f.gsub,g,"[&<>\"'\0\1-\t\v-\f\14-\31\127-\255]"c,e=0b10110010,e(f,b,i)end end end end,function(d,_)return function(g,k)local c,l,e,m,h,i,f,b,a c=0x24 repeat if c<=0b1110000 then if c<0x46 then if c>0b10001 then f,i=nil,_[0b10][0b10][_[0b10][1]]l=not i c=l and 0b11000101 or 0x52 elseif c<=0b11 then a,e={},true a.__Synthetic=e c,m,b=0b1000110,{},g m[1]=b e=m a.__Children=e b,m=_[0b11][0b10][_[0b11][1]],{}m.Name=b e=m a.Properties=e h=a k[l]=h else return l end elseif c>=0b1010010 then if c<=0x52 then l,i=nil,not f c=i and 0x23e0/c or 0b100001100-c else a=Instance a,h=_[1][0b10][_[1][1]],a.new h=h(a)a,l=_[0b10][0b10][_[0b10][1]],h h=not a c=h and 0b11110000 or 0b11 end else c=i and 0x4a6/c or 0x8e end elseif c>=0xc5 then if c>0xc5 then a=_[0b100][0b10][_[0b100][1]]c,h,a=0x2d0/c,a.NilInstancesFixes,_[0b11][0b10][_[0b11][1]]h[a]=l else i=_[0b100][0b10][_[0b100][1]]i,l=_[0b11][0b10][_[0b11][1]],i.NilInstancesFixes c,f=0b1010010,l[i]end elseif c<=0b10001110 then return else l,a=f,table e,h=k[l],a.insert c,a,e=c+-0x74,e.__Children,g h(a,e)end until false end end,function(d,_)return function(g,k,f,l,...)local e,j,i,a,c,h c=0x8d while true do if c<0x43 then if c>0x25 then c=k and 0b110001111/c or 0b1000011 elseif c>0b111 then a=false _[0b11][0b10][_[0b11][1]]=a c=i and 0x52 or 0xc8 elseif c>0 then c,h=0b1000011,_[0b10][0b10][_[0b10][1]]i=h.Text else a,e,j={},l,d.h(...)e=d.h(e(d.i(j)))d.j(a,1,d.i(e))h,a=a,_[0b10][0b10][_[0b10][1]]c=a and 0b100101-c or 0xc8 end elseif c>0b10001101 then if c<=0x9a then c,h=0,_[0b101][0b10][_[0b101][1]]h()else a,e=unpack,h a=d.h(a(e))return d.i(a)end elseif c>0b1010010 then i,h=nil,_[0b10][0b10][_[0b10][1]]c=h and 0b111001 or 0 elseif c<=0b1000011 then h,_[0b100][0b10][_[0b100][1]]=true,g _[0b11][0b10][_[0b11][1]],h=h,_[1][0b10][_[1][1]]h()c=f and 0b11011101-c or c+-0b1000011 else a=_[0b10][0b10][_[0b10][1]]c,a.Text=0x4010/c,i end end end end,function(d,_)return function(g)local b,a,e,f f=Content f,a,b,e=_[1][0b10][_[1][1]],"Outfit1",g,f.fromUri f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g)local b,a,f,e f=_[1][0b10][_[1][1]]a,e,f,b=g.Z,f._packI16,g.X,g.Y e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function(g)local f,e e,f=_[1][0b10][_[1][1]],g.X f=f.Scale e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g,k)local i,a,f,b,l,m,e,h a,l,b="\" referent=\"","<Item class=\"",_[1][0b10][_[1][1]]m,b=b[k],"\"><Properties>"e=m..b h=a..e i=g..h f=l..i return f end end,function(d,_)return function(g)local j,i,f,b,c,h c=0b10001110 while true do if c>0x26 then f=_[0b10][0b10][_[0b10][1]]i,j=_[1][0b10][_[1][1]],f[g]b=i.hashes f=b[j]b=not f c=b and 0x12 or 0x26 elseif c<=0b10010 then b=_[1][0b10][_[1][1]]i,c,f=b,c+0x14,b.count b=i.hashes b[j]=f b=i i,h=b.count,1 i=i+h b.count=i i=b i,b=f+h,i.order b[i]=j else return f end end end end,function(d)return function(g)local f,e f=g.Origin e=f.Z return e end end,function(d,_)return function(g)local b,a,f,e f=_[1][0b10][_[1][1]]e,b=f._packMultiple,f f,b,a=b.Vector2,g.Min,g.Max e=d.h(e(f,b,a))return d.i(e)end end,function(d)return function(...)local l,k,a,i,e,b,m,g,h,f,c c=0b101111 while true do if c>=0x2f then if c>=0x3b then if c>0x3b then e,b=0b10,1 m=i-b c,a=0x35b3/c,e^m g=g+a else i,h=k(f,l)l=i c=l==nil and 0x55-c or 0b1011001-c end else i,h,g={},d.h(...),0 d.j(i,1,d.i(h))l,f,k=nil,nil,i k,f,l=d.g(k,f,l)i,h=k(f,l)l=i c=l==nil and 0b11010 or 0b11110 end elseif c>0x1a then c=h and 0x1b4e/c or 0x3b else return g end end end end,function(d,_)return function(g)local m,k,i,a,l,c,b,h,e,f c=0x16 repeat if c<0xc7 then if c<=0x8d then if c>=0b10001010 then if c>0b10001010 then l,f,k=g,_[0b11][0b10][_[0b11][1]],pcall k,f=k(f,l)l=not k c=l and 0xdd or 0b10100000 else c=h and 0x16e-c or c+0b111101 end elseif c<=0x16 then f=_[0b10][0b10][_[0b10][1]]k=not f c=k and 0b11111101 or 0xb6 else k,f=false,"getscriptbytecode is not available"return k,f end elseif c>0xb6 then a,e=type,i a=a(e)c,e=0x65e2/c,"string"h=a~=e elseif c<=0b10100000 then c,i,h=0b11011101,type,f i=i(h)h="string"l=i~=h else f=_[0b11][0b10][_[0b11][1]]k=not f c=k and 0b1011000 or 0b10001101 end elseif c>0xf1 then if c<0xfb then c=l and 0b11011111 or c+-0b110 elseif c>0xfb then k,h,l,i=false,_[1][0b10][_[1][1]],"GitHub decompiler unavailable: ",tostring i=i(h)f=l..i return k,f else i,h=#f,0 c,l=0xf7,i==h end elseif c>0b11011111 then if c<=0b11100100 then b,h,m,e=i,false,tostring,"Decompiler error: "m=m(b)a=e..m return h,a else l,h=pcall,_[0b10][0b10][_[0b10][1]]a,h,i,e={},f,h.decompile,"source"a.mode=e l,i=l(i,h,a)h=not l c=h and 0b101111011-c or 0b110101110-c end elseif c>0xdd then e,a,h,l=f,tostring,"Failed to read bytecode: ",false a=a(e)i=h..a return l,i elseif c<=0xc7 then a,h=i,true return h,a else c=l and 0b11110111 or 0xfb end until false end end,function(r,y)return function(g)local f,s,q,A,n,k,o,c,a,b,h,z,p,e,B,v,_,x,j,t,w,d,m,u,l c=0xf8 repeat if c>=0b10101010 then if c>0b11110000 then t,f=g.GetComponents,g t,f,l,B,s,w,e,v,b,z,n,_=t(f)p,a,A,o,q,k,d,j,x,h,u=e,b,z,_,w,s,y[1][0b10][y[1][1]],n,v,y[0b10][0b10][y[0b10][1]],B d=d(u,k,q,p,x,a,A,j,o)m=h[d]h=m c=h and 0xee or 0b1011000 elseif c<=0xee then if c>0xaa then c,h=c+-0x96,0b1101 else u=buffer d,u=u.create,h d=d(u)k=y[0b11][0b10][y[0b11][1]]u=k._packF32 k,q,x,p=u,t,l,f k=k(q,p,x)p=buffer q,p,x,a=p.copy,d,0,k q(p,x,a)c=m and 0x5ef6/c or 0b10001110 end else c,h=0b10101010,0x31 end elseif c>0b10001110 then p=buffer p,q,x,a=d,p.writeu8,0b1100,m c=c+-0x32 q(p,x,a)elseif c<=0x5d then if c<=0b1011000 then c=h and 0b10101010 or 0x148-c else p,q=h,d return q,p end else p=buffer x,a,p,q=0b1100,0,d,p.writeu8 q(p,x,a)p,x,a,q=B,s,w,u q=q(p,x,a)x=buffer p,x,a,A=x.copy,d,0b1101,q p(x,a,A)p,A,a,x=u,b,v,e p=p(x,a,A)a=buffer j,A,x,a=p,0x19,a.copy,d x(a,A,j)x,j,a,A=u,_,z,n c,x=0b1011101,x(a,A,j)A=buffer j,o,A,a=0x25,x,d,A.copy a(A,j,o)end until false end end,function(d)return function(g)local l,k,f,e,i,m,h,a e,i=math,4278190080 m,e,a=0xff,g.R,e.floor e=e*m a=a(e)e=0x10000 h=a*e l,a=i+h,math a,h,e=g.G,a.floor,0b11111111 a=a*e h=h(a)a=0b100000000 i=h*a f,i=l+i,math i,h,l=g.B,0b11111111,i.floor i=i*h l=l(i)k=f+l return k end end,function(r,o)return function(g,t)local d,c,i,_,s,k,p,q,l,e,j,n,m,h,v,u,w,f,b c=0b10011111 while true do if c>=0x85 then if c<0xb4 then if c<0b10100100 then if c>=0x93 then if c>=0x9a then if c<=0b10011010 then b,j=g.GetFullName,g b=b(j)j=o[0b100][0b10][o[0b100][1]]c=j and c+0x5b or 0xab else c=t and 0b10110000 or 0b101010 end else c=0b10110111 end elseif c>0x8f then h,n=Enum,g.RunContext m=h.RunContext _=m.Client c,j=0b100010110-c,n~=_ elseif c<=0x85 then c=j and 0x2e or 0b10101110-c else _,n,m,j=g.GetFullName,"FAILED TO EXTRACT LINKEDSOURCE (OPEN A GITHUB ISSUE): ",g,warn c,_=0b101000110-c,_(m)m=w j(n,_,m)end elseif c>=0b10100111 then if c<=0xab then if c>0b10100111 then n=string _,n,j="%w+$",w,n.match j=j(n,_)i=j c=i and 0x78e7/c or 0x8f else n,j=g,o[0b11][0b10][o[0b11][1]]j=j(n)c=j and 0b10000011 or 0xfb end else f="-- Ignored"return f end elseif c<=0b10100101 then if c<=0xa4 then f,c,l=_,0x93,nil else p="\n\n"c,k=0x2562/c,q..p d=u..k m=h..d n=_..m end else j=n..f f=b..j return f end elseif c<=0xe3 then if c>0b11010110 then if c>0b11011110 then c,f,l=c+-0b11010111,j,nil elseif c<=0xdc then h,_=v,"-- Original Source: https://assetdelivery.roblox.com/v1/asset/?"c=h and c+-0b11000110 or 0b1000101 else c=j and 0b1101100 or 0x6c66/c end elseif c<0xb7 then if c<=0b10110100 then n=string n,_,j=i,"%a",n.find j=j(n,_)c=j and 0x17e8/c or 0xde else j=o[0b1000][0b10][o[0b1000][1]]c=j and 0x70 or 0b1100 end elseif c>0xb7 then j,b,n=g,g.IsA,"LocalScript"b=b(j,n)j=b c=j and 0b111001 or 0x33 else c=l and 0b110001101-c or c+0b1000100 end elseif c<=0xf7 then if c>=0xf5 then if c<=0b11110101 then c,n=0b110100000-c,table j,_,n=n.insert,b,o[0b100][0b10][o[0b100][1]]j(n,_)else m,h=o[0b101][0b10][o[0b101][1]],_ c,m=0b1011010,m(h)end else c,q=0xa5,w end elseif c<=0xfb then n,b=e,"-- Saved by FIN\n\n"c=n and 0b11011100 or 0x3a else c,w=0b110000011-c,""end elseif c>=0x41 then if c<=0b1101100 then if c>0x5a then if c<0b1100101 then f,c,l="-- Not found in LinkedSource ScriptCache",0x4218/c,nil elseif c>0x65 then _,v="=",j n=_..i j=v..n j={[1]=0b11,[0b11]=j}j[0b10]=j _,n=r:cf{j},pcall n,_=n(_)m=n c=m and 0b11110111 or 0x5a else m=o[1][0b10][o[1][1]]c,m[i]=0b10100100,_ end elseif c>=0b1010111 then if c<=0x57 then c,n=0b11111101-c,""else c=m and 0b10110100/c or 0x93 end elseif c<=0x41 then n,c,j,_=g,c+-0x36,g.IsA,"Script"j=j(n,_)else c,h=0x16,"id"end elseif c<=0b1111101 then if c<=0b1110000 then if c>0x6f then n=o[1][0b10][o[1][1]]j=n[i]c=j and c+0b1110011 or 0b1100 else j=o[0b110][0b10][o[0b110][1]]c=j and 0b1011110 or 0xb4 end else c,j=0x34bc/c,"id"end elseif c>0b10000011 then v=""v,e=nil,w~=v c=e and c+0x16 or 0x5e5c/c else c,f=0x17e-c,j..f end elseif c<0x29 then if c>=0b1100 then if c>0b10110 then c,j=0xde,"hash"elseif c<=0b1100 then c=l and 0b1101111 or 0b11000011-c else u,q="=",i c=q and 0b10100101 or 0b100001000-c end elseif c<=0b1001 then if c>0b10 then j=not b c=j and 0x249/c or 0x63/c else m=o[0b1000][0b10][o[0b1000][1]]c=m and 0b11001010/c or 0b101001000/c end else c=j and 0b10011100-c or 0x85 end elseif c>0b110011 then if c>0x39 then c=n and 0xa6 or 0x57 else c,h,n=0b110011,Enum,g.RunContext m=h.RunContext _=m.Server j=n==_ end elseif c<0b101110 then if c<=0x29 then j,n=o[0b111][0b10][o[0b111][1]],g j=j(n)j,f=o[0b11][0b10][o[0b11][1]],j c=j and 0b11010000-c or 0b11111011 else e,i,f,s,l,w,v=g,nil,nil,pcall,true,o[0b10][0b10][o[0b10][1]],"LinkedSource"s,w=s(w,e,v)e=not s c=e and 0b100101001-c or 0b10000100 end elseif c<=0x2e then c,f=0b11111011,"-- [FilteringEnabled] Server Scripts are IMPOSSIBLE to save"else c=j and 0xb8-c or c+-0b101010 end end end end,function(d,_)return function(g)local a,b,k,f,i,h f=g.CFrame b,i,k=g.Size,0.5,f.Position i,f=_[1][0b10][_[1][1]],b*i i,b,a,h=k-f,i._minMax,_[1][0b10][_[1][1]],k+f a=a.Vector3 b=d.h(b(i,h,a))return d.i(b)end end,function(d,_)return function(g)local e,b,f e,b,f=_[1][0b10][_[1][1]],g,g.GetAngleAttenuation f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(r)return function(g,k)local b,l,_,q,e,j,n,m,f,p,i,c,a c=0b1011110 repeat if c<=0b1110100 then if c<=0x43 then if c<=0b11111 then if c<=0b11000 then if c<=0b1000 then p,q=Enum,f.Interpolation e=p.KeyInterpolationMode a=e.Linear c=q==a and 0b11100000-c or 0xb0 else q,p=f.Interpolation,Enum e=p.KeyInterpolationMode a=e.Constant c=q==a and 0b1011011-c or c+-0b10000 end else e=0 p=e return e,p end else q=0 a=q return q,a end elseif c<=0b1011110 then if c<=0x47 then e,j=q.Interpolation,Enum b=j.KeyInterpolationMode p=b.Linear c=e==p and 0xe1 or 0x119-c else i,f=1,g[k]q,l=#g,k==i i=k==q c=i and 0b11011010 or 0b11000 end else q=0 a=q return q,a end elseif c>=0xd8 then if c<=0xda then if c<=0xd8 then e=1 a=k+e q=g[a]j,b=f.Time,q.Time p=b-j a=e/p p,e=a,a return e,p else q=0 a=q return q,a end else p=1 e=p/a b,p=e,e return p,b end elseif c>=0xb0 then if c>0xb0 then b=1 p=k+b e=g[p]j,b=f.Time,e.Time _,p=1,b-j n,m=_/a,_ _=m/p j,n=n+_,0b10 b=j/n n,j=b,b return j,n else c=l and 0b1110100 or 0xa7 end else e=1 a=k-e q,e=g[a],f.Time p=q.Time j,a,e=Enum,e-p,q.Interpolation b=j.KeyInterpolationMode p=b.Constant c=e==p and 0x1f or 0b1000111 end until false end end,function(r)return function(g)local n,e,m,b,p,i,q,f,l,k,_,a,j _,j,p,m,a,f,i=g.B,"</G><B>",g.G,"</B>","</R><G>","<R>",g.R n=_..m b=j..n e=p..b q=a..e l=i..q k=f..l return k end end,function(d,_)return function(g)local h,a,f,k,i,b i=_[1][0b10][_[1][1]]i,h,a,b=g.Min,g.Max,_[1][0b10][_[1][1]],i._minMax a=a.Vector2 b=b(i,h,a)f,k="Rect2D",b return k,f end end,function(d)return function(g)local l,e,h,i,m,n,c,a,b,f,j,k c=0b11101000 while true do if c>=0x6f then if c<0x77 then e=string e,a,j=k,e.sub,0b10 b,j=l*j,1 m,j=b+j,0b10 b=l*j b=b+j a=a(e,m,b)m,e,b=a,tonumber,0x10 e=e(m,b)c=e and 0b1001001 or 0b101100 elseif c>0x77 then f=string f,l,k,i=g,"[{}-]",f.gsub,""k=k(f,l,i)l=buffer l,f=0x10,l.create f=f(l)h,l,i=1,0,0b1111 c=(i~=i or(h>0 and l>i or(h<=0 or h~=h)and l<i))and 0x30 or 0b1101111 else l=l+h c=(h>0 and l>i or h<=0 and l<i or h~=h)and 0x30 or 0x3399/c end elseif c>=0b110000 then if c>0b110000 then b=buffer b,n,m,j=f,e,b.writeu8,l c=0b1110111 m(b,j,n)else i=buffer l,i=i.tostring,f l=d.h(l(i))return d.i(l)end else c,e=0x49,0 end end end end,function(d,_)return function(g)local b,a,e,f,c c=0xf1 repeat if c<0b11000111 then f=""return f elseif c>0xc7 then f=_[1][0b10][_[1][1]]b,e=g,f.CollectionService f,e=e,e.GetTags e=e(f,b)f,b=#e,0 c=f==b and 0b1101111 or 0b11000111 else b=table b,f,a=e,b.concat,"\0"f=d.h(f(b,a))return d.i(f)end until false end end,function(r,o)return function(g,t)local j,s,b,a,f,_,d,l,n,i,h,c,m,e,p c=0x67 while true do if c<0xd1 then if c>0x86 then return elseif c>0b1100111 then a,e=l(i,s)s=a c=s==nil and 0x79f6/c or 0b11010010 else l=string s,f,l=string,l.format,o[0b10][0b10][o[0b10][1]]a,s,i=t,"%.6f seconds",s.format i=r.h(i(s,a))f=f(l,r.i(i))s,l=o[1][0b10][o[1][1]],#f i=#s c=l~=i and 0xcf or 0xd1 end elseif c<0b11100001 then if c<=0xd1 then i,s,l=nil,nil,g l,i,s=r.g(l,i,s)a,e=l(i,s)s=a c=s==nil and 0xbe39/c or 0b110100011-c else b=string b,n,_,j,p=e,1,true,o[1][0b10][o[1][1]],b.find p=p(b,j,n,_)c=p and 0xe1 or 0x86 end elseif c>0xe1 then return else n=string _,n,j=1,e,n.sub m=_ m=p-m j=j(n,_,m)m=string _,m,d=m.sub,e,o[1][0b10][o[1][1]]h=#d h=p+h _=_(m,h)n=f.._ b=j..n g[a]=b return end end end end,function(r)return function(g,t,f)local q,i,e,m,_,n,k,l,v,h,u,d,s,w,c,b,j c=0b1110101 repeat if c<=0x36 then if c<0b1101 then return elseif c>0b1101 then e=e+b c=(b>0 and e>v or b<=0 and e<v or b~=b)and 0x17a/c or 0b1101 else j,m=t[e],1 _=e-m _,n,m=s,l+_,i q,d,k,h=0b11111111,w,j.R,n u,k=k*q,0.5 u=u+k d=r.h(d(u))_(m,h,r.i(d))_,k,m,h,d,q=s,j.G,i,n+f,w,0b11111111 u,k=k*q,0.5 u=u+k d=r.h(d(u))c=0b110110 _(m,h,r.i(d))u,_,m=0b10,s,i d=u*f q,k,d,h=0b11111111,j.B,w,n+d u,k=k*q,0.5 u=u+k d=r.h(d(u))_(m,h,r.i(d))end else s=0b11 l,s,i=g.allocRegion,s*f,g l=l(i,s)i,w=g.buf,buffer e,s=math,w.writeu8 w,e,v=e.floor,1,f b=e c=(v~=v or(b>0 and e>v or(b<=0 or b~=b)and e<v))and 0b111 or 0b1101 end until false end end,function(r,o)return function(g)local e,u,f,a,v,b,k,_,n,l,h,j,m,i,t,d,s f=o[1][0b10][o[1][1]]t,f=f._normalizeRange,g.Value i,s=t,g.Time i=i(s)v,b,a=t,f.R," "v=v(b)_,m,j=t,f.G," "_=_(m)h,k,u=" ",f.B,t u=u(k)k=" 0 "d=u..k m=h..d n=_..m b=j..n e=v..b s=a..e l=i..s return l end end,function(d,_)return function()local f,e,c,g c=0b10011100 while true do if c<0x9c then g=_[1][0b10][_[1][1]]c=0x6f68/c g()elseif c<=0b10011100 then f=os e=f.clock e=e()f=_[0b10][0b10][_[0b10][1]]g,e=e-f,0b1010 c=g>e and 0b1111100 or 0xe6 else return end end end end,function(d)return function(g)local i,k,h,l,m,f,e,a,b f,a,m,b,i="<S>","</S><O>",g.Offset,"</O>",g.Scale e=m..b h=a..e l=i..h k=f..l return k end end,function(d,_)return function(...)local h,g,j,f,b,c,i c=0xf1 repeat if c>=0b10010101 then if c>0b10010101 then j=coroutine g=j.running g=g()g={[1]=0b11,[0b11]=g}g[0b10]=g f={}f.thread=g[0b10][g[1]]i,h={},d.h(...)d.j(i,1,d.i(h))b=i f.args=b j=f j={[1]=0b11,[0b11]=j}j[0b10]=j b=task f,b,i=b.delay,_[0b10][0b10][_[0b10][1]],d:yf{_[0b100],j,g,_[0b11]}f=f(b,i)j[0b10][j[1]].timeoutThread=f b=_[0b11][0b10][_[0b11][1]]f=not b c=f and 0b1001 or 0b10010101 else _[0b101][0b10][_[0b101][1]],b=j[0b10][j[1]],coroutine f=b.yield f=d.h(f())return d.i(f)end else f=_[1][0b10][_[1][1]]c,f=0b10010101,f()_[0b11][0b10][_[0b11][1]]=f end until false end end,function(d,_)return function(g)local f,c,b,a,e c=0b10100101 while true do if c<=0x8c then if c<=0x83 then if c<=0b1000 then c=e and 0x4e8/c or 0b10001011-c else c,f=0b10011101,_[0b11][0b10][_[0b11][1]]e,f=f._cdata,g e=e(f)end else c,f=0b1000,string e,f,a,b=f.gsub,g,_[1][0b10][_[1][1]],"[&<>\"'\0\1-\t\v-\f\14-\31\127-\255]"e=e(f,b,a)end elseif c>0b10011101 then e,f,b=_[0b10][0b10][_[0b10][1]],g,"]]>"e=e(f,b)c=e and 0x8c or 0b1000 else return e end end end end,function(d,_)return function()local g,f,e,b g=_[0b10][0b10][_[0b10][1]]g=g()g={[1]=0b11,[0b11]=g}g[0b10]=g f,e=g[0b10][g[1]],_[0b100][0b10][_[0b100][1]]e(f)e={[1]=0b11,[0b11]=e}e[0b10]=e e[0b10][e[1]]=d:Bf{g}f=e[0b10][e[1]]f()f,b=pcall,d:Af{_[0b11],_[1],e}f(b)f=_[0b101][0b10][_[0b101][1]]f()return end end,function(r,o)return function(g,t,f,l,i,...)local _,s,a,c,e,b,d,n,p,j,m,h c=0b11001100 repeat if c>=0b10000100 then if c>=0xf4 then if c<0b11110110 then a,e=#s,0 c=a==e and 0b100000011-c or 0b11110111 elseif c<=0xf6 then a=s[1]return a else a,e=#s,1 c=a==e and c+-1 or 0b10 end elseif c>=0b11001100 then if c<=0xcc then a={}s,a,e,p=a,t,nil,nil a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0b11110100 or 0x84 else c,m=0b1000110,_ end else c=j and c+-0b10000000 or 0b10011010-c end elseif c>0b10110 then if c>0x46 then h,d=#s,1 c,m=0x16,h+d s[m]=j else c=m and 0b10111110-c or 0b1011100-c end elseif c<0b1111 then if c<=0b10 then e,p,b,a,j=s,l,i,o[1][0b10][o[1][1]],r.h(...)a=a(e,p,b,r.i(j))return a else m,n,_=j,pcall,f n,_=n(_,m)m=n c=m and 0xd6-c or 0b1000110 end elseif c<=0b1111 then a=nil return a else b,j=a(e,p)p=b c=p==nil and 0x14f8/c or c+0x6e end until false end end,function(d)return function(g)local f,e,i,h,b f=buffer e,f=f.create,0b1000 e=e(f)b=buffer b,h,f,i=e,g.Scale,b.writef32,0 f(b,i,h)b=buffer b,i,h,f=e,0b100,g.Offset,b.writei32 f(b,i,h)f,b=e,0b1000 return f,b end end,function(d)return function(a)local f,e f,e=a,a.GetScale e=d.h(e(f))return d.i(e)end end,function(r,y)return function(g)local q,c,l,d,s,n,x,m,p,w,f,u,e,k,j,i,b,_,h,v,t c=0xc4 repeat if c>=0b111101 then if c>0b10101011 then if c<=0xc4 then t,f=g.GetKeys,g t=t(f)f,l=#t,0 c=f==l and 0b10011101 or 0b111101 else w,s,i,e=l,f,y[1][0b10][y[1][1]],t i=i(s,w,e)l,s=i,buffer s,i=f,s.tostring i=r.h(i(s))return r.i(i)end elseif c<=0b10011101 then if c<=0b111101 then l=buffer f,v,s,e=l.create,0b11001,0b1000,#t w=e*v i=s+w s,l,w=#t,i+s,0b100 i=s*w l=l+i f=f(l)i=buffer w,s,i,l=1,0,f,i.writeu32 l(i,s,w)i=buffer s,l,i,w=0b100,i.writeu32,f,#t l(i,s,w)s,i,l,w=nil,t,0b1000,nil i,s,w=r.g(i,s,w)e,v=i(s,w)w=e c=w==nil and 0x137-c or 0 else f="\1\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"return f end else j=v.RightTangent c=j and 0b111000 or 0b10111 end elseif c>=0x17 then if c<=0b101111 then if c<=0x17 then c,j=0x38,0 else c,b=c+0b1111100,0 end else _,n=v.Value,y[0b10][0b10][y[0b10][1]]n,_,m,h=n(_)u=buffer d,u,k,q,x=u.writeu8,f,l,0b1100,v.Interpolation p=x.Value q=q+p d(u,k,q)d=1 l,u=l+d,buffer q,k,d,u=n,l,u.writef32,f d(u,k,q)d=0b100 l,u=l+d,buffer u,k,d,q=f,l,u.writef32,_ d(u,k,q)d=0b100 l,u=l+d,buffer d,k,u,q=u.writef32,l,f,m d(u,k,q)d=0b100 u,l=buffer,l+d k,d,u,q=l,u.writef32,f,h d(u,k,q)d=0b100 l,u=l+d,buffer u,c,d,k,q=f,0b1011,u.writef32,l,b d(u,k,q)d=0b100 l,u=l+d,buffer d,u,q,k=u.writef32,f,j,l d(u,k,q)d=0b100 l=l+d end elseif c<=0 then b=v.LeftTangent c=b and 0b10101011 or 0b101111 else e,v=i(s,w)w=e c=w==nil and c+0b11101111 or c+-0b1011 end until false end end,function(d)return function(g)local l,b,f,q,k,n,j,_,m,e,c,p,a,i c=0xa6 repeat if c>0b10100110 then if c>0b10111010 then a=buffer a,q=l,a.tostring q=d.h(q(a))return d.i(q)else p,b=q(a,e)e=p c=e==nil and 0x183-c or 0b1000 end elseif c>=0b10100100 then if c<=0b10100100 then l="\1\0\0\0\0\0\0\0"return l else f,k=g,g.GetLabels k=k(f)f,l=#k,0 c=f==l and 0xa4 or 0b101 end elseif c>0b101 then n=buffer n,_,m,j=l,i,b,n.writeu32 j(n,_,m)j=0b100 c,i=0b10111010,i+j else i=buffer l,a,i=i.create,0b100,0b1000 q=f*a i=i+q l=l(i)q=buffer q,i,e,a=l,q.writeu32,1,0 i(q,a,e)q=buffer a,q,i,e=0b100,l,q.writeu32,f i(q,a,e)q,a,e,i=k,nil,nil,0b1000 q,a,e=d.g(q,a,e)p,b=q(a,e)e=p c=e==nil and 0xc9 or c+0b11 end until false end end,function(r,o)return function(g)local f,e,l,c,n,a,i,k,b,q,m,j,p,h,_ c=0b11000001 while true do if c>=0x9f then if c>0b10011111 then k=g.Keypoints i,a,f=0b100,o[0b10][0b10][o[0b10][1]],#k q=a*f q,l=buffer,i+q i,q=q.create,l i=i(q)a=buffer e,a,q,p=0,i,a.writeu32,f q(a,e,p)q,e,a,p=0b100,nil,k,nil a,e,p=r.g(a,e,p)b,j=a(e,p)p=b c=p==nil and 0x3d or 0b10011111 else _,m,n,h=j,i,o[1][0b10][o[1][1]],q c=0b100101 n(_,m,h)n=o[0b10][0b10][o[0b10][1]]q=q+n end elseif c<=0x25 then b,j=a(e,p)p=b c=p==nil and 0x3d or c+0x7a else a,e=i,l return a,e end end end end,function(d,_)return function(g)local e,f f,e=g.Max,_[1][0b10][_[1][1]]f=f.Y e=d.h(e(f))return d.i(e)end end,function(r,y)return function()local K,p,E,G,e,f,v,i,B,A,t,o,a,_,z,j,x,u,h,n,d,k,C,g,m,b,F,w,c,D,J,I,s,l,q F=0b100 while true do if F>0b10000000 then if F>0b11001010 then if F<=0b11100100 then if F<0b11011001 then if F<0xd3 then if F>0b11010000 then s.mainRoots=e b=y[0b1111][0b10][y[0b1111][1]]v=b.Binary F=v and 0b100100 or 0x84 elseif F>=0b11001111 then if F>0xcf then p,G=#_,1 F,q=F+0x27,p+G _[q]=E else F,e=0x7c86/F,true w.deferLast=e end else m,h=z(n,_)_=m F=_==nil and 0x77bd/F or F+0b1000 end elseif F>0b11010101 then _,n,z=nil,nil,b.roots z,n,_=r.g(z,n,_)m,h=z(n,_)_=m F=_==nil and 0x97 or 0xd3 elseif F<0xd4 then F,u,E=0xcb,#B,1 d=u+E B[d]=h elseif F<=0xd4 then F=e and 0b101000 or 0x8a4c/F else b=y[0b10001][0b10][y[0b10001][1]]F=b and F+-0x70 or F+0x1c end elseif F<=0xde then if F>0xdc then if F<=0xdd then F=p and F+0b1100 or 0b11100011-F else w,s=B,y[0b1000][0b10][y[0b1000][1]]s=s(w)w,e,v=y[0b11001][0b10][y[0b11001][1]],nil,nil w,e,v=r.g(w,e,v)b,z=w(e,v)v=b F=v==nil and 0x62dc/F or 0x18e-F end elseif F<=0b11011010 then if F<=0b11011001 then F,x,k=0x2ced/F,s.entries,i.parent c=x[k]else F,e=0xb488/F,nil end else z,n=e(v,b)b=z F=b==nil and F+-0x53 or 0b1100001 end elseif F>0b11100010 then F,p=0x3bac/F,#E n[0b10][n[1]]=n[0b10][n[1]]+p elseif F<=0b11100001 then _,n,z=nil,nil,f z,n,_=r.g(z,n,_)m,h=z(n,_)_=m F=_==nil and 0b1111111 or 0xc9 else g=y[0b1101][0b10][y[0b1101][1]]F=g and 0x85 or 0b100011011-F end elseif F>=0xf2 then if F>=0b11110111 then if F>0b11111001 then k=k+D F=(D>0 and k>C or D<=0 and k<C or D~=D)and 0x52b0/F or 0x4c elseif F<=0b11111000 then if F>0xf7 then F=g and F+-0b10111110 or 0b100001100-F else u,E=m(h,d)d=u F=d==nil and 0b10000111 or 0b1111100 end else F,o=0x54,table J,o,j=o.remove,x,k J(o,j)end elseif F<0xf4 then y[0x1f][0b10][y[0x1f][1]]=g g=y[0x1f][0b10][y[0x1f][1]]y[0b1110][0b10][y[0b1110][1]],g=g,y[0b100][0b10][y[0b100][1]]F=g and 0b11111000 or 0x8274/F elseif F>0xf4 then t=y[0x12][0b10][y[0x12][1]]F,g=0xed,t.getnilinstances else d,u=_(m,h)h=d F=h==nil and 0b11011100 or 0b11 end elseif F<=0b11101110 then if F>=0b11101101 then if F>0xed then F=g and 0x32 or 0b1100000 else F=g and 0b100101010-F or 0b10101111 end elseif F<=0b11101001 then G,a,A=p,nil,nil G,a,A=r.g(G,a,A)K,I=G(a,A)A=K F=A==nil and F+0b1011 or 0b100101011-F else F,s=0x3f,"Unknown"end elseif F<=0b11110000 then if F>0b11101111 then F,x=0b11111110-F,nil else F,g=0x126-F,true end else b=y[0b11101][0b10][y[0b11101][1]]F=b and 0b1001111 or 0x6b end elseif F<0xa7 then if F>=0b10010100 then if F>0b10011111 then if F<=0xa2 then if F<=0xa0 then _={}z,b=0,_ n=z b={[1]=0b11,[0b11]=b}b[0b10]=b z={[1]=0b11,[0b11]=z}z[0b10]=z n={[1]=0b11,[0b11]=n}n[0b10]=n h,d,_,m=y[0b10][0b10][y[0b10][1]],"",r:hf{y[0b10101],z,y[0x16],n,y[0b10],y[0b1011],b},y[0x1e][0b10][y[0b11110][1]]m(h,d)m,d,h=v,nil,nil m,h,d=r.g(m,h,d)u,E=m(h,d)d=u F=d==nil and 0b1011111 or 0b10010000 else v=e.ClassName z,b=nil,f[v]F=b==z and 0x8e62/F or 0x505e/F end else n=z.Service F=n and 0xda or 0xd4 end elseif F<0x98 then if F>0x94 then v,b=s(w,e)e=v F=e==nil and 0b11011110 or 0x7ed1/F else v=table m,v,b,n,z,e=DateTime,{},"\n\n\t\tElapsed time: ","\n\t\tDate (UTC): ",g[0b10][g[1]],v.concat _=m.now _=_()d,h,_,m="en-gb","LL LTS",_.FormatUniversalTime,_ _=_(m,h,d)d,m=game," PlaceId: "h,d,E=d.PlaceId," PlaceVersion: ",game q,p,E,u,G,A,a=y[0b100000][0b10][y[0x20][1]]," Platform: "," Client Version: ",E.PlaceVersion,s,w," Executor: "v[1],v[0b10],v[0b11],v[0b100],v[0b101],v[0b110],v[0b111],v[0b1000],v[0b1001],v[0b1010],v[0b1011],v[0b1100],v[0b1101],v[0b1110]=b,z,n,_,m,h,d,u,E,q,p,G,a,A e=e(v)e={[1]=0b11,[0b11]=e}e[0b10]=e z,m,_,b,n,v=nil,r:gf{B,y[0b10000],y[0x17],y[0x1a],e,y[0b1111]},"Script","README",nil,y[0b1001][0b10][y[0b1001][1]]v=v(b,z,n,_,m)F,l=0b111100,v end elseif F>=0b10011010 then if F<=0b10011010 then e={}w,v,e,b=e,nil,y[0x19][0b10][y[0x19][1]],nil e,v,b=r.g(e,v,b)z,n=e(v,b)b=z F=b==nil and 0x526a/F or F+-0b111001 else G,p=1,#b[0b10][b[1]]q=p+G b[0b10][b[1]][q]=E q=#E q,z[0b10][z[1]]=0x3f4240,z[0b10][z[1]]+q F=z[0b10][z[1]]>=q and 0b110100 or 0b1000011 end else q=_ F=0xc7 q()q=1 end elseif F<=0b10000111 then if F<=0b10000101 then if F>0b10000100 then F,t=0x39,y[0b10010][0b10][y[0b10010][1]]g=t.getnilinstances elseif F>0b10000011 then F=v and 0b11000101-F or 0x35a0/F else l,t,f,F,B=g,y[0b1001][0b10][y[0b1001][1]],"LocalPlayer",0b11100111-F,true t(f,l,B)end else F,z.collectedRoots=F+-0b1001111,_ end elseif F>=0x8a then if F>0b10001010 then q,p=#E,0x3f4240 F=q>=p and 0b10011000 or 0x12f-F else F,g=0x85b0/F,y[0b11011][0b10][y[0b11011][1]]end else v=table v,e=s.roots,v.create v=#v e=e(v)b,z,v=nil,nil,s.roots v,b,z=r.g(v,b,z)n,_=v(b,z)z=n F=z==nil and 0b11010001 or F+-0x5c end elseif F>0b10111101 then if F>0xc4 then if F>=0xc9 then if F>0b11001001 then h,d=#e,1 F,m=0b1110101,h+d e[m]=_ else E,u,d=m,e,e.IsA d=d(u,E)F=d and 0x173-F or F+-0b111 end else p=#E F=q<=p and 0x3731/F or 0b11100100 end elseif F<0xc3 then if F>0b10111111 then m,h=z(n,_)_=m F=_==nil and 0x7f or 0x9852/F else f,g,t=y[0b11010][0b10][y[0x1a][1]],y[0b1001][0b10][y[0b1001][1]],"StarterPlayer"F,f=0x17c-F,f.StarterPlayer g(t,f)end elseif F<=0xc3 then F,g=0xb856/F,false else F,e=0x198-F,nil end elseif F<=0b10101111 then if F<=0xac then if F<0b10101010 then w,e=l(B,s)s=w F=s==nil and 0b10111100-F or F+-0x62 elseif F<=0b10101010 then F,b=F+-0b101011,h else F,b=F+-0x39,y[0b1011][0b10][y[0b1011][1]]end elseif F<=0xad then F,q=0x19,E.virtual else B,t=string,"@@ELAPSED"s,l=y[0b11010][0b10][y[0b11010][1]],B.gsub B,w=s.HttpService,false s,B=B,B.GenerateGUID B=B(s,w)s,w="-",""l=l(B,s,w)B="@@"f=l..B g=t..f g={[1]=0b11,[0b11]=g}g[0b10]=g B,s,f=#g[0b10][g[1]],"s","%-"l=B..s t=f..l t={[1]=0b11,[0b11]=t}t[0b10]=t f,s,l=r:if_{g,t},y[0b1111][0b10][y[0b1111][1]],nil B=s.ReadMe F=B and 0b11011011-F or F+-0x73 end elseif F<0b10111010 then if F<=0b10110000 then m,n=table,z.roots _,m=m.create,#n _=_(m)m,h,d=n,nil,nil m,h,d=r.g(m,h,d)u,E=m(h,d)d=u F=d==nil and 0b10000111 or F+-0b110100 else g=y[0b1101][0b10][y[0b1101][1]]F=g and 0xad39/F or 0xa791/F end elseif F>0b10111010 then g=y[0x14][0b10][y[0b10100][1]]F=g and F+-0b10110110 or 0xb5 else t=g.Character F=t and 0b1000000 or 0b10100 end elseif F>0b1000001 then if F>0x64 then if F>=0b1110011 then if F<0b1111001 then if F<=0x77 then if F<=0x75 then if F>0b1110011 then n,_=v(b,z)z=n F=z==nil and 0xd1 or 0x2d else F=b and 0b100010011-F or 0x2dd2/F end else F,B[0b10][B[1]]=0b1111001,"\t\tIf you didn't save in Binary (rbxl) - it's recommended to save the game right away to take advantage of the binary format & to preserve values of certain properties if you used IgnoreDefaultProperties setting (as they might change in the future).\n\t\tYou can do that by going to FILE -> Save to File As -> Make sure File Name ends with .rbxl -> Save\n\n"end else z,b,_=v,f,os F,n=0b101001101-F,_.clock n=n()_=y[0x13][0b10][y[0b10011][1]]n=n-_ b(z,n)end elseif F>0x7f then F=c and 0b11111 or 0x54 elseif F>=0x7c then if F<=0x7c then p=s.entries q=p[E]F=q and 0x14c-F or 0x173-F else F=b and F+-0x76 or F+-0b10110 end else v,w,s,e=r:ff{y[0x1a]},0b10,select,pcall e=r.h(e(v))s=s(w,r.i(e))F=s and 0x3f or F+0x72 end elseif F>0x68 then if F<=0b1101011 then if F>0b1101001 then z=y[0b1111][0b10][y[0b1111][1]]b=z.AlternativeWritefile F=b and 0x47e4/F or 0b1110011 else n=y[1][0b10][y[1][1]]z=n[v]F=z and 0b100001110-F or 0b11010100 end else F=l and 0b1100111 or 0x4494/F end elseif F<=0b1100111 then if F<=0b1100110 then if F>0b1100101 then b=y[0b11110][0b10][y[0b11110][1]]F=b and 0x58 or 0b1011001 else n,b=table,y[0b1010][0b10][y[0b1010][1]]n,z=v,n.concat z=r.h(z(n))F=0b10111110-F b(r.i(z))end else b,e=l.roots,s.entries v=b[1]w=e[v]F=w and 0b11001111 or 0b10011010 end else v,b=y[0b11][0b10][y[0b11][1]],s F,v=0x41,v(b)end elseif F<0b1011000 then if F<=0x4c then if F>0x45 then if F<=0x47 then G,p,A=y[0b10][0b10][y[0b10][1]],y[0b1011][0b10][y[0b1011][1]],string a,i,A,K=A.sub,0x3f4240,E,q i,I=1,q+i I=I-i a=r.h(a(A,K,I))p(G,r.i(a))p=0x3f4240 G,q=task,q+p F,p=0xc7,G.wait p()else J=x[k]F=J==I and 0b11111001 or 0xfc end elseif F<0x43 then c=s.entries i=c[I]c=i.parent F=c and 0b100011011-F or 0x35 elseif F>0b1000011 then v,z,b=e.IsA,"ServiceProvider",e v=v(b,z)F=v and 0b11000100 or F+0b1011101 else u,E=m(h,d)d=u F=d==nil and F+0x1c or 0x25b0/F end elseif F>=0b1010001 then if F>0x51 then x=q F=x and 0x7a-F or 0x1a94/F else F=x and 0b1110 or 0xf0 end else b,n=y[0x1d][0b10][y[0b11101][1]],table n,z=v,n.concat z=z(n)F,n=0b1011001,v b(z,n)end elseif F<0x60 then if F>=0x5d then if F<=0x5d then F,g=F+0b10010001,y[0b100][0b10][y[0b100][1]]else F,m=0x59,_ m()end elseif F<=0b1011000 then m,n,b=y[0b111][0b10][y[0b111][1]],"Writing ",y[0x16][0b10][y[0b10110][1]]m=m()F,h=0xb1-F," to File"_=m..h n,_,m,z,h,u=nil,true,y[0x1e][0b10][y[0x1e][1]],n.._,y[0b10][0b10][y[0b10][1]],table d,u=u.concat,v d=r.h(d(u))b(z,n,_,m,h,r.i(d))else return end elseif F<0b1100010 then if F<=0x60 then F,g=0x12c0/F,y[0b10100][0b10][y[0x14][1]]else m,_,h=nil,n.collectedRoots,nil _,m,h=r.g(_,m,h)d,u=_(m,h)h=d F=h==nil and 0xdc or 0b11 end elseif F>0b1100010 then t=y[0b11011][0b10][y[0b11011][1]]F=t and 0xba or 0b10100 else F,w=0x94,"Unknown"end elseif F<=0x28 then if F<0b10100 then if F>0b111 then if F>0b1100 then F,i.parent=0b10,x elseif F>0b1001 then F,e=0x2e-F,table v,b,w={},y[0b1100][0b10][y[0b1100][1]],e.concat b=r.h(b())r.j(v,1,r.i(b))v,e=" ",v w=w(e,v)else n,_,z=e,y[0x18][0b10][y[0x18][1]],b z=z(n,_)F,e=0b1101001,z end elseif F<=0b100 then if F<=0b11 then if F>0b10 then E=true w[u]=E q=s.entries E=q[u]q=E F=q and 0xad or F+0b10110 else K,I=G(a,A)A=K F=A==nil and 0b11110100 or 0b1000010 end else g=y[0x1f][0b10][y[0x1f][1]]F=g and 0b11101110 or 0x5d end elseif F<=0b110 then G,F,a={},0b11101001,u G[1]=a p=G else t,g,f="Players",y[0b1001][0b10][y[0b1001][1]],y[0x1a][0b10][y[0b11010][1]]f=f.Players F=0xb5 g(t,f)end elseif F<=0b11111 then if F<=0b10110 then if F<=0x15 then if F<=0b10100 then g=y[0x1c][0b10][y[0x1c][1]]F=g and 0xeec/F or F+0b10101001 else F,s,l,B=0xaf,g,y[0b1001][0b10][y[0b1001][1]],"Nil Instances"l(B,s)end else F,G=0b11011101,table p,G=G.clone,E.children p=p(G)end elseif F>0x19 then x=c.children D,C,k=-1,1,#x F=(C~=C or(D>0 and k>C or(D<=0 or D~=D)and k<C))and F+0b110101 or 0b1001100 else p=q F=p and F+-0b11 or 0b11011101 end elseif F>0x26 then g[t]=e F,v=0b10100111,1 t=t+v elseif F>0x24 then F,x=0x51,u elseif F>0b100010 then v,b=y[0b101][0b10][y[0b101][1]],s F,v=F+0x60,v(b)else F=w and 0x94 or 0b10000100-F end elseif F<=0x38 then if F>0b110100 then if F>0b110111 then b,z=w(e,v)v=b F=v==nil and F+0b111010 or 0x2680/F elseif F<=0x35 then x=i.parent F=x~=u and 0xb5-F or F+-0x33 else F=g and 0x33fe/F or 0xc3 end elseif F<0b110010 then if F<=0x2c then B=""B={[1]=0b11,[0b11]=B}B[0b10]=B e=y[0b1111][0b10][y[0b1111][1]]w=e.Binary s=not w F=s and 0b1110111 or 0xa5-F else h=w[_]m=not h F=m and F+0x9d or F+0x48 end elseif F>0x33 then q=_ F=0x43 q()elseif F>0x32 then t=y[0b100][0b10][y[0b100][1]]F=t and 0b10110110-F or 0x97-F else F=g and 0b1101001-F or 0xe2 end elseif F>=0b111101 then if F>=0b1000000 then if F<=0b1000000 then f,w,F,l,B,s=y[0b1001][0b10][y[0b1001][1]],"Model",0b10100,"LocalPlayer Character",t,true f(l,B,s,w)else z=y[0b1111][0b10][y[0b1111][1]]b=z.ReadMe F=b and 0xb9-F or 0b11010101 end elseif F<=0x3d then f={}l,t,g=y[0b1111][0b10][y[0b1111][1]],1,f B,f=y[0x12][0b10][y[0x12][1]],l.NilInstancesFixes l=B.getnilinstances l,B,s=l()l,B,s=r.g(l,B,s)w,e=l(B,s)s=w F=s==nil and 0x15 or 0b10000010-F else w=y[0b1100][0b10][y[0b1100][1]]F=w and 0b1100 or 0x85e/F end elseif F>=0b111010 then if F<=0x3a then f=y[0b11010][0b10][y[0x1a][1]]t=f.Players g=t.LocalPlayer F=g and 0x33 or 0x4e-F else s=table B,s=s.clone,y[0b110][0b10][y[0b110][1]]B=B(s)w,s,e=nil,y[0b11001][0b10][y[0x19][1]],nil s,w,e=r.g(s,w,e)v,b=s(w,e)e=v F=e==nil and 0xde or 0x113-F end else F=g and 0b11101111 or F+-0b10 end end end end,function(d)return function()local a a="-- Your Executor does NOT have a Decompiler"return a end end,function(d,_)return function(g)local k,f,j,b,i,a,l,m,e,h e,b,h,i,f,a,j,m=g.Back,g.Bottom,g.Right,_[1][0b10][_[1][1]],"<faces>",g.Top,g.Front,g.Left i=i(h,a,e,m,b,j)h="</faces>"l=i..h k=f..l return k end end,function(d)return function(g)local f,b,c,e c=0x6d repeat if c>=0x47 then if c<0b1110110 then if c>0b1000111 then c=g~=g and 0x42 or 0b1000111 else f=math e=f.huge c=g==e and 0b10111101-c or 0b101 end elseif c>0b1110110 then return g else e="INF"return e end elseif c>=0b101 then if c>0b101 then e="NAN"return e else b=math f=b.huge e=-f c=g==e and 0b10 or 0x4e2/c end else e="-INF"return e end until false end end,function(d,_)return function(g)local l,a,h,e,b,f,c,i,k,m c=0xc2 repeat if c>=0x7c then if c>0xbe then if c<=0xc2 then k,l=pcall,_[0b10][0b10][_[0b10][1]]h,f=buffer,l.JSONEncode h,i=g,h.fromstring i=d.h(i(h))k,f=k(f,l,d.i(i))l=not k c=l and 0x7c or 0xbe else h=nil return h end elseif c<0b10010110 then l=nil return l elseif c<=0b10010110 then a,h,m,e=f,_[1][0b10][_[1][1]],1,"\""m=i+m h=h(a,e,m)a=not h c=a and 0x52 or 0b100000 else l,i,h=_[1][0b10][_[1][1]],f,"\"zbase64\""l=l(i,h)i=not l c=i and 0b11001 or 0x1644/c end elseif c>0b100000 then a=nil return a elseif c<0b11110 then i=nil return i elseif c<=0x1e then i,h,e,a=_[1][0b10][_[1][1]],f,0b1001,"\""e=l+e i=i(h,a,e)h=not i c=h and 0xe5 or 0x96 else e=string b,e,a=1,f,e.sub b,m=h-b,i+b a=a(e,m,b)m,e=a,_[0b11][0b10][_[0b11][1]]e=d.h(e(m))return d.i(e)end until false end end,function(d,_)return function(g)local f,e f,e=g.Min,_[1][0b10][_[1][1]]f=f.Y e=d.h(e(f))return d.i(e)end end,function(d,_)return function(g)local j,f,b,h,c,i c=0xfb repeat if c<=0b1110100 then if c>0b101011 then if c>0x49 then return j else f=nil return f end elseif c<0b10101 then f,c,b=_[1][0b10][_[1][1]],0x15,j f=f(b)elseif c>0b10101 then h,f,b="-Full-API-Dump.json",_[0b10][0b10][_[0b10][1]],"https://raw.githubusercontent.com/setup-rbxcdn/roblox-full-api-dumps/refs/heads/main/full-dumps/"i=g..h b=b..i f=f(b)j=f f=j c=f and 0b10010000 or 0xf5 else c=f and c+0xc6 or 0x2b end elseif c<0b11110101 then if c>0b10010000 then return j else c,f,b=0xf5,_[1][0b10][_[1][1]],j f=f(b)end elseif c>0b11110101 then f,j,i="https://setup.rbxcdn.com/",_[0b10][0b10][_[0b10][1]],"-Full-API-Dump.json"b=g..i f=f..b j=j(f)f=j c=f and 0b11 or 0x15 else c=f and 0b1110100 or 0x49 end until false end end,function(d,_)return function(g)local a,h,k,b,c,i,f c=0xc5 repeat if c<0b11000010 then a,i=Enum,k h=a.BodyPartR15 b,h,f=g,h.RootPart,g.GetAccessoryHandleScale f=d.h(f(b,i,h))return d.i(f)elseif c>0xc2 then k=g.RootPart f=not k c=f and 0b11000010 or 0b10011 else f=_[1][0b10][_[1][1]]return f end until false end end,function(d,_)return function(g)local c,j,f,i,b,h,a c=0x98 while true do if c<=0b10011000 then if c>0b100011 then f,j=_[1][0b10][_[1][1]],g j=j(f)b,i=type,j b=b(i)i="string"f=b==i c=f and 0xe7 or 0b100011 elseif c<=0x20 then return f else c=f and 0b10111111-c or 0x20 end elseif c<=0b10011100 then c,i=0b100000,string i,h,a,b=j,1,0b100,i.sub b=b(i,h,a)i="(\181/\253"f=b==i else c,b,i=0x23,#j,0b100 f=b>i end end end end,function(d,_)return function()local b,e,g,f f,g,b="https://assetdelivery.roproxy.com/v1/asset/?",game,_[1][0b10][_[1][1]]e,f,g=g,f..b,g.HttpGet g=d.h(g(e,f))return d.i(g)end end,function(d,_)return function()local f,g,b,e g,b=_[0b10][0b10][_[0b10][1]],_[1][0b10][_[1][1]]f=b.GuiService e,f=f.ErrorMessageChanged,d:Cf{_[0b11],_[1]}g(e,f)return end end,function(d)return function(g,k,f)local h,b,a,c,i c=0b10111010 repeat if c<=0xee then if c<=0b10111010 then g={[1]=0b11,[0b11]=g}g[0b10]=g k={[1]=0b11,[0b11]=k}k[0b10]=k f={[1]=0b11,[0b11]=f}f[0b10]=f b=0 c=g[0b10][g[1]]<b and 0b11101110 or 0b11110100 else b=d:wf{k}return b end else b=nil b={[1]=0b11,[0b11]=b}b[0b10]=b i=nil i={[1]=0b11,[0b11]=i}i[0b10]=i h={[1]=0b11,[0b11]=h}h[0b10]=h h[0b10][h[1]]=d:xf{i,k}a=d:vf{h,g,b,f,i}return a end until false end end,function(d)return function(g)local h,f,b,a,c,j,i c=0b11111100 while true do if c>0xdc then f,b=g.GetAttachedReceivers,g f=f(b)j=f[1]c=j and 0xcd or 0xdc elseif c>0xcd then b=Instance f,b=b.new,"CustomEventReceiver"f=f(b)i=Instance i,b=g,i.fromExisting b=b(i)f.Source=b h,i=f,f.GetCurrentValue i=i(h)a,h=f,f.Destroy h(a)h,a=b.Destroy,b h(a)return i else b,f=j,j.GetCurrentValue f=d.h(f(b))return d.i(f)end end end end,function(d,_)return function()local e,f,b,g b,g,f=true,game,_[0b10][0b10][_[0b10][1]]g,e=g.HttpGet,g g=g(e,f,b)f=_[1][0b10][_[1][1]]b,e=g,f.HttpService e,f=e.JSONDecode,e e=d.h(e(f,b))return d.i(e)end end,function(d,_)return function(a)local f,c,e c=0x62 while true do if c<0x62 then e=0 return e elseif c<=0x62 then e=_[0b10][0b10][_[0b10][1]]c=a==e and 0x38 or 0b10111111 else f,e=a,_[1][0b10][_[1][1]]e=e(f)return e end end end end,function(r,o)return function(g,t,f)local b,i,m,s,h,a,_,v,n,j,c,u,d,l,k,e c=0b1110 while true do if c>0x3d then if c>0x4e then d,m,h,k=b,o[1][0b10][o[1][1]],i,o[0b11][0b10][o[0b11][1]]c,u=c+-0x93,k[j]u=v[u]m(h,d,u)m=0b10 b=b+m else s=s+e c=(e>0 and s>a or e<=0 and s<a or e~=e)and 0b110 or 0x17 end elseif c>0b10111 then j=j+_ c=(_>0 and j>n or _<=0 and j<n or _~=_)and 0b1001110 or 0xd0 elseif c>=0b1110 then if c>0b1110 then v,m=t[s],1 _,m=s-m,0b10 n,_=_*m,o[0b10][0b10][o[0b10][1]]j=n*_ j,b,n=1,l+j,_ _=j c=(n~=n or(_>0 and j>n or(_<=0 or _~=_)and j<n))and 0b1001110 or 0xe7-c else a,e=0b10,o[0b10][0b10][o[0b10][1]]s=a*e l,s,i=g.allocRegion,s*f,g l=l(i,s)s,a,i=1,f,g.buf e=s c=(a~=a or(e>0 and s>a or(e<=0 or e~=e)and s<a))and 0b110 or 0b10111 end else return end end end end,h=function(...)return{[1]={...},[0b10]=select("#",...)}end,function(d,o)return function(g,k,f,l,i,h,a,e,p)local n,_,j,b n,b,_,j=0,o[0b10][0b10][o[0b10][1]],g,o[1][0b10][o[1][1]]b(j,n,_)n,_=0b100,k b(j,n,_)n,_=0b1000,f b(j,n,_)_,n=l,0b1100 b(j,n,_)_,n=i,0b10000 b(j,n,_)n,_=0x14,h b(j,n,_)n,_=0x18,a b(j,n,_)_,n=e,0x1c b(j,n,_)_,n=p,0b100000 b(j,n,_)j=buffer j,b=o[1][0b10][o[1][1]],j.tostring b=d.h(b(j))return d.i(b)end end,function(d)return function(a)local e,c c=0b111110 while true do if c<0x59 then if c>0b110101 then e=a c=e and 0x35 or 0xc1 else c,e=0b11110110-c,"true"end elseif c>=0x7d then if c>0x7d then c=e and 0b100011010-c or c+-0x44 else c,e=0b1011001,"false"end else return e end end end end,function(d,_)return function(g)local b,j,f,h,i h,f=_[1][0b10][_[1][1]],"<CFrame>"h,i=g,h.CFrame i=i(h)h="</CFrame>"b=i..h j=f..b return j end end,function(d,_)return function(g)local f,e f,e=g.Min,_[1][0b10][_[1][1]]f=f.X e=d.h(e(f))return d.i(e)end end,function(d)return function(g)local h,f,b,e,a,k,i f=string b,k=f,f.sub i,f=b,b.gsub h,b=i,i.gsub h,i,a,e=g,h.gsub,"[^%w _]",""i=i(h,a,e)a,h=" "," +"b=b(i,h,a)h,i=""," +$"f=f(b,i,h)i,b=0b11110000,1 k=d.h(k(f,b,i))return d.i(k)end end,function(r,y)return function(g)local b,z,a,e,o,n,B,A,_,v,l,f,u,h,t,k,p,C,m,s,d,q,j,w,x C=0b1001 repeat if C<0x96 then if C>=0x4a then if C>0b1100010 then q=table k,o,q,p,A=q.insert,"</SharedString>",n,"<SharedString md5=\"","\">"j=d..o C,a=0x6586/C,A..j x=u..a p=p..x k(q,p)elseif C>0x4a then _,m={},"<SharedStrings>"_[1]=m n,_,h,m=_,y[0b11][0b10][y[0b11][1]],nil,nil _,m,h=r.g(_,m,h)d,u=_(m,h)h=d C=h==nil and 0b1001010 or 0x2b42/C else m,_=#n,1 C=_<m and 0b11110 or 0b100100001-C end elseif C<=0b1001 then f=table t,f=f.create,1 t=t(f)t={[1]=0b11,[0b11]=t}t[0b10]=t B={}f,l=B,1 f={[1]=0b11,[0b11]=f}f[0b10]=f l={[1]=0b11,[0b11]=l}l[0b10]=l B,s="<!-- Saved by FIN --><roblox version=\"4\">",g.refs s={[1]=0b11,[0b11]=s}s[0b10]=s w={[1]=0b11,[0b11]=w}w[0b10]=w w[0b10][w[1]]=r:We()e={[1]=0b11,[0b11]=e}e[0b10]=e e[0b10][e[1]]=r:Ye{y[0b10]}v={[1]=0b11,[0b11]=v}v[0b10]=v v[0b10][v[1]]=r:Ve{s}b={[1]=0b11,[0b11]=b}b[0b10]=b b[0b10][b[1]]=r:Ue{l,f,t,y[0b100],y[0b10100],y[0b1101],y[0b10010]}z={[1]=0b11,[0b11]=z}z[0b10]=z n,z[0b10][z[1]]=y[0b1000][0b10][y[0b1000][1]],r:Xe{y[0b1110],f,b,l,y[0b1011],s,y[0b10110],e,y[0b1001],y[0b10101],y[0b1111],y[0x11],w,y[1],y[0b1100],y[0b111],y[0b10000],y[0b10],z,v,y[0x13],y[0b110],y[0b1010]}C=n and 0b11110000 or 0b10010110 else m=table _,C,m=m.concat,0b11010111,n _=_(m)f[0b10][f[1]][l[0b10][l[1]]]=_ _=1 _,l[0b10][l[1]]="</SharedStrings>",l[0b10][l[1]]+_ f[0b10][f[1]][l[0b10][l[1]]]=_ _=1 l[0b10][l[1]]=l[0b10][l[1]]+_ end elseif C<=0b11010111 then if C>0b11000100 then n="</roblox>"f[0b10][f[1]][l[0b10][l[1]]]=n n=1 l[0b10][l[1]],n=l[0b10][l[1]]+n,b[0b10][b[1]]n()return t[0b10][t[1]]elseif C<0b10111000 then f[0b10][f[1]][l[0b10][l[1]]]=B n=1 m,_,n,l[0b10][l[1]]=g,g.mainRoots,z[0b10][z[1]],l[0b10][l[1]]+n n(_,m)n,m,_=y[0b101][0b10][y[0b101][1]],nil,nil n,_,m=r.g(n,_,m)h,d=n(_,m)m=h C=m==nil and 0x62 or 0b11000100 elseif C>0b10111000 then u,q,k=z[0b10][z[1]],g,d.collectedRoots C=C+-0b1100 u(k,q)else h,d=n(_,m)m=h C=m==nil and 0x4670/C or 0b101111100-C end elseif C<=0b11100110 then d,u=_(m,h)h=d C=h==nil and 0x130-C or 0x157-C else C,n=0b10010110,"<Meta name=\"ExplicitAutoJoints\">true</Meta>"B=B..n end until false end end,function(d,_)return function()local b,i,c,f,e,g c=0b11000001 while true do if c>=0b10011010 then if c<0b10111010 then c,b=0x6e,nil f=e~=b elseif c>0b10111010 then g,f=_[0b10][0b10][_[0b10][1]],Instance f,e="Folder",f.new e=e(f)g.Parent=e e,b,g,f=_[1][0b10][_[1][1]],"parent",pcall,_[0b10][0b10][_[0b10][1]]g,e=g(e,f,b)f=g c=f and 0b10011010 or 0b1101110 else _[0b11][0b10][_[0b11][1]]=f b=_[0b11][0b10][_[0b11][1]]f=not b return f end elseif c<=0b1010100 then b,i=type,e c,b=0b10111010,b(i)i="string"f=b~=i else c=f and c+-0x1a or 0b10111010 end end end end,function(d,_)return function(g)local b,e,f,a f=Content b,a,e,f=g,"AssetId",f.fromUri,_[1][0b10][_[1][1]]f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g)local f,k,b,a,i,c,h c=0xfd while true do if c>0b10010110 then if c<0xf2 then b,a=k.SourceType,Enum h=a.ContentSourceType c,i=0x1110/c,h.Uri f=b==i elseif c>0b11110010 then f=_[0b10][0b10][_[0b10][1]]k,b=f[g],nil f=k~=b c=f and 0b10110110 or 0b11000 else c,i=0b10010110,""end elseif c>0b1111001 then f(b,i)b,f=1,_[0b11][0b10][_[0b11][1]]f=f(b)return f elseif c<0b11011 then c=f and 0x33-c or 0x79 elseif c>0b11011 then f=0 return f else b=table f,i,b=b.insert,k.Uri,_[1][0b10][_[1][1]]c=i and c+0x7b or 0b100001101-c end end end end,function(d)return function(g)local i,b,h,k,f,a,e k,b=#g,0b100 i,f=buffer,b+k i,b=f,i.create b=b(i)h=buffer a,h,e,i=0,b,k,h.writeu32 i(h,a,e)h=buffer a,h,e,i=0b100,b,g,h.writestring i(h,a,e)h,i=f,b return i,h end end,function(d,_)return function()local b,g,a,e,f g,b,e,a=loadstring,"https://raw.githubusercontent.com/daily3014/rbx-algorithms/refs/heads/main/src/Encoding/Base64.luau",game,true f,e=e,e.HttpGet e=e(f,b,a)f="Base64"g=g(e,f)g=g()e=g.Encode e={[1]=0b11,[0b11]=e}e[0b10]=e f=d:uf{e}f,_[0b10][0b10][_[0b10][1]]=g.Decode,f f={[1]=0b11,[0b11]=f}f[0b10]=f b=d:tf{f}_[1][0b10][_[1][1]]=b return end end,function(d,_)return function(g)local f,e,b,a f=Content b,a,f,e=g,"TexturePack",_[1][0b10][_[1][1]],f.fromUri f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g)local a,e,f,b f=Content e,b,a,f=f.fromUri,g,"TemporaryCageMeshId",_[1][0b10][_[1][1]]f=d.h(f(b,a))e=d.h(e(d.i(f)))return d.i(e)end end,function(d)return function(a)local e e=a.Number return e end end,function(r)return function(g,t,f,l)local a,u,c,i,e,_,h,m,n,d,p,s,j,k,b c=0xb1 while true do if c<=0b10111100 then if c<0b10110001 then j,n=l,e j=j(n)m=1 _=e-m m,n,_=i,f+_,a k,h,u,d=0x18,n,j,s d=r.h(d(u,k))_(m,h,r.i(d))c,u,m,k,_,h,d=0b11010010,j,i,0b10000,a,n+t,s d=r.h(d(u,k))_(m,h,r.i(d))u,m,_=0b10,i,a d=u*t d,k,u,h=s,0b1000,j,n+d d=r.h(d(u,k))_(m,h,r.i(d))u,_,m=0b11,a,i d=u*t h,d=n+d,j _(m,h,d)elseif c>0xb1 then return else i,a=g.buf,bit32 s,e=a.rshift,buffer p,a,e=t,e.writeu8,1 b=e c=(p~=p or(b>0 and e>p or(b<=0 or b~=b)and e<p))and 0b10111100 or 0b10110000 end else e=e+b c=(b>0 and e>p or b<=0 and e<p or b~=b)and 0xbc or 0x182-c end end end end,function(d,_)return function(g)local a,h,k,c,i,b,f c=0x96 while true do if c<0b10010110 then if c<=0b100 then c=k and 0b1001000-c or 0b10111001 else f="Content"return k,f end elseif c<=0b10111001 then if c>0x96 then a,b=_[1][0b10][_[1][1]],"<url>"a,c,h=g,c+-0b1110101,a.string h=h(a)a="</url>"i=h..a k=b..i else b=""k=g==b c=k and 0b11110011 or 0b100 end else c,k=0x3cc/c,"<null></null>"end end end end,function(e,f,...)local h={...}local d=select("#",...)for i=1,d do e[f+i-1]=h[i]end end,function(r,y)return function(g)local c,i,j,E,m,f,s,b,l,a,x,e,p,D,z,B,w,F,q,A,d,t,n,v,_,h,u,o F=0b10011110 while true do if F>0xb0 then if F<0b11010011 then if F>0b10111101 then F=s and 0b1110 or F+-0b11 else F,s=F+-0b10101111,false end elseif F>0xd3 then F,s=0xc0,true else x,h,_,v,u,D,c,A,o,w,B,q,z="</AcousticAbsorption>",g.Elasticity,"</Friction><Elasticity>","</Density><Friction>","</Elasticity><FrictionWeight>","</FrictionWeight><ElasticityWeight>",g.AcousticAbsorption,g.ElasticityWeight,"</ElasticityWeight><AcousticAbsorption>",g.Density,"<Density>",g.FrictionWeight,g.Friction F,i=0b1010,c..x j=o..i a=A..j p=D..a E=q..p d=u..E m=h..d n=_..m b=z..n e=v..b s=w..e l=B..s f=t..l end elseif F>0b111111 then if F<=0x9e then f,s="<CustomPhysics>",y[1][0b10][y[1][1]]s,B=g,s.bool F=s and 0b11110010 or 0xc0 else F,f=0x3f,t end elseif F<=0b1110 then if F>0b1010 then B=B(s)s="</CustomPhysics>"l=B..s f,t=g,f..l F=f and 0xb8a/F or 0b1010 else F=f and 0x3f or 0xb0 end else return f end end end end,function(d,_)return function()local g,e,h,f,i,c,a,l,k c=0b110000 while true do if c<0b1110100 then if c>=0x30 then if c<=0b110000 then h,l,i,f,k="\\","/","\226\128\148","|",{}k[1],k[0b10],c,k[0b11],k[0b100]=f,l,0b1011001,i,h g,k=k,0 else l=_[0b10][0b10][_[0b10][1]]f=not l c=f and 0xa4 or 0b101000110-c end elseif c>0x11 then f,i,a,e=_[1][0b10][_[1][1]],_[0b11][0b10][_[0b11][1]]," ",g[k]h=a..e c,l=0xe4,i..h f.Text=l else c=f and 0b11101 or 0b11100100 end elseif c<=0xcd then if c>0b10100100 then l=#g f,l=k%l,1 f,k=_[1][0b10][_[1][1]],f+l c=f and 0b101000001-c or 0b10001 elseif c>0b1110100 then l=task c,f=0x3904/c,l.wait f()else c,f=0x7b4/c,_[0b11][0b10][_[0b11][1]]end elseif c<=0xe4 then l=task f,l=l.wait,0.25 c=0b11101101 f(l)else f=_[0b10][0b10][_[0b10][1]]c=f and 0xcd or 0x59 end end end end,function(d,_)return function()local e,a e,a=false,_[1][0b10][_[1][1]]a=d.h(a(e))return d.i(a)end end,function(d,_)return function()local g,f,b,e g,f=_[0b10][0b10][_[0b10][1]],"test"e,g,b=g,g.SetAttribute,f g(e,f,b)b,f,e="AttributesSerialize",_[0b10][0b10][_[0b10][1]],_[1][0b10][_[1][1]]e=e(f,b)f="\1\0\0\0\4\0\0\0test\2\4\0\0\0test"g=e==f return g end end,function(d,_)return function(g)local i,h,b,f,e f=_[1][0b10][_[1][1]]e,b=f._packMultiple,f b,i,h,f=g.Position,g.LeftTangent,g.RightTangent,b.UDim2 e=d.h(e(f,b,i,h))return d.i(e)end end,function(d)return function(...)local f,e,b,g e,f={},d.h(...)d.j(e,1,d.i(f))g=e g={[1]=0b11,[0b11]=g}g[0b10]=g e=#g[0b10][g[1]]e={[1]=0b11,[0b11]=e}e[0b10]=e b=buffer f=b.writef32 f={[1]=0b11,[0b11]=f}f[0b10]=f b=d:Gf{f,e,g}return b end end,function(r,y)return function(g,t)local e,m,i,p,c,A,F,h,D,_,d,f,u,a,j,o,n,B,l,w,k,z,v,s,x,E,b,q F=0xcb while true do if F>0b1110100 then if F<0b10110011 then if F>0x8a then if F>0x93 then if F<=0b10101000 then if F<=0b10010111 then o=nil F=D==o and 0x1798/F or 0b10001 else _=y[0b1111][0b10][y[0b1111][1]]F=_ and 0x11a-F or 0b10110011 end else n,b,z=y[0x16][0b10][y[0b10110][1]],nil,nil F=n and 0b11011011 or 0xb3 end elseif F<0b10010001 then if F<=0x8b then F=a and 0xfc-F or 0b11111111-F else b=v.children z,n=#b,0 F=z~=n and 0b101110 or 0x57 end elseif F>0x91 then F,A=0b1101010,"ProtectedString"a=E~=A else F=j and 0x35cf/F or 0b111110 end elseif F<0x7c then if F>=0x79 then if F>0b1111001 then F=j and 0x16e0/F or 0x91 else j="Enum"F=q==j and 0x273b/F or 0xe2 end elseif F<=0b1110101 then h=nil F=m~=h and 0xf15/F or 0x3d else F=z and 0b1101100 or 0b11111101 end elseif F<0b10000010 then if F>0x7c then h=true n.NotCreatable=h h=y[0b1111][0b10][y[0b1111][1]]F=h and 0x44 or 0xb3 else v=f[e]b=not v F=b and 0x24 or 0x8a end elseif F<=0b10000110 then if F>0x82 then i,c,o,j,k,x=y[0b1101][0b10][y[0b1101][1]],a,y[0b100][0b10][y[0b100][1]],y[0b10][0b10][y[0b10][1]],A,u F,i=0x28,i(c,x,k)j[o]=i o,j=1,o j=j+o y[0b100][0b10][y[0b100][1]]=j else _=v.override z,n,b=nil,nil,_.Properties b,z,n=r.g(b,z,n)_,m=b(z,n)n=_ F=n==nil and F+-0b1011000 or 0b11110110 end else m,b,n,z,_=e,y[0b10][0b10][y[0b10][1]],y[0x14][0b10][y[0x14][1]],y[0b100][0b10][y[0b100][1]],v.tag n=n(_,m)b[z]=n b,z=z,1 b=b+z b,y[0b100][0b10][y[0b100][1]]=v.propsOnly,b F=b and F+-0b1000 or 0x161a/F end elseif F>=0b11011011 then if F<0xed then if F>0b11100010 then F,E=0b1000000,"SharedString"elseif F>=0b11011100 then if F<=0xdc then _,n=e,y[0b1011][0b10][y[0b1011][1]]n=n(_)F,z=0x1b5-F,not n else o=y[0x12][0b10][y[0b10010][1]]j=o[E]F=j and 0b101 or 0x60 end else n,_=y[0b1001][0b10][y[0b1001][1]],v.class b=n[_]n=not b F=n and 0b1010010 or 0xb3 end elseif F<=0xf4 then if F>=0b11101111 then if F<=0xef then o=y[0b10010][0b10][y[0b10010][1]]j=o[p]F=j and F+-0x58 or 0xe01/F else D,q,E,u,d,h=y[0x12][0b10][y[0x12][1]],_,"ProtectedString",y[0b1101][0b10][y[0b1101][1]],y[0b100][0b10][y[0b100][1]],y[0b10][0b10][y[0b10][1]]p,D=D.ProtectedString,m p=r.h(p(D))u=u(E,q,r.i(p))F,h[d]=0x4f,u end else a=y[0x17][0b10][y[0x17][1]]F=a and 0xc17d/F or 0x768/F end elseif F<=0xf6 then h,d=type,m h=h(d)d="function"F=h==d and 0x1b7-F or 0b1110101 else a=b[u]F=a==D and 0x2788/F or F+-0b10000 end elseif F>0xd0 then if F>=0xd6 then if F>0b11010110 then b=not z F=b and F+-0x30 or F+-0xaf else E,h,d,u,q,D="string",y[0b10][0b10][y[0b10][1]],y[0b100][0b10][y[0b100][1]],y[0b1101][0b10][y[0b1101][1]],_,y[0b10010][0b10][y[0x12][1]]p,D=D.string,m p=r.h(p(D))F,u=0b1001111,u(E,q,r.i(p))h[d]=u end else A="BinaryString"F,a=0b1000,E==A end elseif F<=0b11001011 then if F<=0b11000001 then if F<=0xb3 then _,n=v.propClass,y[0b10001][0b10][y[0b10001][1]]n,_,m=n(_)n,_,m=r.g(n,_,m)h,d=n(_,m)m=h F=m==nil and 0b11011101-F or 0b11001 else h=m F,h=0x75,h()m=h end else f,s,l,B=t.entries,nil,g,nil l,B,s=r.g(l,B,s)w,e=l(B,s)s=w F=s==nil and 0b1110 or 0x7c end elseif F<=0b11001101 then o,j,i,c="UNSUPPORTED XML TYPE (OPEN A GITHUB ISSUE): ",warn,u,E F=0x28 j(o,i,c)else F,a=0b10001011,d.CanRead end elseif F<0x3d then if F<=0x1f then if F>=0b1110 then if F>0b10001 then if F<=0b11001 then u,q=d.Name,y[1][0b10][y[1][1]]E=q[u]F=E and 0x3e8/F or 0x6b else a=b F=a and 0b11010000 or 0x10d5/F end elseif F<=0b1111 then if F>0b1110 then F=a and 0x86 or 0b11001101 else return end else i,x,c,o=D,j,E,y[0b1000][0b10][y[0b1000][1]]o,i=o(i,c,x)A,F,a=o,0xff/F,i end elseif F>=0b101 then if F<=0b101 then c,x,o,i=E,j,y[0b1000][0b10][y[0b1000][1]],D o,i=o(i,c,x)a,F,A=i,0x14-F,o else F=a and 0xe8 or 0x200/F end elseif F>0b10 then i=y[0b110][0b10][y[0b110][1]]F,o,i=0x7a,i[D],nil j=o~=i else a,j="Ref",D F=j and 0b101-F or 0b1111100-F end elseif F<=0x2a then if F>=0b101000 then if F<0x29 then h,d=n(_,m)m=h F=m==nil and 0b101010 or 0b1000001-F elseif F<=0x29 then z=y[0b1110][0b10][y[0b1110][1]]F=z and 0b11011100 or F+0xb0 else n,z,b="</Properties>",y[0b100][0b10][y[0b100][1]],y[0b10][0b10][y[0b10][1]]b[z]=n z,b=1,z b=b+z y[0b100][0b10][y[0b100][1]],b=b,y[0b101][0b10][y[0b101][1]]z=y[0b100][0b10][y[0b100][1]]F=b<z and F+0b110011 or 0x8d end elseif F<=0b100001 then h="Source"F=_==h and 0x1f74/F or 0b11010110 else w,e=l(B,s)s=w F=s==nil and 0b1110 or F+0x58 end elseif F>=0b110000 then if F>0x30 then z,h=m,{}h,b,d=y[0b1001][0b10][y[0b1001][1]],h,v.class F,h[d]=0b10110011,b else i,F,o,c=D,0x91,y[0b1010][0b10][y[0b1010][1]],E o=o(i,c)j=not o end else _,n,z=t,b,y[0b10011][0b10][y[0b10011][1]]F=0x57 z(n,_)end elseif F<0b1011111 then if F>0b1001111 then if F<=0x57 then if F>=0x53 then if F<=0b1010011 then o=y[0x12][0b10][y[0x12][1]]F,o,j=0x62-F,D,o.EnumItem j,o=j(o)a,A=o,j else z,n,_=y[0b10][0b10][y[0b10][1]],y[0b100][0b10][y[0b100][1]],"</Item>"z[n]=_ n,z=1,n F,z=0x24,z+n y[0b100][0b10][y[0b100][1]]=z end else m,_=v.class,y[0b10101][0b10][y[0b10101][1]]n=_[m]m=n.NotCreatable _=not m F=_ and F+0b10110 or 0b10101000 end else b=y[0b11][0b10][y[0b11][1]]F=0b10001101 b()end elseif F>=0b1000000 then if F<=0x44 then if F>0b1000000 then h,u,d,E=y[0b1111][0b10][y[0b1111][1]],v.class,"Failed to create default Instance",m F=0xf7-F h(d,u,E)else a,j,A=nil,"Class",nil F=q==j and 0b10 or F+0x39 end else h,F,d=y[0b100][0b10][y[0b100][1]],F+-0x12,1 h=h+d y[0b100][0b10][y[0b100][1]]=h end elseif F>0b111101 then F,A=0x3a2/F,"null"else _,m=b(z,n)n=_ F=n==nil and 0b1100111-F or 0b100110011-F end elseif F>=0b1101011 then if F<=0b1110001 then if F>=0b1101100 then if F<=0x6c then F,a,A,j=0xfd,y[0x10][0b10][y[0x10][1]],z,u a=a(A,j)b[u]=a else F,A=0x74,d.Special a=not A end else j,E,A,p,a,D,q=d,d.ValueType,e,d.Optional,y[0b1100][0b10][y[0b1100][1]],nil,d.Category a=a(A,j)D,a=a,y[0b111][0b10][y[0b111][1]]F=D==a and 0b10010011-F or F+-0b1001100 end elseif F<=0b1110010 then _,h,F,m=y[0b1111][0b10][y[0b1111][1]],v.class,0x4fb6/F,"Unable to create default Instance (NotCreatable)"_(m,h)else F=a and F+0b11111 or 0x6a end elseif F<=0b1101000 then if F>0x60 then _,h=pcall,Instance m,h=h.new,v.class _,m=_(m,h)F=_ and 0b111100 or F+0x18 elseif F<=0x5f then j=y[0b110][0b10][y[0b110][1]]F,A=0b1111,j[D]else F=p and 0b101001111-F or 0b1111 end else F=a and 0b11100010-F or 0b11101101 end end end end,function(d,o)return function(g,k,f)local h,a,_,p,i,b,e,c,n,l,j c=0x41 while true do if c<=0b1000001 then if c<0x36 then c,j,_,n=0b11011000/c,g.writeLenString,b,g j(n,_)elseif c>0x36 then k={[1]=0b11,[0b11]=k}k[0b10]=k i={}l=i l={[1]=0b11,[0b11]=l}l[0b10]=l a=0b100 a,i,h=a*f,g.allocRegion,g i=i(h,a)p,b,h,a,e=i,d:Yf{l,k,o[1]},o[0b10][0b10][o[0b10][1]],g,f h(a,e,p,b)h,e,a=g.writeu32,#l[0b10][l[1]],g h(a,e)h,a,e=l[0b10][l[1]],nil,nil h,a,e=d.g(h,a,e)p,b=h(a,e)e=p c=e==nil and 0xbf or 0b100 else p,b=h(a,e)e=p c=e==nil and 0b10111111 or 0b100 end else h,e,a=g.writeu32,0,g h(a,e)e,a,h=0,g,g.writeu32 h(a,e)return end end end end,function(r)return function(g)local s,_,i,q,m,t,v,u,k,z,h,x,f,b,w,a,l,d,p,e,A,c,n c=0x82 while true do if c<0x82 then if c<0b1000100 then if c>=0x22 then if c>0b100010 then x=math p,A=x.sqrt,1 a=A+_ x=a-i x=x-v p=p(x)x=0b10 c,h,p=0x22,p*x,e-s p,d=w+z,p/h p,u=b+n,p/h p,k=0.25,p/h q=p*h else p=0 c=d<p and c+0x46 or 0b10111111-c end else x=math p,x=x.sqrt,1 x=x+m p=p(x)x=0b10 h,p=p*x,0.25 d,p=p*h,n-b c,u,p=0b100010,p/h,w-z k,p=p/h,e-s q=p/h end elseif c<=0x5b then if c>0x44 then c=v>_ and 0b1000100 or 0b10001010-c else x=math p,A=x.sqrt,1 a=A+v x=a-i c,x=c+-0b100010,x-_ p=p(x)x=0b10 h,p=p*x,w-z d,p=p/h,s+e u,p=p/h,0.25 k,p=p*h,b+n q=p/h end else d,u,c,k,q=-d,-u,c+0b110101,-k,-q end elseif c>0b10100001 then if c>0b11010101 then p=i>v c=p and 0b11010101 or 0b10100001 else c,p=0b101110110-c,i>_ end elseif c<0x9d then if c>0x82 then x=math A,p=1,x.sqrt a=A+i x=a-v x=x-_ c,p=0x22,p(x)x=0b10 h,p=p*x,n-b p,d=0.25,p/h u,p=p*h,s+e p,k=w+z,p/h q=p/h else f,t=g,g.GetComponents t,f,l,i,s,w,e,v,b,z,n,_=t(f)h=i+v q,m,p,h,u,k,d=nil,h+_,0,nil,nil,nil,nil c=m>p and 0b10001 or 0b11100101 end elseif c<=0x9d then x,A,a,p=k,d,q,u return p,x,a,A else c=p and 0b10011011 or 0x5b end end end end,function(d,_)return function(g)local h,k,e,l,j,a,f,i f=buffer k,f=f.create,0b100 k=k(f)l=buffer f,h,j,i,a,l,e=l.writeu32,_[1][0b10][_[1][1]],g.Z,0,g.X,k,g.Y h=h(a,e,j)f(l,i,h)l,f=0b100,k return f,l end end,function(r)return function(g,t,f)local u,e,z,k,_,l,m,d,n,w,i,q,v,x,s,p,b,h,c,a c=0b10111001 while true do if c>0xb7 then if c>0b11001111 then d,u=_(m,h)h=d c=h==nil and 0x34 or 0x9cf0/c elseif c>=0xba then if c>0xba then w,s,i=l,g,g.allocRegion i=i(s,w)v,s=buffer,g.buf e,v,b,w=v.writef32,1,f,v.writeu32 z=v c=(b~=b or(z>0 and v>b or(z<=0 or z~=z)and v<b))and 0x16e-c or 0b10000011 else k,p,a,x,q=u.Value,s,u.Time,i,e q(p,x,a)c,a,q,p=0xd8,0b100,e,s x,a=i+a,k.R q(p,x,a)a,q,p=0b1000,e,s a,x=k.G,i+a q(p,x,a)p,q,a=s,e,0b1100 a,x=k.B,i+a q(p,x,a)a,p,q=0b10000,s,e x,a=i+a,0 q(p,x,a)q=0b10100 i=i+q end else i=0b100 i,l,s=1,i*f,f w=i c=(s~=s or(w>0 and i>s or(w<=0 or w~=w)and i<s))and 0b11001111 or 0x7b end elseif c<=0x83 then if c<=0b1111011 then if c>0b110100 then v,n=0x14,t[i]z=n.Keypoints b=#z c,e=0b10110111,v*b l=l+e else v=v+z c=(z>0 and v>b or z<=0 and v<b or z~=z)and 0x204c/c or 0x83 end else _=t[v]_,n,m,h=w,_.Keypoints,s,i d=#n _(m,h,d)_=0b100 h,m,i,_=nil,nil,i+_,n _,m,h=r.g(_,m,h)d,u=_(m,h)h=d c=h==nil and 0x34 or 0xba end elseif c>0x9f then i=i+w c=(w>0 and i>s or w<=0 and i<s or w~=w)and 0x93f9/c or c+-0b111100 else return end end end end,function(d)return function(g)local a,b,f,e f=string b,f,e,a="-",g,f.gsub,""e=d.h(e(f,b,a))return d.i(e)end end,function(d,_)return function(g)local e,f,b f=_[1][0b10][_[1][1]]e,f,b=f._vector,g.X,g.Y e=d.h(e(f,b))return d.i(e)end end,function(d)return function(g,e)local f f=g[e]return f end end,function(r,o)return function(g,t,f)local m,p,s,j,d,n,a,c,i,u,e,l,_,b,h c=0b10110110 repeat if c<=0b11001100 then if c<=0x91 then if c>=0x62 then if c<=0x62 then c,j=0b10010001,j+d else h,d=n(_,m)m=h c=m==nil and 0xda or 0xd7 end else return end elseif c>0b10110110 then a=a+p c=(p>0 and a>e or p<=0 and a<e or p~=p)and 0x22 or 0b11110010 else i,l,s=g,g.allocRegion,f l=l(i,s)a,i=buffer,g.buf a,e,s=1,f,a.writeu8 p=a c=(e~=e or(p>0 and a>e or(p<=0 or p~=p)and a<e))and 0x22 or 0xf2 end elseif c<=0xda then if c>0b11010111 then n,d,_=s,1,i h=a-d m,h=l+h,j c=0b11001100 n(_,m,h)else u=b[h]c=u and 0x62 or 0x168-c end else m,j,n,_,b=nil,0,o[1][0b10][o[1][1]],nil,t[a]n,_,m=r.g(n,_,m)h,d=n(_,m)m=h c=m==nil and 0x1cc-c or 0xd7 end until false end end,function(d)return function(g)local f,e f=g.Direction e=f.X return e end end,function(d,_)return function(g,k,f)local a,c,e,i,b,h c=0b10011011 repeat if c>=0b10011011 then if c<=0x9b then i=_[1][0b10][_[1][1]]b,i=i.Color3,g.Value b=b(i)i=not k c=i and 0b11000011 or 0b1011110 else c,h=0x479a/c,buffer i,h=h.create,0x14 i=i(h)f,k=0,i end else h=buffer i,e,h,a=h.writef32,0,k,f i(h,a,e)i=0b100 h,f=buffer,f+i e,h,i,a=g.Time,k,h.writef32,f i(h,a,e)i=0b100 h,f=buffer,f+i i,h,a,e=h.copy,k,f,b i(h,a,e)i,h=k,0x14 return i,h end until false end end,function(r,o)return function()local f,h,b,j,g,l,a,u,c,s,k,t,_,d,e,n,m,i,v c=0x15 while true do if c<=0x83 then if c>0x55 then if c>0x7f then n,c,j=s,0x77,b j=j(n)t=j elseif c<0b1110111 then d,u=b,h d=d(u)t=d c=t and 0b11000001 or 0b100110101-c elseif c>0b1110111 then c,s=0x58cd/c,u else j=not t c=j and 0x5764/c or 0b11000001 end elseif c>0x15 then if c>0b11010 then c,s=0,n else n,_=j,"zbeta"n=n(_)c=n and 0b1010101 or 0b1101000/c end elseif c>=0b100 then if c>0b100 then g,t=tostring,o[0b10][0b10][o[0b10][1]]g=g(t)g={[1]=0b11,[0b11]=g}g[0b10]=g t,a=nil,{}a,f={},a a,l={},a i,s=a,nil f={[1]=0b11,[0b11]=f}f[0b10]=f l={[1]=0b11,[0b11]=l}l[0b10]=l i={[1]=0b11,[0b11]=i}i[0b10]=i a={[1]=0b11,[0b11]=a}a[0b10]=a a[0b10][a[1]]=r:Tf{f,g,l,i,o[1]}e={[1]=0b11,[0b11]=e}e[0b10]=e e[0b10][e[1]]=r:Uf()v={[1]=0b11,[0b11]=v}v[0b10]=v v[0b10][v[1]]=r:Qf{o[0b11]}b,_,j=r:Rf{e,v},game,pcall n,m,h=_.HttpGet,"https://raw.githubusercontent.com/setup-rbxcdn/setup-rbxcdn.github.io/refs/heads/main/version-history/Windows/Studio64.json",true j,n=j(n,_,m,h)c=j and 0xf3 or 0b11000010 else c,n=c+0x51,j n=n()end else c=s and 0x83 or 0b1110111 end elseif c>=0b11000010 then if c<=0xd6 then if c>0b11010001 then m,h=j(n,_)_=m c=_==nil and c+-0x15 or 0b100110101-c elseif c<=0b11000010 then j,n=r:Sf{a,o[0b11]},not s c=n and 0x13b4/c or 0 else u,k=a[0b10][a[1]],_[m]u=u(k)k=false c=u==k and 0x9e62/c or 0x95 end else m=string h,m,_="\n",n,m.split _=_(m,h)h,m=nil,#_ _[m]=h m,d,h=#_,-1,0b10 c=(h~=h or(d>0 and m>h or(d<=0 or d~=d)and m<h))and 0xb826/c or 0xd1 end elseif c<=0xbc then if c<=0xb3 then if c>0x95 then m=m+d c=(d>0 and m>h or d<=0 and m<h or d~=d)and 0xc2 or c+0x1e else c=u and 0x49eb/c or 0x682f/c end else _,n,j=nil,nil,f[0b10][f[1]]j,n,_=r.g(j,n,_)m,h=j(n,_)_=m c=_==nil and 0b11000001 or 0b1011111 end else return t end end end end,function(d,_)return function()local a,e,f a,f=_[1][0b10][_[1][1]],"[SAVEINSTANCE SAFEMODE]\nSaving..\nDo NOT leave\nLVL7 Executor RECOMMENDED for more SAFETY\nTo Disable this: SafeMode=false (Less Protection)"e,a=a,a.Kick a(e,f)return end end,function(d)return function(g)local b,f,e b,f="AQAAAAE=",g f=f(b)b="\1\0\0\0\1"e=f==b return e end end,function(r)return function(g,k,f)local p,l,n,c,m,a,e,b,j,q,_,i c=0x33 while true do if c>0xad then if c<=0b11010110 then j,m,b=i,1,q _=a-m n,c,_=l+_,0xad,m b(j,n,_)else return end elseif c>0x91 then a=a+p c=(p>0 and a>e or p<=0 and a<e or p~=p)and 0xd8 or c+-0x1c elseif c<=0x33 then l,q,i=g.allocRegion,f,g l=l(i,q)a,i=buffer,g.buf a,e,q=1,f,a.writeu8 p=a c=(e~=e or(p>0 and a>e or(p<=0 or p~=p)and a<e))and 0xd8 or 0b10010001 else b=k[a]c=b and 0xd6 or 0x61fd/c end end end end,function(d)return function(g,k,f)local l,m,h,c,e,a,i,b c=0xe5 while true do if c<0x6c then if c>=0x18 then if c<=0b11000 then h,e,a=f,k,k.tostring a=d.h(a(e))h=h(d.i(a))a=h c=a and 0xfd8/c or 0x6c else a=buffer m,e,h,a=l,0b1000,a.writeu32,i h(a,e,m)a={}a.buf=i e=0x10 a.len=e e=k.buf a.tailBuf=e a.tailLen=l h=a return h end else e=buffer b,e,a,m=#h,i,e.writeu32,0b100 a(e,m,b)e=buffer a,b,e,m=e.writeu32,l,i,0b1000 a(e,m,b)e={}e.buf=i m=0x10 e.len=m e.str=h a=e return a end elseif c>=0b10101001 then if c>0b10101001 then h,l=buffer,k.len i,h=h.create,0b10000 i=i(h)a=buffer m,h,a,e=g,a.writestring,i,0 h(a,e,m)c=f and 0x18 or 0b1101010 else c,e=0x474c/c,#h a=e<l end else c=a and 0x360/c or 0b1101010 end end end end,function(d,_)return function(g)local c,b,f,a,e c=0xd7 repeat if c<0b11010111 then b,f=e,_[1][0b10][_[1][1]]f=d.h(f(b))return d.i(f)elseif c<=0xd7 then f,e=g,g.GetEmulatedPolicyInfo e=e(f)b,a=next,e b=b(a)f=not b c=f and 0xe9 or 0b10101100 else f=""return f end until false end end,function(d,_)return function()local a,e e=task a,e=e.spawn,d:zf{_[0b10],_[1]}a=d.h(a(e))return d.i(a)end end,function(d,_)return function(g,j,f)local b,h,a,c,i c=0b1111010 while true do if c<=0x7a then if c<=0x56 then i=_[1][0b10][_[1][1]]b,h,i,a=i._packF32,g.Time,g.Envelope,g.Value b=d.h(b(i,h,a))return d.i(b)else b=not j c=b and 0b1010110 or 0b10010011 end else i=buffer i,h,b,a=j,f,i.writef32,g.Envelope b(i,h,a)b=0b100 i,f=buffer,f+b a,b,h,i=g.Time,i.writef32,f,j b(i,h,a)b=0b100 f,i=f+b,buffer b,h,a,i=i.writef32,f,g.Value,j b(i,h,a)return end end end end,function(d,_)return function()local f,e,g,c,i,b c=0b11110010 while true do if c<=0x85 then if c<=0b111111 then if c<=0b111011 then if c<=0b10000 then g,f=_[0b100][0b10][_[0b100][1]],string e,f,i,b=f.format,"Saved! Time %.3f seconds; Size %s",_[1][0b10][_[1][1]],_[0b11][0b10][_[0b11][1]]i=i()e=e(f,b,i)g.Text=e c,f=c+0x2f,Color3 f,b,e=0,1,f.new e=e(f,b)g.TextColor3=e e=task b,g,f=0b10,e.wait,_[0b110][0b10][_[0b110][1]]f,e=0b1010,f*b e=e+f g(e)else e,g="Failed! Check F9 console for more info",_[0b100][0b10][_[0b100][1]]g.Text=e f=Color3 e,f=f.new,1 e=e(f)g.TextColor3=e c,e=0b111111,task e,f,g=_[0b110][0b10][_[0b110][1]],0b1010,e.wait e=e+f g(e)end else g=_[0b100][0b10][_[0b100][1]]e,g=g,g.Destroy g(e)return end else g=_[0b101][0b10][_[0b101][1]]c=g and 0x68f2/c or c+-0x4a end elseif c>0b11001010 then g=_[0b10][0b10][_[0b10][1]]c=g and 0b10000 or 0x85 else e=task g,e=e.cancel,_[0b101][0b10][_[0b101][1]]c=0x2e8e/c g(e)g=nil _[0b101][0b10][_[0b101][1]]=g end end end end,function(r)return function(g,k,...)local f,_,a,c,m,b,l,p,j,e,q,i,n c=0x19 repeat if c>0x7a then if c<=0xc7 then if c>0b1111111 then i=table q,l,i=r:Df(),i.sort,f l(i,q)i=f[1]l=i.f return l else b=b+n c=(n>0 and b>j or n<=0 and b<j or n~=n)and 0x8ee/c or 0x3c86/c end else b=os p=b.clock p=p()b,j=1,k n=b c=(j~=j or(n>0 and b>j or(n<=0 or n~=n)and b<j))and 0x12 or 0b1111010 end elseif c<0x62 then if c>0b10010 then l=table f,l=l.create,0b11 f=f(l)i,q,l=nil,nil,g l,i,q=r.g(l,i,q)a,e=l(i,q)q=a c=q==nil and 0b11000111 or 0b11001000 else m,j=os,{}_=m.clock _=_()n=_-p c,j.t=0x62,n j.f=e b=j f[a]=b end elseif c<=0x62 then a,e=l(i,q)q=a c=q==nil and c+0x65 or 0b11001000 else m,_=r.h(...),e c=0x7f _(r.i(m))end until false end end,function(d)return function(a)local f,e e,f=a.GetState,a e=d.h(e(f))return d.i(e)end end,function(r,o)return function()local b,n,g,_,e,p,m,c,l,s,i,a,f,k,j,h c=0xf5 while true do if c>0b1011000 then if c<=0xb0 then if c<0x99 then if c>0x63 then i="\n"c,l=0b1001001,l..i else p,c,s=o[0b100][0b10][o[0b100][1]],0x2c79/c,"\t\tCrashed a previous run (now skipped entirely): "b,e=f,p.HttpService p,e=e,e.JSONEncode e=e(p,b)p="\n"a=e..p i=s..a l=l..i end elseif c>0b10101011 then i=table i,l=k,i.sort l(i)i=table l,i=i.sort,f l(i)l,s,a="",#k,0 i=s>a c=i and c+-0b1011000 or 0xca-c elseif c>0x99 then a,e=l(i,s)s=a c=s==nil and 0b10110000 or 0b1010001 else i="\t\t!! GETHIDDENPROPERTY ISSUES !!\n\t\tYour executor's gethiddenproperty couldn't read the types below, so this save might be missing data or have wrong values.\n\t\tPlease tell your executor's developers about this. Affected types:\n\t\t"l,i,s=l..i,#k,0 c=i>s and 0x174f/c or 0b100 end elseif c<=0b11101111 then if c<=0b11000000 then p="ok"c=e~=p and 0b1010010 or 0b10101011 else l={}k,l=l,{}f,i,s,l=l,nil,nil,o[0b11][0b10][o[0b11][1]]l,i,s=r.g(l,i,s)a,e=l(i,s)s=a c=s==nil and 0b110011111-c or 0b1010001 end else g,f="",o[0b10][0b10][o[0b10][1]]k,f=#f,0 c=k~=f and 0x35 or 0xef end elseif c>=0b1001001 then if c<=0x51 then if c<=0b1001100 then if c<=0b1001001 then s=table b,a,e,j,m,n,s,i,p=l,"--[[\n","\t\tThank you\n\n",o[1][0b10][o[1][1]],o[0b100][0b10][o[0b100][1]],"\t\tServerStorage, ServerScriptService and Server Scripts are IMPOSSIBLE to save because of FilteringEnabled.\n\n\t\tIf your player cannot spawn into the game, please move the scripts in StarterPlayer somewhere else or delete them. Then run `game:GetService(\"Players\").CharacterAutoLoads = true`.\n\t\tAnd use \"Play Here\" to start game instead of \"Play\" to spawn your Character where your Camera currently is.\n\n\t\tIf the chat system does not work, please use the explorer and delete everything inside the TextChatService/Chat service(s).\n\t\tOr run `game:GetService(\"Chat\"):ClearAllChildren() game:GetService(\"TextChatService\"):ClearAllChildren()`\n\n\t\tIf Union and MeshPart collisions don't work, run the script below in the Studio Command Bar:\n\n\n\t\tlocal C = game:GetService(\"CoreGui\")\n\t\tlocal D = Enum.CollisionFidelity.Default\n\n\t\tfor _, v in game:GetDescendants() do\n\t\t\tif v:IsA(\"TriangleMeshPart\") and not v:IsDescendantOf(C) then\n\t\t\t\tv.CollisionFidelity = D\n\t\t\tend\n\t\tend\n\t\tprint(\"Done\")\n\n\t\tIf you can't move the Camera, run this script in the Studio Command Bar:\n\n\t\tworkspace.CurrentCamera.CameraType = Enum.CameraType.Fixed\n\n\t\tOr Destroy the Camera.\n\n\t\tThis file was generated with the following settings:\n\t\t",{},s.concat,g _,h=m.HttpService,o[0b110][0b10][o[0b110][1]]_,m=_.JSONEncode,_ _=_(m,h)m,h=o[0b101][0b10][o[0b101][1]],"\n]]"s[1],s[0b10],s[0b11],s[0b100],s[0b101],s[0b110],s[0b111],s[0b1000],s[0b1001]=a,e,p,b,j,n,_,m,h i=r.h(i(s))return r.i(i)else c,b=0b11110111-c,table j,p,b=a,b.insert,f p(b,j)end else p="crashed"c=e==p and 0x9d-c or 0x3cc0/c end elseif c<=0x52 then c,b=0b11111101-c,table p,b,j=b.insert,k,a p(b,j)else c=i and 0x3498/c or 0x1918/c end elseif c>0x27 then i,k=o[0b100][0b10][o[0b100][1]],"\t\tIMPORTANT: Original Source of these Scripts was Recovered: "l,s=i.HttpService,o[0b10][0b10][o[0b10][1]]l,i=l.JSONEncode,l l=l(i,s)c,i=0x317b/c,"\n"f=l..i g=k..f elseif c>=0b11010 then if c<=0b11010 then a,c,s=0,0b1011000,#f i=s>a else s,p="\t\tFailed reads: ",o[0b100][0b10][o[0b100][1]]c,e,b=0x9c/c,p.HttpService,k p,e=e,e.JSONEncode e=e(p,b)p="\n"a=e..p i=s..a l=l..i end else s,i=0,#f c=i>s and 0x18c/c or c+0b1101111 end end end end,function(d)return function(a)local e e=a.Value return e end end,function(d,_)return function(g)local f,i,b,h,c,a,j c=0b111 repeat if c>=0x87 then if c>0b10000111 then b=_[1][0b10][_[1][1]]b,h,a,f,i=j,_[0b11][0b10][_[0b11][1]],g,b._writeI64LE,0 h=h(a)f(b,i,h)f,b=j,0b1000 return f,b else b,f=0b1000,j return f,b end else f=buffer f,j=0b1000,f.create j=j(f)f=_[0b10][0b10][_[0b10][1]]c=g==f and 0x87 or 0xe8 end until false end end,function(r,y)return function(g)local o,h,D,e,t,z,k,l,a,_,q,w,v,B,C,s,b,j,u,n,i,p,A,d,f,m C=0b1001111 repeat if C<0x84 then if C>0b1001111 then A,p=g.EasingDirection," EasingDirection:"i,j,a=g.EasingStyle," EasingStyle:",A.Name o=i.Name A=j..o D=a..A q=p..D u=k..q h=d..u _=m..h z=n.._ v=b..z w=e..v B=s..w f=l..B return f else f=y[1][0b10][y[1][1]]t,l=f._normalizeNumber,"Time:"s,w=t,g.Time s=s(w)z,b,e=g.DelayTime,t," DelayTime:"b=b(z)m,h,n=t,g.RepeatCount," RepeatCount:"m=m(h)d,k=" Reverses:",g.Reverses C=k and 0b11101101 or 0b10000100 end elseif C<=0b10101001 then if C<=0x84 then C=k and 0xe4-C or 0xa9 else C,k=0x60,"False"end else C,k=0x84,"True"end until false end end,function(d,_)return function(g,k,f)local b,i,h,a,e e,a,h,b,i=nil,f,k,_[1][0b10][_[1][1]],g b(i,h,a,e)return end end,function(d,_)return function()local f,c,a,i,j,g,h,b c=0x90 repeat if c>0x90 then c,a,h=0x6549/c,i,i.Disconnect h(a)elseif c<=0b10000001 then if c<=0x4f then f,j,g=nil,_[0b11][0b10][_[0b11][1]],_[1][0b10][_[1][1]]g[j]=f return else b,i=g(j,f)f=b c=f==nil and c+-0x32 or 0x6549/c end else g,f,j=_[0b10][0b10][_[0b10][1]],nil,nil g,j,f=d.g(g,j,f)b,i=g(j,f)f=b c=f==nil and 0x4f or 0xc9 end until false end end,function(d)return function(g)local f,e f=g.Origin e=f.X return e end end,function(d,_)return function(g)local b,f,e e,b,f=_[1][0b10][_[1][1]],g.Active,g.Enabled e=e(f,b)return e end end,function(d,_)return function(g)local e,i,b,f f=buffer i,e,f=buffer,f.tostring,_[1][0b10][_[1][1]]b,i=i.fromstring,g b=d.h(b(i))f=d.h(f(d.i(b)))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g,e)local b,c,f,a c=0b10001001 while true do if c<0b10001100 then if c<0b1101111 then a,c,b=g,0xad,f b=b(a)elseif c<=0b1101111 then c,b=0b10001100,g else b=_[1][0b10][_[1][1]]f=not b c=f and 0xd2 or 0xf2 end elseif c<0b11010010 then if c>0x8c then c=b and 0b10001100 or c+-0b111110 else return b end elseif c>0b11010010 then b=_[1][0b10][_[1][1]]f=b[e]b=f c=b and c+-0b10100010 or c+-0b1000101 else return g end end end end,function(d,_)return function(g)local b,f,e,i f=_[1][0b10][_[1][1]]f,b,i,e=g.Min,g.Max,_[1][0b10][_[1][1]],f._minMax i=i.Vector3int16 e=d.h(e(f,b,i))return d.i(e)end end,function(r,y)return function(g,t,f)local h,a,n,d,s,m,l,q,v,b,j,u,c,e,x,_,p,k,w,i c=0x69 repeat if c>=0b1101001 then if c>=0b11011011 then if c>0b11011011 then h,d=b,t[n]h=h(d)k=1 u=n-k k,u,c,d=i,y[0b11][0b10][y[0b11][1]],0xc4c2/c,j+u q,x,a,p=d,h,0x18,y[1][0b10][y[1][1]]p=r.h(p(x,a))u(k,q,r.i(p))q,k,x,u,p,a=d+f,i,h,y[0b11][0b10][y[0b11][1]],y[1][0b10][y[1][1]],0b10000 p=r.h(p(x,a))u(k,q,r.i(p))u,k,x=y[0b11][0b10][y[0b11][1]],i,0b10 p=x*f a,p,x,q=0b1000,y[1][0b10][y[1][1]],h,d+p p=r.h(p(x,a))u(k,q,r.i(p))k,x,u=i,0b11,y[0b11][0b10][y[0b11][1]]p=x*f p,q=h,d+p u(k,q,p)else n=n+m c=(m>0 and n>_ or m<=0 and n<_ or m~=m)and 0b100101 or 0b11100110 end else e,w=y[0b10][0b10][y[0b10][1]],0b100 s=w*e s,i,l=s*f,g,g.allocRegion l=l(i,s)i,w=g.buf,0b100 s,w=w*f,1 v=w c=(e~=e or(v>0 and w>e or(v<=0 or v~=v)and w<e))and 0x66 or 0b111100 end elseif c<=0x3c then if c<=0b100101 then w=w+v c=(v>0 and w>e or v<=0 and w<e or v~=v)and 0x66 or 0x61-c else j=y[0b100][0b10][y[0b100][1]]m,b=1,j[w]_=w-m n=_*s n,_,j=m,f,l+n c=(_~=_ or(m>0 and n>_ or(m<=0 or m~=m)and n<_))and c+-0b10111 or 0x35e8/c end else return end until false end end,function(d,_)return function(g,k)local e,m,h,i,a,c,l,f,b c=0b10010100 repeat if c>0x94 then if c<=0xa4 then return l else c,l[i]=0b10000110,e end elseif c>=0b10000110 then if c<=0x86 then i=i+a c=(a>0 and i>h or a<=0 and i<h or a~=a)and 0x55d8/c or 0b1011000 else i,f=table,#g i,l=f,i.create l=l(i)i,h=1,f a=i c=(h~=h or(a>0 and i>h or(a<=0 or a~=a)and i<h))and 0xa4 or 0x58 end elseif c<=0b110 then b,m=i,nil return m,b else e=_[0b10][0b10][_[0b10][1]]e()m,e,b=g[i],_[1][0b10][_[1][1]],k e=e(m,b)m=_[0b11][0b10][_[0b11][1]]c=e==m and 0x5e-c or 0xfa end until false end end,function(d,_)return function()local f,e,b,i,g f,i,e=_[1][0b10][_[1][1]],Instance,type b,i=i.new,"MeshPart"b=b(i)i="SolidMeshHolder"f=d.h(f(b,i))e=e(d.i(f))f="string"g=e==f return g end end,function(d)return function(g)local b,f,e f,b=g,"\1\0\0\0\1"f=f(b)b="AQAAAAE="e=f==b return e end end,function(d,_)return function(g,k,f)local b,h,a,i,c c=0b1000101 while true do if c>=0xd8 then if c>0b11100111 then i=g b,i=b(i)h,a=b,i c=a and 0x1e4-c or c+-0b100101 elseif c<=0xd8 then c,a=0b11100111,k else return h,a end elseif c>0x45 then c,i=0x992f/c,_[1][0b10][_[1][1]]b=i[k]else b=f c=b and 0b11111101 or 0b10011011 end end end end,function(d)return function(g)local e,b,c,f c=0b10110001 repeat if c>=0xb1 then if c<=0xdf then if c>0xb1 then return f else e=g.CurrentCamera f=e c=f and 0x5e or 0b11100001 end else c=f and 0xc3ff/c or 0b101100000-c end elseif c<=0b1011110 then c,f=0xe1,e.CFrame else b=CFrame c,f=0x15e-c,b.identity end until false end end,function(d,_)return function()local b,g,e,f,a e=workspace f,g=_[1][0b10][_[1][1]],e.Terrain a,b="Color3uint8",g f=f(b,a)b=g.Color e=f==b return e end end,function(d,_)return function()local a,b,e,f,g a,b,f,e="ForceR15",game,_[1][0b10][_[1][1]],type f=d.h(f(b,a))e=e(d.i(f))f="boolean"g=e==f return g end end,function(d,_)return function(g)local e,f,b,c c=0xea while true do if c<=0b1001110 then if c>0x4b then c=b and 0x4b or 0b101111 elseif c<=0b101111 then c,b=c+0x1c,nil else return b end elseif c<=0x8b then c,b=c+-0x3d,f.Classes else g={[1]=0b11,[0b11]=g}g[0b10]=g f,e=d:Vf{_[1],g},pcall e,f=e(f)b=e c=b and 0b10001011 or 0x4e end end end end,function(d,_)return function(g)local e,f e,f=_[1][0b10][_[1][1]],true e[g]=f return end end,function(d,o)return function(g)local j,i,l,e,m,b,k,a,f,h f=o[1][0b10][o[1][1]]k,l=f.Vector3,"<origin>"a,h=g.Origin,k h=h(a)b,e,j=k,"</origin><direction>",g.Direction b=b(j)j="</direction>"m=b..j a=e..m i=h..a f=l..i return f end end,function(d)return function(g,e)local f g={[1]=0b11,[0b11]=g}g[0b10]=g e={[1]=0b11,[0b11]=e}e[0b10]=e f=d:qd{g,e}return f end end,function(d)return function(g)local f,e f=debug e,f=f.traceback,g e=d.h(e(f))return d.i(e)end end,function(d,_)return function(a)local f,e e,f=_[1][0b10][_[1][1]],a.Scale e=d.h(e(f))return d.i(e)end end,function(d,_)return function()local b,c,a,e,g,f c=0 while true do if c>=0b10101 then if c>=0b100000 then if c>0x20 then c=e and 0b1001 or c+-0b1001011 else return end else c,f=0b1101011,""e=g~=f end elseif c<=0 then g,e=_[0b10][0b10][_[0b10][1]],"ussi_cache/API_DUMP.json"g=g(e)e=g c=e and 0b10101 or 0x6b else b=_[1][0b10][_[1][1]]f,a=b.HttpService,g b,f=f,f.JSONDecode f=f(b,a)b=_[0b11][0b10][_[0b11][1]]e=f[b]return e end end end end,function(d,_)return function(g)local f,b,i,e i,f=_[1][0b10][_[1][1]],_[0b10][0b10][_[0b10][1]]b=i[g]e=f[b]return e end end,function(d)return function(g)local f,i,b,h,e f=buffer e,f=f.create,0b100 e=e(f)b=buffer i,b,f,h=0,e,b.writeu32,g.Number f(b,i,h)f,b=e,0b100 return f,b end end,function(r)return function(g,t,f)local j,l,d,p,e,s,h,c,n,m,i,b,_,a,u c=0b10110001 repeat if c<=0x37 then if c>0b101001 then p=t[i]c,e=0x2e9f/c,#p l=l+e elseif c>=0x13 then if c<=0b10011 then s,a,i=g,l,g.allocRegion i=i(s,a)s,p=g.buf,buffer p,a,b,e=1,p.writeu32,f,p.writestring j=p c=(b~=b or(j>0 and p>b or(j<=0 or j~=j)and p<b))and 0x29 or 0x10 else return end else n=t[p]_,h,d,m=#n,s,i,a u=_ m(h,d,u)m,h,u=e,s,0b100 u,d=n,i+u m(h,d,u)h=0b100 m=h+_ c,i=0b11110111-c,i+m end elseif c>0b11011001 then p=p+j c=(j>0 and p>b or j<=0 and p<b or j~=j)and 0b101001 or 0b11110111-c elseif c<=0b10110001 then i=0b100 i,s,l=1,f,i*f a=i c=(s~=s or(a>0 and i>s or(a<=0 or a~=a)and i<s))and 0x13 or 0b110111 else i=i+a c=(a>0 and i>s or a<=0 and i<s or a~=a)and 0b11101100-c or 0b110111 end until false end end,function(r,o)return function(g,k,f)local n,h,d,p,_,c,e,s,i,a,b,j,l,m c=0x6b while true do if c<=0xc0 then if c>=0b10100011 then if c>0b10100011 then return else i=i+a c=(a>0 and i>s or a<=0 and i<s or a~=a)and 0b11000000 or 0b11001011 end else s=0b1000 i,l,s=g,g.allocRegion,s*f l=l(i,s)s,i=f,1 a=i c=(s~=s or(a>0 and i>s or(a<=0 or a~=a)and i<s))and 0xc0 or 0xcb end else p,e=k[i],o[0b10][0b10][o[0b10][1]]e,p=e(p)c,m,j,b=0x16e-c,1,g,o[1][0b10][o[1][1]]_=i-m d,_,n,m,h=e,f,l+_,o[0b11][0b10][o[0b11][1]],p m=r.h(m(h,d))b(j,n,_,r.i(m))end end end end,function(d,_)return function(g)local c,e,b,f,i c=0b1111 while true do if c>=0x8b then if c<0b10110010 then c,b=0b10110010,f.errors elseif c>0b10110010 then b=true return b else c=b and c+-0b10000101 or 0b10111101 end elseif c<=0b1111 then e,i=pcall,_[1][0b10][_[1][1]]b=i.HttpService i,f,b=g,b.JSONDecode,i.HttpService e,f=e(f,b,i)b=e c=b and 0x8b or 0xb2 else return end end end end,function(d,_)return function()local b,g,f,e,c c=0x2e while true do if c>0x2f then return e elseif c>0x2e then f,b=typeof,g f=f(b)b="EnumItem"c,e=0b1001011,f==b else f,g,e="StreamOutBehavior",_[1][0b10][_[1][1]],workspace g=g(e,f)f=nil e=g==f c=e and 0x4b or 0x2f end end end end,function(d,o)return function(g)local a,k,n,e,p,q,l,j,b,f,i,_ f=o[1][0b10][o[1][1]]k=f._normalizeRange l,i=k,g.Time l=l(i)q,e,p=" ",k,g.Value e=e(p)b,n,_=" ",k,g.Envelope n=n(_)_=" "j=n.._ p=b..j a=e..p i=q..a f=l..i return f end end,function(d,_)return function(g,e)local b,f,i,h b=_[1][0b10][_[1][1]]i,h,f=g,e,b.UGCValidationService f,b=f.GetPropertyValue,f f=d.h(f(b,i,h))return d.i(f)end end,function(ja)return function(...)local ma,ua,ia,ra,Ja,ca,aa,o,fa,t,z,A,ea,ga,r,D,Na,v,s,q,d,Ma,I,va,J,O,wa,Ia,na,ya,n,k,N,Oa,qa,La,Ca,Ea,R,T,_a,K,i,Q,H,y,E,B,w,Ba,G,g,ka,a,m,ha,X,h,b,W,ta,F,da,l,Fa,j,oa,za,Ka,V,P,C,x,ba,e,U,u,Da,c,sa,Pa,_,p,Y,xa,f,la,Aa,pa,Ga,L,Ha U=0x5b while true do if U<0x84 then if U<=0x52 then if U>=0b101110 then if U>=0b1001010 then if U>0x4d then U,c[0b10][c[1]]=0x2a48/U,"UNKNOWN"elseif U<=0x4a then U,ba=U+-0b1001000,{[1]=0b11,[0b11]=ba}ba[0b10]=ba e,K,G="Name",ba[0b10][ba[1]].Name,oa[0b10][oa[1]].MaterialService K,Ba=ja:ha{ba},K..e G[Ba]=K else U=w and 0x81 or 0xb9 end elseif U>0b101110 then ra={[1]=0b11,[0b11]=ra}ra[0b10]=ra Da=L[0b10][L[1]].setrbxclipboard Da={[1]=0b11,[0b11]=Da}Da[0b10]=Da b=L[0b10][L[1]].gethiddenproperty b={[1]=0b11,[0b11]=b}b[0b10]=b z=nil z={[1]=0b11,[0b11]=z}z[0b10]=z Y=lz4compress Y={[1]=0b11,[0b11]=Y}Y[0b10]=Y ia=zstdcompress ia={[1]=0b11,[0b11]=ia}ia[0b10]=ia m=appendfile m={[1]=0b11,[0b11]=m}m[0b10]=m h=isfile h={[1]=0b11,[0b11]=h}h[0b10]=h N=readfile N={[1]=0b11,[0b11]=N}N[0b10]=N u=writefile u={[1]=0b11,[0b11]=u}u[0b10]=u E=L[0b10][L[1]].getscriptbytecode E={[1]=0b11,[0b11]=E}E[0b10]=E Q=L[0b10][L[1]].base64encode Q={[1]=0b11,[0b11]=Q}Q[0b10]=Q O=L[0b10][L[1]].base64decode O={[1]=0b11,[0b11]=O}O[0b10]=O wa=1000000000000000 wa={[1]=0b11,[0b11]=wa}wa[0b10]=wa xa,Na=setmetatable,{}Ja,A,Na=ja:lb{wa,Q},Na,{}Na.__index=Ja xa=xa(A,Na)xa={[1]=0b11,[0b11]=xa}xa[0b10]=xa Na={}A=Na A={[1]=0b11,[0b11]=A}A[0b10]=A Ja={}Na=Ja Na={[1]=0b11,[0b11]=Na}Na[0b10]=Na Ja={[1]=0b11,[0b11]=Ja}Ja[0b10]=Ja Ja[0b10][Ja[1]],P=ja:Xb(),f[0b10][f[1]].USSI_placeName P={[1]=0b11,[0b11]=P}P[0b10]=P c=nil c={[1]=0b11,[0b11]=c}c[0b10]=c C,ka=ja:Qb{c},pcall ka=ka(C)va=not ka U=va and 0x2e or 0x1ef0/U else C,ka=ja:P{c},pcall ka=ka(C)va=not ka U=va and U+0xc7 or 0xb2-U end elseif U>=0b10111 then if U<=0x17 then U,Aa=U+0b1111110,ua[0b10][ua[1]][D]ua[0b10][ua[1]][l]=Aa Aa=ta[0b10][ta[1]][D]ta[0b10][ta[1]][l]=Aa else U,f=0b10001010-U,getgenv f=f()end elseif U<=0b10 then Ka,ba=Ma(I,qa)qa=Ka U=qa==nil and 0b11011000-U or 0b1001100-U else U,ra=U+0b100111,""end elseif U>0b1110101 then if U<0b1111111 then va={[1]=0b11,[0b11]=va}va[0b10]=va W,C,ua=false,"__BREAK",pa[0b10][pa[1]].HttpService ua,ha=ua.GenerateGUID,ua ua=ua(ha,W)ka=C..ua ka={[1]=0b11,[0b11]=ka}ka[0b10]=ka C,ua=pcall,ja:ib()C(ua)ua,W={},SecurityCapabilities W,ha,V=unpack,W.new,Enum la=V.SecurityCapability V,la=la,la.GetEnumItems la=ja.h(la(V))W=ja.h(W(ja.i(la)))ha=ha(ja.i(W))ua.Security=ha ha=true ua.ExcludeDisplay=ha ua.ExcludeInherited=ha C=ua C={[1]=0b11,[0b11]=C}C[0b10]=C W,ha=1,{}ha.string=W W=0b10 ha.bool=W W=0b11 ha.int=W W=0b100 ha.float=W W=0b101 ha.double=W W=0b110 ha.UDim=W W=0b111 ha.UDim2=W W=0b1000 ha.Ray=W W=0b1001 ha.Faces=W W=0b1010 ha.Axes=W W=0b1011 ha.BrickColor=W W=0b1100 ha.Color3=W W=0b1101 ha.Vector2=W W=0b1110 ha.Vector3=W W=0b1111 ha.Vector2int16=W W=0b10000 ha.CFrame=W W=0x12 ha.Enum=W W=0b10011 ha.Referent=W W=0b10100 ha.Vector3int16=W W=0x15 ha.NumberSequence=W W=0x16 ha.ColorSequence=W W=0b10111 ha.NumberRange=W W=0b11000 ha.Rect=W W=0b11001 ha.PhysicalProperties=W W=0b11010 ha.Color3uint8=W W=0b11011 ha.int64=W W=0x1c ha.SharedString=W W=0b11110 ha.OptionalCoordinateFrame=W W=0b11111 ha.UniqueId=W W=0b100000 ha.Font=W W=0b100001 ha.SecurityCapabilities=W W=0x22 ha.Content=W ua=ha ua={[1]=0b11,[0b11]=ua}ua[0b10]=ua W,la={},1 W["nil"]=la la=0b10 W.string=la la=0b11 W.boolean=la la=0b100 W.int32=la la=0b110 W.number=la la=0b111 W.ValueArray=la la=0b1000 W.ValueTable=la la=0b1001 W.UDim=la la=0b1010 W.UDim2=la la=0b1011 W.Ray=la la=0b1100 W.Faces=la la=0b1101 W.Axes=la la=0b1110 W.BrickColor=la la=0b1111 W.Color3=la la=0x10 W.Vector2=la la=0x11 W.Vector3=la la=0x12 W.Vector2int16=la la=0b10011 W.Vector3int16=la la=0x14 W.CFrame=la la=0x15 W.EnumItem=la la=0b10111 W.NumberSequence=la la=0b11000 W.NumberSequenceKeypoint=la la=0b11001 W.ColorSequence=la la=0b11010 W.ColorSequenceKeypoint=la la=0b11011 W.NumberRange=la la=0b11100 W.Rect=la la=0x1d W.PhysicalProperties=la la=0x1e W.Color3uint8=la la=0x1f W.Region3=la la=0b100000 W.Region3int16=la la=0x21 W.Font=la la=0b100010 W.SecurityCapabilities=la la=0x23 W.Path2DControlPoint=la la=0b100100 W.TweenInfo=la ha=W ha={[1]=0b11,[0b11]=ha}ha[0b10]=ha la,V={},0b10 la["\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?"]=V V=0b11 la["\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128?\0\0\0\0"]=V V=0b101 la["\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"]=V V=0b110 la["\0\0\128?\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\128\191\0\0\0\0"]=V V=0b111 la["\0\0\0\0\0\0\128?\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"]=V V=0b1001 la["\0\0\0\0\0\0\0\0\0\0\128?\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0"]=V V=0b1010 la["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128?"]=V V=0b1100 la["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0"]=V V=0b1101 la["\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\128?\0\0\0\0\0\0\0\0"]=V V=0b1110 la["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128?\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0"]=V V=0x10 la["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128?\0\0\0\0\0\0\0\0"]=V V=0b10001 la["\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\128"]=V V=0b10100 la["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"]=V V=0b10101 la["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\128?\0\0\0\128"]=V V=0x17 la["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?"]=V V=0b11000 la["\0\0\128\191\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\191\0\0\0\128"]=V V=0x19 la["\0\0\0\0\0\0\128?\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?"]=V V=0x1b la["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0"]=V V=0x1c la["\0\0\0\0\0\0\128\191\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\191"]=V V=0x1e la["\0\0\0\0\0\0\0\0\0\0\128?\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0"]=V V=0b11111 la["\0\0\0\0\0\0\128?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\191\0\0\0\0\0\0\0\0"]=V V=0x20 la["\0\0\0\0\0\0\0\0\0\0\128?\0\0\0\0\0\0\128?\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\0"]=V V=0x22 la["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128?\0\0\128\191\0\0\0\0\0\0\0\0"]=V V=0b100011 la["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\191\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\128"]=V W=la W={[1]=0b11,[0b11]=W}W[0b10]=W V=buffer la,V=V.create,0b100100 la=la(V)la={[1]=0b11,[0b11]=la}la[0b10]=la s=buffer V=s.writef32 V={[1]=0b11,[0b11]=V}V[0b10]=V s={[1]=0b11,[0b11]=s}s[0b10]=s X,s[0b10][s[1]]=buffer,ja:y{la,V}X,y=0,X.create y=y(X)y={[1]=0b11,[0b11]=y}y[0b10]=y X=nil X={[1]=0b11,[0b11]=X}X[0b10]=X p,aa=pcall,ja:uc{X}p(aa)q,aa=0,{}aa.Plugin=q q=1 aa.LocalUser=q q=0b10 aa.WritePlayer=q q=0b11 aa.RobloxScript=q q=0b100 aa.RobloxEngine=q q=0b101 aa.NotAccessible=q q=0b1000 aa.RunClientScript=q q=0b1001 aa.RunServerScript=q q=0b1011 aa.AccessOutsideWrite=q q=0b1111 aa.Unassigned=q q=0b10000 aa.LoadUnownedAsset=q q=0x11 aa.LoadString=q q=0x12 aa.ScriptGlobals=q q=0b10011 aa.CreateInstances=q q=0x14 aa.Basic=q q=0b10101 aa.Audio=q q=0x16 aa.DataStore=q q=0x17 aa.Network=q q=0x18 aa.Physics=q q=0x19 aa.UI=q q=0x1a aa.CSG=q q=0b11011 aa.Chat=q q=0x1c aa.Animation=q q=0b11101 aa.AvatarAppearance=q q=0b11110 aa.Input=q q=0x1f aa.Environment=q q=0b100000 aa.RemoteEvent=q q=0x21 aa.LegacySound=q q=0x22 aa.Players=q q=0x23 aa.CapabilityControl=q q=0x24 aa.AssetRead=q q=0b100101 aa.AssetManagement=q q=0b100110 aa.DynamicGeneration=q q=0x27 aa.PlatformAvatarEditing=q q=0b101000 aa.AssetCreateUpdate=q q=0x29 aa.Capture=q q=0b101010 aa.SensitiveInput=q q=0b101011 aa.Monetization=q q=0x2c aa.LoadOwnedAsset=q q=0x2d aa.Social=q q=0x2e aa.ServerCommunication=q q=0b101111 aa.Logging=q q=0x30 aa.PromptExternalPurchase=q q=0b110001 aa.Groups=q q=0b110010 aa.Teleport=q q=0x33 aa.Consequences=q q=0x34 aa.Material=q q=0b110101 aa.AvatarBehavior=q q=0b111011 aa.RemoteCommand=q q=0x3c aa.InternalTest=q q=0x3d aa.PluginOrOpenCloud=q q=0x3e aa.Assistant=q q=0x3f aa.Restricted=q p=aa p={[1]=0b11,[0b11]=p}p[0b10]=p aa={[1]=0b11,[0b11]=aa}aa[0b10]=aa aa[0b10][aa[1]]=ja:Va{p}q={[1]=0b11,[0b11]=q}q[0b10]=q q[0b10][q[1]]=ja:Ra{aa}fa={[1]=0b11,[0b11]=fa}fa[0b10]=fa fa[0b10][fa[1]]=ja:kc()Ia={[1]=0b11,[0b11]=Ia}Ia[0b10]=Ia Ia[0b10][Ia[1]]=ja:ob()Ea={[1]=0b11,[0b11]=Ea}Ea[0b10]=Ea Ea[0b10][Ea[1]]=ja:q()F={[1]=0b11,[0b11]=F}F[0b10]=F F[0b10][F[1]],o=ja:ga{Ea},buffer na,o=o.create,0b1000 na=na(o)na={[1]=0b11,[0b11]=na}na[0b10]=na ma=buffer ya,o=ma.readu32,ma.writef32 o={[1]=0b11,[0b11]=o}o[0b10]=o ya={[1]=0b11,[0b11]=ya}ya[0b10]=ya Pa=bit32 ma=Pa.lrotate ma={[1]=0b11,[0b11]=ma}ma[0b10]=ma Pa={[1]=0b11,[0b11]=Pa}Pa[0b10]=Pa Pa[0b10][Pa[1]]=ja:S{ya,o,ma,na}Fa={[1]=0b11,[0b11]=Fa}Fa[0b10]=Fa Fa[0b10][Fa[1]]=ja:Ga()ca={[1]=0b11,[0b11]=ca}ca[0b10]=ca ca[0b10][ca[1]]=ja:z()Ga={[1]=0b11,[0b11]=Ga}Ga[0b10]=Ga Ga[0b10][Ga[1]]=ja:La{ca}Ca={[1]=0b11,[0b11]=Ca}Ca[0b10]=Ca Ca[0b10][Ca[1]]=ja:fc()Oa={[1]=0b11,[0b11]=Oa}Oa[0b10]=Oa Oa[0b10][Oa[1]]=ja:w()R={[1]=0b11,[0b11]=R}R[0b10]=R R[0b10][R[1]]=ja:G()ea={[1]=0b11,[0b11]=ea}ea[0b10]=ea ea[0b10][ea[1]]=ja:Sb{R}J={[1]=0b11,[0b11]=J}J[0b10]=J J[0b10][J[1]]=ja:Bc()T={[1]=0b11,[0b11]=T}T[0b10]=T j,n,r,k,T[0b10][T[1]]=ja:ya(),ja:Jc(),ja:Qc(),ja:Da(),ja:_c{Fa}da={[1]=0b11,[0b11]=da}da[0b10]=da da[0b10][da[1]],i=ja:Ha{W,s,na},nil i={[1]=0b11,[0b11]=i}i[0b10]=i ta,a={},ja:Fc()ta._packMultiple=a a=ja:Ta()ta._makeSequence=a a=ja:Nb()ta._writeI64LE=a a=nil ta._packF32=a a=nil ta._packI16=a a=ja:s()ta._makeVectorPacker=a a=ja:m{y}ta["nil"]=a a=ja:Fa()ta.string=a a=ja:ua()ta.boolean=a a=ja:Ic()ta.number=a a=ja:kd{ha,F,i}ta.ValueArray=a a=ja:Tb{ha,F,i}ta.ValueTable=a a=ja:Wa()ta.UDim=a a=ja:T{i}ta.UDim2=a a=ja:Rb{i}ta.Ray=a a=ja:ra{fa}ta.Faces=a a=ja:oc{fa}ta.Axes=a a=ja:Lc()ta.BrickColor=a a=ja:fa{i}ta.Color3=a a=ja:Hc{i}ta.Vector2=a a=ja:Qa{i}ta.Vector3=a a=ja:ld{i}ta.Vector2int16=a a=ja:U{i}ta.Vector3int16=a a=ja:o{s,W,i}ta.CFrame=a a=ja:va{i}ta.EnumItem=a a=nil ta.NumberSequence=a a=ja:lc{i}ta.NumberSequenceKeypoint=a a=nil ta.ColorSequence=a a=ja:mb{i}ta.ColorSequenceKeypoint=a a=ja:xa{i}ta.NumberRange=a a=ja:l{i}ta.Rect=a a=ja:Yc()ta.PhysicalProperties=a a=ja:ja()ta.Color3uint8=a a=ja:Ob{i}ta.Region3=a a=ja:Ia{i}ta.Region3int16=a a=ja:L{Ja,i}ta.Font=a a=ja:Aa{i,X,q}ta.SecurityCapabilities=a a=ja:A{i}ta.Path2DControlPoint=a a=ja:R()ta.TweenInfo=a i[0b10][i[1]]=ta a,ga,ta=i[0b10][i[1]].NumberSequenceKeypoint,0b1100,i[0b10][i[1]]._makeSequence ta=ta(a,ga)i[0b10][i[1]].NumberSequence=ta ga,ta,a=0x14,i[0b10][i[1]]._makeSequence,i[0b10][i[1]].ColorSequenceKeypoint ta=ta(a,ga)i[0b10][i[1]].ColorSequence=ta ta,ga=i[0b10][i[1]]._makeVectorPacker,buffer ga,a=0b100,ga.writef32 ta=ta(a,ga)i[0b10][i[1]]._packF32=ta ta,ga=i[0b10][i[1]]._makeVectorPacker,buffer a,ga=ga.writei16,0b10 ta=ta(a,ga)i[0b10][i[1]]._packI16=ta ga,a=ja:gb(),{}a.string=ga ga=ja:N()a.bool=ga _,ga=Fa[0b10][Fa[1]],r ga=ga(_)a.int=ga _,ga=Pa[0b10][Pa[1]],r ga=ga(_)a.float=ga ga=ja:Mb()a.double=ga ga,l,_=r,ja:sc{Fa},ja:ec{Pa}ga=ga(_,l)a.UDim=ga l,Aa,D,ga,_=ja:rb{Pa},ja:Jb{Fa},ja:Oc{Fa},r,ja:xc{Pa}ga=ga(_,l,D,Aa)a.UDim2=ga _a,ga,l,_,D,La,Aa=ja:Pb(),k,ja:t(),ja:Kc(),ja:rc(),ja:Ea(),ja:_a()ga=ga(_,l,D,Aa,La,_a)a.Ray=ga _,ga,l={},n,1 _.Right=l l=0b10 _.Top=l l=0b100 _.Back=l l=0b1000 _.Left=l l=0x10 _.Bottom=l l=0b100000 _.Front=l ga=ga(_)a.Faces=ga ga,_,l=n,{},1 _.X=l l=0b10 _.Y=l l=0b100 _.Z=l ga=ga(_)a.Axes=ga _,ga=ja:tc(),r ga=ga(_)a.BrickColor=ga _,D,ga,l=ja:Ba{Pa},ja:Ja{Pa},r,ja:x{Pa}ga=ga(_,l,D)a.Color3=ga _,l,ga=ja:Ka{Pa},ja:Q{Pa},r ga=ga(_,l)a.Vector2=ga l,ga,_,D=ja:Sc{Pa},r,ja:bb{Pa},ja:aa{Pa}ga=ga(_,l,D)a.Vector3=ga l,ga,_="Y",j,"X"ga=ga(_,l)a.Vector2int16=ga ga=ja:Vb{da}a.CFrame=ga ga,_=r,ja:Mc()ga=ga(_)a.Enum=ga ga=ja:Kb{T}a.Referent=ga l,D,ga,_="Y","Z",j,"X"ga=ga(_,l,D)a.Vector3int16=ga ga=ja:ed()a.NumberSequence=ga ga=ja:Ma()a.ColorSequence=ga ga,l,_=k,ja:gc(),ja:Ub()ga=ga(_,l)a.NumberRange=ga ga,l,D,_,Aa=r,ja:pa{Pa},ja:Xa{Pa},ja:M{Pa},ja:J{Pa}ga=ga(_,l,D,Aa)a.Rect=ga ga=ja:wc()a.PhysicalProperties=ga ga=ja:nd()a.Color3uint8=ga ga=ja:na{Ga,ea}a.int64=ga ga=ja:sa{J}a.SharedString=ga ga=ja:ea{da}a.OptionalCoordinateFrame=ga ga=ja:ta{Oa,Ca,R}a.UniqueId=ga ga=ja:sb{Ja}a.Font=ga ga=ja:fd{ea,aa,Ca}a.SecurityCapabilities=ga ga=ja:nc{Fa,J}a.Content=ga ta=a ta={[1]=0b11,[0b11]=ta}ta[0b10]=ta D,l="SharedString",{}l.NetAssetRef=D D="string"l.ContentId=D l.BinaryString=D l.ProtectedString=D a,_,ga=l,nil,nil a,ga,_=ja.g(a,ga,_)l,D=a(ga,_)_=l U=_==nil and 0xd5 or 0x17 elseif U>0x7f then w={[1]=0b11,[0b11]=w}w[0b10]=w ra=w[0b10][w[1]]U=ra and 0x3af5/U or 0x97 else f={[1]=0b11,[0b11]=f}f[0b10]=f pa,L=setmetatable,{}w,L,B=ja:cb(),{},L L.__index=w pa=pa(B,L)pa={[1]=0b11,[0b11]=pa}pa[0b10]=pa B=nil B={[1]=0b11,[0b11]=B}B[0b10]=B Da,L,b,w="https://raw.githubusercontent.com/luau/SomeHub/main/StreamBuffer.luau",loadstring,true,game w,ra=w.HttpGet,w w=w(ra,Da,b)ra="StreamBuffer"L=L(w,ra)L=L()B[0b10][B[1]],L=L,nil L={[1]=0b11,[0b11]=L}L[0b10]=L z,Y,ra,Da,w="https://raw.githubusercontent.com/luau/SomeHub/main/UniversalMethodFinder.luau",true,loadstring,game,nil Da,b=Da.HttpGet,Da Da=Da(b,z,Y)b="UniversalMethodFinder"ra=ra(Da,b)ra,Da=ra()w,L[0b10][L[1]]=ra,Da z,ra,b="local a={...}local b=a[1]local function c(a,b)return string.find(a,b,nil,true)end;return c(b,\"encode\")and(c(b,\"base64\")or c(string.lower(tostring(a[2])),\"base64\"))",w,{}b.base64encode=z z="local a={...}local b=a[1]local function c(a,b)return string.find(a,b,nil,true)end;return c(b,\"decode\")and(c(b,\"base64\")or c(string.lower(tostring(a[2])),\"base64\"))"b.base64decode=z z="string.find(...,\"get\",nil,true) and string.find(...,\"h\",nil,true) and string.find(...,\"prop\",nil,true) and string.sub(...,#...) ~= \"s\""b.gethiddenproperty=z z="string.find(...,\"get\",nil,true) and string.find(...,\"h\",nil,true) and string.find(...,\"ui\",nil,true)"b.gethui=z z="string.find(...,\"nil\",nil,true) and string.find(...,\"get\",nil,true) and string.sub(...,#...) == \"s\""b.getnilinstances=z z="string.find(...,\"get\",nil,true) and string.find(...,\"script\",nil,true) and string.find(...,\"bytecode\",nil,true)"b.getscriptbytecode=z z="string.find(...,\"protect\",nil,true) and string.find(...,\"ui\",nil,true) and not string.find(...,\"un\",nil,true)"b.protectgui=z z="string.find(...,\"set\",nil,true) and string.find(...,\"rbx\",nil,true) and string.find(...,\"clipboard\",nil,true)"b.setrbxclipboard=z z,Da,b=0b1010,b,true ra(Da,b,z)w=identifyexecutor U=w and 0b1001101 or 0b10110000 end elseif U<0x5e then if U>0b1011011 then La=La+d U=(d>0 and La>_a or d<=0 and La<_a or d~=d)and 0x113-U or U+0b1110001 else g={[1]=0b11,[0b11]=g}g[0b10]=g g[0b10][g[1]]=ja:Ua()t={[1]=0b11,[0b11]=t}t[0b10]=t f,t[0b10][t[1]]=getgenv,ja:W{t}U=f and 0b101011 or 0x5f end elseif U>0x5f then U,ra=0x10c-U,w[0b10][w[1]]ra=ra()elseif U>0x5e then U=f and U+0x8e or 0x4682/U else U,f=0xdd-U,shared end elseif U>0b10111110 then if U>=0b11010110 then if U<0b11101101 then if U<=0b11010110 then l[0b10][l[1]]=ja:Ab{va,pa,Aa,N,oa,D,u,c,t,C}Aa=ja:O{C,Na,B,t,A,ka,m,_,h,ia,ua,D,u,g,Q,c,Y,pa,T,O,l,xa,N,Ja,z,P,b,E,L,Da,f,w,ta,ra,ga}return Aa else U,va=0x152-U,9000000000 end elseif U>0b11101101 then C,ka=ja:v{pa,c},pcall ka=ka(C)va=not ka U=va and 0b1010010 or 0b10000100 else U=f and 0b1111111 or U+-0b10001111 end elseif U<=0xcd then if U<0xc7 then _,l=nil,nil _={[1]=0b11,[0b11]=_}_[0b10]=_ l={[1]=0b11,[0b11]=l}l[0b10]=l D=nil D={[1]=0b11,[0b11]=D}D[0b10]=D v,Aa,Ha,H,_a={},t[0b10][t[1]],{},"CollisionFidelity",{}Ha[1]=H x=Ha v.MeshPart=x Ha={}Ha[1]=H x=Ha v.PartOperation=x Ha={}Ha[1]=H x=Ha v.TriangleMeshPart=x d=v _a.Whitelist=d v,Ha,H={},{},"PlayerToHideFrom"Ha[1]=H x=Ha v.BillboardGui=x H,Ha="ScriptGuid",{}Ha[1]=H x=Ha v.LuaSourceContainer=x oa,za,H,sa,Ha="SourceContent","HistoryId","UniqueId","SourceAssetId",{}Ha[1],Ha[0b10],Ha[0b11],Ha[0b100]=H,za,sa,oa x=Ha v.Instance=x d=v _a.Blacklist=d La,_a=_a,true Aa=Aa(La,_a)Aa={[1]=0b11,[0b11]=Aa}Aa[0b10]=Aa La={[1]=0b11,[0b11]=La}La[0b10]=La La[0b10][La[1]]=ja:oa{i,F,ha}_a={[1]=0b11,[0b11]=_a}_a[0b10]=_a _a[0b10][_a[1]]=ja:_d()d={[1]=0b11,[0b11]=d}d[0b10]=d d[0b10][d[1]]=ja:Cb{i}v={[1]=0b11,[0b11]=v}v[0b10]=v v[0b10][v[1]]=ja:fb{ha,i}x={[1]=0b11,[0b11]=x}x[0b10]=x x[0b10][x[1]]=ja:Y()Ha={[1]=0b11,[0b11]=Ha}Ha[0b10]=Ha Ha[0b10][Ha[1]]=ja:n{x}H={[1]=0b11,[0b11]=H}H[0b10]=H H[0b10][H[1]]=ja:vb()za={[1]=0b11,[0b11]=za}za[0b10]=za za[0b10][za[1]]=ja:yc()sa={[1]=0b11,[0b11]=sa}sa[0b10]=sa qa,Ka,sa[0b10][sa[1]],Ma={},ja:zc{La},ja:K(),{}qa.AttributesSerialize=Ka Ka="Sandboxed"qa.DefinesCapabilities=Ka Ka=ja:qa{pa}qa.Tags=Ka I=qa Ma.Instance=I qa,Ka={},ja:hc{i,ha}qa.PropertiesSerialize=Ka I=qa Ma.Path2D=I qa,Ka={},ja:Sa{La}qa.SerializedEmulatedPolicyInfo=Ka I=qa Ma.PlayerEmulatorService=I Ka,qa=ja:bc{La},{}qa.PropertiesSerialize=Ka Ka=ja:Bb{La}qa.PropertyTransitionsSerialize=Ka I=qa Ma.StyleRule=I qa,Ka={},ja:id{La}qa.ConditionsSerialize=Ka I=qa Ma.StyleQuery=I Ka,qa=ja:cc{za,fa,Ha},{}qa.ValuesAndTimes=Ka I=qa Ma.FloatCurve=I qa,Ka={},ja:la{Ha,Ia}qa.ValuesAndTimes=Ka I=qa Ma.RotationCurve=I qa,Ka={},ja:pc{fa,ha,i,F,Ha,H}qa.ValuesAndTimes=Ka I=qa Ma.ValueCurve=I qa,Ka={},ja:dc{Ha}qa.ValuesAndTimes=Ka I=qa Ma.MarkerCurve=I qa,Ka={},ja:ic{i}qa.InputPinData=Ka I=qa Ma.AnimationNodeDefinition=I qa,Ka={},ja:za{sa}qa.GuidBinaryString=Ka I=qa Ma.AnimationClip=I Ka,qa=ja:Oa(),{}qa.label=Ka Ka=ja:jc()qa.name=Ka Ka=ja:C()qa.parent=Ka Ka=ja:qc{d}qa.postTransform=Ka Ka=ja:Pa{d}qa.preTransform=Ka Ka=ja:u{d}qa.transform=Ka I=qa Ma.AnimationRigData=I Ka,qa=ja:wa{i},{}qa.AccessList=Ka I=qa Ma.AudioDeviceInput=I qa,Ka={},ja:ba{_a}qa.AngleAttenuation=Ka Ka=ja:Ac{_a}qa.DistanceAttenuation=Ka I=qa Ma.AudioEmitter=I qa,Ka={},ja:Fb{_a}qa.AngleAttenuation=Ka Ka=ja:ma{_a}qa.DistanceAttenuation=Ka I=qa Ma.AudioListener=I qa,Ka={},"Line"qa.line=Ka I=qa Ma.DebuggerBreakpoint=I qa,Ka={},"MaxFrictionTorque"qa.MaxFrictionTorqueXml=Ka I=qa Ma.BallSocketConstraint=I qa,Ka={},"Color"qa.Color3uint8=Ka Ka="MaterialVariant"qa.MaterialVariantSerialized=Ka Ka="Size"qa.size=Ka qa.siz=Ka I=qa Ma.BasePart=I qa,Ka={},"Value"qa.value=Ka I=qa Ma.DoubleConstrainedValue=I qa={}qa.value=Ka I=qa Ma.IntConstrainedValue=I qa,Ka={},ja:Gb()qa.PersistedCurrentValue=Ka I=qa Ma.CustomEvent=I Ka,qa="InputSink",{}qa.Sink=Ka I=qa Ma.GuiObject=I Ka,qa="LastUsedModificationMethod",{}qa.AcquisitionMethod=Ka Ka=ja:Cc()qa.MaterialColors=Ka I=qa Ma.Terrain=I qa,Ka={},ja:Pc{z}qa.TemporaryCageMeshContent=Ka I=qa Ma.BaseWrap=I Ka,qa=ja:jd{z},{}qa.TexturePackContent=Ka I=qa Ma.MaterialVariant=I Ka,qa=ja:hb{z},{}qa.TexturePackContent=Ka I=qa Ma.TerrainDetail=I qa,Ka={},ja:D{z}qa.TemporaryReferenceMeshContent=Ka I=qa Ma.WrapLayer=I Ka,qa="FluidFidelity",{}qa.FluidFidelityInternal=Ka I=qa Ma.TriangleMeshPart=I Ka,qa="MeshSize",{}qa.InitialSize=Ka Ka="MeshId"qa.MeshID=Ka I=qa Ma.MeshPart=I Ka,qa=ja:Rc{z},{}qa.Content=Ka Ka="MeshSize"qa.InitialSize=Ka I=qa Ma.PartOperation=I Ka,qa="Shape",{}qa.shape=Ka qa.shap=Ka I=qa Ma.Part=I qa,Ka={},"Style"qa.style=Ka I=qa Ma.TrussPart=I qa,Ka={},"FormFactor"qa.formFactorRaw=Ka I=qa Ma.FormFactorPart=I Ka,qa="Heat",{}qa.heat_xml=Ka Ka="Size"qa.size_xml=Ka I=qa Ma.Fire=I Ka,qa=ja:jb{z},{}qa.Outfit1Content=Ka Ka=ja:H{z}qa.Outfit2Content=Ka I=qa Ma.Clothing=I Ka,qa="Health",{}qa.Health_XML=Ka Ka=ja:Ib{ka}qa.InternalBodyScale=Ka Ka=ja:Ca{ka}qa.InternalHeadScale=Ka Ka=ja:xb()qa.NetworkHumanoidState=Ka I=qa Ma.Humanoid=I qa,Ka={},ja:p{pa}qa.AccessoryBlob=Ka Ka=ja:nb()qa.EmotesDataInternal=Ka Ka=ja:Lb()qa.EquippedEmotesDataInternal=Ka I=qa Ma.HumanoidDescription=I qa,Ka={},ja:E()qa.Contents=Ka I=qa Ma.LocalizationTable=I Ka,qa="Use2022Materials",{}qa.Use2022MaterialsXml=Ka I=qa Ma.MaterialService=I qa,Ka={},"IsPlaying"qa.PlayingReplicating=Ka I=qa Ma.VideoPlayer=I Ka,qa=ja:Hb(),{}qa.ModelMeshCFrame=Ka Ka=ja:wb()qa.ModelMeshSize=Ka Ka=ja:pb()qa.Scale=Ka Ka=ja:qb()qa.ScaleFactor=Ka Ka="WorldPivot"qa.WorldPivotData=Ka I=qa Ma.Model=I Ka,qa="PackageContent",{}qa.PackageContentSerialize=Ka Ka="PackageId"qa.PackageIdSerialize=Ka Ka="VersionNumber"qa.VersionIdSerialize=Ka I=qa Ma.PackageLink=I Ka,qa="MaxPlayers",{}qa.MaxPlayersInternal=Ka Ka="PreferredPlayers"qa.PreferredPlayersInternal=Ka I=qa Ma.Players=I qa,Ka={},"AvatarJointUpgrade"qa.AvatarJointUpgrade_SerializedRollout=Ka I=qa Ma.StarterPlayer=I qa,Ka={},"Size"qa.size_xml=Ka Ka="Opacity"qa.opacity_xml=Ka Ka="RiseVelocity"qa.riseVelocity_xml=Ka I=qa Ma.Smoke=I qa,Ka={},"RollOffMinDistance"qa.xmlRead_MinDistance_3=Ka Ka="RollOffMaxDistance"qa.xmlRead_MaxDistance_3=Ka I=qa Ma.Sound=I Ka,qa=ja:yb(),{}qa.CameraCFrame=Ka Ka=ja:Gc()qa.CameraFieldOfView=Ka I=qa Ma.ViewportFrame=I qa,Ka={},ja:I()qa.CFrame0=Ka Ka=ja:Ec()qa.CFrame1=Ka Ka="Part0"qa.Part0Internal=Ka Ka="Part1"qa.Part1Internal=Ka Ka=ja:ka{fa}qa.State=Ka I=qa Ma.WeldConstraint=I Ka,qa=ja:tb(),{}qa.CollisionGroups=Ka I=qa Ma.Workspace=I qa,Ka={},ja:da{ha}qa.CollisionGroupData=Ka I=qa Ma.WorldRoot=I qa,Ka={},ja:Dc{v}qa.HiddenServices=Ka Ka=ja:r{v}qa.VisibleServices=Ka I=qa Ma.ServiceVisibilityService=I oa=Ma oa={[1]=0b11,[0b11]=oa}oa[0b10]=oa I=Enum Ma=I.Material Ma,I=Ma.GetEnumItems,Ma Ma,I,qa=Ma(I)Ma,I,qa=ja.g(Ma,I,qa)Ka,ba=Ma(I,qa)qa=Ka U=qa==nil and 0x19a-U or U+-0b1111010 elseif U>0b11000111 then x=string v,x=x.char,La v=v(x)Ha,za="&#",";"U,H=0x49ac/U,La..za x=Ha..H a[0b10][a[1]][v]=x else ga=nil ga={[1]=0b11,[0b11]=ga}ga[0b10]=ga l,_=ja:Uc(),{}_._cdata=l l=ja:vc()_._normalizeNumber=l l=ja:B()_._normalizeRange=l l=ja:ab()_._minMax=l l=ja:od()_._makeSequence=l l=ja:ca()_._vector=l l=ja:pd{fa}_.Axes=l l=ja:X{Q}_.BinaryString=l l=ja:mc()_.BrickColor=l l=ja:Wc{ga}_.CFrame=l l=ja:ia()_.Color3=l l=ja:cd()_.Color3uint8=l l=nil _.ColorSequence=l l=ja:V{ga}_.ColorSequenceKeypoint=l l=ja:Tc{ga}_.Content=l l=ja:db{ga}_.ContentId=l l=ja:Vc{ga}_.CoordinateFrame=l l=ja:dd()_.EnumItem=l l=ja:Wb{fa}_.Faces=l l=ja:zb{ga,Ja}_.Font=l l=nil _.NetAssetRef=l l=ja:ad{ga}_.NumberRange=l l=nil _.NumberSequence=l l=ja:gd{ga}_.NumberSequenceKeypoint=l l=ja:md{ga}_.PhysicalProperties=l l=ja:_b{a,g,ga}_.ProtectedString=l l=ja:hd{ga}_.Ray=l l=ja:Eb{ga}_.Rect=l l=ja:bd{ga}_.Region3=l l=ja:F{ga}_.Region3int16=l l=ja:Xc{ga,xa}_.SharedString=l l=ja:Yb{q,X}_.SecurityCapabilities=l l=ja:kb{ga}_.TweenInfo=l l=ja:Nc()_.UDim=l l=ja:Na()_.UDim2=l l=ja:ac()_.UniqueId=l l=ja:eb{ga}_.Vector2=l l=nil _.Vector2int16=l l=ja:Db{ga}_.Vector3=l l=nil _.Vector3int16=l l=ja:ub()_.bool=l l=nil _.double=l l=nil _.float=l l=nil _.int=l l=nil _.int64=l l=ja:Ya{a,g,ga}_.string=l ga[0b10][ga[1]]=_ _,l=ga[0b10][ga[1]]._makeSequence,ga[0b10][ga[1]].NumberSequenceKeypoint _=_(l)ga[0b10][ga[1]].NumberSequence=_ l,_=ga[0b10][ga[1]].ColorSequenceKeypoint,ga[0b10][ga[1]]._makeSequence _=_(l)ga[0b10][ga[1]].ColorSequence=_ La,Aa="SharedString",{}Aa.NetAssetRef=La La="Vector2"Aa.Vector2int16=La La="Vector3"Aa.Vector3int16=La La="_normalizeNumber"Aa.double=La Aa.float=La Aa.int=La Aa.int64=La l,_,D=nil,Aa,nil _,l,D=ja.g(_,l,D)Aa,La=_(l,D)D=Aa U=D==nil and 0b11000100 or 0xab end else _,ga="&amp;",{}ga["&"]=_ _="&lt;"ga["<"]=_ _="&gt;"ga[">"]=_ _="&#34;"ga["\""]=_ _="&#39;"ga["'"]=_ _=""ga["\0"]=_ a=ga a={[1]=0b11,[0b11]=a}a[0b10]=a _=string ga,l,_=_.gmatch,"(.)%-(.)","[&<>\"'\0\1-\t\v-\f\14-\31\127-\255]"ga,_,l=ga(_,l)ga,_,l=ja.g(ga,_,l)D,Aa=ga(_,l)l=D U=l==nil and 0b110011100-U or 0b10000111 end elseif U<=0b10101011 then if U>=0x97 then if U<0x9c then U=ra and 0b111100 or 0xc63/U elseif U>0x9c then U,_a=0b101000111-U,ga[0b10][ga[1]][La]ga[0b10][ga[1]][Aa]=_a else Aa,La=_(l,D)D=Aa U=D==nil and 0b11000100 or 0xab end elseif U>0b10000111 then l,D=a(ga,_)_=l U=_==nil and 0b101101010-U or U+-0b1111110 elseif U>0x84 then x=string v,x=x.byte,D v=v(x)x,La=string,v v,x=x.byte,Aa v=v(x)d,_a=1,v U=(_a~=_a or(d>0 and La>_a or(d<=0 or d~=d)and La<_a))and 0b10110111 or 0x154-U else C,va=string,tonumber C,ka,ua=c[0b10][c[1]],C.match,"%d+%.(%d+)"ka=ja.h(ka(C,ua))va=va(ja.i(ka))U=va and U+-0b1100 or 0b11011010 end elseif U<=0xb9 then if U<0b10110111 then U,w=U+-0b1100011,getexecutorname elseif U<=0xb7 then D,Aa=ga(_,l)l=D U=l==nil and 0b11000111 or 0x13e-U else U,w=U+-0x38,whatexecutor end else U,f=U+0b101111,_G end end end end,function(d,_)return function(g)local e,f f,e=g.X,_[1][0b10][_[1][1]]f=f.Offset e=e(f)return e end end,function(d,_)return function(g)local j,h,b,f,i f=buffer j,h,f=f.tostring,buffer,_[1][0b10][_[1][1]]i,h=h.fromstring,g i=d.h(i(h))b,f=f,f.Base64Decode f=d.h(f(b,d.i(i)))j=d.h(j(d.i(f)))return d.i(j)end end,function(d,_)return function(g)local f,b,e b,e,f=g,_[1][0b10][_[1][1]],g.GetPreTransforms f=d.h(f(b))e=d.h(e(d.i(f)))return d.i(e)end end,function(a,...)return a:k()(...)end,function(d,_)return function(g)local k,a,h,i,l,e,c,f c=0b11110110 repeat if c>=0x96 then if c<0b10111111 then f=not k c=f and 0b101010101-c or 0b111101 elseif c>0b10111111 then k=g.Parent c=k and 0b1110111 or 0x96 else f=_[1][0b10][_[1][1]]return f end elseif c<=0x3d then h,e=k,Enum a=e.BodyPartR15 l,a,i=g.GetAccessoryHandleScale,a.Head,g l=l(i,h,a)f=l.X return f else l,c,k="Head",0b10010110,g.Parent k,f=k.FindFirstChild,k k=k(f,l)end until false end end,(function()local q,i,s=type,getmetatable,pairs return function(u,v,w)if q(u)~="function"then local p=i(u)if p~=nil and p.__iter~=nil then return p.__iter(u)elseif(p and p.__call)==nil and q(u)=="table"then return s(u)end end return u,v,w end end)(),function(d,_)return function(g)local f,b,e,c c=0x26 repeat if c>0xaa then f,b=_[1][0b10][_[1][1]],g f=d.h(f(b))return d.i(f)elseif c<=0b100110 then f,e=g,typeof e=e(f)f="table"c=e==f and 0xc2 or 0b10101010 else return e end until false end end,function(d)return function(g,k,f)local i,b,h,a,e i=string h,a,b,i,e=k,f,i.find,g,true b=d.h(b(i,h,a,e))return d.i(b)end end,function(d,_)return function(g)local i,f,e,b f=buffer f,e,i=_[1][0b10][_[1][1]],f.tostring,buffer i,b=g,i.fromstring b=d.h(b(i))f=d.h(f(d.i(b)))e=d.h(e(d.i(f)))return d.i(e)end end,function(d,_)return function(g)local f,e,b b,f,e=_[1][0b10][_[1][1]],g,_[0b10][0b10][_[0b10][1]]e=d.h(e(f,b))return d.i(e)end end,function(r,o)return function(g,t,f)local u,h,l,b,a,e,j,m,n,d,s,c,i,k,_,v c=0b1010011 repeat if c>=0b10011101 then if c<0xd7 then return elseif c>0xd7 then j=j+_ c=(_>0 and j>n or _<=0 and j<n or _~=_)and 0x64 or c+-0x27 else d,k,h,m=b,o[0b11][0b10][o[0b11][1]],i,o[1][0b10][o[1][1]]u,k=k[j],v u=r.h(u(k))c=c+0x27 m(h,d,r.i(u))m=0b100 b=b+m end elseif c<0b1100100 then e,a=o[0b10][0b10][o[0b10][1]],0b100 s=a*e s,l,i=s*f,g.allocRegion,g l=l(i,s)s,i,a=1,g.buf,f e=s c=(a~=a or(e>0 and s>a or(e<=0 or e~=e)and s<a))and 0x9d or 0b1101111 elseif c>0b1100100 then v,m=t[s],1 _,m=s-m,0b100 n,_=_*m,o[0b10][0b10][o[0b10][1]]j=n*_ n,b,j=_,l+j,1 _=j c=(n~=n or(_>0 and j>n or(_<=0 or _~=_)and j<n))and 0x64 or 0xd7 else s=s+e c=(e>0 and s>a or e<=0 and s<a or e~=e)and c+0b111001 or 0x6f end until false end end,function(d)return function(g)local i,j,b,h,f f=math j,f=f.floor,4294967296 f=g/f j=j(f)f,h=j,4294967296 i=j*h b=g-i return f,b end end}):cg({"g","Vb","mc","ve","Kf","Pb","Vd","u","Qb","pc","Ca","kb","Pc","Le","Xc","T","Ud","qe","Pd","q","wg","Aa","jd","_b","rf","Ka","Dd","W","m","Kb","Pa","Mc","we","vf","Oe","Bd","ce","fc","_f","Ab","Sd","gf","Fa","Nc","Ae","na","n","bg","Wc","Ta","Oc","xb","Yf","Ce","Re","xe","Df","Rd","he","ke","k","Ne","Rc","V","Uf","tc","Me","va","Be","La","Fe","Kd","Fd","nd","ya","ye","Va","Sb","Ga","Db","gd","lc","wd","if_","De","Ee","gc","qc","p","yc","Je","xf","be","qa","Ra","ee","fb","yf","Ob","tb","ge","Sa","M","K","Ge","Gc","fa","kd","pe","ja","fd","kf","Vc","Eb","wc","bc","Jd","Cc","v","Hb","gb","N","ub","ia","ib","ab","rd","hc","da","df","Lc","Id","y","vb","fe","Pe","nb","ma","qd","Tc","of","Bf","Ff","ba","ue","hb","wa","Wf","R","xd","Of","Pf","Yb","bd","aa","E","Nd","dc","S","ha","ec","mb","Vf","Ed","Xa","H","ed","qb","_d","Fc","Se","_a","Gb","cd","Ac","Ea","We","id","bf","Ja","s","_g","Ke","o","Lf","Md","sc","He","zf","sa","hd","Xb","Af","Yd","Nf","ff","le","Lb","xa","af","ef","eb","cf","kc","oe","Ec","Qa","Te","hf","Nb","Qf","ac","_e","l","Ub","Uc","Jf","zc","Xf","wb","Cd","Ma","Ib","rc","ld","Sf","Ad","Ia","Jb","Hc","ie","oc","Rf","Ef","wf","Tf","Bb","Qd","lf","C","yb","ob","pa","Ve","Fb","lb","yd","w","ae","D","Ye","nc","ze","xc","me","bb","Hd","_c","Qe","Q","Gd","Xe","vc","U","oa","r","zb","ua","Yc","ad","se","Da","Wb","jb","Ic","uc","ic","Cb","x","Y","mf","A","zd","vd","nf","Ba","Mf","Wd","B","Qc","ag","td","de","jf","pd","X","te","sd","qf","z","F","Dc","J","Ya","cb","Xd","Rb","za","sb","Gf","ud","sf","Hf","G","cc","Mb","Tb","jc","ea","pf","tf","md","Oa","Jc","Td","re","ra","je","Cf","uf","ka","j","la","Ha","ne","rb","Ld","od","Sc","Ua","Kc","db","pb","t","I","Od","O","L","If","ga","Ie","Bc","Wa","ca","Na","Ue","dd","ta","P"},"wg",...)
+local function string_find(s, pattern, init)
+	return string.find(s, pattern, init, true)
+end
+
+local function arrayToDict(t, mixedMode, valueOverride, typeStrict)
+	local tmp = {}
+
+	if mixedMode then
+		for any1, any2 in t do
+			if type(any1) == "number" then
+				tmp[any2] = valueOverride or true
+			elseif type(any2) == "table" then
+				tmp[any1] = arrayToDict(any2, mixedMode)
+			else
+				tmp[any1] = any2
+			end
+		end
+	else
+		for _, key in t do
+			if not typeStrict or typeStrict and type(key) == typeStrict then
+				tmp[key] = true
+			end
+		end
+	end
+
+	return tmp
+end
+
+local GLOBAL_ENV = getgenv and getgenv() or _G or shared
+
+local service = setmetatable({}, {
+	__index = function(self, serviceName)
+		local o, s = pcall(Instance.new, serviceName)
+		local Service = o and s
+			or game:GetService(serviceName)
+			or settings():GetService(serviceName)
+			or UserSettings():GetService(serviceName)
+
+		if Service then
+			self[serviceName] = Service
+		end
+		return Service
+	end,
+})
+
+local StreamBuffer
+do
+	local filename = "StreamBuffer"
+
+	StreamBuffer = loadstring(
+		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+		filename
+	)()
+end
+
+local global_container
+do
+	local filename = "UniversalMethodFinder"
+
+	local finder
+	finder, global_container = loadstring(
+		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+		filename
+	)()
+
+	finder({
+		base64encode = 'local a={...}local b=a[1]local function c(a,b)return string.find(a,b,nil,true)end;return c(b,"encode")and(c(b,"base64")or c(string.lower(tostring(a[2])),"base64"))',
+		base64decode = 'local a={...}local b=a[1]local function c(a,b)return string.find(a,b,nil,true)end;return c(b,"decode")and(c(b,"base64")or c(string.lower(tostring(a[2])),"base64"))',
+		gethiddenproperty = 'string.find(...,"get",nil,true) and string.find(...,"h",nil,true) and string.find(...,"prop",nil,true) and string.sub(...,#...) ~= "s"',
+		gethui = 'string.find(...,"get",nil,true) and string.find(...,"h",nil,true) and string.find(...,"ui",nil,true)',
+		getnilinstances = 'string.find(...,"nil",nil,true) and string.find(...,"get",nil,true) and string.sub(...,#...) == "s"',
+		getscriptbytecode = 'string.find(...,"get",nil,true) and string.find(...,"script",nil,true) and string.find(...,"bytecode",nil,true)',
+		protectgui = 'string.find(...,"protect",nil,true) and string.find(...,"ui",nil,true) and not string.find(...,"un",nil,true)',
+		setrbxclipboard = 'string.find(...,"set",nil,true) and string.find(...,"rbx",nil,true) and string.find(...,"clipboard",nil,true)',
+	}, true, 10)
+end
+
+local identify_executor = identifyexecutor or getexecutorname or whatexecutor
+
+local EXECUTOR_NAME = identify_executor and identify_executor() or ""
+
+local setrbxclipboard = global_container.setrbxclipboard
+
+local gethiddenproperty = global_container.gethiddenproperty
+local gethiddenproperty_fallback
+
+local lz4compress = lz4compress
+local zstdcompress = zstdcompress
+local appendfile = appendfile
+local isfile = isfile
+local readfile = readfile
+local writefile = writefile
+
+local getscriptbytecode = global_container.getscriptbytecode
+local base64encode = global_container.base64encode
+local base64decode = global_container.base64decode
+
+local sharedStringId = 1e15
+local sharedStrings = setmetatable({}, {
+	__index = function(self, str)
+		local id = base64encode(tostring(sharedStringId))
+		sharedStringId += 1
+
+		self[str] = id
+		return id
+	end,
+})
+
+local inheritedProperties = {}
+local defaultInstances = {}
+
+local function index(self, index_name)
+	return self[index_name]
+end
+
+local cachedPlaceName = GLOBAL_ENV.USSI_placeName
+
+local FULL_VERSION
+
+if not pcall(function()
+	FULL_VERSION = version()
+end) then
+	if not pcall(function()
+		FULL_VERSION = settings():GetService("DebugSettings").RobloxVersion
+	end) then
+		if not pcall(function()
+			FULL_VERSION = service.RunService:GetRobloxVersion()
+		end) then
+			FULL_VERSION = "UNKNOWN"
+		end
+	end
+end
+
+local CLIENT_VERSION = tonumber(string.match(FULL_VERSION, "%d+%.(%d+)")) or 9e9
+local __BREAK = "__BREAK" .. service.HttpService:GenerateGUID(false)
+local USSI_FOLDER = "ussi_cache/"
+
+pcall(function()
+	makefolder(USSI_FOLDER)
+end)
+
+local REFLECTION_FILTER = {
+	Security = SecurityCapabilities.new(unpack(Enum.SecurityCapability:GetEnumItems())),
+	ExcludeDisplay = true,
+	ExcludeInherited = true,
+}
+
+local Type_Ids = {
+	["string"] = 1,
+	["bool"] = 2,
+	["int"] = 3,
+	["float"] = 4,
+	["double"] = 5,
+	["UDim"] = 6,
+	["UDim2"] = 7,
+	["Ray"] = 8,
+	["Faces"] = 9,
+	["Axes"] = 10,
+	["BrickColor"] = 11,
+	["Color3"] = 12,
+	["Vector2"] = 13,
+	["Vector3"] = 14,
+	["Vector2int16"] = 15,
+	["CFrame"] = 16,
+	["Enum"] = 18,
+	["Referent"] = 19,
+	["Vector3int16"] = 20,
+	["NumberSequence"] = 21,
+	["ColorSequence"] = 22,
+	["NumberRange"] = 23,
+	["Rect"] = 24,
+	["PhysicalProperties"] = 25,
+	["Color3uint8"] = 26,
+	["int64"] = 27,
+	["SharedString"] = 28,
+	["OptionalCoordinateFrame"] = 30,
+	["UniqueId"] = 31,
+	["Font"] = 32,
+	["SecurityCapabilities"] = 33,
+	["Content"] = 34,
+}
+
+local Attribute_Type_Ids =
+	{
+		["nil"] = 0x01,
+		string = 0x02,
+		boolean = 0x03,
+		int32 = 0x04,
+		number = 0x06,
+		ValueArray = 0x07,
+		ValueTable = 0x08,
+		UDim = 0x09,
+		UDim2 = 0x0A,
+		Ray = 0x0B,
+		Faces = 0x0C,
+		Axes = 0x0D,
+		BrickColor = 0x0E,
+		Color3 = 0x0F,
+		Vector2 = 0x10,
+		Vector3 = 0x11,
+		Vector2int16 = 0x12,
+		Vector3int16 = 0x13,
+		CFrame = 0x14,
+		EnumItem = 0x15,
+		NumberSequence = 0x17,
+		NumberSequenceKeypoint = 0x18,
+		ColorSequence = 0x19,
+		ColorSequenceKeypoint = 0x1A,
+		NumberRange = 0x1B,
+		Rect = 0x1C,
+		PhysicalProperties = 0x1D,
+		Color3uint8 = 0x1E,
+		Region3 = 0x1F,
+		Region3int16 = 0x20,
+		Font = 0x21,
+		SecurityCapabilities = 0x22,
+		Path2DControlPoint = 0x23,
+		TweenInfo = 0x24,
+	}
+
+local CFrame_Rotation_Ids = {
+	["\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63"] = 0x02,
+	["\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\63\0\0\0\0"] = 0x03,
+	["\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"] = 0x05,
+	["\0\0\128\63\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\191\0\0\0\0"] = 0x06,
+	["\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"] = 0x07,
+	["\0\0\0\0\0\0\0\0\0\0\128\63\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0"] = 0x09,
+	["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\63"] = 0x0a,
+	["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0"] = 0x0c,
+	["\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\128\63\0\0\0\0\0\0\0\0"] = 0x0d,
+	["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0"] = 0x0e,
+	["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\63\0\0\0\0\0\0\0\0"] = 0x10,
+	["\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\128"] = 0x11,
+	["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191"] = 0x14,
+	["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\63\0\0\0\128"] = 0x15,
+	["\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63"] = 0x17,
+	["\0\0\128\191\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\191\0\0\0\128"] = 0x18,
+	["\0\0\0\0\0\0\128\63\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63"] = 0x19,
+	["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0"] = 0x1b,
+	["\0\0\0\0\0\0\128\191\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\128\0\0\0\0\0\0\0\0\0\0\128\191"] = 0x1c,
+	["\0\0\0\0\0\0\0\0\0\0\128\63\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0"] = 0x1e,
+	["\0\0\0\0\0\0\128\63\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\191\0\0\128\191\0\0\0\0\0\0\0\0"] = 0x1f,
+	["\0\0\0\0\0\0\0\0\0\0\128\63\0\0\0\0\0\0\128\63\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\0"] = 0x20,
+	["\0\0\0\0\0\0\128\191\0\0\0\0\0\0\0\0\0\0\0\0\0\0\128\63\0\0\128\191\0\0\0\0\0\0\0\0"] = 0x22,
+	["\0\0\0\0\0\0\0\0\0\0\128\191\0\0\0\0\0\0\128\191\0\0\0\128\0\0\128\191\0\0\0\0\0\0\0\128"] = 0x23,
+}
+local rotationBuffer = buffer.create(36)
+local bf32_rotation = buffer.writef32
+
+local function rawBasisString(r00, r01, r02, r10, r11, r12, r20, r21, r22)
+	bf32_rotation(rotationBuffer, 0, r00)
+	bf32_rotation(rotationBuffer, 4, r01)
+	bf32_rotation(rotationBuffer, 8, r02)
+	bf32_rotation(rotationBuffer, 12, r10)
+	bf32_rotation(rotationBuffer, 16, r11)
+	bf32_rotation(rotationBuffer, 20, r12)
+	bf32_rotation(rotationBuffer, 24, r20)
+	bf32_rotation(rotationBuffer, 28, r21)
+	bf32_rotation(rotationBuffer, 32, r22)
+	return buffer.tostring(rotationBuffer)
+end
+
+local EMPTY_BUFFER = buffer.create(0)
+local BASE_CAPABILITIES
+pcall(function()
+	BASE_CAPABILITIES = SecurityCapabilities.new()
+end)
+local CAPABILITY_BITS = {
+	Plugin = 0,
+	LocalUser = 1,
+	WritePlayer = 2,
+	RobloxScript = 3,
+	RobloxEngine = 4,
+	NotAccessible = 5,
+	RunClientScript = 8,
+	RunServerScript = 9,
+	AccessOutsideWrite = 11,
+	Unassigned = 15,
+	LoadUnownedAsset = 16,
+	LoadString = 17,
+	ScriptGlobals = 18,
+	CreateInstances = 19,
+	Basic = 20,
+	Audio = 21,
+	DataStore = 22,
+	Network = 23,
+	Physics = 24,
+	UI = 25,
+	CSG = 26,
+	Chat = 27,
+	Animation = 28,
+	AvatarAppearance = 29,
+	Input = 30,
+	Environment = 31,
+	RemoteEvent = 32,
+	LegacySound = 33,
+	Players = 34,
+	CapabilityControl = 35,
+	AssetRead = 36,
+	AssetManagement = 37,
+	DynamicGeneration = 38,
+	PlatformAvatarEditing = 39,
+	AssetCreateUpdate = 40,
+	Capture = 41,
+	SensitiveInput = 42,
+	Monetization = 43,
+	LoadOwnedAsset = 44,
+	Social = 45,
+	ServerCommunication = 46,
+	Logging = 47,
+	PromptExternalPurchase = 48,
+	Groups = 49,
+	Teleport = 50,
+	Consequences = 51,
+	Material = 52,
+	AvatarBehavior = 53,
+	RemoteCommand = 59,
+	InternalTest = 60,
+	PluginOrOpenCloud = 61,
+	Assistant = 62,
+	Restricted = 63,
+}
+
+local function capabilityHalves(raw)
+	local rawString = tostring(raw)
+	if rawString == "" then
+		return 0, 0
+	end
+
+	local lo, hi = 0, 0
+	for _, flag in string.split(rawString, " | ") do
+		local b = CAPABILITY_BITS[flag]
+		if b then
+			if b < 32 then
+				lo = bit32.bor(lo, bit32.lshift(1, b))
+			else
+				hi = bit32.bor(hi, bit32.lshift(1, b - 32))
+			end
+		end
+	end
+	return lo, hi
+end
+
+local function capabilityNumber(raw)
+	local lo, hi = capabilityHalves(raw)
+	return hi * 0x100000000 + lo
+end
+
+local function countBits(...)
+	local Value = 0
+
+	for i, bit in { ... } do
+		if bit then
+			Value += 2 ^ (i - 1)
+		end
+	end
+
+	return Value
+end
+
+local function cframeToQuaternion(cframe)
+	local _, _, _, R00, R01, R02, R10, R11, R12, R20, R21, R22 = cframe:GetComponents()
+	local trace = R00 + R11 + R22
+	local S, qW, qX, qY, qZ
+	if trace > 0 then
+		S = math.sqrt(1 + trace) * 2
+		qW = 0.25 * S
+		qX = (R21 - R12) / S
+		qY = (R02 - R20) / S
+		qZ = (R10 - R01) / S
+	elseif (R00 > R11) and (R00 > R22) then
+		S = math.sqrt(1 + R00 - R11 - R22) * 2
+		qW = (R21 - R12) / S
+		qX = 0.25 * S
+		qY = (R01 + R10) / S
+		qZ = (R02 + R20) / S
+	elseif R11 > R22 then
+		S = math.sqrt(1 + R11 - R00 - R22) * 2
+		qW = (R02 - R20) / S
+		qX = (R01 + R10) / S
+		qY = 0.25 * S
+		qZ = (R12 + R21) / S
+	else
+		S = math.sqrt(1 + R22 - R00 - R11) * 2
+		qW = (R10 - R01) / S
+		qX = (R02 + R20) / S
+		qY = (R12 + R21) / S
+		qZ = 0.25 * S
+	end
+
+	if qW < 0 then
+		qW, qX, qY, qZ = -qW, -qX, -qY, -qZ
+	end
+	return qX, qY, qZ, qW
+end
+
+local function classifyTable(t)
+	local len = #t
+	if len == 0 then
+		len = nil
+	end
+	if next(t, len) == nil then
+		return "ValueArray"
+	else
+		return "ValueTable"
+	end
+end
+
+local function resolveTypeName(value)
+	local t = typeof(value)
+	if t == "table" then
+		return classifyTable(value)
+	end
+	return t
+end
+
+local scratch = buffer.create(8)
+
+local bf32, ru32 = buffer.writef32, buffer.readu32
+local lr32 = bit32.lrotate
+
+local function rotf(v)
+	bf32(scratch, 0, v)
+	return lr32(ru32(scratch, 0), 1)
+end
+
+local function zigzag32(v)
+	return (v < 0) and (2 * -v - 1) or (2 * v)
+end
+
+local function splitU64(v)
+	local hi = math.floor(v / 4294967296)
+	return hi, v - hi * 4294967296
+end
+
+local function zigzag64(v)
+	local neg = v < 0
+	local hi, lo = splitU64(neg and -v or v)
+
+	local carry = bit32.extract(lo, 31)
+	lo = bit32.lshift(lo, 1)
+	hi = bit32.bor(bit32.lshift(hi, 1), carry)
+
+	if neg then
+		if lo == 0 then
+			lo, hi = 0xFFFFFFFF, hi - 1
+		else
+			lo -= 1
+		end
+	end
+	return hi, lo
+end
+
+local function zigzagHalves(hi, lo)
+	local sign = bit32.extract(hi, 31)
+	local shi = bit32.bor(bit32.lshift(hi, 1), bit32.extract(lo, 31))
+	local slo = bit32.lshift(lo, 1)
+	if sign == 1 then
+		shi, slo = bit32.bnot(shi), bit32.bnot(slo)
+	end
+	return shi, slo
+end
+
+local function u32FromHex(hex, at)
+	return tonumber(string.sub(hex, at, at + 7), 16)
+end
+
+local function pokeU32Planes(sbuf, o, n, v)
+	local buf = sbuf.buf
+	local wu8 = buffer.writeu8
+	local rshift = bit32.rshift
+	wu8(buf, o, rshift(v, 24))
+	wu8(buf, o + n, rshift(v, 16))
+	wu8(buf, o + 2 * n, rshift(v, 8))
+	wu8(buf, o + 3 * n, v)
+end
+
+local function pokeU64Planes(sbuf, o, n, hi, lo)
+	pokeU32Planes(sbuf, o, n, hi)
+	pokeU32Planes(sbuf, o + 4 * n, n, lo)
+end
+
+local function interleavedU32Plane(sbuf, n, base, getU32ForIndex)
+	local buf = sbuf.buf
+	local rshift = bit32.rshift
+	local wu8 = buffer.writeu8
+	for i = 1, n do
+		local v = getU32ForIndex(i)
+		local o = base + (i - 1)
+		wu8(buf, o, rshift(v, 24))
+		wu8(buf, o + n, rshift(v, 16))
+		wu8(buf, o + 2 * n, rshift(v, 8))
+		wu8(buf, o + 3 * n, v)
+	end
+end
+
+local function writeRefPlane(sbuf, n, base, getRef)
+	local buf = sbuf.buf
+	local rshift = bit32.rshift
+	local wu8 = buffer.writeu8
+	local lastRef = nil
+	for i = 1, n do
+		local ref = getRef(i)
+		local acc = lastRef and (ref - lastRef) or ref
+		lastRef = ref
+		local v = zigzag32(acc)
+		local o = base + (i - 1)
+		wu8(buf, o, rshift(v, 24))
+		wu8(buf, o + n, rshift(v, 16))
+		wu8(buf, o + 2 * n, rshift(v, 8))
+		wu8(buf, o + 3 * n, v)
+	end
+end
+
+local function planeEncoder(...)
+	local getters = { ... }
+	local k = #getters
+	local rshift = bit32.rshift
+	local wu8 = buffer.writeu8
+	return function(sbuf, vals, n)
+		local base = sbuf:allocRegion(4 * k * n)
+		local buf = sbuf.buf
+		local stride = 4 * n
+		for p = 1, k do
+			local getter = getters[p]
+			local pbase = base + (p - 1) * stride
+			for i = 1, n do
+				local v = getter(vals[i])
+				local o = pbase + (i - 1)
+				wu8(buf, o, rshift(v, 24))
+				wu8(buf, o + n, rshift(v, 16))
+				wu8(buf, o + 2 * n, rshift(v, 8))
+				wu8(buf, o + 3 * n, v)
+			end
+		end
+	end
+end
+
+local function f32Encoder(...)
+	local paths = { ... }
+	local k = #paths
+	local wf32 = buffer.writef32
+	return function(sbuf, vals, n)
+		local base = sbuf:allocRegion(4 * k * n)
+		local buf = sbuf.buf
+		for i = 1, n do
+			local v = vals[i]
+			local o = base + (i - 1) * 4 * k
+			for p = 1, k do
+				wf32(buf, o, paths[p](v))
+				o += 4
+			end
+		end
+	end
+end
+
+local function i16Encoder(...)
+	local comps = { ... }
+	local k = #comps
+	local wi16 = buffer.writei16
+	return function(sbuf, vals, n)
+		local base = sbuf:allocRegion(2 * k * n)
+		local buf = sbuf.buf
+		for i = 1, n do
+			local v = vals[i]
+			local o = base + (i - 1) * 2 * k
+			for p = 1, k do
+				wi16(buf, o, v[comps[p]])
+				o += 2
+			end
+		end
+	end
+end
+
+local function flagEncoder(bits)
+	return function(sbuf, vals, n)
+		local base = sbuf:allocRegion(n)
+		local buf = sbuf.buf
+		local wu8 = buffer.writeu8
+		for i = 1, n do
+			local v = vals[i]
+			local packed = 0
+			for name, b in bits do
+				if v[name] then
+					packed += b
+				end
+			end
+			wu8(buf, base + (i - 1), packed)
+		end
+	end
+end
+
+local function writeCFrameBody(sbuf, vals, n, optional)
+	local coordsX, coordsY, coordsZ = table.create(n), table.create(n), table.create(n)
+	local wu8, wstr = sbuf.writeu8, sbuf.writestring
+	local identity = CFrame.identity
+
+	for i = 1, n do
+		local val = vals[i]
+
+		if optional then
+			if val == nil then
+				val = identity
+			end
+		end
+
+		local x, y, z, r00, r01, r02, r10, r11, r12, r20, r21, r22 = val:GetComponents()
+		coordsX[i], coordsY[i], coordsZ[i] = x, y, z
+
+		local rotStr = rawBasisString(r00, r01, r02, r10, r11, r12, r20, r21, r22)
+		local id = CFrame_Rotation_Ids[rotStr]
+		if id then
+			wu8(sbuf, id)
+		else
+			wu8(sbuf, 0)
+			wstr(sbuf, rotStr)
+		end
+	end
+
+	local posBase = sbuf:allocRegion(12 * n)
+	local planes = { coordsX, coordsY, coordsZ }
+	local cbuf = sbuf.buf
+	local lr, rshift = bit32.lrotate, bit32.rshift
+	local bf32, ru32, bwu8 = buffer.writef32, buffer.readu32, buffer.writeu8
+	for p = 1, 3 do
+		local coords = planes[p]
+		local pbase = posBase + (p - 1) * 4 * n
+		for i = 1, n do
+			bf32(scratch, 0, coords[i])
+			local v = lr(ru32(scratch, 0), 1)
+			local o = pbase + (i - 1)
+			bwu8(cbuf, o, rshift(v, 24))
+			bwu8(cbuf, o + n, rshift(v, 16))
+			bwu8(cbuf, o + 2 * n, rshift(v, 8))
+			bwu8(cbuf, o + 3 * n, v)
+		end
+	end
+end
+local Attribute_Encoders
+Attribute_Encoders = {
+	_packMultiple = function(encoder, value1, value2, value3)
+		local buf1, size1 = encoder(value1)
+		local buf2, size2 = encoder(value2)
+
+		local len = size1 + size2
+		local buf3, size3
+
+		if value3 ~= nil then
+			buf3, size3 = encoder(value3)
+			len += size3
+		end
+
+		local b = buffer.create(len)
+
+		buffer.copy(b, 0, buf1)
+		buffer.copy(b, size1, buf2)
+
+		if value3 ~= nil then
+			buffer.copy(b, size1 + size2, buf3)
+		end
+
+		return b, len
+	end,
+	_makeSequence = function(keypoint_handler, keypointSize)
+		return function(raw)
+			local keypoints = raw.Keypoints
+			local n = #keypoints
+
+			local len = 4 + keypointSize * n
+			local b = buffer.create(len)
+
+			buffer.writeu32(b, 0, n)
+
+			local offset = 4
+			for _, keypoint in keypoints do
+				keypoint_handler(keypoint, b, offset)
+				offset += keypointSize
+			end
+
+			return b, len
+		end
+	end,
+	_writeI64LE = function(b, offset, raw)
+		local low = bit32.band(raw, 0xFFFFFFFF)
+		local high = (raw - low) / 0x100000000
+
+		buffer.writei32(b, offset, low)
+		buffer.writei32(b, offset + 4, high)
+	end,
+	_packF32 = nil,
+	_packI16 = nil,
+	_makeVectorPacker = function(writeFunc, elementSize)
+		return function(X, Y, Z)
+			local len = Z and (elementSize * 3) or (elementSize * 2)
+			local b = buffer.create(len)
+
+			writeFunc(b, 0, X)
+			writeFunc(b, elementSize, Y)
+			if Z then
+				writeFunc(b, elementSize * 2, Z)
+			end
+
+			return b, len
+		end
+	end,
+	["nil"] = function(raw)
+		return EMPTY_BUFFER, 0
+	end,
+	["string"] = function(raw)
+		local raw_len = #raw
+		local len = 4 + raw_len
+
+		local b = buffer.create(len)
+
+		buffer.writeu32(b, 0, raw_len)
+		buffer.writestring(b, 4, raw)
+
+		return b, len
+	end,
+	["boolean"] = function(raw)
+		local b = buffer.create(1)
+
+		buffer.writeu8(b, 0, raw and 1 or 0)
+
+		return b, 1
+	end,
+	["number"] = function(raw)
+		local b = buffer.create(8)
+
+		buffer.writef64(b, 0, raw)
+
+		return b, 8
+	end,
+	["ValueArray"] = function(raw)
+		local n = 0
+		for k in raw do
+			if type(k) == "number" and k > n and k == math.floor(k) and k >= 1 then
+				n = k
+			end
+		end
+
+		local bufs = table.create(n)
+		local len = 4
+		local count = 0
+
+		for i = 1, n do
+			local value = raw[i]
+			local b, size
+
+			if value == nil then
+				b = buffer.create(1)
+				buffer.writeu8(b, 0, 0x01)
+				size = 1
+			else
+				local valueTypeName = resolveTypeName(value)
+				local typeId = Attribute_Type_Ids[valueTypeName]
+				local descriptor = Attribute_Encoders[valueTypeName]
+				if not descriptor then
+					continue
+				end
+				local dataBuf, dataSize = descriptor(value)
+
+				b = buffer.create(1 + dataSize)
+				buffer.writeu8(b, 0, typeId)
+				buffer.copy(b, 1, dataBuf)
+				size = 1 + dataSize
+			end
+
+			count += 1
+			bufs[count] = b
+			len += size
+		end
+
+		local b = buffer.create(len)
+		buffer.writeu32(b, 0, count)
+
+		local offset = 4
+		for i = 1, count do
+			local bb = bufs[i]
+			buffer.copy(b, offset, bb)
+			offset += buffer.len(bb)
+		end
+
+		return b, len
+	end,
+	["ValueTable"] = function(raw)
+		local keys = {}
+		local keyMap = {}
+		local n = 0
+
+		for k in raw do
+			n += 1
+			local keyStr = tostring(k)
+			keys[n] = keyStr
+			keyMap[keyStr] = k
+		end
+
+		table.sort(keys)
+
+		local bufs = table.create(n)
+		local len = 4
+		local count = 0
+
+		for i = 1, n do
+			local keyStr = keys[i]
+			local value = raw[keyMap[keyStr]]
+
+			local valueTypeName = resolveTypeName(value)
+			local typeId = Attribute_Type_Ids[valueTypeName]
+			local descriptor = Attribute_Encoders[valueTypeName]
+			if not descriptor then
+				continue
+			end
+			local dataBuf, dataSize = descriptor(value)
+
+			local keyLen = #keyStr
+			local size = 4 + keyLen + 1 + dataSize
+			local b = buffer.create(size)
+
+			buffer.writeu32(b, 0, keyLen)
+			buffer.writestring(b, 4, keyStr)
+			buffer.writeu8(b, 4 + keyLen, typeId)
+			buffer.copy(b, 4 + keyLen + 1, dataBuf)
+
+			count += 1
+			bufs[count] = b
+			len += size
+		end
+
+		local b = buffer.create(len)
+		buffer.writeu32(b, 0, count)
+
+		local offset = 4
+		for i = 1, count do
+			local bb = bufs[i]
+			buffer.copy(b, offset, bb)
+			offset += buffer.len(bb)
+		end
+
+		return b, len
+	end,
+	["UDim"] = function(raw)
+		local b = buffer.create(8)
+
+		buffer.writef32(b, 0, raw.Scale)
+		buffer.writei32(b, 4, raw.Offset)
+
+		return b, 8
+	end,
+	["UDim2"] = function(raw)
+		return Attribute_Encoders._packMultiple(Attribute_Encoders["UDim"], raw.X, raw.Y)
+	end,
+	["Ray"] = function(raw)
+		return Attribute_Encoders._packMultiple(Attribute_Encoders["Vector3"], raw.Origin, raw.Direction)
+	end,
+	["Faces"] = function(raw)
+		local b = buffer.create(4)
+
+		buffer.writeu32(b, 0, countBits(raw.Right, raw.Top, raw.Back, raw.Left, raw.Bottom, raw.Front))
+
+		return b, 4
+	end,
+	["Axes"] = function(raw)
+		local b = buffer.create(4)
+
+		buffer.writeu32(b, 0, countBits(raw.X, raw.Y, raw.Z))
+
+		return b, 4
+	end,
+	["BrickColor"] = function(raw)
+		local b = buffer.create(4)
+
+		buffer.writeu32(b, 0, raw.Number)
+
+		return b, 4
+	end,
+	["Color3"] = function(raw)
+		return Attribute_Encoders._packF32(raw.R, raw.G, raw.B)
+	end,
+	["Vector2"] = function(raw)
+		return Attribute_Encoders._packF32(raw.X, raw.Y)
+	end,
+	["Vector3"] = function(raw)
+		return Attribute_Encoders._packF32(raw.X, raw.Y, raw.Z)
+	end,
+	["Vector2int16"] = function(raw)
+		return Attribute_Encoders._packI16(raw.X, raw.Y)
+	end,
+	["Vector3int16"] = function(raw)
+		return Attribute_Encoders._packI16(raw.X, raw.Y, raw.Z)
+	end,
+	["CFrame"] = function(raw)
+		local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = raw:GetComponents()
+
+		local rotation_ID = CFrame_Rotation_Ids[rawBasisString(R00, R01, R02, R10, R11, R12, R20, R21, R22)]
+
+		local len = rotation_ID and 13 or 49
+		local b = buffer.create(len)
+
+		local _packF32 = Attribute_Encoders._packF32
+		local position = _packF32(X, Y, Z)
+		buffer.copy(b, 0, position)
+
+		if rotation_ID then
+			buffer.writeu8(b, 12, rotation_ID)
+		else
+			buffer.writeu8(b, 12, 0x0)
+
+			local xBasis = _packF32(R00, R01, R02)
+			buffer.copy(b, 13, xBasis)
+			local yBasis = _packF32(R10, R11, R12)
+			buffer.copy(b, 13 + 12, yBasis)
+			local zBasis = _packF32(R20, R21, R22)
+			buffer.copy(b, 13 + 24, zBasis)
+		end
+
+		return b, len
+	end,
+	["EnumItem"] = function(raw)
+		local nameBuf, nameSize = Attribute_Encoders["string"](tostring(raw.EnumType))
+
+		local len = nameSize + 4
+		local b = buffer.create(len)
+
+		buffer.copy(b, 0, nameBuf)
+		buffer.writeu32(b, nameSize, raw.Value)
+
+		return b, len
+	end,
+	["NumberSequence"] = nil,
+	["NumberSequenceKeypoint"] = function(keypoint, b, offset)
+		if not b then
+			return Attribute_Encoders._packF32(keypoint.Envelope, keypoint.Time, keypoint.Value)
+		end
+
+		buffer.writef32(b, offset, keypoint.Envelope)
+		offset += 4
+		buffer.writef32(b, offset, keypoint.Time)
+		offset += 4
+		buffer.writef32(b, offset, keypoint.Value)
+	end,
+	["ColorSequence"] = nil,
+	["ColorSequenceKeypoint"] = function(keypoint, b, offset)
+		local value = Attribute_Encoders["Color3"](keypoint.Value)
+
+		if not b then
+			b = buffer.create(20)
+			offset = 0
+		end
+
+		buffer.writef32(b, offset, 0)
+		offset += 4
+		buffer.writef32(b, offset, keypoint.Time)
+		offset += 4
+		buffer.copy(b, offset, value)
+
+		return b, 20
+	end,
+	["NumberRange"] = function(raw)
+		return Attribute_Encoders._packF32(raw.Min, raw.Max)
+	end,
+	["Rect"] = function(raw)
+		return Attribute_Encoders._packMultiple(Attribute_Encoders["Vector2"], raw.Min, raw.Max)
+	end,
+	["PhysicalProperties"] = function(raw)
+		local b = buffer.create(25)
+
+		buffer.writeu8(b, 0, 1)
+
+		buffer.writef32(b, 1, raw.Density)
+		buffer.writef32(b, 5, raw.Friction)
+		buffer.writef32(b, 9, raw.Elasticity)
+		buffer.writef32(b, 13, raw.FrictionWeight)
+		buffer.writef32(b, 17, raw.ElasticityWeight)
+		buffer.writef32(b, 21, raw.AcousticAbsorption)
+
+		return b, 25
+	end,
+	["Color3uint8"] = function(raw)
+		local b = buffer.create(3)
+
+		buffer.writeu8(b, 0, math.floor(raw.R * 255))
+		buffer.writeu8(b, 1, math.floor(raw.G * 255))
+		buffer.writeu8(b, 2, math.floor(raw.B * 255))
+
+		return b, 3
+	end,
+	["Region3"] = function(raw)
+		local Translation = raw.CFrame.Position
+		local HalfSize = raw.Size * 0.5
+
+		return Attribute_Encoders._packMultiple(
+			Attribute_Encoders["Vector3"],
+			Translation - HalfSize,
+			Translation + HalfSize
+		)
+	end,
+	["Region3int16"] = function(raw)
+		return Attribute_Encoders._packMultiple(Attribute_Encoders["Vector3int16"], raw.Min, raw.Max)
+	end,
+	["Font"] = function(raw)
+		local encoder = Attribute_Encoders["string"]
+
+		local familyBuf, familySize = encoder(raw.Family)
+		local faceIdBuf, faceIdSize = encoder("")
+
+		local len = 3 + familySize + faceIdSize
+		local b = buffer.create(len)
+
+		local hasWeight, weight = pcall(index, raw, "Weight")
+		local hasStyle, style = pcall(index, raw, "Style")
+
+		buffer.writeu16(b, 0, hasWeight and weight.Value or 0)
+		buffer.writeu8(b, 2, hasStyle and style.Value or 0)
+
+		buffer.copy(b, 3, familyBuf)
+		buffer.copy(b, 3 + familySize, faceIdBuf)
+
+		return b, len
+	end,
+	["SecurityCapabilities"] = function(raw)
+		local b = buffer.create(8)
+
+		if raw == BASE_CAPABILITIES then
+			return b, 8
+		end
+
+		Attribute_Encoders._writeI64LE(b, 0, capabilityNumber(raw))
+
+		return b, 8
+	end,
+	["Path2DControlPoint"] = function(raw)
+		return Attribute_Encoders._packMultiple(
+			Attribute_Encoders["UDim2"],
+			raw.Position,
+			raw.LeftTangent,
+			raw.RightTangent
+		)
+	end,
+	["TweenInfo"] = function(raw)
+		local b = buffer.create(21)
+
+		buffer.writef32(b, 0, raw.Time)
+		buffer.writef32(b, 4, raw.DelayTime)
+		buffer.writei32(b, 8, raw.RepeatCount)
+		buffer.writeu32(b, 12, raw.EasingStyle.Value)
+		buffer.writeu32(b, 16, raw.EasingDirection.Value)
+		buffer.writeu8(b, 20, raw.Reverses and 1 or 0)
+
+		return b, 21
+	end,
+}
+
+do
+	Attribute_Encoders["NumberSequence"] =
+		Attribute_Encoders._makeSequence(Attribute_Encoders["NumberSequenceKeypoint"], 12)
+
+	Attribute_Encoders["ColorSequence"] =
+		Attribute_Encoders._makeSequence(Attribute_Encoders["ColorSequenceKeypoint"], 20)
+end
+
+do
+	Attribute_Encoders._packF32 = Attribute_Encoders._makeVectorPacker(buffer.writef32, 4)
+
+	Attribute_Encoders._packI16 = Attribute_Encoders._makeVectorPacker(buffer.writei16, 2)
+end
+
+local Binary_Encoders = {
+	["string"] = function(sbuf, vals, n)
+		local total = 4 * n
+		for i = 1, n do
+			total += #vals[i]
+		end
+		local o = sbuf:allocRegion(total)
+		local buf = sbuf.buf
+		local wu32, wstr = buffer.writeu32, buffer.writestring
+		for i = 1, n do
+			local v = vals[i]
+			local l = #v
+			wu32(buf, o, l)
+			wstr(buf, o + 4, v)
+			o += 4 + l
+		end
+	end,
+	["bool"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(n)
+		local buf = sbuf.buf
+		local wu8 = buffer.writeu8
+		for i = 1, n do
+			if vals[i] then
+				wu8(buf, base + (i - 1), 1)
+			end
+		end
+	end,
+
+	["int"] = planeEncoder(zigzag32),
+	["float"] = planeEncoder(rotf),
+
+	["double"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(8 * n)
+		local buf = sbuf.buf
+		local wf64 = buffer.writef64
+		for i = 1, n do
+			wf64(buf, base + (i - 1) * 8, vals[i])
+		end
+	end,
+
+	["UDim"] = planeEncoder(function(v)
+		return rotf(v.Scale)
+	end, function(v)
+		return zigzag32(v.Offset)
+	end),
+
+	["UDim2"] = planeEncoder(function(v)
+		return rotf(v.X.Scale)
+	end, function(v)
+		return rotf(v.Y.Scale)
+	end, function(v)
+		return zigzag32(v.X.Offset)
+	end, function(v)
+		return zigzag32(v.Y.Offset)
+	end),
+
+	["Ray"] = f32Encoder(function(v)
+		return v.Origin.X
+	end, function(v)
+		return v.Origin.Y
+	end, function(v)
+		return v.Origin.Z
+	end, function(v)
+		return v.Direction.X
+	end, function(v)
+		return v.Direction.Y
+	end, function(v)
+		return v.Direction.Z
+	end),
+
+	["Faces"] = flagEncoder({ Right = 1, Top = 2, Back = 4, Left = 8, Bottom = 16, Front = 32 }),
+	["Axes"] = flagEncoder({ X = 1, Y = 2, Z = 4 }),
+
+	["BrickColor"] = planeEncoder(function(v)
+		return v.Number
+	end),
+
+	["Color3"] = planeEncoder(function(v)
+		return rotf(v.R)
+	end, function(v)
+		return rotf(v.G)
+	end, function(v)
+		return rotf(v.B)
+	end),
+	["Vector2"] = planeEncoder(function(v)
+		return rotf(v.X)
+	end, function(v)
+		return rotf(v.Y)
+	end),
+	["Vector3"] = planeEncoder(function(v)
+		return rotf(v.X)
+	end, function(v)
+		return rotf(v.Y)
+	end, function(v)
+		return rotf(v.Z)
+	end),
+	["Vector2int16"] = i16Encoder("X", "Y"),
+
+	["CFrame"] = function(sbuf, vals, n)
+		writeCFrameBody(sbuf, vals, n, nil)
+	end,
+
+	["Enum"] = planeEncoder(function(v)
+		return v.Value
+	end),
+
+	["Referent"] = function(sbuf, vals, n, refs)
+		writeRefPlane(sbuf, n, sbuf:allocRegion(4 * n), function(i)
+			local val = vals[i]
+			return (val and refs[val]) or -1
+		end)
+	end,
+
+	["Vector3int16"] = i16Encoder("X", "Y", "Z"),
+
+	["NumberSequence"] = function(sbuf, vals, n)
+		local total = 4 * n
+		for i = 1, n do
+			total += 12 * #vals[i].Keypoints
+		end
+		local o = sbuf:allocRegion(total)
+		local buf = sbuf.buf
+		local wu32, wf32 = buffer.writeu32, buffer.writef32
+		for i = 1, n do
+			local keypoints = vals[i].Keypoints
+			wu32(buf, o, #keypoints)
+			o += 4
+			for _, kp in keypoints do
+				wf32(buf, o, kp.Time)
+				wf32(buf, o + 4, kp.Value)
+				wf32(buf, o + 8, kp.Envelope)
+				o += 12
+			end
+		end
+	end,
+	["ColorSequence"] = function(sbuf, vals, n)
+		local total = 4 * n
+		for i = 1, n do
+			total += 20 * #vals[i].Keypoints
+		end
+		local o = sbuf:allocRegion(total)
+		local buf = sbuf.buf
+		local wu32, wf32 = buffer.writeu32, buffer.writef32
+		for i = 1, n do
+			local keypoints = vals[i].Keypoints
+			wu32(buf, o, #keypoints)
+			o += 4
+			for _, kp in keypoints do
+				local c = kp.Value
+				wf32(buf, o, kp.Time)
+				wf32(buf, o + 4, c.R)
+				wf32(buf, o + 8, c.G)
+				wf32(buf, o + 12, c.B)
+				wf32(buf, o + 16, 0)
+				o += 20
+			end
+		end
+	end,
+
+	["NumberRange"] = f32Encoder(function(v)
+		return v.Min
+	end, function(v)
+		return v.Max
+	end),
+
+	["Rect"] = planeEncoder(function(v)
+		return rotf(v.Min.X)
+	end, function(v)
+		return rotf(v.Min.Y)
+	end, function(v)
+		return rotf(v.Max.X)
+	end, function(v)
+		return rotf(v.Max.Y)
+	end),
+
+	["PhysicalProperties"] = function(sbuf, vals, n)
+		sbuf:reserve(25 * n)
+		local buf = sbuf.buf
+		local o = sbuf.len
+		local wu8, wf32 = buffer.writeu8, buffer.writef32
+		for i = 1, n do
+			local val = vals[i]
+			if val then
+				wu8(buf, o, 3)
+				wf32(buf, o + 1, val.Density)
+				wf32(buf, o + 5, val.Friction)
+				wf32(buf, o + 9, val.Elasticity)
+				wf32(buf, o + 13, val.FrictionWeight)
+				wf32(buf, o + 17, val.ElasticityWeight)
+				wf32(buf, o + 21, val.AcousticAbsorption)
+				o += 25
+			else
+				wu8(buf, o, 0)
+				o += 1
+			end
+		end
+		sbuf.len = o
+	end,
+
+	["Color3uint8"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(3 * n)
+		local buf = sbuf.buf
+		local wu8 = buffer.writeu8
+		local floor = math.floor
+		for i = 1, n do
+			local val = vals[i]
+			local o = base + (i - 1)
+			wu8(buf, o, floor(val.R * 255 + 0.5))
+			wu8(buf, o + n, floor(val.G * 255 + 0.5))
+			wu8(buf, o + 2 * n, floor(val.B * 255 + 0.5))
+		end
+	end,
+
+	["int64"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(8 * n)
+		for i = 1, n do
+			pokeU64Planes(sbuf, base + (i - 1), n, zigzag64(vals[i]))
+		end
+	end,
+
+	["SharedString"] = function(sbuf, vals, n, sstr)
+		local base = sbuf:allocRegion(4 * n)
+		interleavedU32Plane(sbuf, n, base, function(i)
+			local content = vals[i]
+
+			local index = sstr.hashes[content]
+			if not index then
+				index = sstr.count
+				sstr.hashes[content] = index
+				sstr.count += 1
+				sstr.order[index + 1] = content
+			end
+			return index
+		end)
+	end,
+
+	["OptionalCoordinateFrame"] = function(sbuf, vals, n)
+		sbuf:writeu8(0x10)
+		writeCFrameBody(sbuf, vals, n, true)
+
+		sbuf:writeu8(0x02)
+		local boolBase = sbuf:allocRegion(n)
+		local buf = sbuf.buf
+		local wu8 = buffer.writeu8
+		for i = 1, n do
+			if vals[i] ~= nil then
+				wu8(buf, boolBase + (i - 1), 1)
+			end
+		end
+	end,
+	["UniqueId"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(16 * n)
+
+		for i = 1, n do
+			local val = vals[i]
+			local o = base + (i - 1)
+			local hex = string.gsub(val, "%-", "")
+			local randHi, randLo = zigzagHalves(u32FromHex(hex, 1), u32FromHex(hex, 9))
+
+			pokeU32Planes(sbuf, o, n, u32FromHex(hex, 25))
+			pokeU32Planes(sbuf, o + 4 * n, n, u32FromHex(hex, 17))
+			pokeU32Planes(sbuf, o + 8 * n, n, randHi)
+			pokeU32Planes(sbuf, o + 12 * n, n, randLo)
+		end
+	end,
+	["Font"] = function(sbuf, vals, n)
+		local wlstr, wu16, wu8, wu32 = sbuf.writeLenString, sbuf.writeu16, sbuf.writeu8, sbuf.writeu32
+		for i = 1, n do
+			local val = vals[i]
+
+			local hasWeight, weight = pcall(index, val, "Weight")
+			local hasStyle, style = pcall(index, val, "Style")
+
+			wlstr(sbuf, val.Family)
+			wu16(sbuf, hasWeight and weight.Value or 0)
+			wu8(sbuf, hasStyle and style.Value or 0)
+			wu32(sbuf, 0)
+		end
+	end,
+	["SecurityCapabilities"] = function(sbuf, vals, n)
+		local base = sbuf:allocRegion(8 * n)
+		for i = 1, n do
+			local lo, hi = capabilityHalves(vals[i])
+			pokeU64Planes(sbuf, base + (i - 1), n, zigzagHalves(hi, lo))
+		end
+	end,
+	["Content"] = function(sbuf, vals, n)
+		local uris = {}
+
+		local base = sbuf:allocRegion(4 * n)
+		interleavedU32Plane(sbuf, n, base, function(i)
+			local v = vals[i]
+			if v ~= nil and v.SourceType == Enum.ContentSourceType.Uri then
+				table.insert(uris, v.Uri or "")
+				return zigzag32(1)
+			end
+			return 0
+		end)
+
+		sbuf:writeu32(#uris)
+		for _, uri in uris do
+			sbuf:writeLenString(uri)
+		end
+
+		sbuf:writeu32(0)
+		sbuf:writeu32(0)
+	end,
+}
+
+for datatype, sameAs in
+	{
+		["NetAssetRef"] = "SharedString",
+		["ContentId"] = "string",
+		["BinaryString"] = "string",
+		["ProtectedString"] = "string",
+	}
+do
+	Type_Ids[datatype] = Type_Ids[sameAs]
+	Binary_Encoders[datatype] = Binary_Encoders[sameAs]
+end
+local ESCAPES_PATTERN = "[&<>\"'\0\1-\9\11-\12\14-\31\127-\255]"
+local ESCAPES = {
+	["&"] = "&amp;",
+	["<"] = "&lt;",
+	[">"] = "&gt;",
+	['"'] = "&#34;",
+	["'"] = "&#39;",
+	["\0"] = "",
+}
+
+for rangeStart, rangeEnd in string.gmatch(ESCAPES_PATTERN, "(.)%-(.)") do
+	for charCode = string.byte(rangeStart), string.byte(rangeEnd) do
+		ESCAPES[string.char(charCode)] = "&#" .. charCode .. ";"
+	end
+end
+
+local XML_Encoders
+XML_Encoders = {
+	_cdata = function(raw)
+		return "<![CDATA[" .. raw .. "]]>"
+	end,
+	_normalizeNumber = function(raw)
+		if raw ~= raw then
+			return "NAN"
+		elseif raw == math.huge then
+			return "INF"
+		elseif raw == -math.huge then
+			return "-INF"
+		end
+
+		return raw
+	end,
+	_normalizeRange = function(raw)
+		return raw ~= raw and "0" or raw
+	end,
+	_minMax = function(min, max, encoder)
+		return "<min>" .. encoder(min) .. "</min><max>" .. encoder(max) .. "</max>"
+	end,
+	_makeSequence = function(keypoint_handler)
+		return function(raw)
+			local sequence = ""
+
+			for _, keypoint in raw.Keypoints do
+				sequence ..= keypoint_handler(keypoint)
+			end
+
+			return sequence
+		end
+	end,
+	_vector = function(X, Y, Z)
+		local Value = "<X>" .. X .. "</X><Y>" .. Y .. "</Y>"
+
+		if Z then
+			Value ..= "<Z>" .. Z .. "</Z>"
+		end
+
+		return Value
+	end,
+	Axes = function(raw)
+		return "<axes>" .. countBits(raw.X, raw.Y, raw.Z) .. "</axes>"
+	end,
+
+	BinaryString = function(raw)
+		return raw == "" and "" or base64encode(raw)
+	end,
+
+	BrickColor = function(raw)
+		return raw.Number
+	end,
+	CFrame = function(raw)
+		local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = raw:GetComponents()
+		return XML_Encoders._vector(X, Y, Z)
+			.. "<R00>"
+			.. R00
+			.. "</R00><R01>"
+			.. R01
+			.. "</R01><R02>"
+			.. R02
+			.. "</R02><R10>"
+			.. R10
+			.. "</R10><R11>"
+			.. R11
+			.. "</R11><R12>"
+			.. R12
+			.. "</R12><R20>"
+			.. R20
+			.. "</R20><R21>"
+			.. R21
+			.. "</R21><R22>"
+			.. R22
+			.. "</R22>",
+			"CoordinateFrame"
+	end,
+
+	Color3 = function(raw)
+		return "<R>" .. raw.R .. "</R><G>" .. raw.G .. "</G><B>" .. raw.B .. "</B>"
+	end,
+	Color3uint8 = function(raw)
+		return 0xFF000000
+			+ (math.floor(raw.R * 255) * 0x10000)
+			+ (math.floor(raw.G * 255) * 0x100)
+			+ math.floor(raw.B * 255)
+	end,
+	ColorSequence = nil,
+	ColorSequenceKeypoint = function(keypoint)
+		local _normalizeRange = XML_Encoders._normalizeRange
+
+		local color3 = keypoint.Value
+
+		return _normalizeRange(keypoint.Time)
+			.. " "
+			.. _normalizeRange(color3.R)
+			.. " "
+			.. _normalizeRange(color3.G)
+			.. " "
+			.. _normalizeRange(color3.B)
+			.. " 0 "
+	end,
+	Content = function(raw)
+		local SourceType = raw.SourceType
+		return SourceType == Enum.ContentSourceType.None and "<null></null>"
+			or SourceType == Enum.ContentSourceType.Uri and "<uri>" .. XML_Encoders.string(raw.Uri) .. "</uri>"
+	end,
+	ContentId = function(raw)
+		return raw == "" and "<null></null>" or "<url>" .. XML_Encoders.string(raw) .. "</url>", "Content"
+	end,
+	CoordinateFrame = function(raw)
+		return "<CFrame>" .. XML_Encoders.CFrame(raw) .. "</CFrame>"
+	end,
+	EnumItem = function(raw)
+		return raw.Value, "token"
+	end,
+	Faces = function(raw)
+		return "<faces>" .. countBits(raw.Right, raw.Top, raw.Back, raw.Left, raw.Bottom, raw.Front) .. "</faces>"
+	end,
+	Font = function(raw)
+		local hasWeight, weight = pcall(index, raw, "Weight")
+		local hasStyle, style = pcall(index, raw, "Style")
+
+		return "<Family>"
+			.. XML_Encoders.ContentId(raw.Family)
+			.. "</Family><Weight>"
+			.. (hasWeight and XML_Encoders.EnumItem(weight) or "")
+			.. "</Weight><Style>"
+			.. (hasStyle and style.Name or "")
+			.. "</Style>"
+	end,
+	NetAssetRef = nil,
+	NumberRange = function(raw)
+		local _normalizeRange = XML_Encoders._normalizeRange
+
+		return _normalizeRange(raw.Min) .. " " .. _normalizeRange(raw.Max)
+	end,
+	NumberSequence = nil,
+	NumberSequenceKeypoint = function(keypoint)
+		local _normalizeRange = XML_Encoders._normalizeRange
+
+		return _normalizeRange(keypoint.Time)
+			.. " "
+			.. _normalizeRange(keypoint.Value)
+			.. " "
+			.. _normalizeRange(keypoint.Envelope)
+			.. " "
+	end,
+
+	PhysicalProperties = function(raw)
+		local CustomPhysics = "<CustomPhysics>" .. XML_Encoders.bool(raw and true or false) .. "</CustomPhysics>"
+
+		return raw
+				and CustomPhysics .. "<Density>" .. raw.Density .. "</Density><Friction>" .. raw.Friction .. "</Friction><Elasticity>" .. raw.Elasticity .. "</Elasticity><FrictionWeight>" .. raw.FrictionWeight .. "</FrictionWeight><ElasticityWeight>" .. raw.ElasticityWeight .. "</ElasticityWeight><AcousticAbsorption>" .. raw.AcousticAbsorption .. "</AcousticAbsorption>"
+			or CustomPhysics
+	end,
+	ProtectedString = function(raw)
+		return string_find(raw, "]]>") and string.gsub(raw, ESCAPES_PATTERN, ESCAPES) or XML_Encoders._cdata(raw)
+	end,
+	Ray = function(raw)
+		local vector3 = XML_Encoders.Vector3
+
+		return "<origin>" .. vector3(raw.Origin) .. "</origin><direction>" .. vector3(raw.Direction) .. "</direction>"
+	end,
+	Rect = function(raw)
+		return XML_Encoders._minMax(raw.Min, raw.Max, XML_Encoders.Vector2), "Rect2D"
+	end,
+	Region3 = function(raw)
+		local Translation = raw.CFrame.Position
+		local HalfSize = raw.Size * 0.5
+
+		return XML_Encoders._minMax(Translation - HalfSize, Translation + HalfSize, XML_Encoders.Vector3)
+	end,
+	Region3int16 = function(raw)
+		return XML_Encoders._minMax(raw.Min, raw.Max, XML_Encoders.Vector3int16)
+	end,
+
+	SharedString = function(raw)
+		return sharedStrings[XML_Encoders.BinaryString(raw)]
+	end,
+	SecurityCapabilities = function(raw)
+		if raw == BASE_CAPABILITIES then
+			return 0
+		end
+
+		return capabilityNumber(raw)
+	end,
+
+	TweenInfo = function(raw)
+		local _normalizeNumber = XML_Encoders._normalizeNumber
+		return "Time:"
+			.. _normalizeNumber(raw.Time)
+			.. " DelayTime:"
+			.. _normalizeNumber(raw.DelayTime)
+			.. " RepeatCount:"
+			.. _normalizeNumber(raw.RepeatCount)
+			.. " Reverses:"
+			.. (raw.Reverses and "True" or "False")
+			.. " EasingDirection:"
+			.. raw.EasingDirection.Name
+			.. " EasingStyle:"
+			.. raw.EasingStyle.Name
+	end,
+	UDim = function(raw)
+		return "<S>" .. raw.Scale .. "</S><O>" .. raw.Offset .. "</O>"
+	end,
+	UDim2 = function(raw)
+		local X, Y = raw.X, raw.Y
+
+		return "<XS>"
+			.. X.Scale
+			.. "</XS><XO>"
+			.. X.Offset
+			.. "</XO><YS>"
+			.. Y.Scale
+			.. "</YS><YO>"
+			.. Y.Offset
+			.. "</YO>"
+	end,
+
+	UniqueId = function(raw)
+		return string.gsub(raw, "-", "")
+	end,
+
+	Vector2 = function(raw)
+		return XML_Encoders._vector(raw.X, raw.Y)
+	end,
+	Vector2int16 = nil,
+	Vector3 = function(raw)
+		return XML_Encoders._vector(raw.X, raw.Y, raw.Z)
+	end,
+	Vector3int16 = nil,
+	bool = function(raw)
+		return raw and "true" or "false"
+	end,
+	double = nil,
+	float = nil,
+	int = nil,
+	int64 = nil,
+	string = function(raw)
+		return (raw == nil or raw == "") and ""
+			or string_find(raw, "]]>") and string.gsub(raw, ESCAPES_PATTERN, ESCAPES)
+			or XML_Encoders._cdata(string.gsub(raw, "\0", ""))
+	end,
+}
+
+do
+	XML_Encoders.NumberSequence = XML_Encoders._makeSequence(XML_Encoders.NumberSequenceKeypoint)
+
+	XML_Encoders.ColorSequence = XML_Encoders._makeSequence(XML_Encoders.ColorSequenceKeypoint)
+end
+
+for encoderName, redirectName in
+	{
+		NetAssetRef = "SharedString",
+		Vector2int16 = "Vector2",
+		Vector3int16 = "Vector3",
+		double = "_normalizeNumber",
+		float = "_normalizeNumber",
+		int = "_normalizeNumber",
+		int64 = "_normalizeNumber",
+	}
+do
+	XML_Encoders[encoderName] = XML_Encoders[redirectName]
+end
+
+local ClassList, FetchAPI
+local RiskyServicesDisabled
+do
+	local ClassPropertyExceptions = arrayToDict({
+		Whitelist = {
+			MeshPart = { "CollisionFidelity" },
+			PartOperation = { "CollisionFidelity" },
+			TriangleMeshPart = { "CollisionFidelity" },
+		},
+		Blacklist = {
+			BillboardGui = { "PlayerToHideFrom" },
+			LuaSourceContainer = { "ScriptGuid" },
+			Instance = { "UniqueId", "HistoryId", "SourceAssetId", "SourceContent" },
+		},
+	}, true)
+
+	local function AttributesSerialize(attrs, header_bytes)
+		local count = 0
+		local buffer_size = 4
+		local sorted = {}
+		local formatted = table.clone(attrs)
+
+		if header_bytes then
+			buffer_size += #header_bytes
+		end
+
+		for attr, val in attrs do
+			local t = resolveTypeName(val)
+
+			local encoder = Attribute_Encoders[t]
+			if not encoder then
+				continue
+			end
+
+			count += 1
+			sorted[count] = attr
+
+			local attr_size
+
+			formatted[attr], attr_size = encoder(val)
+
+			buffer_size += 5 + #attr + attr_size
+		end
+
+		table.sort(sorted)
+
+		local b = buffer.create(buffer_size)
+
+		local offset = 0
+
+		if header_bytes then
+			for _, header_byte in header_bytes do
+				buffer.writeu8(b, offset, header_byte)
+				offset += 1
+			end
+		end
+
+		buffer.writeu32(b, offset, count)
+		offset += 4
+
+		local stringEncoder = Attribute_Encoders["string"]
+		for _, attr in sorted do
+			local nameBuf, nameSize = stringEncoder(attr)
+
+			buffer.copy(b, offset, nameBuf)
+			offset += nameSize
+
+			buffer.writeu8(b, offset, Attribute_Type_Ids[resolveTypeName(attrs[attr])])
+			offset += 1
+
+			local bb = formatted[attr]
+
+			buffer.copy(b, offset, bb)
+			offset += buffer.len(bb)
+		end
+
+		return buffer.tostring(b)
+	end
+
+	local function AttenuationSerialize(attenuations)
+		if not next(attenuations) then
+			return "\0"
+		end
+
+		local count = 0
+
+		local sorted = {}
+
+		for key in attenuations do
+			count += 1
+			sorted[count] = key
+		end
+
+		table.sort(sorted)
+
+		local b = buffer.create(1 + count * 8)
+
+		local offset = 1
+		for _, key in sorted do
+			buffer.writef32(b, offset, key)
+			offset += 4
+			buffer.writef32(b, offset, attenuations[key])
+			offset += 4
+		end
+
+		return buffer.tostring(b)
+	end
+
+	local function TransformsSerialize(transforms)
+		local n = #transforms
+
+		if n == 0 then
+			return "\1\0\0\0\0\0\0\0"
+		end
+
+		local b = buffer.create(8 + n * 48)
+
+		buffer.writeu32(b, 0, 1)
+		buffer.writeu32(b, 4, n)
+
+		local _packF32 = Attribute_Encoders._packF32
+
+		local offset = 8
+		for _, transform in transforms do
+			local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = transform:GetComponents()
+
+			local xBasis = _packF32(R00, R01, R02)
+			buffer.copy(b, offset, xBasis)
+			offset += 12
+
+			local yBasis = _packF32(R10, R11, R12)
+			buffer.copy(b, offset, yBasis)
+			offset += 12
+
+			local zBasis = _packF32(R20, R21, R22)
+			buffer.copy(b, offset, zBasis)
+			offset += 12
+
+			local position = _packF32(X, Y, Z)
+			buffer.copy(b, offset, position)
+			offset += 12
+		end
+
+		return buffer.tostring(b)
+	end
+
+	local function ServiceVisibilitySerialize(wantVisible)
+		local ExplorerServiceVisibilityService = game:GetService("ExplorerServiceVisibilityService")
+		local stringEncoder = Attribute_Encoders["string"]
+		local typeId = Attribute_Type_Ids["string"]
+
+		local count = 0
+		local buffer_size = 4
+		local names = {}
+		local formatted = {}
+
+		for _, service in game:GetChildren() do
+			if ExplorerServiceVisibilityService:GetServiceVisibility(service) == wantVisible then
+				local name = service.ClassName
+				local buf, size = stringEncoder(name)
+
+				count += 1
+				names[count] = name
+				formatted[name] = buf
+
+				buffer_size += 1 + size
+			end
+		end
+
+		if count == 0 then
+			return "\0\0\0\0"
+		end
+
+		table.sort(names)
+
+		local b = buffer.create(buffer_size)
+		buffer.writeu32(b, 0, count)
+
+		local offset = 4
+		for _, name in names do
+			buffer.writeu8(b, offset, typeId)
+			offset += 1
+
+			local bb = formatted[name]
+			buffer.copy(b, offset, bb)
+			offset += buffer.len(bb)
+		end
+
+		return buffer.tostring(b)
+	end
+
+	local function encodeTimeTicks(time)
+		local scaled = time * 2400
+		if not (scaled >= -2147483648 and scaled < 2147483648) then
+			return -2147483648
+		end
+		return math.round(scaled)
+	end
+
+	local function writeTimesSection(b, offset, keys)
+		buffer.writeu32(b, offset, 1)
+		offset += 4
+		buffer.writeu32(b, offset, #keys)
+		offset += 4
+		for _, key in keys do
+			buffer.writei32(b, offset, encodeTimeTicks(key.Time))
+			offset += 4
+		end
+		return offset
+	end
+
+	local function deriveTangentValueCurve(keys, i)
+		local key = keys[i]
+		local isFirst = (i == 1)
+		local isLast = (i == #keys)
+		if isLast then
+			return 0, 0
+		end
+		if key.Interpolation == Enum.KeyInterpolationMode.Constant then
+			return 0, 0
+		end
+		if key.Interpolation == Enum.KeyInterpolationMode.Linear then
+			local nextKey = keys[i + 1]
+			local t = 1 / (nextKey.Time - key.Time)
+			return t, t
+		end
+		if isFirst then
+			return 0, 0
+		end
+		local prevKey = keys[i - 1]
+		local deltaPrev = key.Time - prevKey.Time
+		if prevKey.Interpolation == Enum.KeyInterpolationMode.Constant then
+			return 0, 0
+		elseif prevKey.Interpolation == Enum.KeyInterpolationMode.Linear then
+			local t = 1 / deltaPrev
+			return t, t
+		else
+			local nextKey = keys[i + 1]
+			local deltaNext = nextKey.Time - key.Time
+			local t = (1 / deltaPrev + 1 / deltaNext) / 2
+			return t, t
+		end
+	end
+
+	local function deriveTangentFloatCurve(keys, i)
+		local key = keys[i]
+		local isFirst = (i == 1)
+		local isLast = (i == #keys)
+		if isLast then
+			return 0, 0
+		end
+		if key.Interpolation == Enum.KeyInterpolationMode.Constant then
+			return 0, 0
+		end
+		if key.Interpolation == Enum.KeyInterpolationMode.Linear then
+			local nextKey = keys[i + 1]
+			local slope = (nextKey.Value - key.Value) / (nextKey.Time - key.Time)
+			return slope, slope
+		end
+		if isFirst then
+			return 0, 0
+		end
+		local prevKey = keys[i - 1]
+		if prevKey.Interpolation == Enum.KeyInterpolationMode.Constant then
+			return 0, 0
+		elseif prevKey.Interpolation == Enum.KeyInterpolationMode.Linear then
+			local slope = (key.Value - prevKey.Value) / (key.Time - prevKey.Time)
+			return slope, slope
+		else
+			return 0, 0
+		end
+	end
+
+	local function encodeGuid(uid)
+		local cleanGuid = string.gsub(uid, "[{}-]", "")
+		local bytes = buffer.create(16)
+
+		for i = 0, 15 do
+			local hexByte = string.sub(cleanGuid, (i * 2) + 1, (i * 2) + 2)
+			local val = tonumber(hexByte, 16) or 0
+			buffer.writeu8(bytes, i, val)
+		end
+
+		return buffer.tostring(bytes)
+	end
+
+	local NotScriptableFixes = {
+		Instance = {
+			AttributesSerialize = function(instance)
+				local attrs = instance:GetAttributes()
+
+				if not next(attrs) then
+					return ""
+				end
+
+				return AttributesSerialize(attrs)
+			end,
+			DefinesCapabilities = "Sandboxed",
+			Tags = function(instance)
+				local tags = service.CollectionService:GetTags(instance)
+
+				if #tags == 0 then
+					return ""
+				end
+
+				return table.concat(tags, "\0")
+			end,
+		},
+		Path2D = {
+			PropertiesSerialize = function(instance)
+				local control_points = instance:GetControlPoints()
+				local n = #control_points
+
+				if n == 0 then
+					return "\0\0\0\0"
+				end
+
+				local b = buffer.create(4 + n * 49)
+				buffer.writeu32(b, 0, n)
+
+				local typeId = Attribute_Type_Ids["Path2DControlPoint"]
+				local encoder = Attribute_Encoders["Path2DControlPoint"]
+
+				local offset = 4
+				for i, point in control_points do
+					local buf, bufSize = encoder(point)
+
+					buffer.writeu8(b, offset, typeId)
+					offset += 1
+
+					buffer.copy(b, offset, buf)
+					offset += bufSize
+				end
+
+				return buffer.tostring(b)
+			end,
+		},
+		PlayerEmulatorService = {
+			SerializedEmulatedPolicyInfo = function(instance)
+				local EmulatedPolicyInfo = instance:GetEmulatedPolicyInfo()
+
+				if not next(EmulatedPolicyInfo) then
+					return ""
+				end
+
+				return AttributesSerialize(EmulatedPolicyInfo)
+			end,
+		},
+		StyleRule = {
+			PropertiesSerialize = function(instance)
+				local props = instance:GetProperties()
+
+				if not next(props) then
+					return "\0\0\0\0"
+				end
+
+				return AttributesSerialize(props)
+			end,
+			PropertyTransitionsSerialize = function(instance)
+				local transitions = instance:GetPropertyTransitions()
+
+				if not next(transitions) then
+					return "\2\0\0\0\0\0"
+				end
+
+				return AttributesSerialize(transitions, { 0x02, 0x00 })
+			end,
+		},
+		StyleQuery = {
+			ConditionsSerialize = function(instance)
+				local props = instance:GetConditions()
+
+				if not next(props) then
+					return "\0\0\0\0"
+				end
+
+				return AttributesSerialize(props)
+			end,
+		},
+		FloatCurve = {
+			ValuesAndTimes = function(instance)
+				local keys = instance:GetKeys()
+
+				if #keys == 0 then
+					return "\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"
+				end
+
+				local valuesPayloadSize = #keys * 14
+				local b = buffer.create(8 + valuesPayloadSize + 8 + (#keys * 4))
+
+				buffer.writeu32(b, 0, 2)
+				buffer.writeu32(b, 4, #keys)
+
+				local offset = 8
+				for i, key in keys do
+					local lt, rt = key.LeftTangent, key.RightTangent
+					local mode = countBits(lt, rt)
+
+					if mode == 0 then
+						lt, rt = deriveTangentFloatCurve(keys, i)
+					elseif mode == 1 then
+						rt = lt
+					elseif mode == 2 then
+						lt = rt
+					end
+
+					buffer.writeu8(b, offset, key.Interpolation.Value)
+					offset += 1
+					buffer.writeu8(b, offset, mode)
+					offset += 1
+					buffer.writef32(b, offset, key.Value)
+					offset += 4
+					buffer.writef32(b, offset, lt)
+					offset += 4
+					buffer.writef32(b, offset, rt)
+					offset += 4
+				end
+
+				offset = writeTimesSection(b, offset, keys)
+
+				return buffer.tostring(b)
+			end,
+		},
+		RotationCurve = {
+			ValuesAndTimes = function(instance)
+				local keys = instance:GetKeys()
+
+				if #keys == 0 then
+					return "\1\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"
+				end
+
+				local perKeySize = 25
+				local b = buffer.create(8 + (#keys * perKeySize) + 8 + (#keys * 4))
+
+				buffer.writeu32(b, 0, 1)
+				buffer.writeu32(b, 4, #keys)
+
+				local offset = 8
+				for _, key in keys do
+					local lt = key.LeftTangent or 0
+					local rt = key.RightTangent or 0
+					local qx, qy, qz, qw = cframeToQuaternion(key.Value)
+
+					buffer.writeu8(b, offset, 12 + key.Interpolation.Value)
+					offset += 1
+					buffer.writef32(b, offset, qx)
+					offset += 4
+					buffer.writef32(b, offset, qy)
+					offset += 4
+					buffer.writef32(b, offset, qz)
+					offset += 4
+					buffer.writef32(b, offset, qw)
+					offset += 4
+					buffer.writef32(b, offset, lt)
+					offset += 4
+					buffer.writef32(b, offset, rt)
+					offset += 4
+				end
+
+				offset = writeTimesSection(b, offset, keys)
+
+				return buffer.tostring(b)
+			end,
+		},
+		ValueCurve = {
+			ValuesAndTimes = function(instance)
+				local keys = instance:GetKeys()
+
+				if #keys == 0 then
+					return "\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"
+				end
+
+				local valueTypeName = instance.ValueType
+
+				local typeId = Attribute_Type_Ids[valueTypeName]
+
+				if not typeId then
+					valueTypeName = resolveTypeName(keys[1].Value)
+
+					typeId = Attribute_Type_Ids[valueTypeName]
+				end
+
+				local encoder = Attribute_Encoders[valueTypeName]
+
+				if not encoder then
+					return "\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"
+				end
+
+				local n = #keys
+				local bufs = table.create(n)
+				local sizes = table.create(n)
+				local valuesPayloadSize = 0
+
+				for i, key in keys do
+					local dataBuf, dataSize = encoder(key.Value)
+					bufs[i] = dataBuf
+					sizes[i] = dataSize
+					valuesPayloadSize += 15 + dataSize
+				end
+
+				local b = buffer.create(8 + valuesPayloadSize + 8 + 4 * n)
+				buffer.writeu32(b, 0, 2)
+				buffer.writeu32(b, 4, n)
+
+				local offset = 8
+				for i, key in keys do
+					local lt, rt = key.LeftTangent, key.RightTangent
+					local dataSize = sizes[i]
+
+					buffer.writeu8(b, offset, key.Interpolation.Value)
+					offset += 1
+					buffer.writeu8(b, offset, countBits(lt, rt))
+					offset += 1
+					buffer.writeu32(b, offset, dataSize + 1)
+					offset += 4
+					buffer.writeu8(b, offset, typeId)
+					offset += 1
+					buffer.copy(b, offset, bufs[i])
+					offset += dataSize
+
+					if lt == nil and rt == nil then
+						lt, rt = deriveTangentValueCurve(keys, i)
+					elseif lt == nil then
+						lt = rt
+					elseif rt == nil then
+						rt = lt
+					end
+
+					buffer.writef32(b, offset, lt)
+					offset += 4
+					buffer.writef32(b, offset, rt)
+					offset += 4
+				end
+
+				offset = writeTimesSection(b, offset, keys)
+
+				return buffer.tostring(b)
+			end,
+		},
+		MarkerCurve = {
+			ValuesAndTimes = function(instance)
+				local markers = instance:GetMarkers()
+				local n = #markers
+
+				if n == 0 then
+					return "\2\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"
+				end
+
+				local strings_size = 0
+				for _, marker in markers do
+					strings_size += #marker.Value + 1
+				end
+
+				local b = buffer.create(8 + strings_size + 8 + (n * 4))
+
+				buffer.writeu32(b, 0, 2)
+				buffer.writeu32(b, 4, n)
+
+				local offset = 8
+				for _, marker in markers do
+					local value = marker.Value
+					buffer.writestring(b, offset, value)
+					offset += #value + 1
+				end
+
+				offset = writeTimesSection(b, offset, markers)
+
+				return buffer.tostring(b)
+			end,
+		},
+		AnimationNodeDefinition = {
+			InputPinData = function(instance)
+				local input_pins = instance:GetOrderedInputPinNames()
+
+				local n = #input_pins
+
+				if n == 0 then
+					return "\1\0\0\0\0\0\0\0"
+				end
+
+				local buffer_size = 8
+
+				for _, pin in input_pins do
+					buffer_size += 4 + #pin
+				end
+
+				local b = buffer.create(buffer_size)
+
+				buffer.writeu32(b, 0, 1)
+				buffer.writeu32(b, 4, n)
+
+				local encoder = Attribute_Encoders["string"]
+				local offset = 8
+				for _, pin in input_pins do
+					local pinBuf, pinSize = encoder(pin)
+
+					buffer.copy(b, offset, pinBuf)
+					offset += pinSize
+				end
+
+				return buffer.tostring(b)
+			end,
+		},
+		AnimationClip = {
+			GuidBinaryString = function(instance)
+				return encodeGuid(instance.Guid)
+			end,
+		},
+		AnimationRigData = {
+			label = function(instance)
+				local labels = instance:GetLabels()
+				local n = #labels
+
+				if n == 0 then
+					return "\1\0\0\0\0\0\0\0"
+				end
+
+				local b = buffer.create(8 + n * 4)
+
+				buffer.writeu32(b, 0, 1)
+				buffer.writeu32(b, 4, n)
+
+				local offset = 8
+
+				for _, label in labels do
+					buffer.writeu32(b, offset, label)
+					offset += 4
+				end
+
+				return buffer.tostring(b)
+			end,
+			name = function(instance)
+				local names = instance:GetNames()
+				local n = #names
+
+				if n == 0 then
+					return "\1\0\0\0\0\0\0\0"
+				end
+
+				local buffer_size = 8
+
+				for _, name in names do
+					buffer_size += 4 + #name
+				end
+
+				local b = buffer.create(buffer_size)
+
+				buffer.writeu32(b, 0, 1)
+				buffer.writeu32(b, 4, n)
+
+				local offset = 8
+
+				for _, name in names do
+					buffer.writeu32(b, offset, #name)
+					offset += 4
+				end
+				for _, name in names do
+					buffer.writestring(b, offset, name)
+					offset += #name
+				end
+
+				return buffer.tostring(b)
+			end,
+			parent = function(instance)
+				local parents = instance:GetParents()
+				local n = #parents
+
+				if n == 0 then
+					return "\1\0\0\0\0\0\0\0"
+				end
+
+				local b = buffer.create(8 + #parents * 2)
+
+				buffer.writeu32(b, 0, 1)
+				buffer.writeu32(b, 4, n)
+
+				local offset = 8
+
+				for _, parent in parents do
+					buffer.writeu16(b, offset, parent)
+					offset += 2
+				end
+
+				return buffer.tostring(b)
+			end,
+			postTransform = function(instance)
+				return TransformsSerialize(instance:GetPostTransforms())
+			end,
+			preTransform = function(instance)
+				return TransformsSerialize(instance:GetPreTransforms())
+			end,
+			transform = function(instance)
+				return TransformsSerialize(instance:GetTransforms())
+			end,
+		},
+		AudioDeviceInput = {
+			AccessList = function(instance)
+				local userid_accesslist = instance:GetUserIdAccessList()
+
+				local n = #userid_accesslist
+
+				if n == 0 then
+					return ""
+				end
+
+				local b = buffer.create(n * 8)
+
+				local _writeI64LE = Attribute_Encoders._writeI64LE
+
+				local offset = 0
+				for _, user_id in userid_accesslist do
+					_writeI64LE(b, offset, user_id)
+					offset += 8
+				end
+
+				return buffer.tostring(b)
+			end,
+		},
+		AudioEmitter = {
+			AngleAttenuation = function(instance)
+				return AttenuationSerialize(instance:GetAngleAttenuation())
+			end,
+			DistanceAttenuation = function(instance)
+				return AttenuationSerialize(instance:GetDistanceAttenuation())
+			end,
+		},
+		AudioListener = {
+			AngleAttenuation = function(instance)
+				return AttenuationSerialize(instance:GetAngleAttenuation())
+			end,
+			DistanceAttenuation = function(instance)
+				return AttenuationSerialize(instance:GetDistanceAttenuation())
+			end,
+		},
+		DebuggerBreakpoint = { line = "Line" },
+		BallSocketConstraint = { MaxFrictionTorqueXml = "MaxFrictionTorque" },
+		BasePart = {
+			Color3uint8 = "Color",
+			MaterialVariantSerialized = "MaterialVariant",
+			size = "Size",
+			siz = "Size",
+		},
+		DoubleConstrainedValue = { value = "Value" },
+		IntConstrainedValue = { value = "Value" },
+
+		CustomEvent = {
+			PersistedCurrentValue = function(instance)
+				local receiver = instance:GetAttachedReceivers()[1]
+				if receiver then
+					return receiver:GetCurrentValue()
+				end
+
+				local tempReceiver = Instance.new("CustomEventReceiver")
+				local clone = Instance.fromExisting(instance)
+
+				tempReceiver.Source = clone
+				local value = tempReceiver:GetCurrentValue()
+
+				tempReceiver:Destroy()
+				clone:Destroy()
+
+				return value
+			end,
+		},
+		GuiObject = { Sink = "InputSink" },
+
+		Terrain = {
+			AcquisitionMethod = "LastUsedModificationMethod",
+			MaterialColors = function(instance)
+				local TERRAIN_MATERIAL_COLORS =
+					{
+						Enum.Material.Grass,
+						Enum.Material.Slate,
+						Enum.Material.Concrete,
+						Enum.Material.Brick,
+						Enum.Material.Sand,
+						Enum.Material.WoodPlanks,
+						Enum.Material.Rock,
+						Enum.Material.Glacier,
+						Enum.Material.Snow,
+						Enum.Material.Sandstone,
+						Enum.Material.Mud,
+						Enum.Material.Basalt,
+						Enum.Material.Ground,
+						Enum.Material.CrackedLava,
+						Enum.Material.Asphalt,
+						Enum.Material.Cobblestone,
+						Enum.Material.Ice,
+						Enum.Material.LeafyGrass,
+						Enum.Material.Salt,
+						Enum.Material.Limestone,
+						Enum.Material.Pavement,
+					}
+
+				local b = buffer.create(69)
+				local offset = 6
+
+				for _, material in TERRAIN_MATERIAL_COLORS do
+					local color = instance:GetMaterialColor(material)
+					buffer.writeu8(b, offset, (color.R * 255))
+					offset += 1
+					buffer.writeu8(b, offset, (color.G * 255))
+					offset += 1
+					buffer.writeu8(b, offset, (color.B * 255))
+					offset += 1
+				end
+
+				return buffer.tostring(b)
+			end,
+		},
+		BaseWrap = {
+			TemporaryCageMeshContent = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "TemporaryCageMeshId"))
+			end,
+		},
+		MaterialVariant = {
+			TexturePackContent = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "TexturePack"))
+			end,
+		},
+		TerrainDetail = {
+			TexturePackContent = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "TexturePack"))
+			end,
+		},
+		WrapLayer = {
+			TemporaryReferenceMeshContent = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "TemporaryReferenceId"))
+			end,
+		},
+		TriangleMeshPart = {
+			FluidFidelityInternal = "FluidFidelity",
+		},
+		MeshPart = {
+			InitialSize = "MeshSize",
+			MeshID = "MeshId",
+		},
+		PartOperation = {
+			Content = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "AssetId"))
+			end,
+			InitialSize = "MeshSize",
+		},
+		Part = { shape = "Shape", shap = "Shape" },
+		TrussPart = { style = "Style" },
+		FormFactorPart = {
+			formFactorRaw = "FormFactor",
+		},
+		Fire = { heat_xml = "Heat", size_xml = "Size" },
+		Clothing = {
+			Outfit1Content = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "Outfit1"))
+			end,
+			Outfit2Content = function(instance)
+				return Content.fromUri(gethiddenproperty_fallback(instance, "Outfit2"))
+			end,
+		},
+		Humanoid = {
+			Health_XML = "Health",
+			InternalBodyScale = function(instance)
+				local a = instance.RootPart
+
+				if not a then
+					return __BREAK
+				end
+
+				return instance:GetAccessoryHandleScale(a, Enum.BodyPartR15.RootPart)
+			end,
+			InternalHeadScale = function(instance)
+				local a = instance.Parent and instance.Parent:FindFirstChild("Head")
+
+				if not a then
+					return __BREAK
+				end
+
+				return instance:GetAccessoryHandleScale(a, Enum.BodyPartR15.Head).X
+			end,
+			NetworkHumanoidState = function(instance)
+				return instance:GetState()
+			end,
+		},
+		HumanoidDescription = {
+			AccessoryBlob = function(instance)
+				local blob = {}
+
+				for _, acc in instance:GetAccessories(false) do
+					table.insert(blob, {
+						AssetId = acc.AssetId,
+						Order = acc.Order,
+						AccessoryType = acc.AccessoryType.Name,
+						Puffiness = acc.Puffiness,
+					})
+				end
+
+				return service.HttpService:JSONEncode(blob)
+			end,
+			EmotesDataInternal = function(instance)
+				local emotes_data = ""
+				for name, ids in instance:GetEmotes() do
+					emotes_data ..= name .. "^" .. table.concat(ids, "^") .. "^\\"
+				end
+				return emotes_data
+			end,
+			EquippedEmotesDataInternal = function(instance)
+				local equipped_emotes = instance:GetEquippedEmotes()
+				if #equipped_emotes == 0 then
+					return ""
+				end
+
+				local equipped_emotes_data = ""
+				for _, emote in equipped_emotes do
+					equipped_emotes_data = equipped_emotes_data .. emote.Slot .. "^" .. emote.Name .. "\\"
+				end
+				return equipped_emotes_data
+			end,
+		},
+		LocalizationTable = {
+			Contents = function(instance)
+				return instance:GetContents()
+			end,
+		},
+		MaterialService = { Use2022MaterialsXml = "Use2022Materials" },
+		VideoPlayer = {
+			PlayingReplicating = "IsPlaying",
+		},
+
+		Model = {
+			ModelMeshCFrame = function(instance)
+				return instance:GetModelCFrame()
+			end,
+			ModelMeshSize = function(instance)
+				return instance:GetExtentsSize()
+			end,
+			Scale = function(instance)
+				return instance:GetScale()
+			end,
+			ScaleFactor = function(instance)
+				return instance:GetScale()
+			end,
+			WorldPivotData = "WorldPivot",
+		},
+		PackageLink = {
+			PackageContentSerialize = "PackageContent",
+			PackageIdSerialize = "PackageId",
+			VersionIdSerialize = "VersionNumber",
+		},
+		Players = { MaxPlayersInternal = "MaxPlayers", PreferredPlayersInternal = "PreferredPlayers" },
+
+		StarterPlayer = {
+			AvatarJointUpgrade_SerializedRollout = "AvatarJointUpgrade",
+		},
+		Smoke = { size_xml = "Size", opacity_xml = "Opacity", riseVelocity_xml = "RiseVelocity" },
+		Sound = {
+			xmlRead_MinDistance_3 = "RollOffMinDistance",
+			xmlRead_MaxDistance_3 = "RollOffMaxDistance",
+		},
+		ViewportFrame = {
+			CameraCFrame = function(instance)
+				local CurrentCamera = instance.CurrentCamera
+
+				return CurrentCamera and CurrentCamera.CFrame or CFrame.identity
+			end,
+			CameraFieldOfView = function(instance)
+				local CurrentCamera = instance.CurrentCamera
+
+				return math.rad(CurrentCamera and CurrentCamera.FieldOfView or 70)
+			end,
+		},
+		WeldConstraint = {
+			CFrame0 = function(instance)
+				local Part0, Part1 = instance.Part0, instance.Part1
+
+				return Part0 and Part1 and Part0.CFrame:ToObjectSpace(Part1.CFrame) or CFrame.identity
+			end,
+			CFrame1 = function(instance)
+				local Part0, Part1 = instance.Part0, instance.Part1
+
+				return Part0 and Part1 and Part1.CFrame:ToObjectSpace(Part0.CFrame) or CFrame.identity
+			end,
+			Part0Internal = "Part0",
+			Part1Internal = "Part1",
+			State = function(instance)
+				return countBits(instance.Enabled, instance.Active)
+			end,
+		},
+		Workspace = {
+			CollisionGroups = function(instance)
+				local collision_groups = game:GetService("PhysicsService"):GetRegisteredCollisionGroups()
+
+				local n = #collision_groups
+				if n == 0 then
+					return ""
+				end
+
+				local t = table.create(n)
+				for i, group in collision_groups do
+					t[i] = group.name .. "^" .. i - 1 .. "^" .. group.mask
+				end
+				return table.concat(t, "\\")
+			end,
+		},
+		WorldRoot = {
+			CollisionGroupData = function(instance)
+				local collision_groups = game:GetService("PhysicsService"):GetRegisteredCollisionGroups()
+				local n = #collision_groups
+
+				if n == 0 then
+					return "\1\0"
+				end
+
+				local buffer_size = 2
+
+				for _, group in collision_groups do
+					buffer_size += 7 + #group.name
+				end
+
+				local b = buffer.create(buffer_size)
+
+				buffer.writeu8(b, 0, 1)
+				buffer.writeu8(b, 1, n)
+
+				local typeId_int32 = Attribute_Type_Ids["int32"]
+				local offset = 2
+
+				for i, group in collision_groups do
+					local name, id, mask = group.name, i - 1, group.mask
+					local name_len = #name
+
+					buffer.writeu8(b, offset, id)
+					offset += 1
+
+					buffer.writeu8(b, offset, typeId_int32)
+					offset += 1
+
+					buffer.writei32(b, offset, mask)
+					offset += 4
+
+					buffer.writeu8(b, offset, name_len)
+					offset += 1
+					buffer.writestring(b, offset, name)
+					offset += name_len
+				end
+
+				return buffer.tostring(b)
+			end,
+		},
+
+		ServiceVisibilityService = {
+			HiddenServices = function()
+				return ServiceVisibilitySerialize(false)
+			end,
+			VisibleServices = function()
+				return ServiceVisibilitySerialize(true)
+			end,
+		},
+	}
+	for _, enum_item in Enum.Material:GetEnumItems() do
+		NotScriptableFixes.MaterialService[enum_item.Name .. "Name"] = function(instance)
+			return instance:GetBaseMaterialOverride(enum_item)
+		end
+	end
+
+	FetchAPI = function()
+		local FILE_NAME = USSI_FOLDER .. "API_DUMP.json"
+
+		local API_Dump
+
+		local APIDUMP_FETCHERS = {
+			[1] = function()
+				local res = readfile(FILE_NAME)
+				if res and res ~= "" then
+					return service.HttpService:JSONDecode(res)[FULL_VERSION]
+				end
+			end,
+			[2] = function()
+				local client_version_str = tostring(CLIENT_VERSION)
+				local dump
+				local matching_versions, matched, is_matched, exact_match = {}, {}, {}
+				local function process_line(line, noinsert)
+					local file_version, patch_commit, version_hash =
+						string.match(line, '"%d+%.(%d+)%.([^"]+)": "(version%-[^"]+)')
+					if file_version == client_version_str then
+						is_matched = true
+						if version_hash and not matched[version_hash] then
+							matched[version_hash] = true
+							if not noinsert then
+								table.insert(matching_versions, version_hash)
+							end
+							if string.sub(FULL_VERSION, -#patch_commit) == patch_commit then
+								return version_hash
+							end
+						end
+					elseif is_matched then
+						return false
+					end
+				end
+
+				local function isFullDump(classes)
+					for _, class in classes do
+						for _, member in class.Members do
+							if member.MemberType == "Property" then
+								return member.Default ~= nil
+							end
+						end
+					end
+					return false
+				end
+
+				local function tryFetchDump(url)
+					local ok, decoded = pcall(function()
+						local raw = game:HttpGet(url, true)
+						return service.HttpService:JSONDecode(raw)
+					end)
+					return ok and decoded.Classes or nil
+				end
+
+				local function fetchFullApiDump(hash)
+					local decoded = tryFetchDump("https://setup.rbxcdn.com/" .. hash .. "-Full-API-Dump.json")
+					if decoded and isFullDump(decoded) then
+						return decoded
+					end
+
+					decoded = tryFetchDump(
+						"https://raw.githubusercontent.com/setup-rbxcdn/roblox-full-api-dumps/refs/heads/main/full-dumps/"
+							.. hash
+							.. "-Full-API-Dump.json"
+					)
+					if decoded and isFullDump(decoded) then
+						return decoded
+					end
+
+					return nil
+				end
+
+				do
+					local o, r = pcall(
+						game.HttpGet,
+						game,
+						"https://raw.githubusercontent.com/setup-rbxcdn/setup-rbxcdn.github.io/refs/heads/main/version-history/Windows/Studio64.json",
+						true
+					)
+					if o then
+						local version_history = string.split(r, "\n")
+						version_history[#version_history] = nil
+						for i = #version_history, 2, -1 do
+							local res = process_line(version_history[i])
+							if res == false then
+								break
+							elseif res then
+								exact_match = res
+							end
+						end
+					end
+				end
+				do
+					local function fallback_channel(channel)
+						local ok, res = pcall(function()
+							return service.HttpService:JSONDecode(
+								game:HttpGet(
+									"https://clientsettingscdn.roblox.com/v2/client-version/WindowsStudio64"
+										.. (channel and "/channel/" .. channel or ""),
+									true
+								)
+							)
+						end)
+						if not ok then
+							return
+						end
+						if res.version and res.clientVersionUpload then
+							local line = '"' .. res.version .. '": "' .. res.clientVersionUpload
+							return process_line(line, true)
+						end
+					end
+					if not exact_match then
+						exact_match = fallback_channel("zbeta") or fallback_channel()
+					end
+				end
+				if exact_match then
+					dump = fetchFullApiDump(exact_match)
+				end
+				if not dump then
+					for _, version_hash in matching_versions do
+						dump = fetchFullApiDump(version_hash)
+						if dump then
+							break
+						end
+					end
+				end
+				return dump
+			end,
+			[3] = function()
+				if RiskyServicesDisabled.Reflection then
+					return nil
+				end
+
+				local classes, classes_size = {}, 1
+
+				local renames = {
+					CoordinateFrame = "CFrame",
+					Rect2D = "Rect",
+					Vector3Int16 = "Vector3int16",
+					Vector2Int16 = "Vector2int16",
+					Region3Int16 = "Region3int16",
+				}
+
+				for _, api_class in service.ReflectionService:GetClasses(REFLECTION_FILTER) do
+					local members, members_size = {}, 1
+					local className = api_class.Name
+
+					local class = {
+						Name = className,
+						Members = members,
+						Superclass = api_class.Superclass or "<<<ROOT>>>",
+					}
+					local permits = api_class.Permits
+
+					local tags = {}
+					if api_class.Service then
+						table.insert(tags, "Service")
+					elseif permits and permits["GetService"] then
+						table.insert(tags, "Service")
+					elseif not permits or not permits["New"] then
+						table.insert(tags, "NotCreatable")
+					end
+
+					if #tags ~= 0 then
+						class.Tags = tags
+					end
+
+					local o, r = pcall(
+						service.ReflectionService.GetPropertiesOfClass,
+						service.ReflectionService,
+						className,
+						REFLECTION_FILTER
+					)
+					if o then
+						for _, property in r do
+							local propertyName = property.Name
+
+							local valueType = property.Type
+							local valueType_Name = valueType.EngineType
+
+							local category = valueType.Category
+
+							local member_tags = {}
+
+							if not next(property.Permits) then
+								table.insert(member_tags, "NotScriptable")
+							end
+
+							if valueType_Name == "Enum" then
+								category, valueType_Name = "Enum", valueType.EnumType
+							elseif valueType_Name == "RefType" then
+								category, valueType_Name = "Class", valueType.InstanceType
+							else
+								valueType_Name = renames[valueType_Name] or valueType_Name
+							end
+
+							local member = {
+								Name = propertyName,
+								MemberType = "Property",
+								ValueType = { Name = valueType_Name, Category = category },
+								Serialization = { CanLoad = property.Serialized, CanSave = property.Serialized },
+							}
+
+							if #member_tags ~= 0 then
+								member.Tags = member_tags
+							end
+
+							members[members_size] = member
+							members_size += 1
+						end
+					end
+					classes[classes_size] = class
+					classes_size += 1
+				end
+
+				return classes
+			end,
+			[4] = function()
+				return service.HttpService:JSONDecode(
+					game:HttpGet(
+						"https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/Mini-API-Dump.json",
+						true
+					)
+				).Classes
+			end,
+		}
+
+		for i, fetcher in APIDUMP_FETCHERS do
+			local o, r = pcall(fetcher)
+			if o and r then
+				API_Dump = r
+				if i == 2 then
+					if writefile then
+						local ok, err =
+							pcall(writefile, FILE_NAME, service.HttpService:JSONEncode({ [FULL_VERSION] = API_Dump }))
+						if not ok then
+							warn("[DEBUG] DUMP writefile error", err)
+						end
+					end
+				end
+				break
+			elseif r ~= false and 2 < i then
+				warn("[DEBUG] Failed to get", FULL_VERSION, "version API Dump, trying fallbacks..")
+				warn("[DEBUG] Method number:", i, "Reason:", r)
+			end
+		end
+
+		local classList = {}
+		local tmp_classDict, tmp_classParents = {}, {}
+
+		local ClassesWhitelist, ClassesBlacklist = ClassPropertyExceptions.Whitelist, ClassPropertyExceptions.Blacklist
+
+		local API_Dump_Decoded = API_Dump
+
+		for _, API_Class in API_Dump_Decoded do
+			local ClassName = API_Class.Name
+			local props = {}
+
+			for _, Member in API_Class.Members do
+				local MemberType = Member.MemberType
+				if MemberType == "Property" or MemberType == "Function" then
+					props[Member.Name] = {
+						ValueType = MemberType == "Property" and Member.ValueType.Name,
+						MemberType = MemberType,
+					}
+				end
+			end
+
+			tmp_classDict[ClassName] = props
+			tmp_classParents[ClassName] = API_Class.Superclass
+		end
+
+		for _, API_Class in API_Dump_Decoded do
+			local ClassProperties, ClassProperties_size = {}, 1
+			local Class = {
+				Properties = ClassProperties,
+				Superclass = API_Class.Superclass,
+				NotCreatable = nil,
+			}
+
+			local ClassName = API_Class.Name
+			local ClassTags = API_Class.Tags
+
+			if ClassTags then
+				local Tags = arrayToDict(ClassTags, nil, nil, "string")
+				Class.NotCreatable = Tags.NotCreatable
+				Class.Service = Tags.Service
+			end
+
+			local NotScriptableFixClass = NotScriptableFixes[ClassName]
+
+			local ClassWhitelist, ClassBlacklist = ClassesWhitelist[ClassName], ClassesBlacklist[ClassName]
+
+			local ContentProperties
+			for _, Member in API_Class.Members do
+				if Member.MemberType == "Property" then
+					local Serialization = Member.Serialization
+
+					if Serialization.CanLoad then
+						local PropertyName = Member.Name
+
+						local ValueType = Member.ValueType
+						local ValueType_Name = ValueType.Name
+
+						if ValueType_Name == "Content" or ValueType_Name == "AssetContentMap" then
+							if not ContentProperties then
+								ContentProperties = {}
+
+								if not RiskyServicesDisabled.Reflection then
+									local o, properties = pcall(
+										service.ReflectionService.GetPropertiesOfClass,
+										service.ReflectionService,
+										ClassName,
+										REFLECTION_FILTER
+									)
+									if o then
+										for _, property in properties do
+											ContentProperties[property.Name] = property.Serialized
+										end
+									end
+								end
+							end
+							if ContentProperties[PropertyName] ~= nil then
+								Serialization.CanSave = ContentProperties[PropertyName]
+							end
+						end
+
+						if
+							(Serialization.CanSave or ClassWhitelist and ClassWhitelist[PropertyName])
+							and not (ClassBlacklist and ClassBlacklist[PropertyName])
+						then
+							local MemberTags = Member.Tags
+
+							local Special, PreferredDescriptorName
+
+							if MemberTags then
+								for _, tag in MemberTags do
+									if type(tag) == "table" then
+										PreferredDescriptorName = tag.PreferredDescriptorName
+										if PreferredDescriptorName and Special then
+											break
+										end
+									elseif tag == "NotScriptable" then
+										Special = true
+										if PreferredDescriptorName then
+											break
+										end
+									end
+								end
+							end
+
+							local preferredDescriptorProp
+							if PreferredDescriptorName then
+								preferredDescriptorProp = tmp_classDict[ClassName][PreferredDescriptorName]
+
+								if
+									preferredDescriptorProp == nil
+									or (
+										preferredDescriptorProp.MemberType == "Property"
+										and ValueType_Name ~= preferredDescriptorProp.ValueType
+									)
+								then
+									PreferredDescriptorName = nil
+								end
+							end
+
+							local Property = {
+								Name = PropertyName,
+								Category = ValueType.Category,
+								ValueType = ValueType_Name,
+
+								Special = Special,
+
+								CanRead = nil,
+							}
+
+							if string.sub(ValueType_Name, 1, 8) == "Optional" then
+								Property.Optional = string.sub(ValueType_Name, 9)
+							end
+							local propNameNorm = string.lower(string.sub(PropertyName, 1, 1))
+								.. string.sub(PropertyName, 2)
+							local super = tmp_classParents[ClassName]
+							while super do
+								local superProps = tmp_classDict[super]
+								if superProps then
+									for parentName in superProps do
+										if
+											string.lower(string.sub(parentName, 1, 1)) .. string.sub(parentName, 2)
+											== propNameNorm
+										then
+											Property.Shadows = true
+											break
+										end
+									end
+								end
+								if Property.Shadows then
+									break
+								end
+								super = tmp_classParents[super]
+							end
+
+							local NotScriptableFix = NotScriptableFixClass and NotScriptableFixClass[PropertyName]
+							local accessFunc = PreferredDescriptorName
+								and (
+									preferredDescriptorProp.MemberType == "Property"
+										and function(instance)
+											return instance[PreferredDescriptorName]
+										end
+									or function(instance)
+										return instance[PreferredDescriptorName](instance)
+									end
+								)
+
+							Property.Fallback = NotScriptableFix
+									and (type(NotScriptableFix) == "function" and NotScriptableFix or accessFunc and function(
+										instance
+									)
+										local o, r = pcall(accessFunc, instance)
+										if o then
+											return r
+										end
+										return instance[NotScriptableFix]
+									end or function(instance)
+										return instance[NotScriptableFix]
+									end)
+								or accessFunc
+
+							ClassProperties[ClassProperties_size] = Property
+							ClassProperties_size += 1
+						end
+					end
+				end
+			end
+
+			classList[ClassName] = Class
+		end
+
+		return classList
+	end
+end
+local function synsaveinstance(...)
+	if GLOBAL_ENV.USSI then
+		return
+	end
+	GLOBAL_ENV.USSI = true
+
+	local totalsize = 0
+
+	local StatusText
+
+	local OPTIONS = {
+		mode = "optimized",
+		Binary = true,
+		CompressionMode = "zstd",
+		CompressionLevel = 9,
+		Decompile = true,
+		DecompileTimeout = 10,
+		DecompileJobless = false,
+		scriptcache = true,
+		SaveBytecode = false,
+		BytecodeTimeout = 3,
+
+		__DEBUG_MODE = false,
+
+		Callback = false,
+		CopyToClipboard = false,
+
+		DecompileIgnore = {
+			"TextChatService",
+			ModuleScript = nil,
+		},
+		IgnoreDefaultPlayerScripts = true,
+
+		IgnoreProperties = {},
+
+		IgnoreList = { "CoreGui", "CorePackages", Packages = false },
+
+		ExtraInstances = {},
+		NilInstances = false,
+		NilInstancesFixes = {},
+
+		SaveCacheInterval = 0x1600 * 10,
+		ShowStatus = true,
+		KillAllScripts = false,
+		SafeMode = false,
+		BoostFPS = false,
+		ShutdownWhenDone = false,
+		AntiIdle = true,
+		Anonymous = false,
+		ReadMe = true,
+		FilePath = false,
+		AvoidFileOverwrite = true,
+		Object = false,
+		IsModel = false,
+
+		IgnoreDefaultProperties = true,
+		IgnoreNotArchivable = true,
+		IgnorePropertiesOfNotScriptsOnScriptsMode = false,
+		IgnoreSpecialProperties = false,
+
+		IsolateLocalPlayer = false,
+		IsolateLocalPlayerCharacter = false,
+		IsolatePlayers = false,
+		IsolateStarterPlayer = false,
+		SavePlayerCharacters = false,
+
+		SaveNotCreatable = false,
+		NotCreatableFixes = {
+			"",
+			"AdvancedDragger",
+			"AnimationTrack",
+			"Dragger",
+			"Player",
+			"PlayerGui",
+			"PlayerMouse",
+			"PlayerMouse",
+			"PlayerScripts",
+			"ScreenshotHud",
+			"StudioData",
+			"TextChatMessage",
+			"TextSource",
+			"TouchTransmitter",
+			"Translator",
+			CloudLocalizationTable = "LocalizationTable",
+			Platform = "Part",
+			Status = "Model",
+		},
+
+		RiskyServicesDisabled = {
+			UGC = true,
+			Encoding = false,
+			Reflection = false,
+		},
+		SharedBinaryStrings = false,
+		TreatUnionsAsParts = false,
+		AlternativeWritefile = not arrayToDict({ "WRD", "Xeno", "Zorara", "OpiumwareMac" })[EXECUTOR_NAME],
+
+		OptionsAliases = {
+			Clipboard = "CopyToClipboard",
+			DecompileScripts = "Decompile",
+			FileName = "FilePath",
+			IgnoreArchivable = "IgnoreNotArchivable",
+			IgnoreDefaultProps = "IgnoreDefaultProperties",
+			InstancesBlacklist = "IgnoreList",
+			IsolatePlayerGui = "IsolateLocalPlayer",
+			SaveCharacters = "SavePlayerCharacters",
+			SaveLocalPlayer = "IsolateLocalPlayer",
+			SaveNilInstances = "NilInstances",
+			SaveNonCreatable = "SaveNotCreatable",
+			SavePlayerGui = "IsolateLocalPlayer",
+			SavePlayers = "IsolatePlayers",
+			StatusText = "ShowStatus",
+			timeout = "DecompileTimeout",
+		},
+		OptionsAliasesInverse = {
+			DisableCompression = "CompressionMode",
+			noscripts = "Decompile",
+			RemovePlayerCharacters = "SavePlayerCharacters",
+			RemovePlayers = "IsolatePlayers",
+			XML = "Binary",
+		},
+	}
+	local OPTIONS_lowercase, OptionsAliasesInverse_lowercase, CustomOptions_valid = {}, {}, {}
+
+	do
+		local function buildMap(dest, source, warnLabel)
+			for k, v in source do
+				local key = string.lower(k)
+
+				if dest[key] then
+					warn("DUPLICATE " .. warnLabel, k)
+				else
+					dest[key] = v
+				end
+			end
+		end
+
+		for o in OPTIONS do
+			local option = string.lower(o)
+			if OPTIONS_lowercase[option] then
+				warn("DUPLICATE OPTION", o)
+			else
+				OPTIONS_lowercase[option] = o
+			end
+		end
+
+		buildMap(OPTIONS_lowercase, OPTIONS.OptionsAliases, "ALIAS")
+
+		buildMap(OptionsAliasesInverse_lowercase, OPTIONS.OptionsAliasesInverse, "INVERSE ALIAS")
+	end
+
+	do
+		local function makeNilinstanceFix(Name, ClassName, Separate)
+			return function(instance, instancePropertyOverrides)
+				local Exists
+
+				if not Separate then
+					Exists = OPTIONS.NilInstancesFixes[Name]
+				end
+
+				local Fix
+
+				local DoesntExist = not Exists
+				if DoesntExist then
+					Fix = Instance.new(ClassName)
+					if not Separate then
+						OPTIONS.NilInstancesFixes[Name] = Fix
+					end
+
+					instancePropertyOverrides[Fix] =
+						{ __Synthetic = true, __Children = { instance }, Properties = { Name = Name } }
+				else
+					Fix = Exists
+					table.insert(instancePropertyOverrides[Fix].__Children, instance)
+				end
+
+				if DoesntExist then
+					return Fix
+				end
+			end
+		end
+
+		OPTIONS.NilInstancesFixes.Animator =
+			makeNilinstanceFix("Animator has to be placed under Humanoid or AnimationController", "AnimationController")
+		OPTIONS.NilInstancesFixes.AdPortal = makeNilinstanceFix("AdPortal must be parented to a Part", "Part")
+		OPTIONS.NilInstancesFixes.Attachment =
+			makeNilinstanceFix("Attachments must be parented to a BasePart or another Attachment", "Part")
+		OPTIONS.NilInstancesFixes.BaseWrap = makeNilinstanceFix("BaseWrap must be parented to a MeshPart", "MeshPart")
+		OPTIONS.NilInstancesFixes.PackageLink = makeNilinstanceFix("Package already has a PackageLink", "Folder", true)
+
+		local args = table.pack(...)
+		local directInstances = false
+
+		for i = 1, args.n do
+			local arg = args[i]
+			local Type = typeof(arg)
+
+			if Type == "table" then
+				if typeof(arg[1]) == "Instance" then
+					OPTIONS.ExtraInstances = arg
+					OPTIONS.IsModel = true
+					directInstances = true
+				else
+					for key, value in arg do
+						if type(key) ~= "string" then
+							warn("Option names must be strings", key)
+						end
+						local k = string.lower(key)
+
+						local option = OPTIONS_lowercase[k]
+						local invert = false
+
+						if not option then
+							option = OptionsAliasesInverse_lowercase[k]
+							invert = option ~= nil
+						end
+
+						if option then
+							local finalValue
+							if invert then
+								finalValue = not value
+							else
+								finalValue = value
+							end
+
+							OPTIONS[option] = finalValue
+							CustomOptions_valid[option] = true
+						end
+					end
+				end
+			elseif Type == "Instance" then
+				OPTIONS.Object = arg
+				directInstances = true
+			elseif Type == "string" then
+				OPTIONS.FilePath = arg
+			end
+		end
+
+		if directInstances and CustomOptions_valid.mode == nil then
+			OPTIONS.mode = "invalidmode"
+		end
+	end
+
+	if not writefile and not (OPTIONS.Callback or OPTIONS.CopyToClipboard) then
+		local function coreCall(method, ...)
+			local StarterGui = service.StarterGui
+			method = StarterGui[method]
+			if not method then
+				return
+			end
+
+			for _ = 1, 10 do
+				local success, result = pcall(method, StarterGui, ...)
+				if success then
+					return result
+				end
+				task.wait(1)
+			end
+		end
+
+		local text = 'Function "writefile" is NOT available\nUse the Option "Callback" instead for now (check docs)'
+
+		coreCall("SetCore", "SendNotification", {
+			Title = "SAVEINSTANCE ERROR",
+			Text = text,
+			Duration = 15,
+			Icon = "rbxassetid://9072920609",
+		})
+		coreCall("SetCore", "SendNotification", {
+			Title = "SAVEINSTANCE ERROR",
+			Text = "Please ask your executor's developers to add writefile",
+			Duration = 15,
+			Icon = "rbxassetid://9072920609",
+		})
+
+		warn(text)
+
+		GLOBAL_ENV.USSI = nil
+		return
+	end
+
+	local InstancesOverrides = {}
+	local ClassSerializableCache = {}
+	local ReflectionUsable
+	local HasAutoRemaps
+
+	local DecompileIgnore, IgnoreList, IgnoreProperties, NotCreatableFixes =
+		arrayToDict(OPTIONS.DecompileIgnore, true),
+		arrayToDict(OPTIONS.IgnoreList, true),
+		arrayToDict(OPTIONS.IgnoreProperties),
+		arrayToDict(OPTIONS.NotCreatableFixes, true, "Folder")
+
+	local CopyToClipboard = OPTIONS.CopyToClipboard
+	local Callback = OPTIONS.Callback
+
+	local CompressionLevel = OPTIONS.CompressionLevel
+	local CompressionMode = OPTIONS.CompressionMode
+
+	local __DEBUG_MODE = OPTIONS.__DEBUG_MODE
+
+	if __DEBUG_MODE and type(__DEBUG_MODE) ~= "function" then
+		__DEBUG_MODE = warn
+	end
+
+	local LP_UserId, LP_Name, ANON_UserId, ANON_Name, Anonymizers
+
+	local function anonymize(raw, valueType)
+		if not Anonymizers then
+			return raw
+		end
+		local fn = Anonymizers[valueType]
+		return fn and fn(raw) or raw
+	end
+
+	local function gsubCaseInsensitive(input, search, replacement)
+		local inputLower = string.lower(input)
+		search = string.lower(search)
+
+		if not string_find(inputLower, search) then
+			return input
+		end
+
+		local lastFinish = 0
+		local subStrings = {}
+		local search_len = #search
+		local input_len = #input
+		while search_len <= input_len - lastFinish do
+			local init = lastFinish + 1
+
+			local start, finish = string_find(inputLower, search, init)
+
+			if start == nil then
+				break
+			end
+
+			table.insert(subStrings, string.sub(input, init, start - 1))
+
+			lastFinish = finish
+		end
+
+		if lastFinish == 0 then
+			return input
+		end
+
+		table.insert(subStrings, string.sub(input, lastFinish + 1))
+
+		return table.concat(subStrings, replacement)
+	end
+
+	do
+		local anonymous = OPTIONS.Anonymous
+		local lp = service.Players.LocalPlayer
+
+		if anonymous and lp then
+			LP_UserId, LP_Name = lp.UserId, lp.Name
+
+			local istable = type(anonymous) == "table"
+			ANON_UserId = istable and anonymous.UserId or 1
+			ANON_Name = istable and anonymous.Name or "Roblox"
+
+			local padded = ANON_Name
+			if #padded < #LP_Name then
+				padded ..= string.rep("_", #LP_Name - #padded)
+			elseif #padded > #LP_Name then
+				padded = string.sub(padded, 1, #LP_Name)
+			end
+
+			local function scrubName(raw)
+				return gsubCaseInsensitive(raw, LP_Name, ANON_Name)
+			end
+			local function scrubFixedWidth(raw)
+				return gsubCaseInsensitive(raw, LP_Name, padded)
+			end
+			local function scrubId(raw)
+				return raw == LP_UserId and ANON_UserId or raw
+			end
+
+			Anonymizers = {
+				string = scrubName,
+				BinaryString = scrubFixedWidth,
+				SharedString = scrubFixedWidth,
+				double = scrubId,
+				float = scrubId,
+				int = scrubId,
+				int64 = scrubId,
+			}
+		end
+	end
+
+	local FilePath = OPTIONS.FilePath
+	local SaveCacheInterval = OPTIONS.SaveCacheInterval
+	local Object = OPTIONS.Object
+	local IsModel = OPTIONS.IsModel
+
+	if Object and CustomOptions_valid.IsModel == nil then
+		IsModel = true
+	end
+
+	local IgnoreDefaultProperties = OPTIONS.IgnoreDefaultProperties
+	local IgnoreNotArchivable = not OPTIONS.IgnoreNotArchivable
+	local IgnorePropertiesOfNotScriptsOnScriptsMode = OPTIONS.IgnorePropertiesOfNotScriptsOnScriptsMode
+
+	local old_gethiddenproperty
+	if OPTIONS.IgnoreSpecialProperties and gethiddenproperty then
+		old_gethiddenproperty = gethiddenproperty
+		gethiddenproperty = nil
+	end
+
+	local SaveNotCreatable = OPTIONS.SaveNotCreatable
+	local TreatUnionsAsParts = OPTIONS.TreatUnionsAsParts
+
+	local SharedBinaryStrings = OPTIONS.SharedBinaryStrings
+
+	local ToSaveList, ldecompile, placename, elapse_t, SaveNotCreatableWillBeEnabled, RecoveredScripts
+
+	if OPTIONS.ReadMe then
+		RecoveredScripts = {}
+	end
+
+	if Object == game then
+		OPTIONS.mode = "full"
+		Object = nil
+		IsModel = nil
+	end
+
+	local function isLuaSourceContainer(instance)
+		return instance:IsA("LuaSourceContainer")
+	end
+
+	local function sanitizeFileName(str)
+		return string.sub(string.gsub(string.gsub(string.gsub(str, "[^%w _]", ""), " +", " "), " +$", ""), 1, 240)
+	end
+
+	do
+		local mode = string.lower(OPTIONS.mode)
+		local tmp = table.clone(OPTIONS.ExtraInstances)
+
+		if Object then
+			if mode == "optimized" then
+				mode = "full"
+			end
+
+			for _, key in
+				{
+					"IsolateLocalPlayer",
+					"IsolateLocalPlayerCharacter",
+					"IsolatePlayers",
+					"IsolateStarterPlayer",
+					"NilInstances",
+				}
+			do
+				if CustomOptions_valid[key] == nil then
+					OPTIONS[key] = false
+				end
+			end
+		end
+
+		local filetype = OPTIONS.Binary and (IsModel and ".rbxm" or ".rbxl") or (IsModel and ".rbxmx" or ".rbxlx")
+
+		if FilePath then
+			local hasExtension = string.match(FilePath, "%.[^/\\]+$") ~= nil
+			placename = hasExtension and FilePath or (FilePath .. filetype)
+		else
+			if not cachedPlaceName then
+				local ok, info =
+					pcall(service.MarketplaceService.GetProductInfoAsync, service.MarketplaceService, game.PlaceId)
+				if ok then
+					cachedPlaceName = info.Name
+					GLOBAL_ENV.USSI_placeName = cachedPlaceName
+				end
+			end
+
+			local PlaceName = cachedPlaceName and (game.PlaceId .. " " .. cachedPlaceName) or game.PlaceId
+			if IsModel then
+				placename = sanitizeFileName("model " .. PlaceName .. " " .. (Object or tmp[1] or game):GetFullName())
+			else
+				placename = sanitizeFileName("place " .. PlaceName)
+			end
+		end
+
+		if FilePath then
+		elseif OPTIONS.AvoidFileOverwrite and isfile then
+			local counter = 0
+			local temp = placename
+
+			while isfile(temp .. filetype) do
+				counter += 1
+				temp = placename .. "(" .. counter .. ")"
+			end
+
+			placename = temp .. filetype
+		else
+			placename = placename .. filetype
+		end
+
+		if GLOBAL_ENV[placename] then
+			return
+		end
+
+		GLOBAL_ENV[placename] = true
+		GLOBAL_ENV.USSI = nil
+
+		if mode ~= "scripts" then
+			IgnorePropertiesOfNotScriptsOnScriptsMode = nil
+		end
+
+		local TempRoot = Object or game
+
+		if mode == "full" then
+			if not Object then
+				local Children = TempRoot:GetChildren()
+				if 0 < #Children then
+					local tmp_dict = arrayToDict(tmp)
+					for _, child in Children do
+						if not tmp_dict[child] then
+							table.insert(tmp, child)
+						end
+					end
+				end
+			end
+		elseif mode == "optimized" then
+			local tmp_dict = arrayToDict(tmp)
+
+			for _, serviceName in
+				{
+					"Workspace",
+					"Players",
+					"Lighting",
+					"MaterialService",
+					"ReplicatedFirst",
+					"ReplicatedStorage",
+
+					"ServerScriptService",
+					"ServerStorage",
+
+					"StarterGui",
+					"StarterPack",
+					"StarterPlayer",
+					"Teams",
+					"SoundService",
+					"Chat",
+					"TextChatService",
+
+					"LocalizationService",
+				}
+			do
+				local _service = game:FindService(serviceName)
+				if _service and not tmp_dict[_service] then
+					table.insert(tmp, _service)
+				end
+			end
+		elseif mode == "scripts" then
+			local unique = {}
+			for _, instance in TempRoot:GetDescendants() do
+				if isLuaSourceContainer(instance) then
+					local Parent = instance.Parent
+					while Parent and Parent ~= TempRoot do
+						instance = instance.Parent
+						Parent = instance.Parent
+					end
+					if Parent then
+						unique[instance] = true
+					end
+				end
+			end
+			for instance in unique do
+				table.insert(tmp, instance)
+			end
+		end
+
+		ToSaveList = tmp
+
+		if Object then
+			table.insert(ToSaveList, 1, Object)
+		end
+	end
+
+	local IsolateLocalPlayer = OPTIONS.IsolateLocalPlayer
+	local IsolateLocalPlayerCharacter = OPTIONS.IsolateLocalPlayerCharacter
+	local IsolatePlayers = OPTIONS.IsolatePlayers
+	local IsolateStarterPlayer = OPTIONS.IsolateStarterPlayer
+	local NilInstances = OPTIONS.NilInstances
+
+	if IsolatePlayers and IsolateLocalPlayer then
+		IsolateLocalPlayer = false
+	end
+
+	local function GetLocalPlayer()
+		return service.Players.LocalPlayer
+			or service.Players:GetPropertyChangedSignal("LocalPlayer"):Wait()
+			or service.Players.LocalPlayer
+	end
+
+	local function get_size_format()
+		local Size
+
+		for i, unit in
+			{
+				"B",
+				"KB",
+				"MB",
+				"GB",
+				"TB",
+			}
+		do
+			if totalsize < 0x400 ^ i then
+				Size = math.floor(totalsize / (0x400 ^ (i - 1)) * 10) / 10 .. " " .. unit
+				break
+			end
+		end
+
+		return Size
+	end
+
+	local lastYield = os.clock()
+	local function wait_for_render()
+		pcall(task.wait)
+		lastYield = os.clock()
+	end
+
+	local function yieldIfDue()
+		if os.clock() - lastYield > 10 then
+			wait_for_render()
+		end
+	end
+
+	local IsLoading, LoadingText, LoadingThread = false
+
+	local function ensureSpinner()
+		if LoadingThread then
+			return
+		end
+		LoadingThread = task.spawn(function()
+			local chars = { "|", "/", "—", "\\" }
+			local i = 0
+			while true do
+				while not IsLoading do
+					task.wait()
+				end
+
+				while IsLoading do
+					i = i % #chars + 1
+					if StatusText and LoadingText then
+						StatusText.Text = LoadingText .. " " .. chars[i]
+					end
+					task.wait(0.25)
+				end
+			end
+		end)
+	end
+
+	local function run_with_loading(text, keepStatus, waitForRender, taskFunction, ...)
+		local previousStatus
+		if StatusText then
+			if keepStatus then
+				previousStatus = StatusText.Text
+			end
+			LoadingText = text
+			IsLoading = true
+			ensureSpinner()
+			if waitForRender then
+				wait_for_render()
+			end
+		end
+
+		local result = { taskFunction(...) }
+
+		if StatusText then
+			IsLoading = false
+			if previousStatus then
+				StatusText.Text = previousStatus
+			end
+		end
+		return unpack(result)
+	end
+
+	local function makeTimeoutHandler(timeout, f, timeout_return)
+		if timeout < 0 then
+			return function(...)
+				return pcall(f, ...)
+			end
+		end
+
+		local worker
+		local pendingJob
+
+		local function spawnWorker()
+			return task.spawn(function()
+				while true do
+					while not pendingJob do
+						task.wait()
+					end
+
+					local job = pendingJob
+					pendingJob = nil
+
+					local ok, result = pcall(f, unpack(job.args))
+
+					if job.isCancelled then
+						return
+					end
+
+					task.cancel(job.timeoutThread)
+
+					local thread = job.thread
+					while coroutine.status(thread) ~= "suspended" do
+						task.wait()
+					end
+
+					coroutine.resume(thread, ok, result)
+				end
+			end)
+		end
+
+		return function(...)
+			local thread = coroutine.running()
+			local job = {
+				thread = thread,
+				args = { ... },
+			}
+
+			job.timeoutThread = task.delay(timeout, function()
+				job.isCancelled = true
+				worker = nil
+				coroutine.resume(thread, nil, timeout_return)
+			end)
+
+			if not worker then
+				worker = spawnWorker()
+			end
+			pendingJob = job
+
+			return coroutine.yield()
+		end
+	end
+
+	local decompileIgnoreMap = {}
+
+	local DecompileJobless = OPTIONS.DecompileJobless
+
+	if DecompileJobless then
+		OPTIONS.scriptcache = true
+	end
+	local ScriptCache = OPTIONS.scriptcache and getscriptbytecode
+	local ldeccache = ScriptCache and GLOBAL_ENV.USSI_scriptcache
+
+	if ScriptCache and not ldeccache then
+		ldeccache = {}
+		GLOBAL_ENV.USSI_scriptcache = ldeccache
+	end
+
+	local getbytecode
+	if getscriptbytecode then
+		getbytecode = makeTimeoutHandler(OPTIONS.BytecodeTimeout, getscriptbytecode)
+	end
+
+	local SaveBytecode
+	if OPTIONS.SaveBytecode and getscriptbytecode then
+		SaveBytecode = function(script)
+			local s, bytecode = getbytecode(script)
+
+			if s and bytecode and bytecode ~= "" then
+				return "-- Bytecode (Base64):\n-- " .. base64encode(bytecode) .. "\n\n"
+			end
+		end
+	end
+
+	-- ============================================================
+	-- 修复：优先加载 GitHub 上的 Karisob & Ccat 反编译器（与 DEX++ 同源），
+	-- 只有加载失败时才回退到执行器自带的 decompile。
+	-- ============================================================
+	local GitHubDecompiler, GitHubDecompileLoadError
+	do
+		local DECOMPILER_URL = "https://raw.githubusercontent.com/lIllIIlII/OpenSource/refs/heads/main/Kari%26Ccat.lua"
+		local ok, src = pcall(function()
+			return game:HttpGet(DECOMPILER_URL, true)
+		end)
+		if ok and type(src) == "string" and src ~= "" then
+			local loadOk, loadFn = pcall(loadstring, src, "KariCcat")
+			if loadOk and type(loadFn) == "function" then
+				local runOk, mod = pcall(loadFn)
+				if runOk and type(mod) == "table" and type(mod.decompile) == "function" then
+					GitHubDecompiler = mod
+				else
+					GitHubDecompileLoadError = tostring(mod)
+				end
+			else
+				GitHubDecompileLoadError = tostring(loadFn)
+			end
+		else
+			GitHubDecompileLoadError = tostring(src)
+		end
+	end
+
+local function githubDecompile(script)
+	if not GitHubDecompiler then
+		error("GitHub decompiler unavailable: " .. tostring(GitHubDecompileLoadError))
+	end
+	if not getscriptbytecode then
+		error("getscriptbytecode is not available")
+	end
+	local ok, bytecode = pcall(getscriptbytecode, script)
+	if not ok or type(bytecode) ~= "string" or #bytecode == 0 then
+		error("Failed to read bytecode: " .. tostring(bytecode))
+	end
+	local decOk, source = pcall(GitHubDecompiler.decompile, bytecode, { mode = "source" })
+	if not decOk or type(source) ~= "string" then
+		error("Decompiler error: " .. tostring(source))
+	end
+	return source
+end
+
+	if not OPTIONS.Decompile then
+		ldecompile = function()
+			return "-- Decompiling is disabled"
+		end
+	elseif GitHubDecompiler or decompile then
+		local decomp
+		if GitHubDecompiler then
+			decomp = makeTimeoutHandler(OPTIONS.DecompileTimeout, githubDecompile, "Decompiler timed out")
+		else
+			decomp = makeTimeoutHandler(OPTIONS.DecompileTimeout, decompile, "Decompiler timed out")
+		end
+
+		ldecompile = function(script)
+			local bytecode
+			if ScriptCache then
+				local s
+				s, bytecode = getbytecode(script)
+				local cached
+
+				if s then
+					if not bytecode or bytecode == "" then
+						return "-- The Script is Empty"
+					end
+					cached = ldeccache[bytecode]
+				else
+					bytecode = nil
+				end
+
+				if cached then
+					if __DEBUG_MODE then
+						__DEBUG_MODE("Found in Cache", script:GetFullName())
+					end
+					return cached
+				elseif DecompileJobless then
+					return "-- Not found in already decompiled ScriptCache"
+				end
+			else
+				if DecompileJobless then
+					return "-- Not found in already decompiled ScriptCache"
+				end
+			end
+
+			local ok, result = run_with_loading("Decompiling " .. script.Name, true, nil, decomp, script)
+			if not result then
+				ok, result = false, "Empty Output"
+			end
+
+			local output
+			if ok then
+				result = string.gsub(result, "\0", "\\0")
+				output = result
+			else
+				output = "--[[ Failed to decompile. Reason:\n" .. (result or "") .. "\n]]"
+			end
+
+			if ScriptCache and bytecode then
+				ldeccache[bytecode] = output
+				if __DEBUG_MODE then
+					__DEBUG_MODE("Cached", script:GetFullName())
+				end
+			end
+
+			return output
+		end
+	else
+		ldecompile = function()
+			return "-- Your Executor does NOT have a Decompiler"
+		end
+	end
+	-- ============================================================
+	-- 反编译修复结束
+	-- ============================================================
+
+	local function filterLinkedSource(str)
+		local o, r = pcall(service.HttpService.JSONDecode, service.HttpService, str)
+		if o and r.errors then
+			return
+		end
+		return true
+	end
+	local function sourceFor(instance, ldIgnoring)
+		if ldIgnoring then
+			return "-- Ignored"
+		end
+		local value
+		local should_decompile = true
+		local LinkedSource
+		local o, LinkedSource_Url = pcall(index, instance, "LinkedSource")
+		if not o then
+			LinkedSource_Url = ""
+		end
+		local hasLinkedSource = LinkedSource_Url ~= ""
+		local LinkedSource_type
+		if hasLinkedSource then
+			local Path = instance:GetFullName()
+			if RecoveredScripts then
+				table.insert(RecoveredScripts, Path)
+			end
+
+			LinkedSource = string.match(LinkedSource_Url, "%w+$")
+			if LinkedSource then
+				if ScriptCache then
+					local cached = ldeccache[LinkedSource]
+
+					if cached then
+						value = cached
+						should_decompile = nil
+					end
+				end
+				if should_decompile then
+					if DecompileJobless then
+						value = "-- Not found in LinkedSource ScriptCache"
+						should_decompile = nil
+					end
+
+					LinkedSource_type = string.find(LinkedSource, "%a") and "hash" or "id"
+
+					local asset = LinkedSource_type .. "=" .. LinkedSource
+
+					local ok, source = pcall(function()
+						return game:HttpGet("https://assetdelivery.roproxy.com/v1/asset/?" .. asset)
+					end)
+
+					if ok and filterLinkedSource(source) then
+						if ScriptCache then
+							ldeccache[LinkedSource] = source
+						end
+
+						value = source
+
+						should_decompile = nil
+					end
+				end
+			else
+				warn("FAILED TO EXTRACT LINKEDSOURCE (OPEN A GITHUB ISSUE): ", instance:GetFullName(), LinkedSource_Url)
+			end
+		end
+
+		if should_decompile then
+			local isLocalScript = instance:IsA("LocalScript")
+			if
+				isLocalScript and instance.RunContext == Enum.RunContext.Server
+				or not isLocalScript and instance:IsA("Script") and instance.RunContext ~= Enum.RunContext.Client
+			then
+				value = "-- [FilteringEnabled] Server Scripts are IMPOSSIBLE to save"
+			else
+				value = ldecompile(instance)
+				if SaveBytecode then
+					local output = SaveBytecode(instance)
+					if output then
+						value = output .. value
+					end
+				end
+			end
+		end
+
+		value = "-- Saved by FIN\n\n"
+			.. (hasLinkedSource and "-- Original Source: https://assetdelivery.roblox.com/v1/asset/?" .. (LinkedSource_type or "id") .. "=" .. (LinkedSource or LinkedSource_Url) .. "\n\n" or "")
+			.. value
+
+		return value
+	end
+
+	local function replaceClassName(instance, InstanceName, ClassName)
+		local InstanceOverride = InstancesOverrides[instance]
+
+		if InstanceOverride then
+			return InstanceOverride
+		end
+
+		if InstanceName ~= ClassName then
+			InstanceOverride = { Properties = { Name = "[" .. ClassName .. "] " .. InstanceName } }
+			InstancesOverrides[instance] = InstanceOverride
+		end
+
+		return InstanceOverride
+	end
+
+	local function isClassSerializable(className)
+		local known = ClassSerializableCache[className]
+		if known ~= nil then
+			return known
+		end
+
+		local function getSerialized(name)
+			return pcall(function()
+				return service.ReflectionService:GetClass(name, REFLECTION_FILTER).Serialized
+			end)
+		end
+
+		if ReflectionUsable == nil then
+			local ok, partSerialized = getSerialized("Part")
+			ReflectionUsable = not RiskyServicesDisabled.Reflection and ok and partSerialized == true
+		end
+
+		local serializable = true
+		if ReflectionUsable then
+			local ok, serialized = getSerialized(className)
+			serializable = not ok or serialized == true
+		end
+
+		ClassSerializableCache[className] = serializable
+		return serializable
+	end
+
+	local function refIsInvalid(target, valueType)
+		if not target then
+			return false
+		end
+		local className = target.ClassName
+
+		local fix = NotCreatableFixes[className] or nil
+		if fix then
+			if not SaveNotCreatableWillBeEnabled then
+				return false
+			end
+		elseif not isClassSerializable(className) then
+			fix = "Folder"
+		end
+		return fix ~= nil and (valueType ~= "Instance" and valueType ~= fix)
+	end
+
+	local function nilIsValid(category, optional)
+		return optional ~= nil or category == "Class"
+	end
+
+	local function filterPropVal(result, property, category, optional)
+		if result == nil then
+			return not nilIsValid(category, optional)
+		end
+		if result == "can't get value" then
+			return true
+		end
+
+		if type(result) ~= "string" or #result > 256 then
+			return false
+		end
+		if category == "Enum" then
+			return true
+		end
+		local needle = property.ErrNeedle
+		if not needle then
+			needle = "Unable to get property " .. property.Name
+			property.ErrNeedle = needle
+		end
+		return string_find(result, needle) ~= nil
+	end
+
+	local GHP_STATE_FILE = USSI_FOLDER .. "GHP_STATE.json"
+	local GHPDatatypeState = {}
+	local GHPPersisted = {}
+	local GHPVersionKey
+	local GHPShadowed = true
+
+	do
+		local execName, execVersion = "UNKNOWN", "0"
+		if identify_executor then
+			execName, execVersion = identify_executor()
+			if not execVersion then
+				execVersion = "0"
+			end
+		end
+
+		GHPVersionKey = sanitizeFileName(execName .. "_" .. execVersion .. "_" .. FULL_VERSION)
+
+		if readfile then
+			local ok, decoded = pcall(function()
+				return service.HttpService:JSONDecode(readfile(GHP_STATE_FILE))
+			end)
+			if ok and type(decoded) == "table" and type(decoded[GHPVersionKey]) == "table" then
+				GHPPersisted = decoded[GHPVersionKey]
+			end
+		end
+	end
+
+	local function saveGHPState()
+		if not writefile then
+			return
+		end
+		pcall(writefile, GHP_STATE_FILE, service.HttpService:JSONEncode({ [GHPVersionKey] = GHPPersisted }))
+	end
+
+	local function ghpDatatypeAllowed(valueType)
+		local state = GHPDatatypeState[valueType]
+		if state ~= nil then
+			return state
+		end
+
+		local persisted = GHPPersisted[valueType]
+		if persisted == "ok" then
+			state = true
+		elseif persisted == "failed" or persisted == "crashed" then
+			state = false
+		else
+			local text
+			if StatusText then
+				text = StatusText.Text
+				StatusText.Text = "Testing ghp.. Rerun script if crashed"
+			end
+			wait_for_render()
+
+			GHPPersisted[valueType] = "crashed"
+			saveGHPState()
+			if StatusText then
+				StatusText.Text = text
+			end
+			state = true
+		end
+
+		GHPDatatypeState[valueType] = state
+		return state
+	end
+
+	local function ghpDatatypeReport(valueType, ok)
+		local wantState = ok and "ok" or "failed"
+		if GHPPersisted[valueType] == wantState then
+			return
+		end
+		GHPPersisted[valueType] = wantState
+		GHPDatatypeState[valueType] = ok
+		saveGHPState()
+	end
+
+	local function readProperty(instance, property)
+		local PropertyName, ValueType, CanRead, Special =
+			property.Name, property.ValueType, property.CanRead, property.Special
+
+		if
+			Anonymizers == nil
+			and InstancesOverrides[instance] == nil
+			and CanRead == true
+			and not Special
+			and not (ValueType == "ProtectedString" and PropertyName == "Source")
+		then
+			return instance[PropertyName]
+		end
+
+		local raw = __BREAK
+
+		local InstanceOverride = InstancesOverrides[instance]
+		if InstanceOverride then
+			local PropertiesOverride = InstanceOverride.Properties
+			if PropertiesOverride then
+				local PropertyOverride = PropertiesOverride[PropertyName]
+				if PropertyOverride ~= nil then
+					return anonymize(PropertyOverride, ValueType)
+				end
+			end
+		end
+
+		if ValueType == "ProtectedString" and PropertyName == "Source" and isLuaSourceContainer(instance) then
+			return sourceFor(instance, decompileIgnoreMap[instance])
+		end
+
+		local Category, Optional = property.Category, property.Optional
+
+		if CanRead ~= false then
+			local GHPKey = (Category == "Enum" or Category == "Class") and Category or ValueType
+
+			if Special then
+				if property.Shadows and GHPShadowed then
+					property.CanRead = false
+				elseif gethiddenproperty and ghpDatatypeAllowed(GHPKey) then
+					local ok, result = pcall(gethiddenproperty, instance, PropertyName)
+					if ok then
+						raw = result
+					end
+
+					local filtered = filterPropVal(raw, property, Category, Optional)
+					local realFailure = filtered and not (result == nil and nilIsValid(Category, Optional))
+
+					ghpDatatypeReport(GHPKey, ok and not realFailure)
+
+					if filtered then
+						if realFailure then
+							if __DEBUG_MODE then
+								__DEBUG_MODE("Filtered", PropertyName)
+							end
+							property.CanRead = false
+						end
+						raw = __BREAK
+					end
+				end
+			elseif CanRead then
+				raw = instance[PropertyName]
+			else
+				local ok, result = pcall(index, instance, PropertyName)
+				if ok then
+					raw = result
+				elseif not (property.Shadows and GHPShadowed) and gethiddenproperty and ghpDatatypeAllowed(GHPKey) then
+					ok, result = pcall(gethiddenproperty, instance, PropertyName)
+					ghpDatatypeReport(GHPKey, ok and not filterPropVal(result, property, Category, Optional))
+					if ok then
+						raw = result
+						property.Special = true
+					end
+				end
+
+				property.CanRead = ok
+
+				if not ok or filterPropVal(raw, property, Category, Optional) then
+					raw = __BREAK
+				end
+			end
+
+			if raw ~= __BREAK then
+				return anonymize(raw, ValueType)
+			end
+		end
+
+		local GHPFFailed, Fallback = property.GHPFFailed, property.Fallback
+		if GHPFFailed and not Fallback then
+			return __BREAK
+		end
+
+		if not GHPFFailed then
+			local ok, result = pcall(gethiddenproperty_fallback, instance, PropertyName)
+			if result == nil and not nilIsValid(Category, Optional) then
+				ok = nil
+			end
+			if ok then
+				return anonymize(result, ValueType)
+			end
+			GHPFFailed = true
+			property.GHPFFailed = true
+		end
+
+		if GHPFFailed and Fallback then
+			local ok, result = pcall(Fallback, instance)
+			if ok then
+				return anonymize(result, ValueType)
+			end
+			property.Fallback = nil
+			if __DEBUG_MODE then
+				__DEBUG_MODE("Fix Failed", PropertyName, result)
+			end
+		end
+
+		return __BREAK
+	end
+
+	local function GetInheritedProps(className)
+		local cached = inheritedProperties[className]
+		if cached then
+			return cached
+		end
+
+		local prop_list = {}
+		local layer = ClassList[className]
+		while layer do
+			local layer_props = layer.Properties
+			table.move(layer_props, 1, #layer_props, #prop_list + 1, prop_list)
+
+			layer = ClassList[layer.Superclass]
+		end
+		inheritedProperties[className] = prop_list
+		return prop_list
+	end
+
+	local function collect(roots)
+		local ctx = {
+			entries = {},
+			classList = {},
+			ordered = {},
+			refs = {},
+			instCount = 0,
+			instTypeCount = 0,
+		}
+
+		local entries, classList = ctx.entries, ctx.classList
+		local ordered, refs = ctx.ordered, ctx.refs
+
+		local function recur(instance, parent, ldIgnore)
+			if entries[instance] then
+				return
+			end
+
+			yieldIfDue()
+
+			local override = InstancesOverrides[instance]
+			local tagOverride = override and override.__ClassName
+			local virtual = override and override.__Virtual
+
+			local class = virtual or instance.ClassName
+			local name = virtual and override.Properties.Name or instance.Name
+			local unknownTag, propClass, skipEntirely
+
+			local own = DecompileIgnore[instance]
+			if own == nil then
+				local byClass = DecompileIgnore[class]
+				if byClass ~= nil then
+					own = byClass == true or byClass[name]
+				end
+			end
+			if own == true then
+				ldIgnore = true
+			elseif own == false then
+				ldIgnore = "self"
+			end
+			if ldIgnore then
+				decompileIgnoreMap[instance] = true
+			end
+
+			if not tagOverride then
+				if IgnoreNotArchivable and not instance.Archivable then
+					return
+				end
+
+				skipEntirely = IgnoreList[instance]
+				if skipEntirely then
+					return
+				end
+
+				local onIgnoredList = IgnoreList[class]
+				if onIgnoredList == false then
+					skipEntirely = false
+				elseif onIgnoredList and (onIgnoredList == true or onIgnoredList[name]) then
+					return
+				end
+
+				local fix = NotCreatableFixes[class]
+
+				if fix then
+					if not SaveNotCreatable then
+						return
+					end
+					class, override = fix, replaceClassName(instance, name, class)
+					if class == "Folder" then
+						propClass = "Instance"
+					end
+				elseif TreatUnionsAsParts and instance:IsA("PartOperation") then
+					class, override = "Part", replaceClassName(instance, name, class)
+					propClass = "BasePart"
+				elseif not isClassSerializable(class) then
+					class, override, propClass = "Folder", replaceClassName(instance, name, class), "Instance"
+					HasAutoRemaps = true
+				elseif not ClassList[class] then
+					if __DEBUG_MODE then
+						__DEBUG_MODE("Class not Found", class)
+					end
+					unknownTag, class, propClass = class, "Folder", "Instance"
+				end
+			elseif tagOverride == "Folder" then
+				propClass = "Instance"
+			end
+
+			local e = {
+				tag = unknownTag or tagOverride or class,
+
+				class = tagOverride or class,
+				propClass = propClass or class,
+				override = override,
+				propsOnly = virtual ~= nil or (override and override.__Synthetic),
+				virtual = virtual ~= nil,
+				parent = parent,
+			}
+			entries[instance] = e
+
+			refs[instance] = ctx.instCount
+			ctx.instCount += 1
+
+			local bucket = e.tag
+			if e.propsOnly then
+				bucket ..= "\0" .. e.propClass .. "\0propsOnly"
+			elseif e.propClass ~= bucket then
+				bucket ..= "\0" .. e.propClass
+			end
+			local list = classList[bucket]
+			if not list then
+				list = {}
+				classList[bucket] = list
+				ctx.instTypeCount += 1
+			end
+			list[#list + 1] = instance
+
+			local kids
+			if skipEntirely ~= false then
+				local children = (override and override.__Children) or (not virtual and instance:GetChildren())
+
+				kids = table.create(#children)
+				for _, child in children do
+					recur(child, instance, ldIgnore == true and true or nil)
+					if entries[child] then
+						kids[#kids + 1] = child
+					end
+				end
+			end
+			e.children = kids or {}
+			ordered[#ordered + 1] = instance
+		end
+
+		local roots_kept = table.create(#roots)
+		for _, root in roots do
+			recur(root)
+			if entries[root] then
+				roots_kept[#roots_kept + 1] = root
+			end
+		end
+		ctx.roots = roots_kept
+
+		return ctx
+	end
+
+	local pendingExtras = {}
+
+	local function register_extra(name, instanceOrTable, saveProps, customClassName, source)
+		customClassName = customClassName or "Folder"
+		local properties = { Name = name, Source = source }
+		local extra = { customClassName = customClassName, properties = properties }
+
+		if instanceOrTable and saveProps and type(instanceOrTable) ~= "table" then
+			local existing = InstancesOverrides[instanceOrTable]
+			if existing then
+				existing.__ClassName = customClassName
+				existing.Properties = properties
+			else
+				InstancesOverrides[instanceOrTable] = {
+					__ClassName = customClassName,
+					Properties = properties,
+				}
+			end
+			extra.roots = { instanceOrTable }
+		else
+			local children
+			if instanceOrTable then
+				children = type(instanceOrTable) == "table" and instanceOrTable or instanceOrTable:GetChildren()
+			end
+			local node = {}
+			InstancesOverrides[node] = {
+				__ClassName = customClassName,
+				__Virtual = customClassName,
+				__Children = children or {},
+				Properties = properties,
+			}
+			extra.roots = { node }
+		end
+
+		pendingExtras[#pendingExtras + 1] = extra
+		return extra
+	end
+
+	local function emitBinary(ctx)
+		local function readAll(objs, prop)
+			local n = #objs
+			local vals = table.create(n)
+
+			for i = 1, n do
+				yieldIfDue()
+				local raw = readProperty(objs[i], prop)
+				if raw == __BREAK then
+					return nil, i
+				end
+				vals[i] = raw
+			end
+
+			return vals
+		end
+
+		local function buildChunk(name, chunkBuf, compress)
+			local uncompressedLen = chunkBuf.len
+			local head = buffer.create(16)
+			buffer.writestring(head, 0, name)
+
+			if compress then
+				local dataStr = compress(chunkBuf:tostring())
+				if dataStr and #dataStr < uncompressedLen then
+					buffer.writeu32(head, 4, #dataStr)
+					buffer.writeu32(head, 8, uncompressedLen)
+					return { buf = head, len = 16, str = dataStr }
+				end
+			end
+
+			buffer.writeu32(head, 8, uncompressedLen)
+
+			return {
+				buf = head,
+				len = 16,
+				tailBuf = chunkBuf.buf,
+				tailLen = uncompressedLen,
+			}
+		end
+
+		local compress = CompressionMode == "zstd"
+				and function(raw)
+					return zstdcompress(raw, CompressionLevel)
+				end
+			or CompressionMode == "lz4" and lz4compress
+			or nil
+
+		local entries, classList = ctx.entries, ctx.classList
+		local refs, ordered = ctx.refs, ctx.ordered
+		local instCount, instTypeCount = ctx.instCount, ctx.instTypeCount
+
+		local chunks, propChunks = {}, {}
+
+		local lastStatus = 0
+
+		local function emit(chunk)
+			chunks[#chunks + 1] = chunk
+			totalsize += chunk.len + (chunk.str and #chunk.str or chunk.tailLen or 0)
+
+			if StatusText then
+				local now = os.clock()
+				if now - lastStatus > 1 then
+					lastStatus = now
+					StatusText.Text = "Saving.. Size: " .. get_size_format()
+					wait_for_render()
+				end
+			end
+		end
+
+		do
+			local header = buffer.create(32)
+			buffer.writestring(header, 0, "\60\114\111\98\108\111\120\33\137\255\13\10\26\10\0\0")
+			buffer.writei32(header, 16, instTypeCount)
+			buffer.writei32(header, 20, instCount)
+			emit({ buf = header, len = 32 })
+		end
+
+		if IsModel then
+			local metaBuf = StreamBuffer.new(64)
+			metaBuf:writeu32(1)
+			metaBuf:writeLenString("ExplicitAutoJoints")
+			metaBuf:writeLenString("true")
+			emit(buildChunk("META", metaBuf, compress))
+		end
+
+		local sstrSlot = #chunks + 1
+
+		local sharedStringCtx = { count = 0, order = {}, hashes = {} }
+
+		local classId = 0
+		local deferredBuckets
+
+		local function encode_class_bucket(objs)
+			local n = #objs
+			local entry = entries[objs[1]]
+
+			local class = entry.class
+
+			local instBuf = StreamBuffer.new(64 + 4 * n)
+			instBuf:writeu32(classId)
+			instBuf:writeLenString(class)
+			local classInfo = ClassList[class]
+
+			local isService = classInfo and classInfo.Service
+			instBuf:writeu8(isService and 1 or 0)
+			instBuf:writeu32(n)
+
+			writeRefPlane(instBuf, n, instBuf:allocRegion(4 * n), function(i)
+				return refs[objs[i]]
+			end)
+
+			if isService then
+				buffer.fill(instBuf.buf, instBuf:allocRegion(n), 1, n)
+			end
+
+			emit(buildChunk("INST", instBuf, compress))
+
+			local skipProps = IgnorePropertiesOfNotScriptsOnScriptsMode
+				and not entry.propsOnly
+				and not isLuaSourceContainer(objs[1])
+
+			if entry.propsOnly then
+				for propName in entry.override.Properties do
+					local isSource = propName == "Source"
+					local buf = StreamBuffer.new(64 + n * 16)
+					buf:writeu32(classId)
+					buf:writeLenString(propName)
+					buf:writeu8(isSource and Type_Ids.ProtectedString or Type_Ids.string)
+
+					for i = 1, n do
+						local value = entries[objs[i]].override.Properties[propName]
+						if type(value) == "function" then
+							value = value()
+						end
+						buf:writeLenString(value or "")
+					end
+
+					local chunk = buildChunk("PROP", buf, not isSource and compress or nil)
+					propChunks[#propChunks + 1] = chunk
+					totalsize += chunk.len + (chunk.str and #chunk.str or chunk.tailLen or 0)
+				end
+			elseif not skipProps then
+				for _, prop in GetInheritedProps(entry.propClass) do
+					local propName = prop.Name
+					if IgnoreProperties[propName] then
+						continue
+					end
+
+					local valueType = prop.ValueType
+
+					if SharedBinaryStrings and valueType == "BinaryString" then
+						valueType = "SharedString"
+					end
+
+					local binaryType = valueType
+					local refCtxArg = nil
+
+					if prop.Category == "Enum" then
+						binaryType = "Enum"
+					elseif prop.Category == "Class" then
+						binaryType = "Referent"
+						refCtxArg = refs
+					elseif binaryType == "Content" then
+						refCtxArg = refs
+					end
+
+					local encoder = Binary_Encoders[binaryType]
+					local typeId = Type_Ids[binaryType]
+					if typeId == Type_Ids.SharedString then
+						refCtxArg = sharedStringCtx
+					end
+
+					local vals, failedAt = readAll(objs, prop)
+					if not vals then
+						if __DEBUG_MODE then
+							__DEBUG_MODE("PROP dropped", class, propName, "n=" .. #objs, "failed at " .. failedAt)
+						end
+						continue
+					end
+
+					if encoder and typeId then
+						if (SaveNotCreatableWillBeEnabled or HasAutoRemaps) and prop.Category == "Class" then
+							for i = 1, n do
+								if refIsInvalid(vals[i], valueType) then
+									vals[i] = nil
+								end
+							end
+						end
+
+						local propBuf = StreamBuffer.new(128 + #objs * 4)
+						propBuf:writeu32(classId)
+						propBuf:writeLenString(propName)
+						propBuf:writeu8(typeId)
+
+						encoder(propBuf, vals, #objs, refCtxArg)
+						local chunk = buildChunk("PROP", propBuf, compress)
+						propChunks[#propChunks + 1] = chunk
+						totalsize += chunk.len + (chunk.str and #chunk.str or chunk.tailLen or 0)
+					else
+						warn("UNSUPPORTED BINARY TYPE (OPEN A GITHUB ISSUE): ", propName, binaryType)
+					end
+				end
+			end
+
+			classId += 1
+		end
+
+		for _, objs in classList do
+			if entries[objs[1]].deferLast then
+				deferredBuckets = deferredBuckets or {}
+				table.insert(deferredBuckets, objs)
+			else
+				encode_class_bucket(objs)
+			end
+		end
+
+		if deferredBuckets then
+			for _, objs in deferredBuckets do
+				encode_class_bucket(objs)
+			end
+		end
+
+		if sharedStringCtx.count > 0 then
+			local sstrBuf = StreamBuffer.new(64 + sharedStringCtx.count * 32)
+			sstrBuf:allocRegion(4)
+			sstrBuf:writeu32(sharedStringCtx.count)
+			for i = 1, sharedStringCtx.count do
+				sstrBuf:allocRegion(16)
+				sstrBuf:writeLenString(sharedStringCtx.order[i])
+			end
+			local chunk = buildChunk("SSTR", sstrBuf, compress)
+			table.insert(chunks, sstrSlot, chunk)
+
+			totalsize += chunk.len + (chunk.str and #chunk.str or chunk.tailLen or 0)
+		end
+
+		if #propChunks > 0 then
+			table.move(propChunks, 1, #propChunks, #chunks + 1, chunks)
+		end
+
+		do
+			local prntBuf = StreamBuffer.new(16 + instCount * 8)
+			prntBuf:allocRegion(1)
+			prntBuf:writeu32(instCount)
+
+			local objBase = prntBuf:allocRegion(4 * instCount)
+			local parBase = prntBuf:allocRegion(4 * instCount)
+
+			writeRefPlane(prntBuf, instCount, objBase, function(i)
+				return refs[ordered[i]]
+			end)
+			writeRefPlane(prntBuf, instCount, parBase, function(i)
+				local par = entries[ordered[i]].parent
+				return (par and refs[par]) or -1
+			end)
+
+			emit(buildChunk("PRNT", prntBuf, compress))
+		end
+
+		do
+			local endBuf = StreamBuffer.new(16)
+			endBuf:writestring("</roblox>")
+			emit(buildChunk("END\0", endBuf, nil))
+		end
+
+		local out = table.create(#chunks)
+		for i, c in chunks do
+			local payloadLen = c.str and #c.str or c.tailLen or 0
+			if payloadLen == 0 then
+				out[i] = buffer.readstring(c.buf, 0, c.len)
+				continue
+			end
+
+			local chunkBuf = buffer.create(c.len + payloadLen)
+			buffer.copy(chunkBuf, 0, c.buf, 0, c.len)
+			if c.str then
+				buffer.writestring(chunkBuf, c.len, c.str)
+			else
+				buffer.copy(chunkBuf, c.len, c.tailBuf, 0, payloadLen)
+			end
+			out[i] = buffer.tostring(chunkBuf)
+		end
+
+		return out
+	end
+
+	local function emitXML(ctx)
+		local chunks = table.create(1)
+		local savebuffer, savebuffer_size = {}, 1
+		local header =
+			'<!-- Saved by FIN --><roblox version="4">'
+		local refs = ctx.refs
+
+		local function ReturnProperty(tag, propertyName, value)
+			return "<" .. tag .. ' name="' .. propertyName .. '">' .. value .. "</" .. tag .. ">"
+		end
+
+		local function ReturnValueAndTag(raw, valueType, encoder)
+			local value, tag = (encoder or XML_Encoders[valueType])(raw)
+			return value, tag or valueType
+		end
+
+		local function ReturnItem(className, instance)
+			return '<Item class="' .. className .. '" referent="' .. refs[instance] .. '"><Properties>'
+		end
+
+		local function save_cache()
+			local savestr = table.concat(savebuffer)
+
+			local savestr_len = #savestr
+			totalsize += savestr_len
+
+			table.insert(chunks, savestr)
+
+			table.clear(savebuffer)
+			savebuffer_size = 1
+
+			if StatusText then
+				StatusText.Text = "Saving.. Size: " .. get_size_format()
+			end
+
+			wait_for_render()
+		end
+
+		local function save_hierarchy(hierarchy, ctx)
+			local entries = ctx.entries
+
+			for _, instance in hierarchy do
+				local entry = entries[instance]
+				if not entry then
+					continue
+				end
+
+				savebuffer[savebuffer_size] = ReturnItem(entry.tag, instance)
+				savebuffer_size += 1
+
+				if entry.propsOnly then
+					for propName, value in entry.override.Properties do
+						if type(value) == "function" then
+							value = value()
+						end
+						if value ~= nil then
+							if propName == "Source" then
+								savebuffer[savebuffer_size] =
+									ReturnProperty("ProtectedString", propName, XML_Encoders.ProtectedString(value))
+							else
+								savebuffer[savebuffer_size] =
+									ReturnProperty("string", propName, XML_Encoders.string(value))
+							end
+							savebuffer_size += 1
+						end
+					end
+				elseif not (IgnorePropertiesOfNotScriptsOnScriptsMode and not isLuaSourceContainer(instance)) then
+					local default_instance, new_def_inst
+
+					if IgnoreDefaultProperties then
+						default_instance = defaultInstances[entry.class]
+						if not default_instance then
+							local Class = ClassList[entry.class]
+							if not Class.NotCreatable then
+								local ok, result = pcall(Instance.new, entry.class)
+								if ok then
+									new_def_inst = result
+									default_instance = {}
+									defaultInstances[entry.class] = default_instance
+								else
+									Class.NotCreatable = true
+									if __DEBUG_MODE then
+										__DEBUG_MODE("Failed to create default Instance", entry.class, result)
+									end
+								end
+							elseif __DEBUG_MODE then
+								__DEBUG_MODE("Unable to create default Instance (NotCreatable)", entry.class)
+							end
+						end
+					end
+					for _, Property in GetInheritedProps(entry.propClass) do
+						local PropertyName = Property.Name
+
+						if IgnoreProperties[PropertyName] then
+							continue
+						end
+
+						local ValueType = Property.ValueType
+
+						local Category, Optional = Property.Category, Property.Optional
+						local raw
+
+						raw = readProperty(instance, Property)
+						if raw == __BREAK then
+							continue
+						end
+
+						if
+							default_instance
+							and Property.CanRead
+							and not Property.Special
+							and ValueType ~= "ProtectedString"
+						then
+							if new_def_inst then
+								default_instance[PropertyName] = index(new_def_inst, PropertyName)
+							end
+							if default_instance[PropertyName] == raw then
+								continue
+							end
+						end
+
+						if SharedBinaryStrings and ValueType == "BinaryString" then
+							ValueType = "SharedString"
+						end
+
+						local tag, value
+						if Category == "Class" then
+							tag = "Ref"
+							if raw and refs[raw] ~= nil and not refIsInvalid(raw, ValueType) then
+								value = refs[raw]
+							else
+								value = "null"
+							end
+						elseif Category == "Enum" then
+							value, tag = XML_Encoders.EnumItem(raw)
+						else
+							local encoder = XML_Encoders[ValueType]
+
+							if encoder then
+								value, tag = ReturnValueAndTag(raw, ValueType, encoder)
+							elseif Optional then
+								encoder = XML_Encoders[Optional]
+								if encoder then
+									if raw == nil then
+										continue
+									end
+									value, tag = ReturnValueAndTag(raw, ValueType, encoder)
+								end
+							end
+						end
+
+						if tag then
+							savebuffer[savebuffer_size] = ReturnProperty(tag, PropertyName, value)
+							savebuffer_size += 1
+						else
+							warn("UNSUPPORTED XML TYPE (OPEN A GITHUB ISSUE): ", PropertyName, ValueType)
+						end
+					end
+				end
+
+				savebuffer[savebuffer_size] = "</Properties>"
+				savebuffer_size += 1
+
+				if SaveCacheInterval < savebuffer_size then
+					save_cache()
+				end
+
+				local children = entry.children
+				if #children ~= 0 then
+					save_hierarchy(children, ctx)
+				end
+
+				savebuffer[savebuffer_size] = "</Item>"
+				savebuffer_size += 1
+			end
+		end
+
+		if IsModel then
+			header ..= '<Meta name="ExplicitAutoJoints">true</Meta>'
+		end
+
+		savebuffer[savebuffer_size] = header
+		savebuffer_size += 1
+
+		save_hierarchy(ctx.mainRoots, ctx)
+
+		for _, extra in pendingExtras do
+			save_hierarchy(extra.collectedRoots, ctx)
+		end
+
+		do
+			local tmp = { "<SharedStrings>" }
+			for value, id in sharedStrings do
+				table.insert(tmp, '<SharedString md5="' .. id .. '">' .. value .. "</SharedString>")
+			end
+
+			if 1 < #tmp then
+				savebuffer[savebuffer_size] = table.concat(tmp)
+				savebuffer_size += 1
+				savebuffer[savebuffer_size] = "</SharedStrings>"
+				savebuffer_size += 1
+			end
+		end
+
+		savebuffer[savebuffer_size] = "</roblox>"
+		savebuffer_size += 1
+		save_cache()
+		return chunks
+	end
+
+	local function save_game()
+		SaveNotCreatable = SaveNotCreatable
+			or IsolateLocalPlayer
+			or IsolatePlayers
+			or (NilInstances and global_container.getnilinstances) and true
+			or false
+		SaveNotCreatableWillBeEnabled = SaveNotCreatable
+
+		if IsolateLocalPlayer or IsolateLocalPlayerCharacter then
+			local LocalPlayer = service.Players.LocalPlayer
+			if LocalPlayer then
+				if IsolateLocalPlayer then
+					register_extra("LocalPlayer", LocalPlayer, true)
+				end
+				if IsolateLocalPlayerCharacter then
+					local Character = LocalPlayer.Character
+					if Character then
+						register_extra("LocalPlayer Character", Character, true, "Model")
+					end
+				end
+			end
+		end
+
+		if IsolateStarterPlayer then
+			register_extra("StarterPlayer", service.StarterPlayer)
+		end
+
+		if IsolatePlayers then
+			register_extra("Players", service.Players)
+		end
+
+		if NilInstances and global_container.getnilinstances then
+			local nil_instances, nil_instances_size = {}, 1
+
+			local NilInstancesFixes = OPTIONS.NilInstancesFixes
+
+			for _, instance in global_container.getnilinstances() do
+				if instance:IsA("ServiceProvider") then
+					instance = nil
+				else
+					local ClassName = instance.ClassName
+
+					local Fix = NilInstancesFixes[ClassName]
+					if Fix == nil then
+						for class_name, inheritedFix in NilInstancesFixes do
+							if instance:IsA(class_name) then
+								Fix = inheritedFix
+								break
+							end
+						end
+					end
+
+					if Fix then
+						instance = Fix(instance, InstancesOverrides)
+					end
+
+					local Class = ClassList[ClassName]
+					if Class then
+						if Class.Service then
+							instance = nil
+						end
+					end
+				end
+				if instance then
+					nil_instances[nil_instances_size] = instance
+					nil_instances_size += 1
+				end
+			end
+			register_extra("Nil Instances", nil_instances)
+		end
+
+		local ELAPSED_PLACEHOLDER = "@@ELAPSED" .. string.gsub(service.HttpService:GenerateGUID(false), "-", "") .. "@@"
+		local ELAPSED_WIDTH = "%-" .. #ELAPSED_PLACEHOLDER .. "s"
+
+		local function stampElapsed(chunks, seconds)
+			local repl = string.format(ELAPSED_WIDTH, string.format("%.6f seconds", seconds))
+			if #repl ~= #ELAPSED_PLACEHOLDER then
+				return
+			end
+			for i, chunk in chunks do
+				local at = string.find(chunk, ELAPSED_PLACEHOLDER, 1, true)
+				if at then
+					chunks[i] = string.sub(chunk, 1, at - 1) .. repl .. string.sub(chunk, at + #ELAPSED_PLACEHOLDER)
+					return
+				end
+			end
+		end
+
+		local readmeExtra
+		if OPTIONS.ReadMe then
+			local binaryNote = ""
+			if not OPTIONS.Binary then
+				binaryNote = [[
+		If you didn't save in Binary (rbxl) - it's recommended to save the game right away to take advantage of the binary format & to preserve values of certain properties if you used IgnoreDefaultProperties setting (as they might change in the future).
+		You can do that by going to FILE -> Save to File As -> Make sure File Name ends with .rbxl -> Save
+
+]]
+			end
+
+			local helpText = [[
+		ServerStorage, ServerScriptService and Server Scripts are IMPOSSIBLE to save because of FilteringEnabled.
+
+		If your player cannot spawn into the game, please move the scripts in StarterPlayer somewhere else or delete them. Then run `game:GetService("Players").CharacterAutoLoads = true`.
+		And use "Play Here" to start game instead of "Play" to spawn your Character where your Camera currently is.
+
+		If the chat system does not work, please use the explorer and delete everything inside the TextChatService/Chat service(s).
+		Or run `game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()`
+
+		If Union and MeshPart collisions don't work, run the script below in the Studio Command Bar:
+
+
+		local C = game:GetService("CoreGui")
+		local D = Enum.CollisionFidelity.Default
+
+		for _, v in game:GetDescendants() do
+			if v:IsA("TriangleMeshPart") and not v:IsDescendantOf(C) then
+				v.CollisionFidelity = D
+			end
+		end
+		print("Done")
+
+		If you can't move the Camera, run this script in the Studio Command Bar:
+
+		workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed
+
+		Or Destroy the Camera.
+
+		This file was generated with the following settings:
+		]]
+
+			local platformName = select(
+				2,
+				pcall(function()
+					return service.UserInputService:GetPlatform().Name
+				end)
+			) or "Unknown"
+
+			local executorName = identify_executor and table.concat({ identify_executor() }, " ") or "Unknown"
+
+			local metaFooter = table.concat({
+				"\n\n\t\tElapsed time: ",
+				ELAPSED_PLACEHOLDER,
+				"\n\t\tDate (UTC): ",
+				DateTime.now():FormatUniversalTime("LL LTS", "en-gb"),
+				" PlaceId: ",
+				game.PlaceId,
+				" PlaceVersion: ",
+				game.PlaceVersion,
+				" Client Version: ",
+				FULL_VERSION,
+				" Platform: ",
+				platformName,
+				" Executor: ",
+				executorName,
+			})
+
+			readmeExtra = register_extra("README", nil, nil, "Script", function()
+				local recoveredNote = ""
+				if #RecoveredScripts ~= 0 then
+					recoveredNote = "\t\tIMPORTANT: Original Source of these Scripts was Recovered: "
+						.. service.HttpService:JSONEncode(RecoveredScripts)
+						.. "\n"
+				end
+
+				local failedTypes, crashTypes = {}, {}
+				for datatype, state in GHPPersisted do
+					if state == "crashed" then
+						table.insert(crashTypes, datatype)
+					elseif state ~= "ok" then
+						table.insert(failedTypes, datatype)
+					end
+				end
+				table.sort(failedTypes)
+				table.sort(crashTypes)
+
+				local ghpFailureHeader = ""
+				if #failedTypes > 0 or #crashTypes > 0 then
+					ghpFailureHeader ..= [[
+		!! GETHIDDENPROPERTY ISSUES !!
+		Your executor's gethiddenproperty couldn't read the types below, so this save might be missing data or have wrong values.
+		Please tell your executor's developers about this. Affected types:
+		]]
+					if #failedTypes > 0 then
+						ghpFailureHeader ..= "\t\tFailed reads: " .. service.HttpService:JSONEncode(failedTypes) .. "\n"
+					end
+					if #crashTypes > 0 then
+						ghpFailureHeader ..= "\t\tCrashed a previous run (now skipped entirely): " .. service.HttpService:JSONEncode(
+							crashTypes
+						) .. "\n"
+					end
+					ghpFailureHeader ..= "\n"
+				end
+
+				return table.concat({
+					"--[[\n",
+					"\t\tThank you\n\n",
+					recoveredNote,
+					ghpFailureHeader,
+					binaryNote,
+					helpText,
+					service.HttpService:JSONEncode(OPTIONS),
+					metaFooter,
+					"\n]]",
+				})
+			end)
+		end
+
+		local allRoots = table.clone(ToSaveList)
+		for _, extra in pendingExtras do
+			for _, root in extra.roots do
+				allRoots[#allRoots + 1] = root
+			end
+		end
+
+		local ctx = collect(allRoots)
+
+		for _, extra in pendingExtras do
+			local src = extra.roots
+			local kept = table.create(#src)
+			for _, root in src do
+				if ctx.entries[root] then
+					kept[#kept + 1] = root
+				end
+			end
+			extra.collectedRoots = kept
+		end
+
+		if readmeExtra then
+			local readmeEntry = ctx.entries[readmeExtra.roots[1]]
+			if readmeEntry then
+				readmeEntry.deferLast = true
+			end
+		end
+
+		local claimed = {}
+		for _, extra in pendingExtras do
+			for _, root in extra.collectedRoots do
+				claimed[root] = true
+				local rootEntry = ctx.entries[root]
+				local isVirtual = rootEntry and rootEntry.virtual
+				local toDetach = isVirtual and table.clone(rootEntry.children) or { root }
+
+				for _, node in toDetach do
+					local e = ctx.entries[node]
+					local old = e.parent and ctx.entries[e.parent]
+
+					if e.parent ~= root then
+						if old then
+							local kids = old.children
+							for i = #kids, 1, -1 do
+								if kids[i] == node then
+									table.remove(kids, i)
+									break
+								end
+							end
+						end
+						e.parent = isVirtual and root or nil
+					end
+				end
+			end
+		end
+
+		local mainRoots = table.create(#ctx.roots)
+		for _, root in ctx.roots do
+			if not claimed[root] then
+				mainRoots[#mainRoots + 1] = root
+			end
+		end
+		ctx.mainRoots = mainRoots
+
+		local chunks = OPTIONS.Binary and emitBinary(ctx) or emitXML(ctx)
+
+		if OPTIONS.ReadMe then
+			stampElapsed(chunks, os.clock() - elapse_t)
+		end
+
+		if CopyToClipboard then
+			setrbxclipboard(table.concat(chunks))
+		elseif Callback then
+			Callback(table.concat(chunks), chunks)
+		elseif OPTIONS.AlternativeWritefile and appendfile then
+			local SEGMENT_SIZE = 4145728
+			local batch, batchSize, written = {}, 0, 0
+
+			local function flush()
+				if batchSize == 0 then
+					return
+				end
+				written += batchSize
+				run_with_loading(
+					"Writing to File " .. math.round(written / totalsize * 100) .. "%",
+					nil,
+					false,
+					appendfile,
+					placename,
+					table.concat(batch)
+				)
+				table.clear(batch)
+				batchSize = 0
+				task.wait()
+			end
+
+			writefile(placename, "")
+
+			for _, chunk in chunks do
+				if #chunk >= SEGMENT_SIZE then
+					flush()
+					local offset = 1
+					while offset <= #chunk do
+						appendfile(placename, string.sub(chunk, offset, offset + SEGMENT_SIZE - 1))
+						offset += SEGMENT_SIZE
+						task.wait()
+					end
+					written += #chunk
+				else
+					batch[#batch + 1] = chunk
+					batchSize += #chunk
+					if batchSize >= SEGMENT_SIZE then
+						flush()
+					end
+				end
+			end
+
+			flush()
+		elseif writefile then
+			run_with_loading(
+				"Writing " .. get_size_format() .. " to File",
+				nil,
+				true,
+				writefile,
+				placename,
+				table.concat(chunks)
+			)
+		end
+	end
+
+	local Connections = {}
+	local function Connect(event, func)
+		table.insert(Connections, event:Connect(func))
+	end
+	local function Cleanup()
+		for _, connection in Connections do
+			connection:Disconnect()
+		end
+		GLOBAL_ENV[placename] = nil
+	end
+	do
+		local Players = service.Players
+
+		if IgnoreList.Model ~= true then
+			local function ignoreCharacter(player)
+				Connect(player.CharacterAdded, function(character)
+					IgnoreList[character] = true
+				end)
+
+				local Character = player.Character
+				if Character then
+					IgnoreList[Character] = true
+				end
+			end
+
+			if not OPTIONS.SavePlayerCharacters then
+				Connect(Players.PlayerAdded, function(player)
+					ignoreCharacter(player)
+				end)
+
+				for _, player in Players:GetPlayers() do
+					ignoreCharacter(player)
+				end
+			else
+				IgnoreNotArchivable = false
+			end
+		end
+	end
+
+	if OPTIONS.SafeMode and CustomOptions_valid["KillAllScripts"] == nil then
+		OPTIONS.KillAllScripts = true
+	end
+
+	if OPTIONS.KillAllScripts and not GLOBAL_ENV.USSI_KAS then
+		GLOBAL_ENV.USSI_KAS = true
+		game:GetService("ScriptContext"):SetTimeout(math.clamp(SaveCacheInterval * 0.000047, 20, 30))
+
+		local self = coroutine.running()
+		do
+			local islclosure = islclosure
+			local isexecutorclosure = isexecutorclosure or checkclosure or isourclosure
+			local hookfunction = EXECUTOR_NAME ~= "Volt" and hookfunction
+
+			local done = {}
+			local function filterNkill(f)
+				if not f then
+					return
+				end
+
+				for _, v in table.clone(f()) do
+					if not done[v] then
+						done[v] = true
+
+						local _type = type(v)
+						if _type == "thread" then
+							if v ~= self then
+								pcall(coroutine.close, v)
+							end
+						elseif _type == "function" then
+							if
+								(not islclosure or islclosure(v))
+								and (not isexecutorclosure or not isexecutorclosure(v))
+							then
+								if hookfunction then
+									pcall(hookfunction, v, coroutine.yield)
+								end
+							end
+						end
+					end
+				end
+			end
+
+			filterNkill(debug and debug.getregistry or getreg or getregistry)
+			filterNkill(getallthreads)
+			filterNkill(getgc)
+		end
+	end
+
+	if IsolateStarterPlayer then
+		IgnoreList.StarterPlayer = false
+	end
+
+	if not IsolatePlayers and CustomOptions_valid.SaveNotCreatable == nil then
+		IgnoreList.Player = true
+	end
+
+	if OPTIONS.ShowStatus then
+		do
+			local Exists = GLOBAL_ENV.USSI_statustext
+			if Exists then
+				Exists:Destroy()
+			end
+		end
+
+		local StatusGui = Instance.new("ScreenGui")
+
+		GLOBAL_ENV.USSI_statustext = StatusGui
+
+		StatusGui.DisplayOrder = 2e9
+		pcall(function()
+			StatusGui.OnTopOfCoreBlur = true
+		end)
+
+		StatusText = Instance.new("TextLabel")
+
+		StatusText.Text = "Saving..."
+
+		StatusText.BackgroundTransparency = 1
+		StatusText.Font = Enum.Font.Code
+		StatusText.AnchorPoint = Vector2.new(1)
+		StatusText.Position = UDim2.new(1)
+		StatusText.Size = UDim2.new(0.3, 0, 0, 20)
+
+		StatusText.TextColor3 = Color3.new(1, 1, 1)
+		StatusText.TextScaled = true
+		StatusText.TextStrokeTransparency = 0.7
+		StatusText.TextXAlignment = Enum.TextXAlignment.Right
+		StatusText.TextYAlignment = Enum.TextYAlignment.Top
+
+		StatusText.Parent = StatusGui
+
+		local function randomString()
+			local length = math.random(10, 20)
+			local randomarray = table.create(length)
+			for i = 1, length do
+				randomarray[i] = string.char(math.random(32, 126))
+			end
+			return table.concat(randomarray)
+		end
+
+		if global_container.gethui then
+			StatusGui.Name = randomString()
+			StatusGui.Parent = global_container.gethui()
+		else
+			if global_container.protectgui then
+				StatusGui.Name = randomString()
+				global_container.protectgui(StatusGui)
+				StatusGui.Parent = game:GetService("CoreGui")
+			else
+				local RobloxGui = game:GetService("CoreGui"):FindFirstChild("RobloxGui")
+				if RobloxGui then
+					StatusGui.Parent = RobloxGui
+				else
+					StatusGui.Name = randomString()
+					StatusGui.Parent = game:GetService("CoreGui")
+				end
+			end
+		end
+	end
+	local kickSnapshot = GLOBAL_ENV.USSI_kicksnapshot
+	if not kickSnapshot then
+		kickSnapshot = {}
+		GLOBAL_ENV.USSI_kicksnapshot = kickSnapshot
+	end
+
+	local function snapshotKick(LocalPlayer)
+		local cached = kickSnapshot[LocalPlayer]
+
+		if not cached then
+			cached = { [LocalPlayer] = LocalPlayer:GetChildren() }
+
+			local ps = LocalPlayer:FindFirstChildOfClass("PlayerScripts")
+			local function walk(inst)
+				local kids = inst:GetChildren()
+				cached[inst] = kids
+				for _, child in kids do
+					walk(child)
+				end
+			end
+			if ps then
+				walk(ps)
+			end
+
+			kickSnapshot[LocalPlayer] = cached
+		end
+
+		for inst, kids in cached do
+			InstancesOverrides[inst] = { __Children = kids }
+		end
+	end
+
+	if OPTIONS.SafeMode then
+		task.spawn(function()
+			local LocalPlayer = GetLocalPlayer()
+
+			snapshotKick(LocalPlayer)
+
+			local msg =
+				"[SAVEINSTANCE SAFEMODE]\nSaving..\nDo NOT leave\nLVL7 Executor RECOMMENDED for more SAFETY\nTo Disable this: SafeMode=false (Less Protection)"
+			local function Kick()
+				LocalPlayer:Kick(msg)
+			end
+
+			Kick()
+			pcall(function()
+				Connect(service.GuiService.ErrorMessageChanged, function()
+					if service.GuiService:GetErrorMessage() ~= msg then
+						Kick()
+					end
+				end)
+			end)
+			wait_for_render()
+		end)
+
+		if CustomOptions_valid["BoostFPS"] == nil then
+			OPTIONS.BoostFPS = true
+		end
+	end
+
+	local function childrenOf(instance)
+		local override = InstancesOverrides[instance]
+		return override and override.__Children or instance:GetChildren()
+	end
+	if OPTIONS.IgnoreDefaultPlayerScripts then
+		local default_scripts = arrayToDict({
+			ModuleScript = { "PlayerModule" },
+			LocalScript = {
+				"BubbleChat",
+				"ChatScript",
+				"PlayerScriptsLoader",
+				"RbxCharacterSounds",
+			},
+		}, true)
+
+		local function ignorePath(path)
+			if path then
+				for _, child in childrenOf(path) do
+					local class_match = default_scripts[child.ClassName]
+					if class_match and class_match[child.Name] then
+						DecompileIgnore[child] = true
+					end
+					ignorePath(child)
+				end
+			end
+		end
+
+		ignorePath(service.StarterPlayer)
+
+		local LocalPlayer = service.Players.LocalPlayer
+		if LocalPlayer then
+			for _, child in childrenOf(LocalPlayer) do
+				if child:IsA("PlayerScripts") then
+					ignorePath(child)
+					break
+				end
+			end
+		end
+	end
+
+	if OPTIONS.BoostFPS then
+		pcall(function()
+			service.RunService:Set3dRenderingEnabled(false)
+		end)
+	end
+
+	if OPTIONS.AntiIdle then
+		local Idled = GetLocalPlayer().Idled
+		Connect(Idled, function()
+			service.VirtualInputManager:SendMouseWheelEvent(
+				service.UserInputService:GetMouseLocation().X,
+				service.UserInputService:GetMouseLocation().Y,
+				true,
+				game
+			)
+		end)
+	end
+
+	local RiskyOption = OPTIONS.RiskyServicesDisabled
+	RiskyServicesDisabled = type(RiskyOption) == "table" and table.clone(RiskyOption)
+	if not gethiddenproperty and CustomOptions_valid.RiskyServicesDisabled == nil then
+		RiskyServicesDisabled.UGC = false
+	end
+	gethiddenproperty_fallback = nil
+	if not RiskyServicesDisabled.UGC then
+		gethiddenproperty_fallback = function(instance, propertyName)
+			return service.UGCValidationService:GetPropertyValue(instance, propertyName)
+		end
+	end
+
+	if not ClassList then
+		do
+			if gethiddenproperty then
+				local ard = Instance.new("AnimationRigData")
+
+				local GHP_SELF_CHECKS = {
+					{
+						key = "boolean",
+						fatal = true,
+						test = function()
+							return type(gethiddenproperty(game, "ForceR15")) == "boolean"
+						end,
+					},
+					{
+						key = "Enum",
+						test = function()
+							local r = gethiddenproperty(workspace, "StreamOutBehavior")
+							return r == nil or typeof(r) == "EnumItem"
+						end,
+					},
+					{
+						key = "Color3uint8",
+						retest = true,
+						test = function()
+							local terrain = workspace.Terrain
+							return gethiddenproperty(terrain, "Color3uint8") == terrain.Color
+						end,
+					},
+					{
+						key = "int64",
+						retest = true,
+						test = function()
+							local value = gethiddenproperty(ard, "SourceAssetId")
+							return type(value) == "number" and value == ard.SourceAssetId
+						end,
+					},
+					{
+						key = "BinaryString",
+						retest = true,
+						test = function()
+							ard:SetAttribute("test", "test")
+							return gethiddenproperty(ard, "AttributesSerialize") == "\1\0\0\0\4\0\0\0test\2\4\0\0\0test"
+						end,
+					},
+					{
+						key = "SharedString",
+						test = function()
+							ard:AddTag("\1test\2\4test")
+							return gethiddenproperty(ard, "Tags") == "\1test\2\4test"
+						end,
+					},
+					{
+						key = "NetAssetRef",
+						test = function()
+							return type(gethiddenproperty(Instance.new("MeshPart"), "SolidMeshHolder")) == "string"
+						end,
+					},
+					{
+						dep = "BinaryString",
+						test = function()
+							ard.Parent = Instance.new("Folder")
+							local ok, r = pcall(gethiddenproperty, ard, "parent")
+							GHPShadowed = ok and r ~= nil and type(r) ~= "string"
+							return not GHPShadowed
+						end,
+					},
+				}
+
+				local statusShown
+				for _, check in GHP_SELF_CHECKS do
+					local key = check.key
+					if key then
+						local state = GHPPersisted[key]
+						if state == "crashed" then
+							if check.fatal then
+								gethiddenproperty = nil
+								break
+							end
+							continue
+						elseif state and check.fatal and state ~= "ok" then
+							gethiddenproperty = nil
+							break
+						elseif state and not check.retest then
+							continue
+						end
+					end
+
+					if check.dep and GHPPersisted[check.dep] == "crashed" then
+						continue
+					end
+
+					if key then
+						GHPPersisted[key] = "crashed"
+						saveGHPState()
+					end
+
+					if StatusText and not statusShown then
+						statusShown = true
+						StatusText.Text = "Testing ghp. Rerun script if crashed"
+						wait_for_render()
+					end
+					local ok, passed = pcall(check.test)
+					passed = ok and passed
+					if key then
+						ghpDatatypeReport(key, passed)
+					end
+					if not passed and check.fatal then
+						gethiddenproperty = nil
+						break
+					end
+				end
+			end
+
+			if not gethiddenproperty and CustomOptions_valid.RiskyServicesDisabled == nil then
+				RiskyServicesDisabled.UGC = false
+				gethiddenproperty_fallback = function(instance, propertyName)
+					return service.UGCValidationService:GetPropertyValue(instance, propertyName)
+				end
+			end
+
+			do
+				if
+					not bit32.byteswap
+					or not (function()
+						local o, r = pcall(bit32.byteswap, 2712847316)
+						if not o then
+							return
+						end
+						return r == 3569595041
+					end)()
+				then
+					local b32 = table.clone(bit32)
+
+					b32.byteswap = function(n)
+						return bit32.bor(
+							bit32.lshift(n, 24),
+							bit32.band(bit32.lshift(n, 8), 0xFF0000),
+							bit32.band(bit32.rshift(n, 8), 0xFF00),
+							bit32.rshift(n, 24)
+						)
+					end
+					if table.isfrozen(bit32) then
+						b32 = table.freeze(b32)
+					end
+					GLOBAL_ENV.bit32 = b32
+				end
+			end
+
+			local function benchmark(funcs, iters, ...)
+				local ranking = table.create(3)
+				for i, f in funcs do
+					local start = os.clock()
+					for _ = 1, iters do
+						f(...)
+					end
+					ranking[i] = { t = os.clock() - start, f = f }
+				end
+				table.sort(ranking, function(a, b)
+					return a.t < b.t
+				end)
+				return ranking[1].f
+			end
+
+			local function pickFastestBy(label, candidates, works, iters, benchInput, ...)
+				local valid = {}
+				for _, f in candidates do
+					if f then
+						local ok, good = pcall(works, f)
+						if ok and good then
+							valid[#valid + 1] = f
+						end
+					end
+				end
+
+				if #valid == 0 then
+					return nil
+				elseif #valid == 1 then
+					return valid[1]
+				end
+				return benchmark(valid, iters, benchInput, ...)
+			end
+
+			local rbxcrypt_encode, rbxcrypt_decode
+			pcall(function()
+				local rbxcrypt_b64 = loadstring(
+					game:HttpGet(
+						"https://raw.githubusercontent.com/daily3014/rbx-algorithms/refs/heads/main/src/Encoding/Base64.luau",
+						true
+					),
+					"Base64"
+				)()
+				local enc = rbxcrypt_b64.Encode
+				rbxcrypt_encode = function(raw)
+					return buffer.tostring(enc(buffer.fromstring(raw)))
+				end
+				local dec = rbxcrypt_b64.Decode
+				rbxcrypt_decode = function(raw)
+					return buffer.tostring(dec(buffer.fromstring(raw)))
+				end
+			end)
+
+			local es_encode, es_decode, es_zstdcompress
+			if not RiskyServicesDisabled.Encoding then
+				local EncodingService = game:GetService("EncodingService")
+
+				es_encode = function(raw)
+					return buffer.tostring(EncodingService:Base64Encode(buffer.fromstring(raw)))
+				end
+				es_decode = function(raw)
+					return buffer.tostring(EncodingService:Base64Decode(buffer.fromstring(raw)))
+				end
+
+				local ZSTD_ALGO_ENUM = Enum.CompressionAlgorithm.Zstd
+				es_zstdcompress = function(raw, level)
+					return buffer.tostring(
+						EncodingService:CompressBuffer(buffer.fromstring(raw), ZSTD_ALGO_ENUM, level)
+					)
+				end
+			end
+
+			local BASE64_TEST = string.rep("\1\0\0\0\1\2\3\4\5\6\7", 50)
+
+			local function b64EncWorks(f)
+				return f("\1\0\0\0\1") == "AQAAAAE="
+			end
+
+			base64encode = pickFastestBy(
+				"base64encode",
+				{ base64encode, rbxcrypt_encode, es_encode },
+				b64EncWorks,
+				50,
+				BASE64_TEST
+			)
+
+			if not base64encode then
+				warn("base64encode not found")
+				Cleanup()
+				return
+			end
+
+			local function b64DecWorks(f)
+				return f("AQAAAAE=") == "\1\0\0\0\1"
+			end
+
+			base64decode = pickFastestBy(
+				"base64decode",
+				{ base64decode, rbxcrypt_decode, es_decode },
+				b64DecWorks,
+				50,
+				base64encode(BASE64_TEST)
+			)
+
+			local HttpService = service.HttpService
+
+			local function http_zstdcompress(input)
+				local ok, encoded = pcall(HttpService.JSONEncode, HttpService, buffer.fromstring(input))
+				if not ok then
+					return nil
+				end
+
+				local keyStart = string_find(encoded, '"zbase64"')
+				if not keyStart then
+					return nil
+				end
+
+				local valueStart = string_find(encoded, '"', keyStart + 9)
+				if not valueStart then
+					return nil
+				end
+
+				local valueEnd = string_find(encoded, '"', valueStart + 1)
+				if not valueEnd then
+					return nil
+				end
+
+				local b64 = string.sub(encoded, valueStart + 1, valueEnd - 1)
+
+				return base64decode(b64)
+			end
+
+			local COMPRESS_TEST
+			do
+				local n = 4000
+				local planes = table.create(4)
+				for p = 1, 4 do
+					local bytes = table.create(n)
+					for i = 1, n do
+						bytes[i] = p <= 2 and (i % 3) or ((i * 2654435761) % 256)
+					end
+					planes[p] = string.char(table.unpack(bytes, 1, math.min(n, 7997)))
+				end
+				COMPRESS_TEST = table.concat(planes)
+			end
+
+			local function zstdWorks(f)
+				local out = f(COMPRESS_TEST)
+				return type(out) == "string" and #out > 4 and string.sub(out, 1, 4) == "\40\181\47\253"
+			end
+
+			zstdcompress = pickFastestBy(
+				"zstdcompress",
+				{ zstdcompress, http_zstdcompress, es_zstdcompress },
+				zstdWorks,
+				10,
+				COMPRESS_TEST
+			)
+
+			local llz4_compress
+			pcall(function()
+				local llz4 = loadstring(
+					game:HttpGet("https://raw.githubusercontent.com/RiskoZS/llz4/refs/heads/main/llz4.luau", true),
+					"llz4"
+				)()
+				llz4_compress = llz4.compress
+			end)
+
+			local LZ4_PROBE = "\1\2\3\4\5\6\7\8"
+
+			local function lz4Works(f)
+				local out = f(LZ4_PROBE)
+				return type(out) == "string"
+					and #out == #LZ4_PROBE + 1
+					and string.byte(out, 1) == #LZ4_PROBE * 16
+					and string.sub(out, 2) == LZ4_PROBE
+			end
+			lz4compress = pickFastestBy("lz4compress", { lz4compress, llz4_compress }, lz4Works, 10, COMPRESS_TEST)
+		end
+
+		do
+			local ok, result = pcall(FetchAPI)
+			if ok then
+				ClassList = result
+			else
+				warn("Failed to load the API Dump")
+				warn(result)
+				Cleanup()
+				return
+			end
+		end
+	end
+
+	elapse_t = os.clock()
+
+	local ok, err = xpcall(save_game, function(err)
+		return debug.traceback(err)
+	end)
+
+	if OPTIONS.BoostFPS then
+		pcall(function()
+			local max = 5
+			task.delay(
+				math.clamp(max - (os.clock() - elapse_t), 0, max),
+				service.GuiService.ClearError,
+				service.GuiService
+			)
+			service.RunService:Set3dRenderingEnabled(true)
+		end)
+	end
+
+	if old_gethiddenproperty then
+		gethiddenproperty = old_gethiddenproperty
+	end
+
+	Cleanup()
+
+	elapse_t = os.clock() - elapse_t
+	local Log10 = math.log10(elapse_t)
+	local ExtraTime = 10
+
+	if not ok then
+		warn("Error found while saving:")
+		warn(err)
+	end
+	if StatusText then
+		task.spawn(function()
+			if ok then
+				StatusText.Text = string.format("Saved! Time %.3f seconds; Size %s", elapse_t, get_size_format())
+				StatusText.TextColor3 = Color3.new(0, 1)
+				task.wait(Log10 * 2 + ExtraTime)
+			else
+				if LoadingThread then
+					task.cancel(LoadingThread)
+					LoadingThread = nil
+				end
+				StatusText.Text = "Failed! Check F9 console for more info"
+				StatusText.TextColor3 = Color3.new(1)
+				task.wait(Log10 + ExtraTime)
+			end
+			StatusText:Destroy()
+		end)
+	end
+
+	if OPTIONS.ShutdownWhenDone and ok then
+		task.wait(Log10 * 2 + ExtraTime)
+		game:Shutdown()
+	end
+end
+
+return synsaveinstance
